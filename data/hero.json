@@ -1730,7 +1730,10 @@
         ],
         "cooldown": 60,
         "treantStats": {
-          "health": [1000, 1600],
+          "health": [
+            {"level": 1, "value": 1000},
+            {"level": 2, "value": 1600}
+          ],
           "damage": "15-17",
           "siegeDamage": 1,
           "attackRange": 100,
@@ -2040,7 +2043,12 @@
         ],
         "maxWolves": 1,
         "wolfStats": {
-          "health": [450, 530, 610, 700],
+          "health": [
+            {"level": 1, "value": 450},
+            {"level": 2, "value": 530},
+            {"level": 3, "value": 610},
+            {"level": 4, "value": 700}
+          ],
           "damage": [
             "26-27",
             "34-35", 
@@ -2051,7 +2059,12 @@
           "attackRange": 90,
           "movementSpeed": 350,
           "armorType": "重步兵",
-          "armor": [2, 3, 4, 5],
+          "armor": [
+            {"level": 1, "value": 2},
+            {"level": 2, "value": 3},
+            {"level": 3, "value": 4},
+            {"level": 4, "value": 5}
+          ],
           "specialEffect": "攻擊時，守護狼將暫時現身"
         },
         "type": "active"
@@ -2573,8 +2586,18 @@
           }
         ],
         "duration": {
-          "normalUnits": [15, 25, 35, 45],
-          "heroes": [2, 3, 4, 4.5]
+          "normalUnits": [
+            {"level": 1, "value": 15},
+            {"level": 2, "value": 25},
+            {"level": 3, "value": 35},
+            {"level": 4, "value": 45}
+          ],
+          "heroes": [
+            {"level": 1, "value": 2},
+            {"level": 2, "value": 3},
+            {"level": 3, "value": 4},
+            {"level": 4, "value": 4.5}
+          ]
         },
         "range": 800,
         "cooldown": 18,
@@ -2607,7 +2630,12 @@
         "range": 500,
         "cooldown": 20,
         "wardStats": {
-          "health": [75, 135, 135, 135],
+          "health": [
+            {"level": 1, "value": 75},
+            {"level": 2, "value": 135},
+            {"level": 3, "value": 135},
+            {"level": 4, "value": 135}
+          ],
           "damage": [
             "11-13",
             "17-20",
@@ -2630,13 +2658,19 @@
         "range": 700,
         "cooldown": 75,
         "golemStats": {
-          "health": [500, 850],
+          "health": [
+            {"level": 1, "value": 500},
+            {"level": 2, "value": 850}
+          ],
           "damage": [
             "21-22",
             "37-61"
           ],
           "siegeDamage": 1,
-          "armor": [0, 3],
+          "armor": [
+            {"level": 1, "value": 0},
+            {"level": 2, "value": 3}
+          ],
           "attackRange": 600
         },
         "type": "active"
@@ -2687,8 +2721,18 @@
         "effect": "最接近戰牛酋長的敵人將被迫攻擊這個單位。",
         "manaCost": 30,
         "duration": {
-          "normalUnits": [3, 5, 7, 9],
-          "heroes": [1, 2, 3, 4]
+          "normalUnits": [
+            {"level": 1, "value": 3},
+            {"level": 2, "value": 5},
+            {"level": 3, "value": 7},
+            {"level": 4, "value": 9}
+          ],
+          "heroes": [
+            {"level": 1, "value": 1},
+            {"level": 2, "value": 2},
+            {"level": 3, "value": 3},
+            {"level": 4, "value": 4}
+          ]
         },
         "range": 450,
         "maxTargets": 10,
@@ -3555,8 +3599,20 @@
         "icon": "../img_UDskill/bb03.gif",
         "description": "屍毒效果隨等級增長。",
         "effect": "增強其他技能效果。",
-        "dirtyBloodExtraReduction": [20, 25, 30, 35, 40],
-        "plagueSpeedReduction": [10, 15, 20, 25, 30],
+        "dirtyBloodExtraReduction": [
+          {"level": 1, "value": 20},
+          {"level": 2, "value": 25},
+          {"level": 3, "value": 30},
+          {"level": 4, "value": 35},
+          {"level": 5, "value": 40}
+        ],
+        "plagueSpeedReduction": [
+          {"level": 1, "value": 10},
+          {"level": 2, "value": 15},
+          {"level": 3, "value": 20},
+          {"level": 4, "value": 25},
+          {"level": 5, "value": 30}
+        ],
         "bloodyBladeDamageIncrease": 12,
         "type": "passive"
       },
@@ -3642,7 +3698,12 @@
         ],
         "stunDuration": {
           "normalUnits": 5,
-          "heroes": [1, 1, 2, 2]
+          "heroes": [
+            {"level": 1, "value": 1},
+            {"level": 2, "value": 1},
+            {"level": 3, "value": 2},
+            {"level": 4, "value": 2}
+          ]
         },
         "cooldown": 7,
         "type": "active"
@@ -3808,8 +3869,18 @@
           }
         ],
         "stunDuration": {
-          "normalUnits": [2, 3, 4, 5],
-          "heroes": [1, 1, 2, 2]
+          "normalUnits": [
+            {"level": 1, "value": 2},
+            {"level": 2, "value": 3},
+            {"level": 3, "value": 4},
+            {"level": 4, "value": 5}
+          ],
+          "heroes": [
+            {"level": 1, "value": 1},
+            {"level": 2, "value": 1},
+            {"level": 3, "value": 2},
+            {"level": 4, "value": 2}
+          ]
         },
         "range": 250,
         "castRange": 700,
@@ -4035,8 +4106,18 @@
         "effect": "與目標交換位置。若目標為敵人，將被困住一段時間。",
         "manaCost": 90,
         "bindDuration": {
-          "normalUnits": [4, 5, 6, 7],
-          "heroes": [2, 2, 3, 3]
+          "normalUnits": [
+            {"level": 1, "value": 4},
+            {"level": 2, "value": 5},
+            {"level": 3, "value": 6},
+            {"level": 4, "value": 7}
+          ],
+          "heroes": [
+            {"level": 1, "value": 2},
+            {"level": 2, "value": 2},
+            {"level": 3, "value": 3},
+            {"level": 4, "value": 3}
+          ]
         },
         "range": 500,
         "cooldown": 18,
@@ -4391,19 +4472,33 @@
       "zh": "巫妖",
       "en": "Lich"
     },
-    "title": "克爾蘇沙德 Kel'Thuzad",
+    "title": {
+      "zh": "克爾蘇沙德",
+      "en": "Kel'Thuzad"
+    },
     "faction": "undead",
     "type": "int",
     "stats": {
-      "strength": [17, 1.6],
-      "agility": [17, 1.0],
-      "intelligence": [26, 3.4],
-      "health": 410,
-      "mana": 260,
-      "damage": [44, 54],
-      "armor": 0,
+      "level": 16,
+      "strength": {
+        "base": 17,
+        "growth": 1.6
+      },
+      "agility": {
+        "base": 17,
+        "growth": 1.0
+      },
+      "intelligence": {
+        "base": 26,
+        "growth": 3.4
+      },
+      "baseHealth": 410,
+      "baseMana": 260,
+      "baseAttackMin": 44,
+      "baseAttackMax": 54,
+      "baseArmor": 0,
       "attackRange": 500,
-      "moveSpeed": 280
+      "movementSpeed": 280
     },
     "description": "具有破壞力的英雄。他看似脆弱的身軀卻能發揮出可怕的力量，一次擊殺多數敵人。克爾蘇沙德是達拉朗最偉大的大法師之一。他原先是奇林托爾的成員之一，也是安東尼達斯的摯友。但是，他對於黑暗法術的執迷讓他被同僚驅逐。在巫妖王的召喚之下，克爾蘇沙德穿越北域，將自己的靈魂獻給那蘇。",
     "skills": [
@@ -4412,15 +4507,83 @@
         "description": "引爆一個單位，讓他體內的邪惡力量四散，並補充到友軍身上。對目標及週遭部隊造成傷害並降低移動及攻擊速度。",
         "manaCost": 120,
         "damage": {
-          "primary": [35, 55, 75, 95],
-          "area": [80, 110, 140, 170]
+          "primary": [
+            {
+              "level": 1,
+              "value": 35
+            },
+            {
+              "level": 2,
+              "value": 55
+            },
+            {
+              "level": 3,
+              "value": 75
+            },
+            {
+              "level": 4,
+              "value": 95
+            }
+          ],
+          "area": [
+            {
+              "level": 1,
+              "value": 80
+            },
+            {
+              "level": 2,
+              "value": 110
+            },
+            {
+              "level": 3,
+              "value": 140
+            },
+            {
+              "level": 4,
+              "value": 170
+            }
+          ]
         },
         "effects": {
           "attackSpeedReduction": "20%",
           "moveSpeedReduction": "50%",
           "slowDuration": {
-            "normal": [2, 4, 6, 8],
-            "hero": [1, 1, 3, 4]
+            "normal": [
+              {
+                "level": 1,
+                "value": 2
+              },
+              {
+                "level": 2,
+                "value": 4
+              },
+              {
+                "level": 3,
+                "value": 6
+              },
+              {
+                "level": 4,
+                "value": 8
+              }
+            ],
+            "hero": [
+              {
+                "level": 1,
+                "value": 1
+              },
+              {
+                "level": 2,
+                "value": 1
+              },
+              {
+                "level": 3,
+                "value": 3
+              },
+              {
+                "level": 4,
+                "value": 4
+              }
+            ]
           }
         },
         "range": 600,
@@ -4433,7 +4596,24 @@
         "manaCost": 125,
         "effects": {
           "lifeRegen": 50,
-          "duration": [3, 4, 5, 6]
+          "duration": [
+            {
+              "level": 1,
+              "value": 3
+            },
+            {
+              "level": 2,
+              "value": 4
+            },
+            {
+              "level": 3,
+              "value": 5
+            },
+            {
+              "level": 4,
+              "value": 6
+            }
+          ]
         },
         "cooldown": 60,
         "type": "channeling"
@@ -4442,8 +4622,42 @@
         "name": "支配冰冷",
         "description": "降低敵方的冰冷抵抗力，使巫妖的冰系魔法有更大的傷害。增加寒冰爆的攻擊力。",
         "effects": {
-          "primaryDamageIncrease": [10, 20, 30, 40],
-          "areaDamageIncrease": [25, 50, 75, 100]
+          "primaryDamageIncrease": [
+            {
+              "level": 1,
+              "value": 10
+            },
+            {
+              "level": 2,
+              "value": 20
+            },
+            {
+              "level": 3,
+              "value": 30
+            },
+            {
+              "level": 4,
+              "value": 40
+            }
+          ],
+          "areaDamageIncrease": [
+            {
+              "level": 1,
+              "value": 25
+            },
+            {
+              "level": 2,
+              "value": 50
+            },
+            {
+              "level": 3,
+              "value": 75
+            },
+            {
+              "level": 4,
+              "value": 100
+            }
+          ]
         },
         "type": "passive"
       },
@@ -4452,8 +4666,26 @@
         "description": "創造出一片極低溫的區域，對敵軍造成凍傷。範圍內每秒造成傷害並減緩移動速度。",
         "manaCost": 175,
         "effects": {
-          "damagePerSecond": [50, 100],
-          "moveSpeedReduction": ["40%", "80%"],
+          "damagePerSecond": [
+            {
+              "level": 1,
+              "value": 50
+            },
+            {
+              "level": 2,
+              "value": 100
+            }
+          ],
+          "moveSpeedReduction": [
+            {
+              "level": 1,
+              "value": "40%"
+            },
+            {
+              "level": 2,
+              "value": "80%"
+            }
+          ],
           "duration": 8
         },
         "range": 900,
@@ -4469,19 +4701,35 @@
       "zh": "狼人",
       "en": "Lycan"
     },
-    "title": "維克多 Victor",
+    "title": {
+      "zh": "維克多",
+      "en": "Victor"
+    },
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "strength": [18, 1.7],
-      "agility": [25, 2.5],
-      "intelligence": [17, 1.8],
-      "health": 540,
-      "mana": 140,
-      "damage": [42, 48],
-      "armor": 2,
+      "level": 16,
+      "strength": {
+        "base": 18,
+        "growth": 1.7
+      },
+      "agility": {
+        "base": 25,
+        "growth": 2.5
+      },
+      "intelligence": {
+        "base": 17,
+        "growth": 1.8
+      },
+      "baseHealth": 540,
+      "baseMana": 140,
+      "baseAttackMin": 42,
+      "baseAttackMax": 48,
+      "baseArmor": 2,
       "attackRange": 100,
-      "moveSpeed": "320 / 400（狼化）"
+      "movementSpeed": 320,
+      "movementSpeedTransformed": 400,
+      "transformationNote": "狼化形態移動速度為400"
     },
     "description": "敏捷的英雄。他的牙與爪能夠有效率的撕裂敵人，而且他絲毫不需要牙與爪以外的戰鬥方式。數百年前仍是人類的維克多受到了月光的詛咒，從此獸化為半人半狼的怪物。從此無法融入人類社會的他心裡充滿仇恨，但沒有人具有殺死他的力量，而他本身也具有不老不死的能力。過了幾百年後，仍然強悍的他決定為灼炎軍效忠，好能夠完全的對人類發洩他的仇恨。",
     "skills": [
@@ -4492,9 +4740,60 @@
         "effects": {
           "duration": 40,
           "spawnUnit": {
-            "health": [160, 250, 350, 440],
-            "damage": ["10-11", "17-20", "24-28", "31-34"],
-            "armor": [0, 1, 2, 3],
+            "health": [
+              {
+                "level": 1,
+                "value": 160
+              },
+              {
+                "level": 2,
+                "value": 250
+              },
+              {
+                "level": 3,
+                "value": 350
+              },
+              {
+                "level": 4,
+                "value": 440
+              }
+            ],
+            "damage": [
+              {
+                "level": 1,
+                "value": "10-11"
+              },
+              {
+                "level": 2,
+                "value": "17-20"
+              },
+              {
+                "level": 3,
+                "value": "24-28"
+              },
+              {
+                "level": 4,
+                "value": "31-34"
+              }
+            ],
+            "armor": [
+              {
+                "level": 1,
+                "value": 0
+              },
+              {
+                "level": 2,
+                "value": 1
+              },
+              {
+                "level": 3,
+                "value": 2
+              },
+              {
+                "level": 4,
+                "value": 3
+              }
+            ],
             "moveSpeed": 300
           }
         },
@@ -4505,11 +4804,79 @@
         "name": "狂犬病",
         "description": "犬齒中的毒素會讓敵人受到疾病的感染。被擊中的敵人將每秒受到傷害並降低移動速度。",
         "effects": {
-          "damagePerSecond": [4, 8, 12, 16],
-          "moveSpeedReduction": ["7%", "14%", "21%", "28%"],
+          "damagePerSecond": [
+            {
+              "level": 1,
+              "value": 4
+            },
+            {
+              "level": 2,
+              "value": 8
+            },
+            {
+              "level": 3,
+              "value": 12
+            },
+            {
+              "level": 4,
+              "value": 16
+            }
+          ],
+          "moveSpeedReduction": [
+            {
+              "level": 1,
+              "value": "7%"
+            },
+            {
+              "level": 2,
+              "value": "14%"
+            },
+            {
+              "level": 3,
+              "value": "21%"
+            },
+            {
+              "level": 4,
+              "value": "28%"
+            }
+          ],
           "duration": {
-            "normal": [5, 5, 5, 5],
-            "hero": [1, 1, 2, 1]
+            "normal": [
+              {
+                "level": 1,
+                "value": 5
+              },
+              {
+                "level": 2,
+                "value": 5
+              },
+              {
+                "level": 3,
+                "value": 5
+              },
+              {
+                "level": 4,
+                "value": 5
+              }
+            ],
+            "hero": [
+              {
+                "level": 1,
+                "value": 1
+              },
+              {
+                "level": 2,
+                "value": 1
+              },
+              {
+                "level": 3,
+                "value": 2
+              },
+              {
+                "level": 4,
+                "value": 1
+              }
+            ]
           }
         },
         "type": "passive"
@@ -4518,7 +4885,24 @@
         "name": "狼群領袖",
         "description": "狼人散發出的領袖氣質，使得他每一次攻擊都能造成更大傷害。增加攻擊力。",
         "effects": {
-          "attackDamageIncrease": ["9%", "16%", "23%", "30%"]
+          "attackDamageIncrease": [
+            {
+              "level": 1,
+              "value": "9%"
+            },
+            {
+              "level": 2,
+              "value": "16%"
+            },
+            {
+              "level": 3,
+              "value": "23%"
+            },
+            {
+              "level": 4,
+              "value": "30%"
+            }
+          ]
         },
         "type": "passive"
       },
@@ -4526,7 +4910,16 @@
         "name": "狼化",
         "description": "狼人將成為完全的狼，失去理智而無法施展技能，但也具有更加強大的肉搏力量。轉化成巨狼，降低攻擊間隔，但也無法施展技能。",
         "effects": {
-          "attackInterval": ["1.4秒", "1.0秒"]
+          "attackInterval": [
+            {
+              "level": 1,
+              "value": "1.4秒"
+            },
+            {
+              "level": 2,
+              "value": "1.0秒"
+            }
+          ]
         },
         "cooldown": 60,
         "type": "transformation"
@@ -4540,19 +4933,33 @@
       "zh": "紅色魔術師",
       "en": "Magician's Red"
     },
-    "title": "鴨都勞 Avdol",
+    "title": {
+      "zh": "鴨都勞",
+      "en": "Avdol"
+    },
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "strength": [15, 1.5],
-      "agility": [24, 2.2],
-      "intelligence": [21, 2.2],
-      "health": 400,
-      "mana": 210,
-      "damage": [38, 60],
-      "armor": 2,
+      "level": 16,
+      "strength": {
+        "base": 15,
+        "growth": 1.5
+      },
+      "agility": {
+        "base": 24,
+        "growth": 2.2
+      },
+      "intelligence": {
+        "base": 21,
+        "growth": 2.2
+      },
+      "baseHealth": 400,
+      "baseMana": 210,
+      "baseAttackMin": 38,
+      "baseAttackMax": 60,
+      "baseArmor": 2,
       "attackRange": 600,
-      "moveSpeed": 300
+      "movementSpeed": 300
     },
     "description": "具有破壞力的英雄。他能夠施法一次消去敵人大量生命，也能夠提供穩定的長期火力。火焰不只是他的武器，同時也是他的分身──更可說，他就是火焰。當他發怒時能夠創造誰也無法抵擋的高溫，最好別想用刀或槍這種無意義的東西阻止他。",
     "skills": [
@@ -4561,7 +4968,12 @@
         "description": "召喚一枚火彈，毀滅所有阻擋它的物體。發射一枚火彈，飛行一段距離後爆炸。若飛行途中撞擊其它物體，則直接爆炸。",
         "manaCost": 90,
         "effects": {
-          "explosionDamage": [100, 133, 167, 200],
+          "explosionDamage": [
+            {"level": 1, "value": 100},
+            {"level": 2, "value": 133},
+            {"level": 3, "value": 167},
+            {"level": 4, "value": 200}
+          ],
           "flightDistance": 900
         },
         "range": 450,
@@ -4571,7 +4983,12 @@
         "name": "火焰狂熱",
         "description": "火彈變得更具有毀滅性。增加火彈的燃燒軌跡範圍。",
         "effects": {
-          "burningTrailRange": [80, 100, 120, 140]
+          "burningTrailRange": [
+            {"level": 1, "value": 80},
+            {"level": 2, "value": 100},
+            {"level": 3, "value": 120},
+            {"level": 4, "value": 140}
+          ]
         },
         "type": "passive"
       },
@@ -4579,7 +4996,12 @@
         "name": "火焰化身",
         "description": "踩踏在火焰上的火焰魔術師感到更加自在。火彈的射線上出現燃燒軌跡，靠近燃燒軌跡的紅色魔術師將隱形及增加攻擊速度與移動速度。",
         "effects": {
-          "attackSpeedIncrease": ["18%", "27%", "36%", "45%"],
+          "attackSpeedIncrease": [
+            {"level": 1, "value": "18%"},
+            {"level": 2, "value": "27%"},
+            {"level": 3, "value": "36%"},
+            {"level": 4, "value": "45%"}
+          ],
           "moveSpeedIncrease": "20%",
           "invisibility": true
         },
@@ -4590,8 +5012,14 @@
         "description": "火彈爆炸時的猛烈震波，使周遭的敵人暫時失去戰鬥能力。火彈爆炸時使周遭敵人暈眩。",
         "effects": {
           "stunDuration": {
-            "normal": [3, 4],
-            "hero": [0.5, 1]
+            "normal": [
+              {"level": 1, "value": 3},
+              {"level": 2, "value": 4}
+            ],
+            "hero": [
+              {"level": 1, "value": 0.5},
+              {"level": 2, "value": 1}
+            ]
           },
           "range": 200
         },
@@ -4606,28 +5034,52 @@
       "zh": "波斯獸人",
       "en": "Persian Orc"
     },
-    "title": "怒刃 Furyedge",
+    "title": {
+      "zh": "怒刃",
+      "en": "Furyedge"
+    },
     "faction": "undead",
     "type": "str",
     "stats": {
-      "strength": [28, 2.4],
-      "agility": [19, 2.3],
-      "intelligence": [13, 1.3],
-      "health": 660,
-      "mana": 130,
-      "damage": [43, 48],
-      "armor": 3,
+      "level": 16,
+      "strength": {
+        "base": 28,
+        "growth": 2.4
+      },
+      "agility": {
+        "base": 19,
+        "growth": 2.3
+      },
+      "intelligence": {
+        "base": 13,
+        "growth": 1.3
+      },
+      "baseHealth": 660,
+      "baseMana": 130,
+      "baseAttackMin": 43,
+      "baseAttackMax": 48,
+      "baseArmor": 3,
       "attackRange": 100,
-      "moveSpeed": 290
+      "movementSpeed": 290
     },
     "description": "具有威嚇力的英雄。他的大刀沾滿了敵軍的鮮血，沒有人能夠抵抗那充滿力量的一擊。怒刃是波斯帝國從世界的角落找到的怪物。沒有人知道牠的一切，但每個看過怒刃的人都同意，牠是個不折不扣的怪物。牠具有常人所不及的怪力、嗜血、殘暴。為了滿足自己的暴力慾望，牠將以手上的大刀毀滅每個敵人。",
     "skills": [
       {
         "name": "跳劈",
         "description": "高高跳起，藉著重力增強揮刀的力道，造成毀滅性打擊。攻擊敵人並造成暈眩。",
-        "manaCost": [75, 80, 85, 90],
+        "manaCost": [
+          {"level": 1, "value": 75},
+          {"level": 2, "value": 80},
+          {"level": 3, "value": 85},
+          {"level": 4, "value": 90}
+        ],
         "effects": {
-          "damage": [50, 90, 130, 170],
+          "damage": [
+            {"level": 1, "value": 50},
+            {"level": 2, "value": 90},
+            {"level": 3, "value": 130},
+            {"level": 4, "value": 170}
+          ],
           "stunDuration": {
             "normal": 4,
             "hero": 2
@@ -4641,7 +5093,12 @@
         "manaCost": 60,
         "effects": {
           "damage": 50,
-          "attackIncrease": ["20%", "30%", "40%", "50%"],
+          "attackIncrease": [
+            {"level": 1, "value": "20%"},
+            {"level": 2, "value": "30%"},
+            {"level": 3, "value": "40%"},
+            {"level": 4, "value": "50%"}
+          ],
           "duration": 10
         },
         "range": 100,
@@ -4652,7 +5109,12 @@
         "name": "破甲",
         "description": "波斯獸人強大的力量將擊破目標的盔甲。被獸人擊中的敵人將降低防禦一段時間。",
         "effects": {
-          "armorReduction": [3, 5, 7, 9]
+          "armorReduction": [
+            {"level": 1, "value": 3},
+            {"level": 2, "value": 5},
+            {"level": 3, "value": 7},
+            {"level": 4, "value": 9}
+          ]
         },
         "type": "passive"
       },
@@ -4660,10 +5122,22 @@
         "name": "血性狂暴",
         "description": "對血的慾望提升到極限，獸人將會不顧一切消滅敵人，只為了享受切割血肉的快感。一段時間之內增加攻擊力、防禦力、生命值並魔法免疫。",
         "effects": {
-          "attackIncrease": [25, 80],
-          "armorIncrease": [5, 10],
-          "healthIncrease": [100, 200],
-          "duration": [15, 15],
+          "attackIncrease": [
+            {"level": 1, "value": 25},
+            {"level": 2, "value": 80}
+          ],
+          "armorIncrease": [
+            {"level": 1, "value": 5},
+            {"level": 2, "value": 10}
+          ],
+          "healthIncrease": [
+            {"level": 1, "value": 100},
+            {"level": 2, "value": 200}
+          ],
+          "duration": [
+            {"level": 1, "value": 15},
+            {"level": 2, "value": 15}
+          ],
           "magicImmunity": true
         },
         "cooldown": 180,
@@ -4678,28 +5152,52 @@
       "zh": "天衣無縫的亡靈",
       "en": "Perfect Phantom"
     },
-    "title": "悠悠可 Yuyuko",
+    "title": {
+      "zh": "悠悠可",
+      "en": "Yuyuko"
+    },
     "faction": "undead",
     "type": "int",
     "stats": {
-      "strength": [20, 2.1],
-      "agility": [15, 1.6],
-      "intelligence": [25, 1.3],
-      "health": 500,
-      "mana": 250,
-      "damage": [45, 50],
-      "armor": 2,
+      "level": 16,
+      "strength": {
+        "base": 20,
+        "growth": 2.1
+      },
+      "agility": {
+        "base": 15,
+        "growth": 1.6
+      },
+      "intelligence": {
+        "base": 25,
+        "growth": 1.3
+      },
+      "baseHealth": 500,
+      "baseMana": 250,
+      "baseAttackMin": 45,
+      "baseAttackMax": 50,
+      "baseArmor": 2,
       "attackRange": 300,
-      "moveSpeed": 300
+      "movementSpeed": 300
     },
     "description": "無可擊敗的英雄。她有著異於友軍的操弄死亡的方式，並使之成為自己的力量。即使是敵人，也可能成為她的血肉。生前就具有操縱他人生死的能力，因為極度厭惡這個能力而自盡。成為亡靈後失去所有記憶，只有操縱他人生死的能力依然存在。為了一飽食慾而來到戰場，心中想的只剩下吞食其他幽靈與精氣。",
     "skills": [
       {
         "name": "返魂蝶",
         "description": "具有操縱死亡能力的幽靈，能夠輕易的讓死者重生。喚醒周遭的屍體為幽靈而戰。",
-        "manaCost": [100, 125, 150, 175],
+        "manaCost": [
+          {"level": 1, "value": 100},
+          {"level": 2, "value": 125},
+          {"level": 3, "value": 150},
+          {"level": 4, "value": 175}
+        ],
         "effects": {
-          "resurrectCount": [4, 6, 8, 10],
+          "resurrectCount": [
+            {"level": 1, "value": 4},
+            {"level": 2, "value": 6},
+            {"level": 3, "value": 8},
+            {"level": 4, "value": 10}
+          ],
           "duration": 40
         },
         "cooldown": 40
@@ -4709,7 +5207,12 @@
         "description": "吸收周遭死者殘存的精力，增加自身的力量，同時對周遭敵人造成傷害。吞食屍兵回復生命並增加生命上限，同時對周遭敵人造成傷害。",
         "manaCost": 50,
         "effects": {
-          "healthPerCorpse": [15, 20, 25, 30],
+          "healthPerCorpse": [
+            {"level": 1, "value": 15},
+            {"level": 2, "value": 20},
+            {"level": 3, "value": 25},
+            {"level": 4, "value": 30}
+          ],
           "maxHealthPerCorpse": 6,
           "damage": 100,
           "areaOfEffect": 400
@@ -4722,7 +5225,12 @@
         "description": "打開通往冥界的門，使幽靈湧入。悠悠可周遭有單位死亡時，回復生命。",
         "effects": {
           "healthPerDeath": 25,
-          "range": [500, 700, 900, 1100]
+          "range": [
+            {"level": 1, "value": 500},
+            {"level": 2, "value": 700},
+            {"level": 3, "value": 900},
+            {"level": 4, "value": 1100}
+          ]
         },
         "type": "passive"
       },
@@ -4731,7 +5239,10 @@
         "description": "充滿妖力的櫻花「西行妖」具有吸收他人的養分作為己用的能力。對目標造成傷害，並回復傷害數值兩倍的生命。",
         "manaCost": 125,
         "effects": {
-          "damage": [200, 400],
+          "damage": [
+            {"level": 1, "value": 200},
+            {"level": 2, "value": 400}
+          ],
           "lifeSteal": "200%"
         },
         "range": 300,
@@ -4746,19 +5257,33 @@
       "zh": "影行客",
       "en": "Shadow Walker"
     },
-    "title": "阿莎．鐵牢之影 Alsa Iron-Cell",
+    "title": {
+      "zh": "阿莎．鐵牢之影",
+      "en": "Alsa Iron-Cell"
+    },
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "strength": [18, 1.7],
-      "agility": [25, 2.5],
-      "intelligence": [17, 1.8],
-      "health": 460,
-      "mana": 170,
-      "damage": [45, 55],
-      "armor": 3,
+      "level": 16,
+      "strength": {
+        "base": 18,
+        "growth": 1.7
+      },
+      "agility": {
+        "base": 25,
+        "growth": 2.5
+      },
+      "intelligence": {
+        "base": 17,
+        "growth": 1.8
+      },
+      "baseHealth": 460,
+      "baseMana": 170,
+      "baseAttackMin": 45,
+      "baseAttackMax": 55,
+      "baseArmor": 3,
       "attackRange": 100,
-      "moveSpeed": 320
+      "movementSpeed": 320
     },
     "description": "神出鬼沒的她，總在敵人毫無意識到的情況下擊殺對方。只要有她在，空無一人的地方也不再安全。阿沙•鐵牢曾是一名優秀的典獄長，但是她那殘酷、獨斷的行逕終究招致了鐵衛議會的恐懼，或許是害怕她的冷血總有一天會傷害到到同胞，她設計送進了地下數百公尺的監牢之中……一個腐朽、潮濕的遠古牢籠。或許是因為阿沙那難以想像的憤怒，有可能是因為在遠古牢籠中徘徊不去的邪靈，一件超乎常理的事情發生了：阿沙的影子脫離了本體。逃出了籠牢。帶著駭人的恨意及惡意，它加入了灼炎軍團，誓言殺死每一個膽小的同盟懦夫，以及拯救那個已經沒有多少時間的肉體。",
     "skills": [
@@ -4767,18 +5292,43 @@
         "description": "影行客將自我的身形隱藏於陰影之中，無所不在的陰影將可以使他通行無阻。讓影行客隱形並增加移動速度，隱形狀態下的第一次攻擊將威力加倍，但攻擊或施法後隱形將解除。",
         "manaCost": 75,
         "effects": {
-          "invisibilityDuration": [15, 20, 25, 30],
-          "bonusDamage": [40, 60, 80, 100],
-          "moveSpeedIncrease": ["20%", "30%", "40%", "50%"]
+          "invisibilityDuration": [
+            {"level": 1, "value": 15},
+            {"level": 2, "value": 20},
+            {"level": 3, "value": 25},
+            {"level": 4, "value": 30}
+          ],
+          "bonusDamage": [
+            {"level": 1, "value": 40},
+            {"level": 2, "value": 60},
+            {"level": 3, "value": 80},
+            {"level": 4, "value": 100}
+          ],
+          "moveSpeedIncrease": [
+            {"level": 1, "value": "20%"},
+            {"level": 2, "value": "30%"},
+            {"level": 3, "value": "40%"},
+            {"level": 4, "value": "50%"}
+          ]
         },
-        "cooldown": [15, 20, 25, 30]
+        "cooldown": [
+          {"level": 1, "value": 15},
+          {"level": 2, "value": 20},
+          {"level": 3, "value": 25},
+          {"level": 4, "value": 30}
+        ]
       },
       {
         "name": "影跡擊",
         "description": "打出一個負力場的能源彈，可以燒掉對方部隊的法力點數，並造成同數值的傷害。減少目標的法力，並減少相同的生命。",
         "manaCost": 50,
         "effects": {
-          "manaReduction": [50, 100, 150, 200]
+          "manaReduction": [
+            {"level": 1, "value": 50},
+            {"level": 2, "value": 100},
+            {"level": 3, "value": 150},
+            {"level": 4, "value": 200}
+          ]
         },
         "range": 300,
         "cooldown": 18
@@ -4787,12 +5337,32 @@
         "name": "暗影之怒",
         "description": "夜色與陰影將賜與影行客更大的力量。攻擊時有一定機率擊暈目標並造成額外傷害。",
         "effects": {
-          "bonusDamage": [50, 50, 50, 50],
+          "bonusDamage": [
+            {"level": 1, "value": 50},
+            {"level": 2, "value": 50},
+            {"level": 3, "value": 50},
+            {"level": 4, "value": 50}
+          ],
           "stunDuration": {
-            "normal": [2, 2, 2, 2],
-            "hero": [1, 1, 1, 1]
+            "normal": [
+              {"level": 1, "value": 2},
+              {"level": 2, "value": 2},
+              {"level": 3, "value": 2},
+              {"level": 4, "value": 2}
+            ],
+            "hero": [
+              {"level": 1, "value": 1},
+              {"level": 2, "value": 1},
+              {"level": 3, "value": 1},
+              {"level": 4, "value": 1}
+            ]
           },
-          "triggerChance": ["12%", "15%", "18%", "21%"]
+          "triggerChance": [
+            {"level": 1, "value": "12%"},
+            {"level": 2, "value": "15%"},
+            {"level": 3, "value": "18%"},
+            {"level": 4, "value": "21%"}
+          ]
         },
         "type": "passive"
       },
@@ -4801,7 +5371,10 @@
         "description": "任何擁有影子的生物將受到傷害，並成為影行客的路徑。向目標發射一枚影之箭，擊中目標造成傷害，同一瞬間影行客會在目標的身邊現身。影之箭路徑上的敵人會受到傷害。",
         "manaCost": 140,
         "effects": {
-          "damage": [150, 250],
+          "damage": [
+            {"level": 1, "value": 150},
+            {"level": 2, "value": 250}
+          ],
           "damageDistance": 800
         },
         "range": 800,
@@ -4816,19 +5389,33 @@
       "zh": "西斯大帝",
       "en": "Sith The Lord"
     },
-    "title": "白卜庭 Palpatine",
+    "title": {
+      "zh": "白卜庭",
+      "en": "Palpatine"
+    },
     "faction": "undead",
     "type": "int",
     "stats": {
-      "strength": [16, 1.5],
-      "agility": [21, 2.8],
-      "intelligence": [23, 2.7],
-      "health": 420,
-      "mana": 230,
-      "damage": [31, 37],
-      "armor": 1,
+      "level": 16,
+      "strength": {
+        "base": 16,
+        "growth": 1.5
+      },
+      "agility": {
+        "base": 21,
+        "growth": 2.8
+      },
+      "intelligence": {
+        "base": 23,
+        "growth": 2.7
+      },
+      "baseHealth": 420,
+      "baseMana": 230,
+      "baseAttackMin": 31,
+      "baseAttackMax": 37,
+      "baseArmor": 1,
       "attackRange": 600,
-      "moveSpeed": 290
+      "movementSpeed": 290
     },
     "description": "值得信任的英雄。他的存在足以使敵軍完全瓦解，剩餘的也將被一一擊殺。化身白卜庭在共和議會潛伏數年之久，在引誘安那金．天行者墮入黑暗原力之後，正式現出真身，使得措手不及的絕地議會幾乎毀滅，之後君臨銀河。",
     "skills": [
@@ -4837,10 +5424,25 @@
         "description": "大喊著「Unlimited Power!!」並發出強烈的黑暗原力閃電。對目標造成傷害並淨化。",
         "manaCost": 75,
         "effects": {
-          "damage": [85, 155, 255, 295],
+          "damage": [
+            {"level": 1, "value": 85},
+            {"level": 2, "value": 155},
+            {"level": 3, "value": 255},
+            {"level": 4, "value": 295}
+          ],
           "purifyDuration": {
-            "normal": [2, 2, 2, 2],
-            "hero": [1, 1, 1, 1]
+            "normal": [
+              {"level": 1, "value": 2},
+              {"level": 2, "value": 2},
+              {"level": 3, "value": 2},
+              {"level": 4, "value": 2}
+            ],
+            "hero": [
+              {"level": 1, "value": 1},
+              {"level": 2, "value": 1},
+              {"level": 3, "value": 1},
+              {"level": 4, "value": 1}
+            ]
           },
           "summonDamage": 400
         },
@@ -4850,12 +5452,27 @@
       {
         "name": "原力鎖喉",
         "description": "西斯側的絕地武士必修招式，以原力攻擊目標的喉嚨。使目標無法移動及攻擊並慢慢損失生命。",
-        "manaCost": [90, 100, 110, 120],
+        "manaCost": [
+          {"level": 1, "value": 90},
+          {"level": 2, "value": 100},
+          {"level": 3, "value": 110},
+          {"level": 4, "value": 120}
+        ],
         "effects": {
           "damagePerSecond": 30,
           "disableDuration": {
-            "normal": [8, 16, 24, 32],
-            "hero": [2, 3, 5, 6]
+            "normal": [
+              {"level": 1, "value": 8},
+              {"level": 2, "value": 16},
+              {"level": 3, "value": 24},
+              {"level": 4, "value": 32}
+            ],
+            "hero": [
+              {"level": 1, "value": 2},
+              {"level": 2, "value": 3},
+              {"level": 3, "value": 5},
+              {"level": 4, "value": 6}
+            ]
           }
         },
         "range": 550,
@@ -4865,7 +5482,12 @@
       {
         "name": "第六十六號密令",
         "description": "第六十六號密令啟動，所有伏兵行動。使目標週遭的敵軍攻擊目標。",
-        "manaCost": [110, 130, 150, 170],
+        "manaCost": [
+          {"level": 1, "value": 110},
+          {"level": 2, "value": 130},
+          {"level": 3, "value": 150},
+          {"level": 4, "value": 170}
+        ],
         "effects": {
           "controlLevel": ["雜兵", "LV1傭兵", "LV2傭兵", "LV3傭兵"],
           "areaOfEffect": 400
@@ -4894,19 +5516,33 @@
       "zh": "靈行者",
       "en": "Spirit Walker"
     },
-    "title": "巴特克 Bartuc",
+    "title": {
+      "zh": "巴特克",
+      "en": "Bartuc"
+    },
     "faction": "undead",
     "type": "int",
     "stats": {
-      "strength": [23, 2.1],
-      "agility": [16, 1.6],
-      "intelligence": [21, 2.3],
-      "health": 560,
-      "mana": 210,
-      "damage": [41, 50],
-      "armor": 0,
+      "level": 16,
+      "strength": {
+        "base": 23,
+        "growth": 2.1
+      },
+      "agility": {
+        "base": 16,
+        "growth": 1.6
+      },
+      "intelligence": {
+        "base": 21,
+        "growth": 2.3
+      },
+      "baseHealth": 560,
+      "baseMana": 210,
+      "baseAttackMin": 41,
+      "baseAttackMax": 50,
+      "baseArmor": 0,
       "attackRange": 450,
-      "moveSpeed": 300
+      "movementSpeed": 300
     },
     "description": "值得信任的英雄。他能夠靈活的使用靈魂的力量，使友軍更為強大。相對於他那異於常人、遭到靈蹄部落放逐的兄長，他是一位熱愛追求知識，一心求知的靈行者。但在得知兄長遭到放逐，並疑似加入惡名昭彰的天譴軍後，他不顧師長的反對，而將自身放逐於靈魂界當中……那是兄長最常出沒的地方——但這個舉動實在太愚蠢了。對巫妖王而言，靈魂界實在是個毫無意義的地方，那裡只有數不清的遊魂。但他的出現完全攫取了巫妖王的思考——居然有如此高能量、高智慧的靈魂在此地出沒，巫妖王立刻將巴特克的意識緊緊的抓住，並在一瞬間之內改造了他的意志。從這一刻開始，他成為那蘇最得力的副將，並賜名為「巴特克」，那是在遠古傳說中，與惡魔交易，最後卻形神俱滅的愚蠢法師。",
     "skills": [
@@ -4919,27 +5555,52 @@
           "duration": 8
         },
         "range": 500,
-        "cooldown": [34, 28, 22, 16]
+        "cooldown": [
+          {"level": 1, "value": 34},
+          {"level": 2, "value": 28},
+          {"level": 3, "value": 22},
+          {"level": 4, "value": 16}
+        ]
       },
       {
         "name": "隱形術",
         "description": "將同伴的身形置於幽界之中，讓他的生命得以保存。讓範圍內的傭兵部隊隱形，並與靈行者同時增加移動速度，如果部隊展開攻擊，使用能力或是施展法術，就會為人所見。",
         "manaCost": 50,
         "effects": {
-          "duration": [16, 24, 32, 40],
+          "duration": [
+            {"level": 1, "value": 16},
+            {"level": 2, "value": 24},
+            {"level": 3, "value": 32},
+            {"level": 4, "value": 40}
+          ],
           "moveSpeedIncrease": "25%",
           "areaOfEffect": 300
         },
         "range": 500,
-        "cooldown": [20, 18, 16, 14],
+        "cooldown": [
+          {"level": 1, "value": 20},
+          {"level": 2, "value": 18},
+          {"level": 3, "value": 16},
+          {"level": 4, "value": 14}
+        ],
         "type": "area_stealth"
       },
       {
         "name": "狂野魂魄",
         "description": "巴特克能激起同伴最瘋狂的意志，使他們變得更為嗜血。增加附近友軍的攻擊速度，並使近戰單位攻擊時獲得攻擊力一部分的生命值。",
         "effects": {
-          "attackSpeedIncrease": ["5%", "10%", "15%", "20%"],
-          "lifeStealMelee": ["10%", "20%", "30%", "40%"],
+          "attackSpeedIncrease": [
+            {"level": 1, "value": "5%"},
+            {"level": 2, "value": "10%"},
+            {"level": 3, "value": "15%"},
+            {"level": 4, "value": "20%"}
+          ],
+          "lifeStealMelee": [
+            {"level": 1, "value": "10%"},
+            {"level": 2, "value": "20%"},
+            {"level": 3, "value": "30%"},
+            {"level": 4, "value": "40%"}
+          ],
           "auraRange": 900
         },
         "type": "aura"
@@ -4950,9 +5611,18 @@
         "manaCost": 150,
         "effects": {
           "transformUnit": {
-            "health": [600, 900],
-            "damage": ["30-36", "46-52"],
-            "armor": [5, 7],
+            "health": [
+              {"level": 1, "value": 600},
+              {"level": 2, "value": 900}
+            ],
+            "damage": [
+              {"level": 1, "value": "30-36"},
+              {"level": 2, "value": "46-52"}
+            ],
+            "armor": [
+              {"level": 1, "value": 5},
+              {"level": 2, "value": 7}
+            ], 
             "skills": ["粉碎波", "硬化外皮"],
             "attackRange": 100,
             "moveSpeed": 270,
@@ -4962,75 +5632,13 @@
           }
         },
         "range": 500,
-        "cooldown": [35, 20]
+        "cooldown": [
+          {"level": 1, "value": 35},
+          {"level": 2, "value": 20}
+        ]
       }
     ],
     "author": "DDKnight",
     "lastUpdated": "2008/12/29"
-  },
-  {
-    "name": {
-      "zh": "戰鎖",
-      "en": "Warlock"
-    },
-    "title": "納加茲 Nathrezim",
-    "faction": "undead",
-    "type": "int",
-    "stats": {
-      "strength": [22, 1.8],
-      "agility": [16, 1.7],
-      "intelligence": [22, 1.5],
-      "health": 540,
-      "mana": 220,
-      "damage": [32, 42],
-      "armor": 2,
-      "attackRange": 100,
-      "moveSpeed": 300
-    },
-    "description": "具有破壞力的英雄。他無法一次毀滅敵軍，但他生存的每一秒，都將對所有生物產生危害。納加茲是個聰明且狡猾的惡魔，臣服於薩加洛斯之下，為灼炎軍作盡殺戮破壞之能事。他雖然具有與人類相比強大許多的力量，但最令人懼怕的是他那消耗無盡的黑暗能量。",
-    "skills": [
-      {
-        "name": "暗影箭",
-        "description": "積蓄黑暗能量並發射，惡魔戰鎖的招牌招式。對單體目標造成傷害。",
-        "manaCost": 75,
-        "effects": {
-          "damage": [75, 110, 145, 180]
-        },
-        "range": 550,
-        "cooldown": [20, 14, 9, 4]
-      },
-      {
-        "name": "獻祭",
-        "description": "使納加茲的敵人全身被地獄的炙熱化為灰燼。對敵人造成持續傷害。",
-        "manaCost": 50,
-        "effects": {
-          "castTime": 1,
-          "initialDamage": [35, 45, 55, 65],
-          "damageOverTime": [10, 15, 20, 25],
-          "duration": [3.1, 4.1, 5.1, 6.1]
-        },
-        "range": 500,
-        "cooldown": 6
-      },
-      {
-        "name": "獄甲術",
-        "description": "納加茲利用惡魔之力強化自己的鎧甲，使其擁有再生的能力，更能吸取血肉來回復。增加防禦力及生命回復。",
-        "effects": {
-          "armorIncrease": [2, 4, 6, 8],
-          "healthRegenIncrease": [2, 4, 6, 8]
-        },
-        "type": "passive"
-      },
-      {
-        "name": "夜幕",
-        "description": "夜晚，魔將的舞台。使用暗影箭時有機率額外發動一次。",
-        "effects": {
-          "triggerChance": ["25%", "50%"]
-        },
-        "type": "passive"
-      }
-    ],
-    "author": "sos123409431",
-    "lastUpdated": "2008/12/24"
   }
 ]
