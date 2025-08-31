@@ -1,7 +1,11 @@
-function App() {
+import { HeroPage } from './pages/hero'
 
+function App() {
   return (
-   <div class="">app</div>
+    <div class="">
+      app
+      <HeroPage />
+    </div>
   )
 }
 
