@@ -11,7 +11,6 @@
     "faction": "alliance",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 16,
         "growth": 1.5
@@ -183,7 +182,6 @@
     "faction": "alliance",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 19,
         "growth": 1.8
@@ -385,7 +383,6 @@
     "faction": "alliance",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 16,
         "growth": 1.7
@@ -542,7 +539,6 @@
     "faction": "alliance",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 29,
         "growth": 2.4
@@ -712,7 +708,6 @@
     "faction": "alliance",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 20,
         "growth": 2.0
@@ -853,7 +848,6 @@
     "faction": "alliance",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 19,
         "growth": 2.0
@@ -1073,7 +1067,6 @@
     "faction": "alliance",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 15,
         "growth": 1.6
@@ -1213,7 +1206,6 @@
     "faction": "alliance",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 25,
         "growth": 2.3
@@ -1382,7 +1374,6 @@
     "faction": "alliance",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 22,
         "growth": 2.1
@@ -1592,7 +1583,6 @@
     "faction": "alliance",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 19,
         "growth": 1.8
@@ -1731,8 +1721,14 @@
         "cooldown": 60,
         "treantStats": {
           "health": [
-            {"level": 1, "value": 1000},
-            {"level": 2, "value": 1600}
+            {
+              "level": 1,
+              "value": 1000
+            },
+            {
+              "level": 2,
+              "value": 1600
+            }
           ],
           "damage": "15-17",
           "siegeDamage": 1,
@@ -1759,7 +1755,6 @@
     "faction": "alliance",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 17,
         "growth": 1.6
@@ -1960,7 +1955,6 @@
     "faction": "alliance",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 15,
         "growth": 1.0
@@ -2044,14 +2038,26 @@
         "maxWolves": 1,
         "wolfStats": {
           "health": [
-            {"level": 1, "value": 450},
-            {"level": 2, "value": 530},
-            {"level": 3, "value": 610},
-            {"level": 4, "value": 700}
+            {
+              "level": 1,
+              "value": 450
+            },
+            {
+              "level": 2,
+              "value": 530
+            },
+            {
+              "level": 3,
+              "value": 610
+            },
+            {
+              "level": 4,
+              "value": 700
+            }
           ],
           "damage": [
             "26-27",
-            "34-35", 
+            "34-35",
             "42-43",
             "50-51"
           ],
@@ -2060,10 +2066,22 @@
           "movementSpeed": 350,
           "armorType": "重步兵",
           "armor": [
-            {"level": 1, "value": 2},
-            {"level": 2, "value": 3},
-            {"level": 3, "value": 4},
-            {"level": 4, "value": 5}
+            {
+              "level": 1,
+              "value": 2
+            },
+            {
+              "level": 2,
+              "value": 3
+            },
+            {
+              "level": 3,
+              "value": 4
+            },
+            {
+              "level": 4,
+              "value": 5
+            }
           ],
           "specialEffect": "攻擊時，守護狼將暫時現身"
         },
@@ -2138,7 +2156,6 @@
     "faction": "alliance",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 23,
         "growth": 2.4
@@ -2315,7 +2332,6 @@
     "faction": "alliance",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 19,
         "growth": 2.0
@@ -2475,7 +2491,6 @@
     "faction": "alliance",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 18,
         "growth": 2
@@ -2587,16 +2602,40 @@
         ],
         "duration": {
           "normalUnits": [
-            {"level": 1, "value": 15},
-            {"level": 2, "value": 25},
-            {"level": 3, "value": 35},
-            {"level": 4, "value": 45}
+            {
+              "level": 1,
+              "value": 15
+            },
+            {
+              "level": 2,
+              "value": 25
+            },
+            {
+              "level": 3,
+              "value": 35
+            },
+            {
+              "level": 4,
+              "value": 45
+            }
           ],
           "heroes": [
-            {"level": 1, "value": 2},
-            {"level": 2, "value": 3},
-            {"level": 3, "value": 4},
-            {"level": 4, "value": 4.5}
+            {
+              "level": 1,
+              "value": 2
+            },
+            {
+              "level": 2,
+              "value": 3
+            },
+            {
+              "level": 3,
+              "value": 4
+            },
+            {
+              "level": 4,
+              "value": 4.5
+            }
           ]
         },
         "range": 800,
@@ -2631,10 +2670,22 @@
         "cooldown": 20,
         "wardStats": {
           "health": [
-            {"level": 1, "value": 75},
-            {"level": 2, "value": 135},
-            {"level": 3, "value": 135},
-            {"level": 4, "value": 135}
+            {
+              "level": 1,
+              "value": 75
+            },
+            {
+              "level": 2,
+              "value": 135
+            },
+            {
+              "level": 3,
+              "value": 135
+            },
+            {
+              "level": 4,
+              "value": 135
+            }
           ],
           "damage": [
             "11-13",
@@ -2659,8 +2710,14 @@
         "cooldown": 75,
         "golemStats": {
           "health": [
-            {"level": 1, "value": 500},
-            {"level": 2, "value": 850}
+            {
+              "level": 1,
+              "value": 500
+            },
+            {
+              "level": 2,
+              "value": 850
+            }
           ],
           "damage": [
             "21-22",
@@ -2668,8 +2725,14 @@
           ],
           "siegeDamage": 1,
           "armor": [
-            {"level": 1, "value": 0},
-            {"level": 2, "value": 3}
+            {
+              "level": 1,
+              "value": 0
+            },
+            {
+              "level": 2,
+              "value": 3
+            }
           ],
           "attackRange": 600
         },
@@ -2691,7 +2754,6 @@
     "faction": "alliance",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 29,
         "growth": 1.7
@@ -2722,16 +2784,40 @@
         "manaCost": 30,
         "duration": {
           "normalUnits": [
-            {"level": 1, "value": 3},
-            {"level": 2, "value": 5},
-            {"level": 3, "value": 7},
-            {"level": 4, "value": 9}
+            {
+              "level": 1,
+              "value": 3
+            },
+            {
+              "level": 2,
+              "value": 5
+            },
+            {
+              "level": 3,
+              "value": 7
+            },
+            {
+              "level": 4,
+              "value": 9
+            }
           ],
           "heroes": [
-            {"level": 1, "value": 1},
-            {"level": 2, "value": 2},
-            {"level": 3, "value": 3},
-            {"level": 4, "value": 4}
+            {
+              "level": 1,
+              "value": 1
+            },
+            {
+              "level": 2,
+              "value": 2
+            },
+            {
+              "level": 3,
+              "value": 3
+            },
+            {
+              "level": 4,
+              "value": 4
+            }
           ]
         },
         "range": 450,
@@ -2867,7 +2953,6 @@
     "faction": "alliance",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 23,
         "growth": 2.3
@@ -3064,7 +3149,6 @@
     "faction": "scourge",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 22,
         "growth": 1.8
@@ -3273,7 +3357,6 @@
     "faction": "undead",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 23,
         "growth": 2.5
@@ -3432,7 +3515,6 @@
     "faction": "undead",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 25,
         "growth": 2.2
@@ -3600,18 +3682,48 @@
         "description": "屍毒效果隨等級增長。",
         "effect": "增強其他技能效果。",
         "dirtyBloodExtraReduction": [
-          {"level": 1, "value": 20},
-          {"level": 2, "value": 25},
-          {"level": 3, "value": 30},
-          {"level": 4, "value": 35},
-          {"level": 5, "value": 40}
+          {
+            "level": 1,
+            "value": 20
+          },
+          {
+            "level": 2,
+            "value": 25
+          },
+          {
+            "level": 3,
+            "value": 30
+          },
+          {
+            "level": 4,
+            "value": 35
+          },
+          {
+            "level": 5,
+            "value": 40
+          }
         ],
         "plagueSpeedReduction": [
-          {"level": 1, "value": 10},
-          {"level": 2, "value": 15},
-          {"level": 3, "value": 20},
-          {"level": 4, "value": 25},
-          {"level": 5, "value": 30}
+          {
+            "level": 1,
+            "value": 10
+          },
+          {
+            "level": 2,
+            "value": 15
+          },
+          {
+            "level": 3,
+            "value": 20
+          },
+          {
+            "level": 4,
+            "value": 25
+          },
+          {
+            "level": 5,
+            "value": 30
+          }
         ],
         "bloodyBladeDamageIncrease": 12,
         "type": "passive"
@@ -3649,7 +3761,6 @@
     "faction": "undead",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 23,
         "growth": 2.3
@@ -3699,10 +3810,22 @@
         "stunDuration": {
           "normalUnits": 5,
           "heroes": [
-            {"level": 1, "value": 1},
-            {"level": 2, "value": 1},
-            {"level": 3, "value": 2},
-            {"level": 4, "value": 2}
+            {
+              "level": 1,
+              "value": 1
+            },
+            {
+              "level": 2,
+              "value": 1
+            },
+            {
+              "level": 3,
+              "value": 2
+            },
+            {
+              "level": 4,
+              "value": 2
+            }
           ]
         },
         "cooldown": 7,
@@ -3821,7 +3944,6 @@
     "faction": "undead",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 24,
         "growth": 2.5
@@ -3870,16 +3992,40 @@
         ],
         "stunDuration": {
           "normalUnits": [
-            {"level": 1, "value": 2},
-            {"level": 2, "value": 3},
-            {"level": 3, "value": 4},
-            {"level": 4, "value": 5}
+            {
+              "level": 1,
+              "value": 2
+            },
+            {
+              "level": 2,
+              "value": 3
+            },
+            {
+              "level": 3,
+              "value": 4
+            },
+            {
+              "level": 4,
+              "value": 5
+            }
           ],
           "heroes": [
-            {"level": 1, "value": 1},
-            {"level": 2, "value": 1},
-            {"level": 3, "value": 2},
-            {"level": 4, "value": 2}
+            {
+              "level": 1,
+              "value": 1
+            },
+            {
+              "level": 2,
+              "value": 1
+            },
+            {
+              "level": 3,
+              "value": 2
+            },
+            {
+              "level": 4,
+              "value": 2
+            }
           ]
         },
         "range": 250,
@@ -4009,7 +4155,6 @@
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 16,
         "growth": 1.7
@@ -4107,16 +4252,40 @@
         "manaCost": 90,
         "bindDuration": {
           "normalUnits": [
-            {"level": 1, "value": 4},
-            {"level": 2, "value": 5},
-            {"level": 3, "value": 6},
-            {"level": 4, "value": 7}
+            {
+              "level": 1,
+              "value": 4
+            },
+            {
+              "level": 2,
+              "value": 5
+            },
+            {
+              "level": 3,
+              "value": 6
+            },
+            {
+              "level": 4,
+              "value": 7
+            }
           ],
           "heroes": [
-            {"level": 1, "value": 2},
-            {"level": 2, "value": 2},
-            {"level": 3, "value": 3},
-            {"level": 4, "value": 3}
+            {
+              "level": 1,
+              "value": 2
+            },
+            {
+              "level": 2,
+              "value": 2
+            },
+            {
+              "level": 3,
+              "value": 3
+            },
+            {
+              "level": 4,
+              "value": 3
+            }
           ]
         },
         "range": 500,
@@ -4185,7 +4354,6 @@
     "faction": "undead",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 23,
         "growth": 2.4
@@ -4361,7 +4529,6 @@
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 20,
         "growth": 1.9
@@ -4479,7 +4646,6 @@
     "faction": "undead",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 17,
         "growth": 1.6
@@ -4708,7 +4874,6 @@
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 18,
         "growth": 1.7
@@ -4798,7 +4963,10 @@
           }
         },
         "cooldown": 8,
-        "restrictions": ["持續效果", "無法指定英雄"]
+        "restrictions": [
+          "持續效果",
+          "無法指定英雄"
+        ]
       },
       {
         "name": "狂犬病",
@@ -4940,7 +5108,6 @@
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 15,
         "growth": 1.5
@@ -4969,10 +5136,22 @@
         "manaCost": 90,
         "effects": {
           "explosionDamage": [
-            {"level": 1, "value": 100},
-            {"level": 2, "value": 133},
-            {"level": 3, "value": 167},
-            {"level": 4, "value": 200}
+            {
+              "level": 1,
+              "value": 100
+            },
+            {
+              "level": 2,
+              "value": 133
+            },
+            {
+              "level": 3,
+              "value": 167
+            },
+            {
+              "level": 4,
+              "value": 200
+            }
           ],
           "flightDistance": 900
         },
@@ -4984,10 +5163,22 @@
         "description": "火彈變得更具有毀滅性。增加火彈的燃燒軌跡範圍。",
         "effects": {
           "burningTrailRange": [
-            {"level": 1, "value": 80},
-            {"level": 2, "value": 100},
-            {"level": 3, "value": 120},
-            {"level": 4, "value": 140}
+            {
+              "level": 1,
+              "value": 80
+            },
+            {
+              "level": 2,
+              "value": 100
+            },
+            {
+              "level": 3,
+              "value": 120
+            },
+            {
+              "level": 4,
+              "value": 140
+            }
           ]
         },
         "type": "passive"
@@ -4997,10 +5188,22 @@
         "description": "踩踏在火焰上的火焰魔術師感到更加自在。火彈的射線上出現燃燒軌跡，靠近燃燒軌跡的紅色魔術師將隱形及增加攻擊速度與移動速度。",
         "effects": {
           "attackSpeedIncrease": [
-            {"level": 1, "value": "18%"},
-            {"level": 2, "value": "27%"},
-            {"level": 3, "value": "36%"},
-            {"level": 4, "value": "45%"}
+            {
+              "level": 1,
+              "value": "18%"
+            },
+            {
+              "level": 2,
+              "value": "27%"
+            },
+            {
+              "level": 3,
+              "value": "36%"
+            },
+            {
+              "level": 4,
+              "value": "45%"
+            }
           ],
           "moveSpeedIncrease": "20%",
           "invisibility": true
@@ -5013,12 +5216,24 @@
         "effects": {
           "stunDuration": {
             "normal": [
-              {"level": 1, "value": 3},
-              {"level": 2, "value": 4}
+              {
+                "level": 1,
+                "value": 3
+              },
+              {
+                "level": 2,
+                "value": 4
+              }
             ],
             "hero": [
-              {"level": 1, "value": 0.5},
-              {"level": 2, "value": 1}
+              {
+                "level": 1,
+                "value": 0.5
+              },
+              {
+                "level": 2,
+                "value": 1
+              }
             ]
           },
           "range": 200
@@ -5041,7 +5256,6 @@
     "faction": "undead",
     "type": "str",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 28,
         "growth": 2.4
@@ -5068,17 +5282,41 @@
         "name": "跳劈",
         "description": "高高跳起，藉著重力增強揮刀的力道，造成毀滅性打擊。攻擊敵人並造成暈眩。",
         "manaCost": [
-          {"level": 1, "value": 75},
-          {"level": 2, "value": 80},
-          {"level": 3, "value": 85},
-          {"level": 4, "value": 90}
+          {
+            "level": 1,
+            "value": 75
+          },
+          {
+            "level": 2,
+            "value": 80
+          },
+          {
+            "level": 3,
+            "value": 85
+          },
+          {
+            "level": 4,
+            "value": 90
+          }
         ],
         "effects": {
           "damage": [
-            {"level": 1, "value": 50},
-            {"level": 2, "value": 90},
-            {"level": 3, "value": 130},
-            {"level": 4, "value": 170}
+            {
+              "level": 1,
+              "value": 50
+            },
+            {
+              "level": 2,
+              "value": 90
+            },
+            {
+              "level": 3,
+              "value": 130
+            },
+            {
+              "level": 4,
+              "value": 170
+            }
           ],
           "stunDuration": {
             "normal": 4,
@@ -5094,10 +5332,22 @@
         "effects": {
           "damage": 50,
           "attackIncrease": [
-            {"level": 1, "value": "20%"},
-            {"level": 2, "value": "30%"},
-            {"level": 3, "value": "40%"},
-            {"level": 4, "value": "50%"}
+            {
+              "level": 1,
+              "value": "20%"
+            },
+            {
+              "level": 2,
+              "value": "30%"
+            },
+            {
+              "level": 3,
+              "value": "40%"
+            },
+            {
+              "level": 4,
+              "value": "50%"
+            }
           ],
           "duration": 10
         },
@@ -5110,10 +5360,22 @@
         "description": "波斯獸人強大的力量將擊破目標的盔甲。被獸人擊中的敵人將降低防禦一段時間。",
         "effects": {
           "armorReduction": [
-            {"level": 1, "value": 3},
-            {"level": 2, "value": 5},
-            {"level": 3, "value": 7},
-            {"level": 4, "value": 9}
+            {
+              "level": 1,
+              "value": 3
+            },
+            {
+              "level": 2,
+              "value": 5
+            },
+            {
+              "level": 3,
+              "value": 7
+            },
+            {
+              "level": 4,
+              "value": 9
+            }
           ]
         },
         "type": "passive"
@@ -5123,20 +5385,44 @@
         "description": "對血的慾望提升到極限，獸人將會不顧一切消滅敵人，只為了享受切割血肉的快感。一段時間之內增加攻擊力、防禦力、生命值並魔法免疫。",
         "effects": {
           "attackIncrease": [
-            {"level": 1, "value": 25},
-            {"level": 2, "value": 80}
+            {
+              "level": 1,
+              "value": 25
+            },
+            {
+              "level": 2,
+              "value": 80
+            }
           ],
           "armorIncrease": [
-            {"level": 1, "value": 5},
-            {"level": 2, "value": 10}
+            {
+              "level": 1,
+              "value": 5
+            },
+            {
+              "level": 2,
+              "value": 10
+            }
           ],
           "healthIncrease": [
-            {"level": 1, "value": 100},
-            {"level": 2, "value": 200}
+            {
+              "level": 1,
+              "value": 100
+            },
+            {
+              "level": 2,
+              "value": 200
+            }
           ],
           "duration": [
-            {"level": 1, "value": 15},
-            {"level": 2, "value": 15}
+            {
+              "level": 1,
+              "value": 15
+            },
+            {
+              "level": 2,
+              "value": 15
+            }
           ],
           "magicImmunity": true
         },
@@ -5159,7 +5445,6 @@
     "faction": "undead",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 20,
         "growth": 2.1
@@ -5186,17 +5471,41 @@
         "name": "返魂蝶",
         "description": "具有操縱死亡能力的幽靈，能夠輕易的讓死者重生。喚醒周遭的屍體為幽靈而戰。",
         "manaCost": [
-          {"level": 1, "value": 100},
-          {"level": 2, "value": 125},
-          {"level": 3, "value": 150},
-          {"level": 4, "value": 175}
+          {
+            "level": 1,
+            "value": 100
+          },
+          {
+            "level": 2,
+            "value": 125
+          },
+          {
+            "level": 3,
+            "value": 150
+          },
+          {
+            "level": 4,
+            "value": 175
+          }
         ],
         "effects": {
           "resurrectCount": [
-            {"level": 1, "value": 4},
-            {"level": 2, "value": 6},
-            {"level": 3, "value": 8},
-            {"level": 4, "value": 10}
+            {
+              "level": 1,
+              "value": 4
+            },
+            {
+              "level": 2,
+              "value": 6
+            },
+            {
+              "level": 3,
+              "value": 8
+            },
+            {
+              "level": 4,
+              "value": 10
+            }
           ],
           "duration": 40
         },
@@ -5208,10 +5517,22 @@
         "manaCost": 50,
         "effects": {
           "healthPerCorpse": [
-            {"level": 1, "value": 15},
-            {"level": 2, "value": 20},
-            {"level": 3, "value": 25},
-            {"level": 4, "value": 30}
+            {
+              "level": 1,
+              "value": 15
+            },
+            {
+              "level": 2,
+              "value": 20
+            },
+            {
+              "level": 3,
+              "value": 25
+            },
+            {
+              "level": 4,
+              "value": 30
+            }
           ],
           "maxHealthPerCorpse": 6,
           "damage": 100,
@@ -5226,10 +5547,22 @@
         "effects": {
           "healthPerDeath": 25,
           "range": [
-            {"level": 1, "value": 500},
-            {"level": 2, "value": 700},
-            {"level": 3, "value": 900},
-            {"level": 4, "value": 1100}
+            {
+              "level": 1,
+              "value": 500
+            },
+            {
+              "level": 2,
+              "value": 700
+            },
+            {
+              "level": 3,
+              "value": 900
+            },
+            {
+              "level": 4,
+              "value": 1100
+            }
           ]
         },
         "type": "passive"
@@ -5240,8 +5573,14 @@
         "manaCost": 125,
         "effects": {
           "damage": [
-            {"level": 1, "value": 200},
-            {"level": 2, "value": 400}
+            {
+              "level": 1,
+              "value": 200
+            },
+            {
+              "level": 2,
+              "value": 400
+            }
           ],
           "lifeSteal": "200%"
         },
@@ -5264,7 +5603,6 @@
     "faction": "undead",
     "type": "agi",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 18,
         "growth": 1.7
@@ -5293,29 +5631,77 @@
         "manaCost": 75,
         "effects": {
           "invisibilityDuration": [
-            {"level": 1, "value": 15},
-            {"level": 2, "value": 20},
-            {"level": 3, "value": 25},
-            {"level": 4, "value": 30}
+            {
+              "level": 1,
+              "value": 15
+            },
+            {
+              "level": 2,
+              "value": 20
+            },
+            {
+              "level": 3,
+              "value": 25
+            },
+            {
+              "level": 4,
+              "value": 30
+            }
           ],
           "bonusDamage": [
-            {"level": 1, "value": 40},
-            {"level": 2, "value": 60},
-            {"level": 3, "value": 80},
-            {"level": 4, "value": 100}
+            {
+              "level": 1,
+              "value": 40
+            },
+            {
+              "level": 2,
+              "value": 60
+            },
+            {
+              "level": 3,
+              "value": 80
+            },
+            {
+              "level": 4,
+              "value": 100
+            }
           ],
           "moveSpeedIncrease": [
-            {"level": 1, "value": "20%"},
-            {"level": 2, "value": "30%"},
-            {"level": 3, "value": "40%"},
-            {"level": 4, "value": "50%"}
+            {
+              "level": 1,
+              "value": "20%"
+            },
+            {
+              "level": 2,
+              "value": "30%"
+            },
+            {
+              "level": 3,
+              "value": "40%"
+            },
+            {
+              "level": 4,
+              "value": "50%"
+            }
           ]
         },
         "cooldown": [
-          {"level": 1, "value": 15},
-          {"level": 2, "value": 20},
-          {"level": 3, "value": 25},
-          {"level": 4, "value": 30}
+          {
+            "level": 1,
+            "value": 15
+          },
+          {
+            "level": 2,
+            "value": 20
+          },
+          {
+            "level": 3,
+            "value": 25
+          },
+          {
+            "level": 4,
+            "value": 30
+          }
         ]
       },
       {
@@ -5324,10 +5710,22 @@
         "manaCost": 50,
         "effects": {
           "manaReduction": [
-            {"level": 1, "value": 50},
-            {"level": 2, "value": 100},
-            {"level": 3, "value": 150},
-            {"level": 4, "value": 200}
+            {
+              "level": 1,
+              "value": 50
+            },
+            {
+              "level": 2,
+              "value": 100
+            },
+            {
+              "level": 3,
+              "value": 150
+            },
+            {
+              "level": 4,
+              "value": 200
+            }
           ]
         },
         "range": 300,
@@ -5338,30 +5736,78 @@
         "description": "夜色與陰影將賜與影行客更大的力量。攻擊時有一定機率擊暈目標並造成額外傷害。",
         "effects": {
           "bonusDamage": [
-            {"level": 1, "value": 50},
-            {"level": 2, "value": 50},
-            {"level": 3, "value": 50},
-            {"level": 4, "value": 50}
+            {
+              "level": 1,
+              "value": 50
+            },
+            {
+              "level": 2,
+              "value": 50
+            },
+            {
+              "level": 3,
+              "value": 50
+            },
+            {
+              "level": 4,
+              "value": 50
+            }
           ],
           "stunDuration": {
             "normal": [
-              {"level": 1, "value": 2},
-              {"level": 2, "value": 2},
-              {"level": 3, "value": 2},
-              {"level": 4, "value": 2}
+              {
+                "level": 1,
+                "value": 2
+              },
+              {
+                "level": 2,
+                "value": 2
+              },
+              {
+                "level": 3,
+                "value": 2
+              },
+              {
+                "level": 4,
+                "value": 2
+              }
             ],
             "hero": [
-              {"level": 1, "value": 1},
-              {"level": 2, "value": 1},
-              {"level": 3, "value": 1},
-              {"level": 4, "value": 1}
+              {
+                "level": 1,
+                "value": 1
+              },
+              {
+                "level": 2,
+                "value": 1
+              },
+              {
+                "level": 3,
+                "value": 1
+              },
+              {
+                "level": 4,
+                "value": 1
+              }
             ]
           },
           "triggerChance": [
-            {"level": 1, "value": "12%"},
-            {"level": 2, "value": "15%"},
-            {"level": 3, "value": "18%"},
-            {"level": 4, "value": "21%"}
+            {
+              "level": 1,
+              "value": "12%"
+            },
+            {
+              "level": 2,
+              "value": "15%"
+            },
+            {
+              "level": 3,
+              "value": "18%"
+            },
+            {
+              "level": 4,
+              "value": "21%"
+            }
           ]
         },
         "type": "passive"
@@ -5372,8 +5818,14 @@
         "manaCost": 140,
         "effects": {
           "damage": [
-            {"level": 1, "value": 150},
-            {"level": 2, "value": 250}
+            {
+              "level": 1,
+              "value": 150
+            },
+            {
+              "level": 2,
+              "value": 250
+            }
           ],
           "damageDistance": 800
         },
@@ -5396,7 +5848,6 @@
     "faction": "undead",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 16,
         "growth": 1.5
@@ -5425,23 +5876,59 @@
         "manaCost": 75,
         "effects": {
           "damage": [
-            {"level": 1, "value": 85},
-            {"level": 2, "value": 155},
-            {"level": 3, "value": 255},
-            {"level": 4, "value": 295}
+            {
+              "level": 1,
+              "value": 85
+            },
+            {
+              "level": 2,
+              "value": 155
+            },
+            {
+              "level": 3,
+              "value": 255
+            },
+            {
+              "level": 4,
+              "value": 295
+            }
           ],
           "purifyDuration": {
             "normal": [
-              {"level": 1, "value": 2},
-              {"level": 2, "value": 2},
-              {"level": 3, "value": 2},
-              {"level": 4, "value": 2}
+              {
+                "level": 1,
+                "value": 2
+              },
+              {
+                "level": 2,
+                "value": 2
+              },
+              {
+                "level": 3,
+                "value": 2
+              },
+              {
+                "level": 4,
+                "value": 2
+              }
             ],
             "hero": [
-              {"level": 1, "value": 1},
-              {"level": 2, "value": 1},
-              {"level": 3, "value": 1},
-              {"level": 4, "value": 1}
+              {
+                "level": 1,
+                "value": 1
+              },
+              {
+                "level": 2,
+                "value": 1
+              },
+              {
+                "level": 3,
+                "value": 1
+              },
+              {
+                "level": 4,
+                "value": 1
+              }
             ]
           },
           "summonDamage": 400
@@ -5453,25 +5940,61 @@
         "name": "原力鎖喉",
         "description": "西斯側的絕地武士必修招式，以原力攻擊目標的喉嚨。使目標無法移動及攻擊並慢慢損失生命。",
         "manaCost": [
-          {"level": 1, "value": 90},
-          {"level": 2, "value": 100},
-          {"level": 3, "value": 110},
-          {"level": 4, "value": 120}
+          {
+            "level": 1,
+            "value": 90
+          },
+          {
+            "level": 2,
+            "value": 100
+          },
+          {
+            "level": 3,
+            "value": 110
+          },
+          {
+            "level": 4,
+            "value": 120
+          }
         ],
         "effects": {
           "damagePerSecond": 30,
           "disableDuration": {
             "normal": [
-              {"level": 1, "value": 8},
-              {"level": 2, "value": 16},
-              {"level": 3, "value": 24},
-              {"level": 4, "value": 32}
+              {
+                "level": 1,
+                "value": 8
+              },
+              {
+                "level": 2,
+                "value": 16
+              },
+              {
+                "level": 3,
+                "value": 24
+              },
+              {
+                "level": 4,
+                "value": 32
+              }
             ],
             "hero": [
-              {"level": 1, "value": 2},
-              {"level": 2, "value": 3},
-              {"level": 3, "value": 5},
-              {"level": 4, "value": 6}
+              {
+                "level": 1,
+                "value": 2
+              },
+              {
+                "level": 2,
+                "value": 3
+              },
+              {
+                "level": 3,
+                "value": 5
+              },
+              {
+                "level": 4,
+                "value": 6
+              }
             ]
           }
         },
@@ -5483,13 +6006,30 @@
         "name": "第六十六號密令",
         "description": "第六十六號密令啟動，所有伏兵行動。使目標週遭的敵軍攻擊目標。",
         "manaCost": [
-          {"level": 1, "value": 110},
-          {"level": 2, "value": 130},
-          {"level": 3, "value": 150},
-          {"level": 4, "value": 170}
+          {
+            "level": 1,
+            "value": 110
+          },
+          {
+            "level": 2,
+            "value": 130
+          },
+          {
+            "level": 3,
+            "value": 150
+          },
+          {
+            "level": 4,
+            "value": 170
+          }
         ],
         "effects": {
-          "controlLevel": ["雜兵", "LV1傭兵", "LV2傭兵", "LV3傭兵"],
+          "controlLevel": [
+            "雜兵",
+            "LV1傭兵",
+            "LV2傭兵",
+            "LV3傭兵"
+          ],
           "areaOfEffect": 400
         },
         "range": 500,
@@ -5500,7 +6040,10 @@
         "description": "以黑暗原力分裂對象的黑暗面，產生一個對西斯絕對忠實的奴僕。創造一個具有本尊一部分攻擊力的分身。",
         "manaCost": 200,
         "effects": {
-          "cloneAttackPower": ["50%", "100%"],
+          "cloneAttackPower": [
+            "50%",
+            "100%"
+          ],
           "duration": 60,
           "vulnerabilityMultiplier": "200%"
         },
@@ -5523,7 +6066,6 @@
     "faction": "undead",
     "type": "int",
     "stats": {
-      "level": 16,
       "strength": {
         "base": 23,
         "growth": 2.1
@@ -5556,10 +6098,22 @@
         },
         "range": 500,
         "cooldown": [
-          {"level": 1, "value": 34},
-          {"level": 2, "value": 28},
-          {"level": 3, "value": 22},
-          {"level": 4, "value": 16}
+          {
+            "level": 1,
+            "value": 34
+          },
+          {
+            "level": 2,
+            "value": 28
+          },
+          {
+            "level": 3,
+            "value": 22
+          },
+          {
+            "level": 4,
+            "value": 16
+          }
         ]
       },
       {
@@ -5568,20 +6122,44 @@
         "manaCost": 50,
         "effects": {
           "duration": [
-            {"level": 1, "value": 16},
-            {"level": 2, "value": 24},
-            {"level": 3, "value": 32},
-            {"level": 4, "value": 40}
+            {
+              "level": 1,
+              "value": 16
+            },
+            {
+              "level": 2,
+              "value": 24
+            },
+            {
+              "level": 3,
+              "value": 32
+            },
+            {
+              "level": 4,
+              "value": 40
+            }
           ],
           "moveSpeedIncrease": "25%",
           "areaOfEffect": 300
         },
         "range": 500,
         "cooldown": [
-          {"level": 1, "value": 20},
-          {"level": 2, "value": 18},
-          {"level": 3, "value": 16},
-          {"level": 4, "value": 14}
+          {
+            "level": 1,
+            "value": 20
+          },
+          {
+            "level": 2,
+            "value": 18
+          },
+          {
+            "level": 3,
+            "value": 16
+          },
+          {
+            "level": 4,
+            "value": 14
+          }
         ],
         "type": "area_stealth"
       },
@@ -5590,16 +6168,40 @@
         "description": "巴特克能激起同伴最瘋狂的意志，使他們變得更為嗜血。增加附近友軍的攻擊速度，並使近戰單位攻擊時獲得攻擊力一部分的生命值。",
         "effects": {
           "attackSpeedIncrease": [
-            {"level": 1, "value": "5%"},
-            {"level": 2, "value": "10%"},
-            {"level": 3, "value": "15%"},
-            {"level": 4, "value": "20%"}
+            {
+              "level": 1,
+              "value": "5%"
+            },
+            {
+              "level": 2,
+              "value": "10%"
+            },
+            {
+              "level": 3,
+              "value": "15%"
+            },
+            {
+              "level": 4,
+              "value": "20%"
+            }
           ],
           "lifeStealMelee": [
-            {"level": 1, "value": "10%"},
-            {"level": 2, "value": "20%"},
-            {"level": 3, "value": "30%"},
-            {"level": 4, "value": "40%"}
+            {
+              "level": 1,
+              "value": "10%"
+            },
+            {
+              "level": 2,
+              "value": "20%"
+            },
+            {
+              "level": 3,
+              "value": "30%"
+            },
+            {
+              "level": 4,
+              "value": "40%"
+            }
           ],
           "auraRange": 900
         },
@@ -5612,18 +6214,39 @@
         "effects": {
           "transformUnit": {
             "health": [
-              {"level": 1, "value": 600},
-              {"level": 2, "value": 900}
+              {
+                "level": 1,
+                "value": 600
+              },
+              {
+                "level": 2,
+                "value": 900
+              }
             ],
             "damage": [
-              {"level": 1, "value": "30-36"},
-              {"level": 2, "value": "46-52"}
+              {
+                "level": 1,
+                "value": "30-36"
+              },
+              {
+                "level": 2,
+                "value": "46-52"
+              }
             ],
             "armor": [
-              {"level": 1, "value": 5},
-              {"level": 2, "value": 7}
-            ], 
-            "skills": ["粉碎波", "硬化外皮"],
+              {
+                "level": 1,
+                "value": 5
+              },
+              {
+                "level": 2,
+                "value": 7
+              }
+            ],
+            "skills": [
+              "粉碎波",
+              "硬化外皮"
+            ],
             "attackRange": 100,
             "moveSpeed": 270,
             "shockwaveDamage": 60,
@@ -5633,8 +6256,14 @@
         },
         "range": 500,
         "cooldown": [
-          {"level": 1, "value": 35},
-          {"level": 2, "value": 20}
+          {
+            "level": 1,
+            "value": 35
+          },
+          {
+            "level": 2,
+            "value": 20
+          }
         ]
       }
     ],
