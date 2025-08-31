@@ -21,7 +21,7 @@
       },
       "intelligence": {
         "base": 28,
-        "growth": 3.0
+        "growth": 3
       },
       "baseHealth": 420,
       "baseMana": 280,
@@ -39,98 +39,31 @@
         "icon": "../img_ALskill/mega01.gif",
         "description": "發射一枚火球攻擊目標，對其造成火焰傷害。",
         "effect": "對目標造成傷害。",
-        "levels": [
+        "stats": [
           {
-            "level": 1,
-            "manaCost": {
-              "value": 80,
-              "label": "法力消耗"
-            },
-            "damage": {
-              "value": 140,
-              "label": "傷害"
-            },
-            "castTime": {
-              "value": 0.5,
-              "label": "施法時間"
-            },
-            "range": {
-              "value": 600,
-              "label": "射程"
-            },
-            "cooldown": {
-              "value": 6,
-              "label": "冷卻時間"
-            }
+            "label": "法力消耗",
+            "value": 80
           },
           {
-            "level": 2,
-            "manaCost": {
-              "value": 80,
-              "label": "法力消耗"
-            },
-            "damage": {
-              "value": 170,
-              "label": "傷害"
-            },
-            "castTime": {
-              "value": 0.5,
-              "label": "施法時間"
-            },
-            "range": {
-              "value": 600,
-              "label": "射程"
-            },
-            "cooldown": {
-              "value": 6,
-              "label": "冷卻時間"
-            }
+            "label": "傷害",
+            "value": [
+              140,
+              170,
+              200,
+              230
+            ]
           },
           {
-            "level": 3,
-            "manaCost": {
-              "value": 80,
-              "label": "法力消耗"
-            },
-            "damage": {
-              "value": 200,
-              "label": "傷害"
-            },
-            "castTime": {
-              "value": 0.5,
-              "label": "施法時間"
-            },
-            "range": {
-              "value": 600,
-              "label": "射程"
-            },
-            "cooldown": {
-              "value": 6,
-              "label": "冷卻時間"
-            }
+            "label": "施法時間",
+            "value": 0.5
           },
           {
-            "level": 4,
-            "manaCost": {
-              "value": 80,
-              "label": "法力消耗"
-            },
-            "damage": {
-              "value": 230,
-              "label": "傷害"
-            },
-            "castTime": {
-              "value": 0.5,
-              "label": "施法時間"
-            },
-            "range": {
-              "value": 600,
-              "label": "射程"
-            },
-            "cooldown": {
-              "value": 6,
-              "label": "冷卻時間"
-            }
+            "label": "射程",
+            "value": 600
+          },
+          {
+            "label": "冷卻時間",
+            "value": 6
           }
         ]
       },
@@ -140,66 +73,23 @@
         "icon": "../img_ALskill/mega02.gif",
         "description": "將魔力壓縮成為液體，能夠更靈活的運用。",
         "effect": "製造不可交易、不可丟棄的魔法泉水，使用之後可以恢復魔力。",
-        "levels": [
+        "stats": [
           {
-            "level": 1,
-            "manaRestore": {
-              "value": 200,
-              "label": "法力恢復"
-            },
-            "cooldown": {
-              "value": 10,
-              "label": "冷卻時間"
-            },
-            "potionCooldown": {
-              "value": 50,
-              "label": "藥水冷卻時間"
-            }
+            "label": "法力恢復",
+            "value": 200
           },
           {
-            "level": 2,
-            "manaRestore": {
-              "value": 200,
-              "label": "法力恢復"
-            },
-            "cooldown": {
-              "value": 10,
-              "label": "冷卻時間"
-            },
-            "potionCooldown": {
-              "value": 40,
-              "label": "藥水冷卻時間"
-            }
+            "label": "冷卻時間",
+            "value": 10
           },
           {
-            "level": 3,
-            "manaRestore": {
-              "value": 200,
-              "label": "法力恢復"
-            },
-            "cooldown": {
-              "value": 10,
-              "label": "冷卻時間"
-            },
-            "potionCooldown": {
-              "value": 32,
-              "label": "藥水冷卻時間"
-            }
-          },
-          {
-            "level": 4,
-            "manaRestore": {
-              "value": 200,
-              "label": "法力恢復"
-            },
-            "cooldown": {
-              "value": 10,
-              "label": "冷卻時間"
-            },
-            "potionCooldown": {
-              "value": 25,
-              "label": "藥水冷卻時間"
-            }
+            "label": "藥水冷卻時間",
+            "value": [
+              50,
+              40,
+              32,
+              25
+            ]
           }
         ]
       },
@@ -209,50 +99,24 @@
         "icon": "../img_ALskill/mega03.gif",
         "description": "對魔法極為熟練的法師，除了懂得發出強力魔法，也對魔力的使用更加了解。",
         "effect": "增加法師的魔力最大值及魔力回復速度。",
-        "levels": [
+        "stats": [
           {
-            "level": 1,
-            "manaRegen": {
-              "value": 80,
-              "label": "每秒魔力回復"
-            },
-            "maxMana": {
-              "value": 100,
-              "label": "最大魔力增加"
-            }
+            "label": "每秒魔力回復",
+            "value": [
+              80,
+              160,
+              220,
+              280
+            ]
           },
           {
-            "level": 2,
-            "manaRegen": {
-              "value": 160,
-              "label": "每秒魔力回復"
-            },
-            "maxMana": {
-              "value": 160,
-              "label": "最大魔力增加"
-            }
-          },
-          {
-            "level": 3,
-            "manaRegen": {
-              "value": 220,
-              "label": "每秒魔力回復"
-            },
-            "maxMana": {
-              "value": 220,
-              "label": "最大魔力增加"
-            }
-          },
-          {
-            "level": 4,
-            "manaRegen": {
-              "value": 280,
-              "label": "每秒魔力回復"
-            },
-            "maxMana": {
-              "value": 280,
-              "label": "最大魔力增加"
-            }
+            "label": "最大魔力增加",
+            "value": [
+              100,
+              160,
+              220,
+              280
+            ]
           }
         ]
       },
@@ -262,60 +126,39 @@
         "icon": "../img_ALskill/mega04.jpg",
         "description": "丟出一枚殘暴的火球造成傷害並震昏目標敵方部隊。",
         "effect": "對目標造成傷害及暈眩。",
-        "levels": [
+        "stats": [
           {
-            "level": 1,
-            "damage": {
-              "value": 600,
-              "label": "傷害"
-            },
-            "heroStunDuration": {
-              "value": 3,
-              "label": "英雄暈眩時間"
-            },
-            "nomralUnitStunDuration": {
-              "value": 5,
-              "label": "一般單位暈眩時間"
-            },
-            "castTime": {
-              "value": 3,
-              "label": "施法時間"
-            },
-            "cooldown": {
-              "value": 60,
-              "label": "冷卻時間"
-            },
-            "manaCost": {
-              "value": 300,
-              "label": "法力消耗"
-            }
+            "label": "傷害",
+            "value": [
+              600,
+              1000
+            ]
           },
           {
-            "level": 2,
-            "damage": {
-              "value": 1000,
-              "label": "傷害"
-            },
-            "heroStunDuration": {
-              "value": 3,
-              "label": "英雄暈眩時間"
-            },
-            "normalUnitStunDuration": {
-              "value": 5,
-              "label": "一般單位暈眩時間"
-            },
-            "castTime": {
-              "value": 4,
-              "label": "施法時間"
-            },
-            "cooldown": {
-              "value": 60,
-              "label": "冷卻時間"
-            },
-            "manaCost": {
-              "value": 500,
-              "label": "法力消耗"
-            }
+            "label": "英雄暈眩時間",
+            "value": 3
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": 5
+          },
+          {
+            "label": "施法時間",
+            "value": [
+              3,
+              4
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
+          },
+          {
+            "label": "法力消耗",
+            "value": [
+              300,
+              500
+            ]
           }
         ]
       }
@@ -341,7 +184,7 @@
       },
       "agility": {
         "base": 16,
-        "growth": 1.0
+        "growth": 1
       },
       "intelligence": {
         "base": 25,
@@ -358,167 +201,169 @@
     "description": "值得信任的英雄。在他的守護下，我方軍隊將更為強大，而敵方將更不堪一擊。本尼迪塔斯本來是大主教阿隆瑟斯．法奧的學生。阿隆瑟斯．法奧大主教死後，議會決定將本尼迪塔斯升為新一位大主教。他曾有效的抵擋天譴軍，而他對毀滅他的故鄉的天譴軍的仇恨讓他決定誓死將天譴軍消滅。",
     "abilities": [
       {
+        "type": "active",
         "name": "神聖清風",
         "icon": "../img_ALskill/ab01.gif",
         "description": "呼喚一陣能量，來回復指定目標的生命點數。",
         "effect": "回復目標的生命點數，並會在友軍身上彈跳，每次彈跳，回復力量就降低一些。",
-        "manaCost": 80,
-        "healAmount": [
+        "stats": [
           {
-            "level": 1,
-            "value": 65
+            "label": "法力消耗",
+            "value": 80
           },
           {
-            "level": 2,
-            "value": 95
+            "label": "治療量",
+            "value": [
+              65,
+              95,
+              125,
+              155
+            ]
           },
           {
-            "level": 3,
-            "value": 125
+            "label": "冷卻時間",
+            "value": 7
           },
           {
-            "level": 4,
-            "value": 155
+            "label": "射程",
+            "value": 700
+          },
+          {
+            "label": "彈跳範圍",
+            "value": 500
+          },
+          {
+            "label": "彈跳次數",
+            "value": [
+              5,
+              8,
+              11,
+              14
+            ]
+          },
+          {
+            "label": "治療遞減",
+            "value": 10
           }
-        ],
-        "healReduction": 10,
-        "bounceCount": [
-          {
-            "level": 1,
-            "value": 5
-          },
-          {
-            "level": 2,
-            "value": 8
-          },
-          {
-            "level": 3,
-            "value": 11
-          },
-          {
-            "level": 4,
-            "value": 14
-          }
-        ],
-        "bounceRadius": 500,
-        "range": 700,
-        "cooldown": 7,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "審判",
         "icon": "../img_ALskill/ab02.jpg",
         "description": "宣判目標的罪，使之慢慢付出生命的代價。",
         "effect": "在一段時間內每固定秒數對敵人造成傷害。",
-        "manaCost": 75,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
+            "label": "法力消耗",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 15
+            "label": "傷害",
+            "value": [
+              10,
+              15,
+              20,
+              25
+            ]
           },
           {
-            "level": 3,
-            "value": 20
+            "label": "冷卻時間",
+            "value": [
+              25,
+              20,
+              15,
+              10
+            ]
           },
           {
-            "level": 4,
-            "value": 25
+            "label": "持續時間",
+            "value": [
+              10,
+              15,
+              20,
+              25
+            ]
+          },
+          {
+            "label": "射程",
+            "value": 500
+          },
+          {
+            "label": "傷害間隔",
+            "value": 3
           }
-        ],
-        "damageInterval": 3,
-        "range": 500,
-        "duration": [
-          {
-            "level": 1,
-            "value": 10
-          },
-          {
-            "level": 2,
-            "value": 15
-          },
-          {
-            "level": 3,
-            "value": 20
-          },
-          {
-            "level": 4,
-            "value": 25
-          }
-        ],
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 25
-          },
-          {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 15
-          },
-          {
-            "level": 4,
-            "value": 10
-          }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "天譴",
         "icon": "../img_ALskill/ab03.jpg",
         "description": "為友方單位祈福。攻擊獲得神之祈福的單位有可能遭到天譴。",
         "effect": "攻擊被祈福的單位將遭到範圍攻擊。",
-        "manaCost": 75,
-        "damage": 50,
-        "triggerChance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "法力消耗",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 25
+            "label": "傷害",
+            "value": 50
           },
           {
-            "level": 3,
+            "label": "冷卻時間",
+            "value": 8
+          },
+          {
+            "label": "持續時間",
             "value": 30
           },
           {
-            "level": 4,
-            "value": 35
+            "label": "射程",
+            "value": 500
+          },
+          {
+            "label": "觸發機率",
+            "value": [
+              20,
+              25,
+              30,
+              35
+            ]
           }
-        ],
-        "duration": 30,
-        "range": 500,
-        "cooldown": 8,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "聖堂",
         "icon": "../img_ALskill/ab04.jpg",
         "description": "召喚強大的聖光能量，醫療範圍內的友軍及傷害範圍內的敵軍。",
         "effect": "同時治療範圍內的友軍並對敵軍造成一半的傷害。",
-        "manaCost": 200,
-        "healAmount": [
+        "stats": [
           {
-            "level": 1,
-            "value": 300
+            "label": "法力消耗",
+            "value": 200
           },
           {
-            "level": 2,
-            "value": 600
+            "label": "治療量",
+            "value": [
+              300,
+              600
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 180
+          },
+          {
+            "label": "射程",
+            "value": 800
+          },
+          {
+            "label": "治療範圍",
+            "value": 400
           }
-        ],
-        "healRadius": 400,
-        "range": 800,
-        "cooldown": 180,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -559,122 +404,111 @@
     "description": "敏捷的英雄。他能夠完全隱藏身形，並對毫無防備的敵人做出致命一擊。他的刀也具有比法師更可怕的爆發力。阿泰爾是一個殺手組織內的首席刺客。雖然有些自負，但他的技術是有目共睹的。只要為正義而戰的阿泰爾還存活的一天，奸商與邪惡領主們就永遠睡不好覺。",
     "abilities": [
       {
+        "type": "active",
         "name": "隱匿",
         "icon": "../img_ALskill/ac01.gif",
         "description": "完全隱藏自己的身影，任何一名經過的敵人只能自求多福。",
         "effect": "一定時間內使刺客消失，攻擊位於消失點周遭一定範圍內的敵人時將瞬間出現在他身旁，並造成50+隱匿秒數乘以10點傷害。",
-        "manaCost": 75,
-        "attackRange": [
+        "stats": [
           {
-            "level": 1,
-            "value": 500
+            "label": "法力消耗",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 600
+            "label": "冷卻時間",
+            "value": 22
           },
           {
-            "level": 3,
-            "value": 700
+            "label": "持續時間",
+            "value": [
+              20,
+              30,
+              40,
+              50
+            ]
           },
           {
-            "level": 4,
-            "value": 800
+            "label": "攻擊距離",
+            "value": [
+              500,
+              600,
+              700,
+              800
+            ]
           }
-        ],
-        "duration": [
-          {
-            "level": 1,
-            "value": 20
-          },
-          {
-            "level": 2,
-            "value": 30
-          },
-          {
-            "level": 3,
-            "value": 40
-          },
-          {
-            "level": 4,
-            "value": 50
-          }
-        ],
-        "bonusDamage": "50 + duration * 10",
-        "cooldown": 22,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "刀刃塗毒",
         "icon": "../img_ALskill/ac02.gif",
         "description": "在刀刃塗上致命劇毒，使敵人更快喪命。",
-        "effect": "使自身攻擊力增加一段時間。",
-        "manaCost": 75,
-        "attackDamageIncrease": [
+        "effect": "使自身攻擊力增加一段時間。\n發動隱匿的期間，持續時間將凍結。",
+        "stats": [
           {
-            "level": 1,
-            "value": 30
+            "label": "法力消耗",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 60
+            "label": "冷卻時間",
+            "value": 15
           },
           {
-            "level": 3,
-            "value": 90
+            "label": "持續時間",
+            "value": 5
           },
           {
-            "level": 4,
-            "value": 120
+            "label": "攻擊力增加倍率",
+            "value": [
+              30,
+              60,
+              90,
+              120
+            ],
+            "suffix": "%"
           }
-        ],
-        "duration": 5,
-        "cooldown": 15,
-        "specialNote": "發動隱匿的期間，持續時間將凍結",
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "殘影",
         "icon": "../img_ALskill/ac03.gif",
         "description": "刺客靈巧的身影能夠躲避敵人的攻擊。",
         "effect": "有機率躲避敵人的普通攻擊。",
-        "dodgeChance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 12
-          },
-          {
-            "level": 2,
-            "value": 18
-          },
-          {
-            "level": 3,
-            "value": 24
-          },
-          {
-            "level": 4,
-            "value": 30
+            "label": "閃躲機率",
+            "value": [
+              12,
+              18,
+              24,
+              30
+            ],
+            "suffix": "%"
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "三倍危急",
         "icon": "../img_ALskill/ac04.gif",
         "description": "吸收了青骨精氣的刺客，在面對生死一瞬的場面時能夠作出更致命的攻擊。",
         "effect": "吸收了青骨精氣的刺客，在面對生死一瞬的場面時能夠作出更致命的攻擊。",
-        "damageMultiplier": 1.75,
-        "triggerChance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 50
+            "label": "觸發機率",
+            "value": [
+              50,
+              75
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 75
+            "label": "傷害倍率",
+            "value": 175,
+            "suffix": "%"
           }
-        ],
-        "type": "passive"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -715,135 +549,130 @@
     "description": "具有威嚇力的英雄。他的鎚是最致命的武器，每一次攻擊都能擊殺大批敵人。麋鹿部落的族長、貝奧尼加之子、貝奧尼之孫。他年輕但冷靜，揮舞著宛如父親的矮人摯友打造的戰鎚「艾吉斯之牙」。經過黑暗精靈的訓練，他沒有一般野蠻人的魯莽，凡而更像個機警的遊俠。他曾帶領麋鹿部落參與布林．山德之戰，曾替矮人摯友取回故鄉，更曾擊殺一隻白龍。",
     "abilities": [
       {
+        "type": "active",
         "name": "投擲艾吉斯之牙",
         "icon": "../img_ALskill/bar01.gif",
         "description": "投擲魔法戰鎚「艾吉斯之牙」，造成傷害之後還會將對方打昏，並會自動回到主人手中。",
         "effect": "對目標造成傷害及暈眩。",
-        "manaCost": 90,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 120
+            "label": "法力消耗",
+            "value": 90
           },
           {
-            "level": 2,
-            "value": 190
+            "label": "傷害",
+            "value": [
+              120,
+              190,
+              260,
+              320
+            ]
           },
           {
-            "level": 3,
-            "value": 260
+            "label": "冷卻時間",
+            "value": 25
           },
           {
-            "level": 4,
-            "value": 320
+            "label": "射程",
+            "value": 600
+          },
+          {
+            "label": "英雄暈眩時間",
+            "value": [
+              0.5,
+              0.75,
+              1,
+              1.25
+            ],
+            "suffix": "秒"
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": 2,
+            "suffix": "秒"
           }
-        ],
-        "stunDuration": {
-          "normalUnits": 2,
-          "heroes": [
-            {
-              "level": 1,
-              "value": 0.5
-            },
-            {
-              "level": 2,
-              "value": 0.75
-            },
-            {
-              "level": 3,
-              "value": 1.0
-            },
-            {
-              "level": 4,
-              "value": 1.25
-            }
-          ]
-        },
-        "range": 600,
-        "cooldown": 25,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "掃蕩",
         "icon": "../img_ALskill/bar02.gif",
         "description": "野蠻人大幅度揮動戰鎚，能夠揮掃到更多敵人。",
         "effect": "攻擊傷害將擴散至目標週遭的敵軍。",
-        "splashDamagePercent": [
+        "stats": [
           {
-            "level": 1,
-            "value": 35
+            "label": "擴散範圍",
+            "value": 200
           },
           {
-            "level": 2,
-            "value": 50
-          },
-          {
-            "level": 3,
-            "value": 65
-          },
-          {
-            "level": 4,
-            "value": 80
+            "label": "傷害擴散比例",
+            "value": [
+              35,
+              50,
+              65,
+              80
+            ],
+            "suffix": "%"
           }
-        ],
-        "range": 200,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "腎上腺素爆發",
         "icon": "../img_ALskill/bar03.jpg",
         "description": "野蠻人危及時將分泌大量的腎上腺素，發揮出超越平時的力量。",
         "effect": "野蠻人的生命值低於一定數值時時將分泌大量腎上腺素，增加力量。當生命值低於50％將自動啟動。",
-        "strengthIncrease": [
+        "stats": [
           {
-            "level": 1,
-            "value": 6
+            "label": "力量增加",
+            "value": [
+              6,
+              10,
+              14,
+              18
+            ]
           },
           {
-            "level": 2,
-            "value": 10
-          },
-          {
-            "level": 3,
-            "value": 14
-          },
-          {
-            "level": 4,
-            "value": 18
+            "label": "觸發閾值",
+            "value": 50,
+            "suffix": "%"
           }
-        ],
-        "triggerThreshold": 50,
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "全力揮擊",
         "icon": "../img_ALskill/bar04.jpg",
         "description": "野蠻人全力揮動手中的戰鎚，對週遭敵人造成嚴重傷害。",
         "effect": "啟動之後30秒內，野蠻人每次攻擊時造成範圍傷害。",
-        "manaCost": 150,
-        "range": [
+        "stats": [
           {
-            "level": 1,
-            "value": 250
+            "label": "法力消耗",
+            "value": 150
           },
           {
-            "level": 2,
-            "value": 300
-          }
-        ],
-        "damage": [
-          {
-            "level": 1,
-            "value": 50
+            "label": "傷害",
+            "value": [
+              50,
+              100
+            ]
           },
           {
-            "level": 2,
-            "value": 100
+            "label": "冷卻時間",
+            "value": 120
+          },
+          {
+            "label": "持續時間",
+            "value": 30
+          },
+          {
+            "label": "射程",
+            "value": [
+              250,
+              300
+            ]
           }
-        ],
-        "duration": 30,
-        "cooldown": 120,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -863,7 +692,7 @@
     "stats": {
       "strength": {
         "base": 20,
-        "growth": 2.0
+        "growth": 2
       },
       "agility": {
         "base": 24,
@@ -884,106 +713,116 @@
     "description": "敏捷的英雄。他能夠自由自在的出入戰場，等到敵人發現他的到來時，已經身首異處。葛羅．地獄吼是札納唯一僅存的半獸人酋長了。雖然地獄吼帶領著部屬獲得無數的勝利，但卻對那讓他同胞衰弱的疾病束手無策。地獄吼是第一個落入惡魔詛咒中的半獸人。他和心中的嗜血慾望和狂暴怒氣掙扎了許多年。現在，在索爾的遠見和領導之下，地獄吼相信同胞們終於可以擺脫惡魔的腐化，開創出自己的未來。",
     "abilities": [
       {
+        "type": "active",
         "name": "居合",
         "icon": "../img_ALskill/bm01.jpg",
         "description": "以肉眼無法捕捉的速度移動到目標身後，並斬擊造成巨大傷害。",
         "effect": "瞬間移動至目標身後並造成傷害。",
-        "manaCost": 90,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 110
+            "label": "法力消耗",
+            "value": 90
           },
           {
-            "level": 2,
-            "value": 180
+            "label": "傷害",
+            "value": [
+              110,
+              180,
+              250,
+              320
+            ]
           },
           {
-            "level": 3,
-            "value": 250
+            "label": "冷卻時間",
+            "value": 12
           },
           {
-            "level": 4,
-            "value": 320
+            "label": "射程",
+            "value": 300
           }
-        ],
-        "range": 300,
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "縮地",
         "icon": "../img_ALskill/bm02.gif",
         "description": "強健的腳程能使大劍師在一瞬間縮短與敵人的距離。",
         "effect": "瞬間移動至指定地點。",
-        "manaCost": 50,
-        "range": 700,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "法力消耗",
+            "value": 50
           },
           {
-            "level": 2,
-            "value": 15
+            "label": "冷卻時間",
+            "value": [
+              20,
+              15,
+              10,
+              5
+            ]
           },
           {
-            "level": 3,
-            "value": 10
-          },
-          {
-            "level": 4,
-            "value": 5
+            "label": "射程",
+            "value": 700
           }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "一擊斬",
         "icon": "../img_ALskill/bm03.gif",
         "description": "大劍師攻擊時奮力一擊，有機會在攻擊時造成更嚴重的傷害。",
         "effect": "攻擊時有一定機率造成普通攻擊數倍的傷害。",
-        "damageMultiplier": [
+        "stats": [
           {
-            "level": 1,
-            "value": 2
+            "label": "觸發機率",
+            "value": 15,
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 3
-          },
-          {
-            "level": 3,
-            "value": 4
-          },
-          {
-            "level": 4,
-            "value": 5
+            "label": "傷害倍率",
+            "value": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "suffix": "倍"
           }
-        ],
-        "triggerChance": 15,
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "旋風斬",
         "icon": "../img_ALskill/bm04.gif",
         "description": "讓大劍師身邊環繞著旋風斬的毀滅力量，導致他對魔法完全免疫。",
         "effect": "對週遭敵軍造成傷害。",
-        "manaCost": 150,
-        "damagePerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 400
+            "label": "每秒傷害",
+            "value": [
+              400,
+              800
+            ]
           },
           {
-            "level": 2,
-            "value": 800
+            "label": "法力消耗",
+            "value": 150
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
+          },
+          {
+            "label": "持續時間",
+            "value": 0.7
+          },
+          {
+            "label": "射程",
+            "value": 200
           }
-        ],
-        "duration": 0.7,
-        "range": 200,
-        "cooldown": 60,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -1003,7 +842,7 @@
     "stats": {
       "strength": {
         "base": 19,
-        "growth": 2.0
+        "growth": 2
       },
       "agility": {
         "base": 17,
@@ -1024,185 +863,140 @@
     "description": "值得信賴的英雄。他的戰鬥手段超乎常識；對他與他的敵人來說，距離不再具有意義。達拉朗的法師在某次實驗中從時空的裂縫召喚出的生物。他具有操作境界的能力，只要毀滅了境界，事物的一體兩面也將同時毀壞。能夠超越現有空間概念戰鬥的他，在單純為了享受撕裂灼炎軍的快感時，仍是個值得同盟軍信任的戰力。",
     "abilities": [
       {
+        "type": "active",
         "name": "撕裂隙間",
         "icon": "../img_ALskill/bs01.gif",
         "description": "將事物與事物之間的境界撕裂開來，使該範圍成為混沌並扭曲周遭敵人。",
         "effect": "對自身周圍造成傷害，並在傷害區域中心創造一個隙間裂縫。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 110
+            "label": "法力消耗",
+            "value": [
+              110,
+              130,
+              150,
+              170
+            ]
           },
           {
-            "level": 2,
-            "value": 130
+            "label": "傷害",
+            "value": [
+              150,
+              210,
+              270,
+              330
+            ]
           },
           {
-            "level": 3,
-            "value": 150
+            "label": "冷卻時間",
+            "value": 20
           },
           {
-            "level": 4,
-            "value": 170
+            "label": "射程",
+            "value": [
+              400,
+              450,
+              500,
+              550
+            ]
           }
-        ],
-        "damage": [
-          {
-            "level": 1,
-            "value": 150
-          },
-          {
-            "level": 2,
-            "value": 210
-          },
-          {
-            "level": 3,
-            "value": 270
-          },
-          {
-            "level": 4,
-            "value": 330
-          }
-        ],
-        "range": [
-          {
-            "level": 1,
-            "value": 400
-          },
-          {
-            "level": 2,
-            "value": 450
-          },
-          {
-            "level": 3,
-            "value": 500
-          },
-          {
-            "level": 4,
-            "value": 550
-          }
-        ],
-        "cooldown": 20,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "敵方與友方的境界",
         "icon": "../img_ALskill/bs02.gif",
         "description": "從隙間內出現的神秘力量，到底是敵是友？",
-        "effect": "在目標後方創造一個隙間，將他拖行進去。",
-        "manaCost": [
+        "effect": "在目標後方創造一個隙間，將他拖行進去。\n若目標與隙間裂縫的距離小於1300，便傳送至隙間裂縫。",
+        "stats": [
           {
-            "level": 1,
-            "value": 150
+            "label": "法力消耗",
+            "value": [
+              [
+                150,
+                135,
+                120,
+                105
+              ]
+            ]
           },
           {
-            "level": 2,
-            "value": 135
+            "label": "冷卻時間",
+            "value": [
+              24,
+              21,
+              18,
+              15
+            ]
           },
           {
-            "level": 3,
-            "value": 120
-          },
-          {
-            "level": 4,
-            "value": 105
+            "label": "射程",
+            "value": 900
           }
-        ],
-        "range": 900,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 24
-          },
-          {
-            "level": 2,
-            "value": 21
-          },
-          {
-            "level": 3,
-            "value": 18
-          },
-          {
-            "level": 4,
-            "value": 15
-          }
-        ],
-        "specialEffect": "若目標與隙間裂縫的距離小於1300，便傳送至隙間裂縫",
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "自身與他人的境界",
         "icon": "../img_ALskill/bs03.gif",
         "description": "跨越自身與他人的境界，自身與目標將不再有阻礙存在。",
         "effect": "使用技能後的下一次攻擊，將會在自身與攻擊目標旁創造兩個互通的傳送門。",
-        "manaCost": 80,
-        "portalDuration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 3
+            "label": "傳送門持續時間",
+            "value": [
+              3,
+              4,
+              5,
+              6
+            ]
           },
           {
-            "level": 2,
-            "value": 4
+            "label": "法力消耗",
+            "value": 80
           },
           {
-            "level": 3,
-            "value": 5
-          },
-          {
-            "level": 4,
-            "value": 6
+            "label": "冷卻時間",
+            "value": [
+              25,
+              20,
+              14,
+              8
+            ]
           }
-        ],
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 25
-          },
-          {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 14
-          },
-          {
-            "level": 4,
-            "value": 8
-          }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "此方與彼方的境界",
         "icon": "../img_ALskill/bs04.gif",
         "description": "跨越此方與彼方的境界，使距離的概念成為混沌，距離不再具有意義。",
         "effect": "在指定地點與自身處創造兩個互通的傳送門。",
-        "manaCost": 250,
-        "range": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力消耗",
+            "value": 250
+          },
+          {
+            "label": "冷卻時間",
+            "value": [
+              90,
+              45
+            ]
+          },
+          {
+            "label": "持續時間",
+            "value": 15
+          },
+          {
+            "label": "射程",
             "value": 7000
           },
           {
-            "level": 2,
-            "value": 7000
+            "label": "施法時間",
+            "value": 2
           }
-        ],
-        "castTime": 2,
-        "duration": 15,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 90
-          },
-          {
-            "level": 2,
-            "value": 45
-          }
-        ],
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -1226,7 +1020,7 @@
       },
       "agility": {
         "base": 20,
-        "growth": 2.0
+        "growth": 2
       },
       "intelligence": {
         "base": 25,
@@ -1243,105 +1037,111 @@
     "description": "值得信賴的英雄。他能穿梭於敵軍陣中，造成強大的破壞，而所有試圖擊殺他的人將因此而死亡。瓦傑拉這種利用空間波通信的生物，在這次大戰前，隱居在宇宙的某處，從未被人類發現，也從未有生物能與他溝通。直到某日，一個人類的歌聲轉化為空間波傳到瓦傑拉的耳裡，他決定誓死保護這唯一能與他溝通的人類。",
     "abilities": [
       {
+        "type": "active",
         "name": "星間飛行",
         "icon": "../img_ALskill/ff01.jpg",
         "description": "深藍色的夜空中，像流星一樣向你急急飛去。",
         "effect": "飛行到指定地點，並在飛行中放出閃電，靠近瓦傑拉的敵人將被瓦傑拉身上的強大電流電傷。",
-        "manaCost": 100,
-        "range": 800,
-        "lightningInterval": 75,
-        "lightningDamage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 16
+            "label": "傷害",
+            "value": [
+              16,
+              24,
+              32,
+              40
+            ]
           },
           {
-            "level": 2,
-            "value": 24
+            "label": "放出閃電間隔",
+            "value": 75
           },
           {
-            "level": 3,
-            "value": 32
+            "label": "法力消耗",
+            "value": 100
           },
           {
-            "level": 4,
-            "value": 40
+            "label": "冷卻時間",
+            "value": 12
+          },
+          {
+            "label": "射程",
+            "value": 800
           }
-        ],
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "閃電強化",
         "icon": "../img_ALskill/ff02.JPG",
         "description": "從體內放出不可計量的閃電，對所有打擊它的人造成危害。",
         "effect": "被攻擊時放出閃電",
-        "lightningDamageRange": "10-45",
-        "lightningCount": [
+        "stats": [
           {
-            "level": 1,
-            "value": 5
-          },
-          {
-            "level": 2,
+            "label": "最低閃電傷害",
             "value": 10
           },
           {
-            "level": 3,
-            "value": 15
+            "label": "最高閃電傷害",
+            "value": 45
           },
           {
-            "level": 4,
-            "value": 20
+            "label": "閃電數量",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "蛻皮",
         "icon": "../img_ALskill/ff03.jpg",
         "description": "瓦傑拉經由空間波傳遞訊息的特性，使它能對已接收的傷害訊號產生免疫。",
         "effect": "每次被敵方的法術指定一次就增加1%魔法抗性。",
-        "magicResistanceCap": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
-          },
-          {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 30
-          },
-          {
-            "level": 4,
-            "value": 40
+            "label": "魔法抗性上限",
+            "value": [
+              10,
+              20,
+              30,
+              40
+            ],
+            "suffix": "%"
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "閃亮",
         "icon": "../img_ALskill/ff04.jpg",
         "description": "閃亮☆",
         "effect": "對周遭敵人造成傷害。",
-        "manaCost": 150,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 100
+            "label": "法力消耗",
+            "value": 150
           },
           {
-            "level": 2,
-            "value": 200
+            "label": "傷害",
+            "value": [
+              100,
+              200
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 13
+          },
+          {
+            "label": "射程",
+            "value": 650
           }
-        ],
-        "range": 650,
-        "areaType": "環狀",
-        "cooldown": 13,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -1382,134 +1182,130 @@
     "description": "無可擊敗的英雄。他能夠使隊友不受敵方傷害，並且可以承受所有攻擊而不致死亡。「戰士還是能打人臉的。」帶著這句話，卡干從地獄回來了。是的，戰士曾一度處境艱難，看見術士或法師只有跑的份。但與死神的多次接觸讓他了解死亡的奧妙之處，並反過來利用這些知識。如今，所有打過戰士臉的人，將一個個被戰士懷著怒氣用力的打回來。",
     "abilities": [
       {
+        "type": "active",
         "name": "嘲弄",
         "icon": "../img_ALskill/fs01.jpg",
         "description": "嘲諷目標，使其向戰士移動，想要打他的臉。",
         "effect": "一段時間內強制目標向戰士移動。",
-        "manaCost": 50,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 2.0
+            "label": "法力消耗",
+            "value": 50
           },
           {
-            "level": 2,
-            "value": 2.5
+            "label": "冷卻時間",
+            "value": 20
           },
           {
-            "level": 3,
-            "value": 3.0
+            "label": "持續時間",
+            "value": [
+              2,
+              2.5,
+              3,
+              3.5
+            ]
           },
           {
-            "level": 4,
-            "value": 3.5
+            "label": "射程",
+            "value": 600
           }
-        ],
-        "range": 600,
-        "cooldown": 20,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "瘋狂打臉",
         "icon": "../img_ALskill/fs02.jpg",
         "description": "快速揮動手中的刀，集中朝敵人臉部攻擊。",
         "effect": "一段時間內增加攻擊速度，而且有可能擊暈敵人，但增加受到的傷害。",
-        "attackSpeedIncrease": [
+        "stats": [
           {
-            "level": 1,
-            "value": 35
+            "label": "攻擊速度增加比率",
+            "value": [
+              35,
+              50,
+              65,
+              80
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 50
+            "label": "承受傷害增加比率",
+            "value": [
+              30,
+              40,
+              50,
+              60
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 65
+            "label": "擊暈機率",
+            "value": 20,
+            "suffix": "%"
           },
           {
-            "level": 4,
-            "value": 80
-          }
-        ],
-        "damageReceivedIncrease": [
-          {
-            "level": 1,
+            "label": "冷卻時間",
             "value": 30
           },
           {
-            "level": 2,
-            "value": 40
-          },
-          {
-            "level": 3,
-            "value": 50
-          },
-          {
-            "level": 4,
-            "value": 60
+            "label": "持續時間",
+            "value": 200
           }
-        ],
-        "stunChance": 20,
-        "duration": 200,
-        "cooldown": 30,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "法術反彈",
         "icon": "../img_ALskill/fs03.jpg",
         "description": "習於受到法師攻擊的戰士，漸漸熟悉了反擊的技巧。",
-        "effect": "被敵方法術指定時有機率反擊造成傷害。",
-        "damage": 200,
-        "reflectChance": [
+        "effect": "被敵方法術指定時有機率反擊造成傷害。\n學習精通死亡之後，每死亡一次增加1%反彈機率",
+        "stats": [
           {
-            "level": 1,
-            "value": 5
+            "label": "傷害",
+            "value": 200
           },
           {
-            "level": 2,
-            "value": 10
+            "label": "觸發機率",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 15
-          },
-          {
-            "level": 4,
-            "value": 20
+            "label": "射程",
+            "value": 120
           }
-        ],
-        "range": 120,
-        "specialEffect": "學習精通死亡之後，每死亡一次增加1%反彈機率",
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "精通死亡",
         "icon": "../img_ALskill/fs04.jpg",
         "description": "死習慣的戰士將能更熟練的釋放靈魂及復活，減少死亡時間，並對周遭敵軍造成影響。",
         "effect": "復活等待時間縮短，死亡時週遭範圍內所有敵軍英雄永久減少全屬性。",
-        "attributeReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 1
+            "label": "復活等待時間減少",
+            "value": [
+              5,
+              10
+            ]
           },
           {
-            "level": 2,
-            "value": 2
-          }
-        ],
-        "respawnTimeReduction": [
-          {
-            "level": 1,
-            "value": 5
+            "label": "屬性減少",
+            "value": [
+              1,
+              2
+            ]
           },
           {
-            "level": 2,
-            "value": 10
+            "label": "射程",
+            "value": 1000
           }
-        ],
-        "range": 1000,
-        "type": "passive"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -1552,173 +1348,144 @@
     "description": "無所不能的英雄。他能夠組織攻勢、抵擋敵人，同時能在前線造成最大的傷害。凱文是人類王國中最強悍的一名騎士。儘管他的騎士生涯前幾年相當的辛勞又不光彩，但最終他的實力得到了上層的賞識，凱文也得以得到他應得的榮耀。",
     "abilities": [
       {
+        "type": "active",
         "name": "王國之敵",
         "icon": "../img_ALskill/kg01.gif",
         "description": "對王國的主要目標標記，使友軍能清楚看見他們該攻擊的目標。",
         "effect": "減少目標的防禦力，並使他隨時暴露於友軍的視野。",
-        "manaCost": 60,
-        "armorReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 4
+            "label": "防禦力減少",
+            "value": [
+              4,
+              7,
+              11,
+              15
+            ]
           },
           {
-            "level": 2,
-            "value": 7
+            "label": "法力消耗",
+            "value": 60
           },
           {
-            "level": 3,
-            "value": 11
+            "label": "冷卻時間",
+            "value": [
+              45,
+              41,
+              37,
+              33
+            ]
           },
           {
-            "level": 4,
+            "label": "英雄持續時間",
             "value": 15
+          },
+          {
+            "label": "一般單位持續時間",
+            "value": 25
+          },
+          {
+            "label": "射程",
+            "value": 700
           }
-        ],
-        "duration": {
-          "normalUnits": 25,
-          "heroes": 15
-        },
-        "range": 700,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 45
-          },
-          {
-            "level": 2,
-            "value": 41
-          },
-          {
-            "level": 3,
-            "value": 37
-          },
-          {
-            "level": 4,
-            "value": 33
-          }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "名貴血統",
         "icon": "../img_ALskill/kg02.gif",
         "description": "類與藍龍混血的凱文，能夠化身為更具力量的形體。",
         "effect": "變身為藍龍人，具有濺射傷害與增加血量。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 150
+            "label": "法力消耗",
+            "value": [
+              150,
+              135,
+              120,
+              105
+            ]
           },
           {
-            "level": 2,
-            "value": 135
+            "label": "增加生命",
+            "value": [
+              50,
+              150,
+              250,
+              350
+            ]
           },
           {
-            "level": 3,
-            "value": 120
+            "label": "冷卻時間",
+            "value": 80
           },
           {
-            "level": 4,
-            "value": 105
+            "label": "持續時間",
+            "value": [
+              20,
+              30,
+              40,
+              50
+            ]
           }
-        ],
-        "healthIncrease": [
-          {
-            "level": 1,
-            "value": 50
-          },
-          {
-            "level": 2,
-            "value": 150
-          },
-          {
-            "level": 3,
-            "value": 250
-          },
-          {
-            "level": 4,
-            "value": 350
-          }
-        ],
-        "duration": [
-          {
-            "level": 1,
-            "value": 20
-          },
-          {
-            "level": 2,
-            "value": 30
-          },
-          {
-            "level": 3,
-            "value": 40
-          },
-          {
-            "level": 4,
-            "value": 50
-          }
-        ],
-        "cooldown": 80,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "堅韌防守",
         "icon": "../img_ALskill/kg03.gif",
         "description": "凱文不只自己具有強韌的防禦力，同時也能帶起隊友的防守。",
         "effect": "自身增加魔法抗性，增加周遭友軍的防禦力。",
-        "magicResistance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 5
+            "label": "射程",
+            "value": 900
           },
           {
-            "level": 2,
-            "value": 10
+            "label": "魔法抗性",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 15
-          },
-          {
-            "level": 4,
-            "value": 20
+            "label": "增加防禦",
+            "value": [
+              1.5,
+              3,
+              4.5,
+              6
+            ]
           }
-        ],
-        "armorBonus": [
-          {
-            "level": 1,
-            "value": 1.5
-          },
-          {
-            "level": 2,
-            "value": 3.0
-          },
-          {
-            "level": 3,
-            "value": 4.5
-          },
-          {
-            "level": 4,
-            "value": 6.0
-          }
-        ],
-        "range": 900,
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "橫掃千軍",
         "icon": "../img_ALskill/kg04.gif",
         "description": "大劍一揮，將敵人全數擊退。",
         "effect": "將凱文前方120度之內的敵人擊退160距離，造成傷害並擊暈2秒。",
-        "manaCost": 120,
-        "damage": 125,
-        "knockbackDistance": 160,
-        "stunDuration": 2,
-        "coneAngle": 120,
-        "cooldown": 30,
-        "specialEffect": "若掃擊目標被標記為王國之敵，則受到兩倍傷害",
-        "type": "active"
+        "stats": [
+          {
+            "label": "法力消耗",
+            "value": 120
+          },
+          {
+            "label": "傷害",
+            "value": 125
+          },
+          {
+            "label": "冷卻時間",
+            "value": 30
+          },
+          {
+            "label": "暈眩時間",
+            "value": 2
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -1759,138 +1526,139 @@
     "description": "值得信任的英雄。具有多種干擾敵人的技能，適合作為隊友的後盾，讓他們安心戰鬥。善那瑞亞斯是女神伊露恩之子。這個半人半神的存在成長後變得充滿力量與老練。祂擁有從父親那裡繼承的神力。祂與祂的子嗣─林精與森林衛士們，一起忠實的守護著森林。",
     "abilities": [
       {
+        "type": "active",
         "name": "老樹盤根",
         "icon": "../img_ALskill/kog01.gif",
         "description": "與樹木溝通，讓樹根從地面竄出，綑綁敵軍。",
         "effect": "使指定目標無法移動與攻擊，並每秒受到傷害。",
-        "manaCost": 80,
-        "damagePerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 25
+            "label": "法力消耗",
+            "value": 80
           },
           {
-            "level": 2,
-            "value": 40
+            "label": "每秒傷害",
+            "value": [
+              25,
+              40,
+              40,
+              55
+            ]
           },
           {
-            "level": 3,
-            "value": 40
+            "label": "英雄捆綁時間",
+            "value": [
+              2,
+              2,
+              3,
+              3
+            ],
+            "suffix": "秒"
           },
           {
-            "level": 4,
-            "value": 55
+            "label": "一般單位捆綁時間",
+            "value": 9,
+            "suffix": "秒"
+          },
+          {
+            "label": "施放距離",
+            "value": 600
+          },
+          {
+            "label": "冷卻時間",
+            "value": 15
           }
-        ],
-        "duration": {
-          "normalUnits": 9,
-          "heroes": [
-            {
-              "level": 1,
-              "value": 2
-            },
-            {
-              "level": 2,
-              "value": 3
-            }
-          ]
-        },
-        "range": 600,
-        "cooldown": 15,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "召喚暴風",
         "icon": "../img_ALskill/kog02.gif",
         "description": "召喚一個暴風，其強烈風速將妨礙所有附近敵軍的移動。",
         "effect": "召喚一個不具攻擊力的暴風，減緩週遭敵軍的移動速度。",
-        "manaCost": 120,
-        "movementSpeedReduction": 40,
-        "range": 400,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 5
+            "label": "法力消耗",
+            "value": 120
           },
           {
-            "level": 2,
-            "value": 10
+            "label": "減緩倍率",
+            "value": 40,
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 15
+            "label": "施放距離",
+            "value": 400
           },
           {
-            "level": 4,
-            "value": 20
+            "label": "持續時間",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ]
+          },
+          {
+            "label": "施展射程",
+            "value": 400
+          },
+          {
+            "label": "冷卻時間",
+            "value": 40
           }
-        ],
-        "cooldown": 40,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "荊棘之光",
         "icon": "../img_ALskill/kog03.gif",
         "description": "一道光圈可以讓附近的友善部隊環繞著傷害性的護盾。",
         "effect": "反彈敵人近戰攻擊的傷害。",
-        "range": 900,
-        "reflectPercentage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "作用範圍",
+            "value": 900
           },
           {
-            "level": 2,
-            "value": 35
-          },
-          {
-            "level": 3,
-            "value": 50
-          },
-          {
-            "level": 4,
-            "value": 65
+            "label": "反彈倍率",
+            "value": [
+              20,
+              35,
+              50,
+              65
+            ],
+            "suffix": "%"
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "鳥擊",
         "icon": "../img_ALskill/kog04.gif",
         "description": "呼喚自然的力量，阻擋所有試圖攻擊森林衛士的敵人。",
         "effect": "召喚樹人。",
-        "manaCost": 150,
-        "treantCount": 6,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "法力消耗",
+            "value": 150
           },
           {
-            "level": 2,
-            "value": 40
+            "label": "樹人數量",
+            "value": 6
+          },
+          {
+            "label": "持續時間",
+            "value": [
+              20,
+              40
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
           }
-        ],
-        "cooldown": 60,
-        "treantStats": {
-          "health": [
-            {
-              "level": 1,
-              "value": 1000
-            },
-            {
-              "level": 2,
-              "value": 1600
-            }
-          ],
-          "damage": "15-17",
-          "siegeDamage": 1,
-          "attackRange": 100,
-          "movementSpeed": 270,
-          "armor": 10,
-          "armorType": "重步兵"
-        },
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -1931,166 +1699,147 @@
     "description": "具有破壞力的英雄。具有多種毀滅多數敵人的方式，善於少對多戰鬥。紅龍之后，雅立史卓莎，是艾澤拉斯的生命守護者。在遠古大戰時，她是三頭參加戰鬥的巨龍之一。在獸人與人類的第二次大戰中，她被獸人捕捉以生產紅龍作為獸人的座騎，但被一名勇敢的人類法師釋放，再度回到聯盟陣營。",
     "abilities": [
       {
+        "type": "active",
         "name": "火焰之息",
         "icon": "../img_ALskill/lb01.gif",
         "description": "對敵方部隊吐出扇狀的火焰造成灼傷。",
         "effect": "對範圍內的敵軍造成傷害。",
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 100
+            "label": "傷害",
+            "value": [
+              100,
+              150,
+              200,
+              250
+            ]
           },
           {
-            "level": 2,
-            "value": 150
+            "label": "灼傷傷害",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ]
           },
           {
-            "level": 3,
-            "value": 200
+            "label": "傷害距離",
+            "value": 450
           },
           {
-            "level": 4,
-            "value": 250
-          }
-        ],
-        "burnDamage": [
+            "label": "施放距離",
+            "value": 500
+          },
           {
-            "level": 1,
+            "label": "持續時間",
             "value": 5
           },
           {
-            "level": 2,
+            "label": "冷卻時間",
             "value": 10
-          },
-          {
-            "level": 3,
-            "value": 15
-          },
-          {
-            "level": 4,
-            "value": 20
           }
-        ],
-        "damageRange": 450,
-        "castRange": 500,
-        "burnDuration": 5,
-        "cooldown": 10,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "彈跳火焰",
         "icon": "../img_ALskill/lb02.gif",
         "description": "從睿智的紅龍口中吐出的火球，能夠自己找到敵人。",
         "effect": "每次攻擊時額外擊中更多敵人。",
-        "additionalTargets": [
+        "stats": [
           {
-            "level": 1,
-            "value": 1,
-            "total": 2
-          },
-          {
-            "level": 2,
-            "value": 2,
-            "total": 3
-          },
-          {
-            "level": 3,
-            "value": 3,
-            "total": 4
-          },
-          {
-            "level": 4,
-            "value": 4,
-            "total": 5
+            "label": "額外攻擊目標",
+            "value": [
+              1,
+              2,
+              3,
+              4
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "浴火",
         "icon": "../img_ALskill/lb03.gif",
         "description": "紅龍將全身點燃火焰，創造出令人難以忍受的高溫。",
         "effect": "對週遭敵軍每秒造成傷害。",
-        "manaCostPerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
+            "label": "法力消耗",
+            "value": [
+              10,
+              14,
+              18,
+              22
+            ]
           },
           {
-            "level": 2,
-            "value": 14
+            "label": "每秒傷害",
+            "value": [
+              15,
+              20,
+              25,
+              30
+            ]
           },
           {
-            "level": 3,
-            "value": 18
-          },
-          {
-            "level": 4,
-            "value": 22
+            "label": "範圍",
+            "value": 900
           }
-        ],
-        "damagePerSecond": [
-          {
-            "level": 1,
-            "value": 15
-          },
-          {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 25
-          },
-          {
-            "level": 4,
-            "value": 30
-          }
-        ],
-        "range": 900,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "生命通道",
         "icon": "../img_ALskill/lb04.gif",
         "description": "掌管生命的紅龍之后將敵人的生命傳輸至紅龍身上，並疏導至友軍。",
         "effect": "從目標敵軍吸收生命至紅龍，並加快週遭友軍的生命回復速度。",
-        "manaCost": 100,
-        "lifeStealPerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 25
+            "label": "法力花費",
+            "value": 100
           },
           {
-            "level": 2,
-            "value": 50
-          }
-        ],
-        "allyHealthRegenBoost": [
-          {
-            "level": 1,
-            "value": 2
+            "label": "每秒吸取生命",
+            "value": [
+              25,
+              50
+            ]
           },
           {
-            "level": 2,
-            "value": 5
-          }
-        ],
-        "auraRange": 600,
-        "duration": [
-          {
-            "level": 1,
-            "value": 250
+            "label": "友軍生命回復速度",
+            "value": [
+              2,
+              5
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 300
+            "label": "作用範圍",
+            "value": 600
+          },
+          {
+            "label": "持續時間",
+            "value": [
+              250,
+              300
+            ]
+          },
+          {
+            "label": "吸收距離",
+            "value": 800
+          },
+          {
+            "label": "施放距離",
+            "value": 500
+          },
+          {
+            "label": "技能冷卻時間",
+            "value": 40
           }
-        ],
-        "drainRange": 800,
-        "castRange": 500,
-        "cooldown": 40,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -2110,7 +1859,7 @@
     "stats": {
       "strength": {
         "base": 15,
-        "growth": 1.0
+        "growth": 1
       },
       "agility": {
         "base": 20,
@@ -2131,167 +1880,150 @@
     "description": "具有破壞力的英雄。她的每一個法術都具有強大的力量，能夠毁滅每一個敵人。珍娜可能是數十年以來達拉朗最有潛力的法師。她年輕、精力充沛、充滿了好奇心，希望能學到更多的魔法與知識。她的父親是二次大戰時的著名英雄普勞德摩爾海軍上將。珍娜不希望自己辜負了父親的名聲，因此對自己有著很高的要求，只是，她希望能更透過魔法之道來彰顯家族的光榮。",
     "abilities": [
       {
+        "type": "active",
         "name": "雷光衝擊",
         "icon": "../img_ALskill/mg01.jpg",
         "description": "召喚出雷光快速的攻擊敵人並使之暈眩。",
         "effect": "對目標造成傷害及暈眩。",
-        "manaCost": 100,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 85
+            "label": "法力消耗",
+            "value": 100
           },
           {
-            "level": 2,
-            "value": 155
+            "label": "傷害",
+            "value": [
+              85,
+              155,
+              225,
+              300
+            ]
           },
           {
-            "level": 3,
-            "value": 225
+            "label": "冷卻時間",
+            "value": 16
           },
           {
-            "level": 4,
-            "value": 300
+            "label": "射程",
+            "value": 600
+          },
+          {
+            "label": "施法時間",
+            "value": 0
+          },
+          {
+            "label": "英雄暈眩時間",
+            "value": 1
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": 3
           }
-        ],
-        "stunDuration": {
-          "normalUnits": 3,
-          "heroes": 1
-        },
-        "range": 600,
-        "castTime": 0,
-        "cooldown": 16,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "召喚守護狼",
         "icon": "../img_ALskill/mg02.gif",
         "description": "召喚一隻沒有存在感的狼。",
         "effect": "召喚一隻具有永久隱形術的狼為你戰鬥。",
-        "manaCost": 75,
-        "duration": 60,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 11
+            "label": "法力消耗",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 9
+            "label": "冷卻時間",
+            "value": [
+              11,
+              9,
+              7,
+              5
+            ]
           },
           {
-            "level": 3,
-            "value": 7
-          },
-          {
-            "level": 4,
-            "value": 5
+            "label": "持續時間",
+            "value": 60
           }
-        ],
-        "maxWolves": 1,
-        "wolfStats": {
-          "health": [
-            {
-              "level": 1,
-              "value": 450
-            },
-            {
-              "level": 2,
-              "value": 530
-            },
-            {
-              "level": 3,
-              "value": 610
-            },
-            {
-              "level": 4,
-              "value": 700
-            }
-          ],
-          "damage": [
-            "26-27",
-            "34-35",
-            "42-43",
-            "50-51"
-          ],
-          "siegeDamage": 1,
-          "attackRange": 90,
-          "movementSpeed": 350,
-          "armorType": "重步兵",
-          "armor": [
-            {
-              "level": 1,
-              "value": 2
-            },
-            {
-              "level": 2,
-              "value": 3
-            },
-            {
-              "level": 3,
-              "value": 4
-            },
-            {
-              "level": 4,
-              "value": 5
-            }
-          ],
-          "specialEffect": "攻擊時，守護狼將暫時現身"
-        },
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "彈幕是力量",
         "icon": "../img_ALskill/mg03.gif",
         "description": "彈幕就是力量，這是理所當然的。",
         "effect": "在一段時間內以彈幕對週遭的所有敵人攻擊。",
-        "manaCost": 120,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 1.8
+            "label": "法力花費",
+            "value": 120
           },
           {
-            "level": 2,
-            "value": 2.4
+            "label": "持續時間",
+            "value": [
+              1.8,
+              2.4,
+              3,
+              3.6
+            ]
           },
           {
-            "level": 3,
-            "value": 3.0
+            "label": "數量",
+            "value": 5
           },
           {
-            "level": 4,
-            "value": 3.6
+            "label": "傷害",
+            "value": 60
+          },
+          {
+            "label": "彈幕射程",
+            "value": 900
+          },
+          {
+            "label": "施展距離",
+            "value": 500
+          },
+          {
+            "label": "冷卻時間",
+            "value": 30
           }
-        ],
-        "waves": 5,
-        "damage": 60,
-        "bulletRange": 900,
-        "castRange": 500,
-        "cooldown": 30,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "天神烈破",
         "icon": "../img_ALskill/mg04.jpg",
         "description": "放出強大的魔力炮，抹滅射線上的所有敵人。",
         "effect": "對射線上的所有敵人造成嚴重傷害。",
-        "manaCost": 225,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 500
+            "label": "法力花費",
+            "value": 225
           },
           {
-            "level": 2,
+            "label": "傷害",
+            "value": [
+              500,
+              1000
+            ]
+          },
+          {
+            "label": "範圍",
+            "value": 1600
+          },
+          {
+            "label": "施放距離",
             "value": 1000
+          },
+          {
+            "label": "施法時間",
+            "value": 3
+          },
+          {
+            "label": "冷卻時間",
+            "value": 150
           }
-        ],
-        "range": 1600,
-        "castRange": 1000,
-        "castTime": 3,
-        "cooldown": 150,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -2332,142 +2064,129 @@
     "description": "無可擊敗的英雄。聖騎士是軍隊的中心。他身先士卒，對敵人造成第一線的傷害，卻又同時能夠輔助友軍。烏瑟是聖騎士的創始人，他是第一個接受法歐大主教祝福的戰士。他身經百戰，可說是人類史上最驍勇善戰的戰士。雖然大戰已經過去許多年，但烏瑟就為了保護同胞免獸怪物侵襲以及撫平社會的動盪不安而努力。這名聖騎士的領導者可能是同盟軍有史以來最偉大的將領。",
     "abilities": [
       {
+        "type": "active",
         "name": "聖光術",
         "icon": "../img_ALskill/pal01.gif",
         "description": "聖光的力量可以醫療友方活生生的部隊或是傷害敵方的不死部隊。",
         "effect": "回復友軍的生命，或是對敵軍造成一半傷害。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 65
+            "label": "法力花費",
+            "value": [
+              65,
+              75,
+              85,
+              95
+            ]
           },
           {
-            "level": 2,
-            "value": 75
+            "label": "回復生命",
+            "value": [
+              200,
+              350,
+              500,
+              650
+            ]
           },
           {
-            "level": 3,
-            "value": 85
+            "label": "施放距離",
+            "value": 800
           },
           {
-            "level": 4,
-            "value": 95
+            "label": "冷卻時間",
+            "value": 15
           }
-        ],
-        "healAmount": [
-          {
-            "level": 1,
-            "value": 200
-          },
-          {
-            "level": 2,
-            "value": 350
-          },
-          {
-            "level": 3,
-            "value": 500
-          },
-          {
-            "level": 4,
-            "value": 650
-          }
-        ],
-        "range": 800,
-        "cooldown": 15,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "神聖憤怒",
         "icon": "../img_ALskill/pal02.jpg",
         "description": "灌注神力至戰鎚之上，對敵人發出神聖光芒。",
         "effect": "啟動之後一段時間內，聖騎士攻擊時有可能：從目標身上對週遭敵人射出充滿神聖力量的箭矢。",
-        "manaCost": 80,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 50
+            "label": "法力花費",
+            "value": 80
           },
           {
-            "level": 2,
-            "value": 75
+            "label": "傷害",
+            "value": [
+              50,
+              75,
+              100,
+              125
+            ]
           },
           {
-            "level": 3,
+            "label": "啟動機率",
+            "value": 40,
+            "suffix": "%"
+          },
+          {
+            "label": "範圍",
             "value": 100
           },
           {
-            "level": 4,
-            "value": 125
+            "label": "持續時間",
+            "value": 30
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
           }
-        ],
-        "triggerChance": 40,
-        "range": 100,
-        "duration": 30,
-        "cooldown": 60,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "白熱",
         "icon": "../img_ALskill/pal03.gif",
         "description": "烏瑟重拾失傳已久的聖騎士絕學，使白熱重現人間。",
         "effect": "快速對周遭的敵人做出多次攻擊。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 100
+            "label": "法力花費",
+            "value": [
+              100,
+              110,
+              120,
+              130
+            ]
           },
           {
-            "level": 2,
-            "value": 110
+            "label": "傷害",
+            "value": 50
           },
           {
-            "level": 3,
-            "value": 120
+            "label": "攻擊次數",
+            "value": [
+              2,
+              3,
+              4,
+              5
+            ]
           },
           {
-            "level": 4,
-            "value": 130
-          }
-        ],
-        "damage": 50,
-        "attackCount": [
-          {
-            "level": 1,
+            "label": "冷卻時間",
             "value": 2
-          },
-          {
-            "level": 2,
-            "value": 3
-          },
-          {
-            "level": 3,
-            "value": 4
-          },
-          {
-            "level": 4,
-            "value": 5
           }
-        ],
-        "cooldown": 2,
-        "specialEffect": "此技能也會觸發神聖憤怒",
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "復仇",
         "icon": "../img_ALskill/pal04.jpg",
         "description": "聖騎士在死亡之後將從天堂再次回到人間，繼續完成打倒灼炎軍的使命。",
         "effect": "聖騎士在死亡之後將會復活。",
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 90
-          },
-          {
-            "level": 2,
-            "value": 60
+            "label": "冷卻時間",
+            "value": [
+              90,
+              60
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -2487,7 +2206,7 @@
     "stats": {
       "strength": {
         "base": 19,
-        "growth": 2.0
+        "growth": 2
       },
       "agility": {
         "base": 24,
@@ -2508,125 +2227,128 @@
     "description": "敏捷的英雄。她的遠距離火力支援總是令人安心，而友軍在她的支援下將更為強大。泰蘭德是夜精靈的公主，同時也是月神伊露恩的最高女祭司。在遠古時代，她協助福利安和伊力丹從灼炎軍團的手中拯救卡林多。由於她是月之女神的祭司，因此也兼任鐵衛軍的首領。",
     "abilities": [
       {
+        "type": "active",
         "name": "咆哮",
         "icon": "../img_ALskill/pom01.jpg",
         "description": "猛虎咆哮，激勵友軍。",
         "effect": "讓附近友軍暫時獲得攻擊力加成。",
-        "manaCost": 100,
-        "attackBonus": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力花費",
+            "value": 100
+          },
+          {
+            "label": "攻擊力增加倍率",
+            "value": [
+              15,
+              20,
+              25,
+              30
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "範圍",
+            "value": 500
+          },
+          {
+            "label": "持續時間",
             "value": 15
           },
           {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 25
-          },
-          {
-            "level": 4,
-            "value": 30
+            "label": "冷卻時間",
+            "value": 40
           }
-        ],
-        "range": 500,
-        "duration": 15,
-        "cooldown": 40,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "獵鷹突擊",
         "icon": "../img_ALskill/pom02.gif",
         "description": "喚出獵鷹向前突擊。",
         "effect": "對射線上的敵人造成傷害。",
-        "manaCost": 100,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 90
+            "label": "法力花費",
+            "value": 100
           },
           {
-            "level": 2,
-            "value": 140
+            "label": "傷害",
+            "value": [
+              90,
+              140,
+              195,
+              250
+            ]
           },
           {
-            "level": 3,
-            "value": 195
+            "label": "傷害距離",
+            "value": 800
           },
           {
-            "level": 4,
-            "value": 250
+            "label": "施放距離",
+            "value": 700
+          },
+          {
+            "label": "冷卻時間",
+            "value": 12
           }
-        ],
-        "damageRange": 800,
-        "castRange": 700,
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "精準之光",
         "icon": "../img_ALskill/pom03.gif",
         "description": "一道光輝可以讓附近友方部隊的遠距攻擊有更強的破壞力。",
         "effect": "增加週遭友軍的遠距攻擊力。",
-        "attackBonus": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
+            "label": "增加攻擊倍率",
+            "value": [
+              10,
+              20,
+              30,
+              40
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 30
-          },
-          {
-            "level": 4,
-            "value": 40
+            "label": "範圍",
+            "value": 900
           }
-        ],
-        "range": 900,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "進攻",
         "icon": "../img_ALskill/pom04.jpg",
         "description": "號召鐵衛士兵，鼓舞士氣，增加戰鬥能力。",
         "effect": "增加週遭友軍的移動速度及攻擊速度。",
-        "movementSpeedBonus": [
+        "stats": [
           {
-            "level": 1,
-            "value": 7
+            "label": "增加移動速度",
+            "value": [
+              7,
+              14
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 14
-          }
-        ],
-        "attackSpeedBonus": [
-          {
-            "level": 1,
-            "value": 10
+            "label": "增加攻擊速度",
+            "value": [
+              10,
+              20
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 20
+            "label": "範圍",
+            "value": [
+              250,
+              300
+            ]
           }
-        ],
-        "range": [
-          {
-            "level": 1,
-            "value": 250
-          },
-          {
-            "level": 2,
-            "value": 300
-          }
-        ],
-        "type": "passive"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -2667,229 +2389,152 @@
     "description": "值得信任的英雄。他多樣化的戰鬥方式能夠玩弄敵人於手掌心，讓他們眼睜睜看著自己無力抵抗而死亡。羅克漢是暗矛部族的薩滿，在暗矛部族接受了索爾的同盟請求後成為杜洛塔第一線的戰士。他能夠精巧的操控自然力量，玩弄敵人於鼓掌中，又能保護戰友免於傷害。",
     "abilities": [
       {
+        "type": "active",
         "name": "連鎖閃電",
         "icon": "../img_ALskill/sh01.gif",
         "description": "信奉薩滿信仰的暗影獵人使用閃電攻擊敵人。",
         "effect": "出一個閃電光球，可以在敵人之間跳躍；每一次跳躍破壞力就會減少。",
-        "manaCost": 75,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力花費",
             "value": 75
           },
           {
-            "level": 2,
-            "value": 100
+            "label": "主要目標傷害",
+            "value": [
+              75,
+              100,
+              125,
+              150
+            ]
           },
           {
-            "level": 3,
-            "value": 125
+            "label": "傷害減少倍率",
+            "value": 10,
+            "suffix": "%"
           },
           {
-            "level": 4,
-            "value": 150
+            "label": "彈射次數",
+            "value": [
+              4,
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "label": "彈射範圍",
+            "value": 500
+          },
+          {
+            "label": "技能冷卻時間",
+            "value": [
+              6,
+              6,
+              5,
+              4
+            ]
           }
-        ],
-        "damageReduction": 10,
-        "bounceCount": [
-          {
-            "level": 1,
-            "value": 4
-          },
-          {
-            "level": 2,
-            "value": 6
-          },
-          {
-            "level": 3,
-            "value": 8
-          },
-          {
-            "level": 4,
-            "value": 10
-          }
-        ],
-        "bounceRange": 500,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 6
-          },
-          {
-            "level": 2,
-            "value": 6
-          },
-          {
-            "level": 3,
-            "value": 5
-          },
-          {
-            "level": 4,
-            "value": 4
-          }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "邪法",
         "icon": "../img_ALskill/sh02.gif",
         "description": "將目標轉化為無攻擊能力的小動物。",
         "effect": "將一個敵人轉化為亂數決定的生物，中止他們施法的能力。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 70
+            "label": "法力花費",
+            "value": [
+              70,
+              80,
+              90,
+              100
+            ]
           },
           {
-            "level": 2,
-            "value": 80
+            "label": "英雄持續時間",
+            "value": [
+              2,
+              3,
+              4,
+              4.5
+            ]
           },
           {
-            "level": 3,
-            "value": 90
+            "label": "一般單位持續時間",
+            "value": [
+              15,
+              25,
+              35,
+              45
+            ]
           },
           {
-            "level": 4,
-            "value": 100
+            "label": "技能施放距離",
+            "value": 800
+          },
+          {
+            "label": "冷卻時間",
+            "value": 18
           }
-        ],
-        "duration": {
-          "normalUnits": [
-            {
-              "level": 1,
-              "value": 15
-            },
-            {
-              "level": 2,
-              "value": 25
-            },
-            {
-              "level": 3,
-              "value": 35
-            },
-            {
-              "level": 4,
-              "value": 45
-            }
-          ],
-          "heroes": [
-            {
-              "level": 1,
-              "value": 2
-            },
-            {
-              "level": 2,
-              "value": 3
-            },
-            {
-              "level": 3,
-              "value": 4
-            },
-            {
-              "level": 4,
-              "value": 4.5
-            }
-          ]
-        },
-        "range": 800,
-        "cooldown": 18,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "蛇形結界",
         "icon": "../img_ALskill/sh03.gif",
         "description": "召喚一個固定不動的蛇形結界，來攻擊暗影獵人的敵人。這個結界對魔法免疫。",
         "effect": "召喚結界為你戰鬥。",
-        "manaCost": 50,
-        "summonCount": [
+        "stats": [
           {
-            "level": 1,
-            "value": 1
+            "label": "法力花費",
+            "value": 50
           },
           {
-            "level": 2,
-            "value": 2
+            "label": "召喚數量",
+            "value": [
+              1,
+              2,
+              2,
+              3
+            ]
           },
           {
-            "level": 3,
-            "value": 2
+            "label": "施放距離",
+            "value": 500
           },
           {
-            "level": 4,
-            "value": 3
+            "label": "冷卻時間",
+            "value": 20
           }
-        ],
-        "range": 500,
-        "cooldown": 20,
-        "wardStats": {
-          "health": [
-            {
-              "level": 1,
-              "value": 75
-            },
-            {
-              "level": 2,
-              "value": 135
-            },
-            {
-              "level": 3,
-              "value": 135
-            },
-            {
-              "level": 4,
-              "value": 135
-            }
-          ],
-          "damage": [
-            "11-13",
-            "17-20",
-            "23-27",
-            "29-34"
-          ],
-          "siegeDamage": 1,
-          "armor": 0,
-          "attackRange": 600
-        },
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "岩脈",
         "icon": "../img_ALskill/sh04.jpg",
         "description": "暗影獵人運用自然的力量，召喚出一道岩脈。",
         "effect": "目標點創造一道橫向的岩石魔像，一段時間後消失。",
-        "manaCost": 130,
-        "duration": 10,
-        "range": 700,
-        "cooldown": 75,
-        "golemStats": {
-          "health": [
-            {
-              "level": 1,
-              "value": 500
-            },
-            {
-              "level": 2,
-              "value": 850
-            }
-          ],
-          "damage": [
-            "21-22",
-            "37-61"
-          ],
-          "siegeDamage": 1,
-          "armor": [
-            {
-              "level": 1,
-              "value": 0
-            },
-            {
-              "level": 2,
-              "value": 3
-            }
-          ],
-          "attackRange": 600
-        },
-        "type": "active"
+        "stats": [
+          {
+            "label": "法力花費",
+            "value": 130
+          },
+          {
+            "label": "持續時間",
+            "value": 10
+          },
+          {
+            "label": "施放距離",
+            "value": 700
+          },
+          {
+            "label": "技能冷卻時間",
+            "value": 75
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -2930,165 +2575,138 @@
     "description": "具有威嚇力的英雄。他的圖騰戰鎚是最致命的武器，每一次攻擊都能擊殺大批敵人。凱恩．血蹄是牛頭人種族的酋長，智慧而勇敢的領袖，致力於保護自己的族人和同盟。",
     "abilities": [
       {
+        "type": "active",
         "name": "嘲弄",
         "icon": "../img_ALskill/tc01.gif",
         "description": "嘲弄敵人，使之攻擊戰牛酋長。",
         "effect": "最接近戰牛酋長的敵人將被迫攻擊這個單位。",
-        "manaCost": 30,
-        "duration": {
-          "normalUnits": [
-            {
-              "level": 1,
-              "value": 3
-            },
-            {
-              "level": 2,
-              "value": 5
-            },
-            {
-              "level": 3,
-              "value": 7
-            },
-            {
-              "level": 4,
-              "value": 9
-            }
-          ],
-          "heroes": [
-            {
-              "level": 1,
-              "value": 1
-            },
-            {
-              "level": 2,
-              "value": 2
-            },
-            {
-              "level": 3,
-              "value": 3
-            },
-            {
-              "level": 4,
-              "value": 4
-            }
-          ]
-        },
-        "range": 450,
-        "maxTargets": 10,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 11
+            "label": "英雄持續時間",
+            "value": [
+              1,
+              2,
+              3,
+              4
+            ]
           },
           {
-            "level": 2,
-            "value": 9
+            "label": "一般單位持續時間",
+            "value": [
+              3,
+              5,
+              7,
+              9
+            ]
           },
           {
-            "level": 3,
-            "value": 7
+            "label": "射程",
+            "value": 450
           },
           {
-            "level": 4,
-            "value": 5
+            "label": "最大目標數",
+            "value": 10
+          },
+          {
+            "label": "法力消耗",
+            "value": 30
+          },
+          {
+            "label": "冷卻時間",
+            "value": [
+              11,
+              9,
+              7,
+              5
+            ]
           }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "戰爭踐踏",
         "icon": "../img_ALskill/tc02.gif",
         "description": "用力跺擊地面，發出強大的震波。",
         "effect": "對附近的部隊造成傷害並降低他們的移動速度與攻擊速度。",
-        "manaCost": 90,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 80
+            "label": "法力消耗",
+            "value": 90
           },
           {
-            "level": 2,
-            "value": 135
+            "label": "傷害",
+            "value": [
+              80,
+              135,
+              190,
+              250
+            ]
           },
           {
-            "level": 3,
-            "value": 190
+            "label": "冷卻時間",
+            "value": 10
           },
           {
-            "level": 4,
-            "value": 250
+            "label": "英雄持續時間",
+            "value": 3
+          },
+          {
+            "label": "一般單位持續時間",
+            "value": 5
+          },
+          {
+            "label": "射程",
+            "value": [
+              250,
+              300,
+              350,
+              400
+            ]
           }
-        ],
-        "movementSpeedReduction": 50,
-        "attackSpeedReduction": 50,
-        "duration": {
-          "normalUnits": 5,
-          "heroes": 3
-        },
-        "range": [
-          {
-            "level": 1,
-            "value": 250
-          },
-          {
-            "level": 2,
-            "value": 300
-          },
-          {
-            "level": 3,
-            "value": 350
-          },
-          {
-            "level": 4,
-            "value": 400
-          }
-        ],
-        "cooldown": 10,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "粉碎波",
         "icon": "../img_ALskill/tc03.gif",
         "description": "戰牛酋長在攻擊時，將有可能重重跺腳，對周遭的敵軍造成傷害。",
         "effect": "攻擊時有一定機率造成範圍額外傷害。",
-        "damage": 60,
-        "triggerChance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "傷害",
+            "value": 60
           },
           {
-            "level": 2,
-            "value": 25
+            "label": "發動機率",
+            "value": [
+              20,
+              25,
+              30,
+              35
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 30
-          },
-          {
-            "level": 4,
-            "value": 35
+            "label": "範圍",
+            "value": 350
           }
-        ],
-        "range": 350,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "熱血",
         "icon": "../img_ALskill/tc04.jpg",
         "description": "流動在戰牛酋長體內的滾燙血液，讓他的力量倍增。",
         "effect": "增加戰牛酋長的力量屬性。",
-        "strengthIncrease": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
-          },
-          {
-            "level": 2,
-            "value": 40
+            "label": "增加力量",
+            "value": [
+              20,
+              40
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -3129,162 +2747,133 @@
     "description": "無可擊敗的英雄。他能夠作為友軍的盾，卻又具備擊退敵人的能力，就算面對眾多敵軍，他仍然能使友軍感到安心。GBX-001為熱沙企業最新力作，集結了高防禦及高機動性的特點，為目前愛澤拉斯第一臺戰鬥用機人，熱沙企業發言人表示鋼打姆具有單機突入大氣層的能力，但是目前還在研發突出大氣層用的載具，因此尚未測試這項功能，理論上絕對可行，請大家放心。",
     "abilities": [
       {
+        "type": "active",
         "name": "龍騎兵",
         "icon": "../img_ALskill/vg01.gif",
         "description": "龍騎兵系統，全名為「分離式統合制御高速機動兵裝群」，放出後會自動攻擊週圍的敵人。",
         "effect": "放出龍騎兵，自動攻擊週圍的敵人。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力花費",
+            "value": [
+              30,
+              45,
+              60,
+              75
+            ]
+          },
+          {
+            "label": "龍騎兵數量",
+            "value": [
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "label": "龍騎兵傷害",
+            "value": 22
+          },
+          {
+            "label": "持續時間",
             "value": 30
           },
           {
-            "level": 2,
-            "value": 45
-          },
-          {
-            "level": 3,
-            "value": 60
-          },
-          {
-            "level": 4,
-            "value": 75
+            "label": "冷卻時間",
+            "value": [
+              45,
+              41,
+              37,
+              33
+            ]
           }
-        ],
-        "dragonCount": [
-          {
-            "level": 1,
-            "value": 3
-          },
-          {
-            "level": 2,
-            "value": 4
-          },
-          {
-            "level": 3,
-            "value": 5
-          },
-          {
-            "level": 4,
-            "value": 6
-          }
-        ],
-        "dragonDamage": 22,
-        "duration": 30,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 45
-          },
-          {
-            "level": 2,
-            "value": 41
-          },
-          {
-            "level": 3,
-            "value": 37
-          },
-          {
-            "level": 4,
-            "value": 33
-          }
-        ],
-        "specialEffect": "龍騎兵無法被破壞",
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "相轉移裝甲",
         "icon": "../img_ALskill/vg02.gif",
         "description": "以相轉移原理來防禦高熱和衝擊的特殊裝甲，具有相當高的防護效果。",
         "effect": "降低受到的實體傷害。",
-        "damageReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 8
-          },
-          {
-            "level": 2,
-            "value": 14
-          },
-          {
-            "level": 3,
-            "value": 20
-          },
-          {
-            "level": 4,
-            "value": 26
+            "label": "降低傷害",
+            "value": [
+              8,
+              14,
+              20,
+              26
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "光束噴槍",
         "icon": "../img_ALskill/vg03.gif",
         "description": "先驅者的標準武器之一，駕駛技術夠好的狀況下可利用它擊中敵人的腳部造成行動破壞的效果。",
-        "effect": "發射光束造成目標傷害並有機會造成行動破壞。",
-        "manaCost": [
+        "effect": "發射光束造成目標傷害並有機會造成行動破壞。\n擊中時有50%機率使目標跑速-50% 攻擊速度-25%",
+        "stats": [
           {
-            "level": 1,
-            "value": 75
+            "label": "法力花費",
+            "value": [
+              75,
+              85,
+              105,
+              115
+            ]
           },
           {
-            "level": 2,
-            "value": 85
+            "label": "傷害",
+            "value": [
+              75,
+              115,
+              150,
+              195
+            ]
           },
           {
-            "level": 3,
-            "value": 105
+            "label": "施放距離",
+            "value": 600
           },
           {
-            "level": 4,
-            "value": 115
+            "label": "冷卻時間",
+            "value": 12
           }
-        ],
-        "damage": [
-          {
-            "level": 1,
-            "value": 75
-          },
-          {
-            "level": 2,
-            "value": 115
-          },
-          {
-            "level": 3,
-            "value": 150
-          },
-          {
-            "level": 4,
-            "value": 195
-          }
-        ],
-        "debuffChance": 50,
-        "movementSpeedReduction": 50,
-        "attackSpeedReduction": 25,
-        "range": 600,
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "全彈發射",
         "icon": "../img_ALskill/vg04.gif",
         "description": "發射所有飛彈及光束，周遭的敵人將無一倖免。需要時間搜尋並瞄準目標。",
         "effect": "對周遭敵人造成傷害。",
-        "projectileDamage": 50,
-        "waveCount": [
+        "stats": [
           {
-            "level": 1,
-            "value": 5
+            "label": "每個飛射物傷害",
+            "value": 50
           },
           {
-            "level": 2,
-            "value": 10
+            "label": "飛射物波數",
+            "value": [
+              5,
+              10
+            ]
+          },
+          {
+            "label": "射擊範圍",
+            "value": 900
+          },
+          {
+            "label": "施法時間",
+            "value": 1
+          },
+          {
+            "label": "冷卻時間",
+            "value": 40
           }
-        ],
-        "range": 900,
-        "castTime": 1,
-        "cooldown": 40,
-        "type": "active"
+        ]
       }
     ],
     "author": "sos123409431",
@@ -3325,174 +2914,116 @@
     "description": "具有破壞力的英雄。他無法一次毀滅敵軍，但他生存的每一秒，都將對所有生物產生危害。納加茲是個聰明且狡猾的惡魔，臣服於薩加洛斯之下，為灼炎軍作盡殺戮破壞之能事。他雖然具有與人類相比強大許多的力量，但最令人懼怕的是他那消耗無盡的黑暗能量。",
     "abilities": [
       {
+        "type": "active",
         "name": "暗影箭",
         "icon": "../img_UDskill/wl01.jpg",
         "description": "積蓄黑暗能量並發射，惡魔戰鎖的招牌招式。",
         "effect": "對單體目標造成傷害。",
-        "damage": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力消耗",
             "value": 75
           },
           {
-            "level": 2,
-            "value": 110
+            "label": "傷害",
+            "value": [
+              75,
+              110,
+              145,
+              180
+            ]
           },
           {
-            "level": 3,
-            "value": 145
+            "label": "冷卻時間",
+            "value": [
+              20,
+              14,
+              9,
+              4
+            ]
           },
           {
-            "level": 4,
-            "value": 180
+            "label": "射程",
+            "value": 550
           }
-        ],
-        "range": 550,
-        "manaCost": 75,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 20
-          },
-          {
-            "level": 2,
-            "value": 14
-          },
-          {
-            "level": 3,
-            "value": 9
-          },
-          {
-            "level": 4,
-            "value": 4
-          }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "獻祭",
         "icon": "../img_UDskill/wl02.jpg",
         "description": "使納加茲的敵人全身被地獄的炙熱化為灰燼。",
         "effect": "對敵人造成持續傷害。",
-        "manaCost": 50,
-        "initialDamage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 35
+            "label": "法力消耗",
+            "value": 50
           },
           {
-            "level": 2,
-            "value": 45
+            "label": "冷卻時間",
+            "value": 6
           },
           {
-            "level": 3,
-            "value": 55
+            "label": "持續時間",
+            "value": [
+              3.1,
+              4.1,
+              5.1,
+              6.1
+            ]
           },
           {
-            "level": 4,
-            "value": 65
+            "label": "射程",
+            "value": 500
+          },
+          {
+            "label": "傷害間隔",
+            "value": 1
           }
-        ],
-        "dotDamage": [
-          {
-            "level": 1,
-            "value": 10
-          },
-          {
-            "level": 2,
-            "value": 15
-          },
-          {
-            "level": 3,
-            "value": 20
-          },
-          {
-            "level": 4,
-            "value": 25
-          }
-        ],
-        "damageInterval": 1,
-        "duration": [
-          {
-            "level": 1,
-            "value": 3.1
-          },
-          {
-            "level": 2,
-            "value": 4.1
-          },
-          {
-            "level": 3,
-            "value": 5.1
-          },
-          {
-            "level": 4,
-            "value": 6.1
-          }
-        ],
-        "range": 500,
-        "cooldown": 6,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "獄甲術",
         "icon": "../img_UDskill/wl03.jpg",
         "description": "納加茲利用惡魔之力強化自己的鎧甲，使其擁有再生的能力，更能吸取血肉來回復。",
         "effect": "增加防禦力及生命回復。",
-        "armorIncrease": [
+        "stats": [
           {
-            "level": 1,
-            "value": 2
+            "label": "增加防禦",
+            "value": [
+              2,
+              4,
+              6,
+              8
+            ]
           },
           {
-            "level": 2,
-            "value": 4
-          },
-          {
-            "level": 3,
-            "value": 6
-          },
-          {
-            "level": 4,
-            "value": 8
+            "label": "增加每秒生命回復",
+            "value": [
+              2,
+              4,
+              6,
+              8
+            ]
           }
-        ],
-        "healthRegenPerSecond": [
-          {
-            "level": 1,
-            "value": 2
-          },
-          {
-            "level": 2,
-            "value": 4
-          },
-          {
-            "level": 3,
-            "value": 6
-          },
-          {
-            "level": 4,
-            "value": 8
-          }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "夜幕",
         "icon": "../img_UDskill/wl04.jpg",
         "description": "夜晚，魔將的舞台。",
         "effect": "使用暗影箭時有機率額外發動一次。",
-        "triggerChance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 25
-          },
-          {
-            "level": 2,
-            "value": 50
+            "label": "觸發機率",
+            "value": [
+              25,
+              50
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       }
     ],
     "author": "sos123409431",
@@ -3516,7 +3047,7 @@
       },
       "agility": {
         "base": 14,
-        "growth": 1.0
+        "growth": 1
       },
       "intelligence": {
         "base": 18,
@@ -3533,124 +3064,121 @@
     "description": "具有威嚇力的英雄。他的出現就足以對敵軍造成傷害，就算只有身影，也是破壞力的保證。天譴坦克原是風險投資公司自行開發的量產型據點防衛用兵器，但是由於太多來自聯盟、部落、熱沙企業的騷擾，高層決定以量產型為基礎，加裝大量自動兵器來強化其防衛能力，並命名為邦加拉希MK.II。傳說在上面還裝有神奇的裝置能使邦加拉希MK.II在一定時間內無人能擋。",
     "abilities": [
       {
+        "type": "passive",
         "name": "近戰防衛系統—金剛",
         "icon": "../img_UDskill/at01.gif",
         "description": "為了反制想要在坦克上裝C4的敵人所研發出來的武器。",
         "effect": "自動對範圍內的敵人發射飛彈攻擊，射程短但射速高。",
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 25
+            "label": "傷害",
+            "value": [
+              25,
+              30,
+              35,
+              40
+            ]
           },
           {
-            "level": 2,
-            "value": 30
+            "label": "攻擊範圍",
+            "value": 350
           },
           {
-            "level": 3,
-            "value": 35
-          },
-          {
-            "level": 4,
-            "value": 40
+            "label": "攻擊間隔",
+            "value": 1
           }
-        ],
-        "attackRange": 350,
-        "attackInterval": 1,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "近戰防衛系統—神盾",
         "icon": "../img_UDskill/at02.gif",
         "description": "為了反制躲在遠方的對戰車手持火箭炮所研發出來的武器，能夠自動偵測出敵人並攻擊。",
         "effect": "自動對範圍內的敵人發射飛彈攻擊，射程遠但射速低落。",
-        "damage": 40,
-        "attackRange": 800,
-        "attackInterval": [
+        "stats": [
           {
-            "level": 1,
-            "value": 4
+            "label": "傷害",
+            "value": 40
           },
           {
-            "level": 2,
-            "value": 3
+            "label": "攻擊範圍",
+            "value": 800
           },
           {
-            "level": 3,
-            "value": 2
-          },
-          {
-            "level": 4,
-            "value": 1
+            "label": "攻擊間隔",
+            "value": [
+              4,
+              3,
+              2,
+              1
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "鐵幕",
         "icon": "../img_UDskill/at03.gif",
         "description": "風險投資公司的尖端科技，能使坦克短暫時間內無人可擋。",
         "effect": "使坦克在短暫時間內增加極高防禦力。",
-        "manaCost": 75,
-        "duration": 1,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 30
+            "label": "法力花費",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 22
+            "label": "冷卻時間",
+            "value": [
+              30,
+              22,
+              15,
+              8
+            ]
           },
           {
-            "level": 3,
-            "value": 15
-          },
-          {
-            "level": 4,
-            "value": 8
+            "label": "持續時間",
+            "value": 1
           }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "質量殘像",
         "icon": "../img_UDskill/at04.gif",
         "description": "說穿了只是掉漆的假像罷了。天譴坦克脫去一小部分特殊塗料造成假像，迷惑敵方雷達。",
         "effect": "製造不具有攻擊力的殘像，承受兩倍傷害。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 100
+            "label": "法力花費",
+            "value": [
+              100,
+              175
+            ]
           },
           {
-            "level": 2,
-            "value": 175
-          }
-        ],
-        "illusions": [
-          {
-            "level": 1,
-            "value": 3
+            "label": "殘像數量",
+            "value": [
+              3,
+              5
+            ]
           },
           {
-            "level": 2,
-            "value": 5
-          }
-        ],
-        "duration": [
-          {
-            "level": 1,
-            "value": 30
+            "label": "持續時間",
+            "value": [
+              30,
+              45
+            ]
           },
           {
-            "level": 2,
-            "value": 45
+            "label": "冷卻時間",
+            "value": 180
+          },
+          {
+            "label": "殘像承受傷害",
+            "value": 400,
+            "suffix": "%"
           }
-        ],
-        "cooldown": 180,
-        "specialEffect": "殘像將承受400％的傷害",
-        "type": "active"
+        ]
       }
     ],
     "author": "sos123409431",
@@ -3691,212 +3219,172 @@
     "description": "具有威嚇力的英雄。他對待敵軍的方式殘忍而血腥。即使是屍體也能成為他的武器。他年輕時曾是村莊的英雄，守護著居民而挺身與惡魔戰鬥。但最後惡魔摧毀了整個村莊。葛瑞斯沃德受到了比死亡更殘忍的處理。他成為自己曾對付的惡魔軍首領，手拿沾滿敵人鮮血的巨刃，而他對待敵方屍體的手法，更是令人不敢恭維。",
     "abilities": [
       {
+        "type": "active",
         "name": "吞食",
         "icon": "../img_UDskill/bb01.gif",
         "description": "可以吃掉你嗎？",
         "effect": "將目標吞下，對目標每秒造成傷害並補充刀手的生命，直到目標死亡或是刀手被殺。增加屍毒一個等級。",
-        "manaCost": 60,
-        "damagePerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
+            "label": "法力消耗",
+            "value": 60
           },
           {
-            "level": 2,
-            "value": 20
+            "label": "每秒傷害",
+            "value": [
+              10,
+              20,
+              30,
+              40
+            ]
           },
           {
-            "level": 3,
-            "value": 30
+            "label": "每秒回復生命",
+            "value": [
+              20,
+              30,
+              40,
+              50
+            ]
           },
           {
-            "level": 4,
-            "value": 40
+            "label": "冷卻時間",
+            "value": [
+              40,
+              32,
+              16,
+              8
+            ]
+          },
+          {
+            "label": "射程",
+            "value": 100
           }
-        ],
-        "healPerSecond": [
-          {
-            "level": 1,
-            "value": 20
-          },
-          {
-            "level": 2,
-            "value": 30
-          },
-          {
-            "level": 3,
-            "value": 40
-          },
-          {
-            "level": 4,
-            "value": 50
-          }
-        ],
-        "range": 100,
-        "cooldown": [
-          {
-            "level": 1,
-            "value": 40
-          },
-          {
-            "level": 2,
-            "value": 32
-          },
-          {
-            "level": 3,
-            "value": 16
-          },
-          {
-            "level": 4,
-            "value": 8
-          }
-        ],
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "髒污之血",
         "icon": "../img_UDskill/bb02.jpg",
         "description": "被吞食的部隊，他們的血液象徵著與生命完全相反的東西。",
         "effect": "對範圍內的敵軍降低攻擊速度及移動速度。",
-        "manaCost": 75,
-        "attackSpeedReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "法力消耗",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 25
-          },
-          {
-            "level": 3,
-            "value": 30
-          },
-          {
-            "level": 4,
-            "value": 35
-          }
-        ],
-        "movementSpeedReduction": [
-          {
-            "level": 1,
+            "label": "冷卻時間",
             "value": 12
           },
           {
-            "level": 2,
-            "value": 16
+            "label": "英雄持續時間",
+            "value": 5,
+            "suffix": "秒"
           },
           {
-            "level": 3,
-            "value": 20
+            "label": "一般單位持續時間",
+            "value": 12,
+            "suffix": "秒"
           },
           {
-            "level": 4,
-            "value": 24
+            "label": "攻擊速度降低",
+            "value": [
+              20,
+              25,
+              30,
+              35
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "移動速度降低",
+            "value": [
+              12,
+              16,
+              20,
+              24
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "射程",
+            "value": 500
           }
-        ],
-        "range": 500,
-        "duration": {
-          "normalUnits": 12,
-          "heroes": 5
-        },
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "瘟疫",
         "icon": "../img_UDskill/bb03.gif",
         "description": "刀手散播著瘟疫般的氣體，隨著體內屍毒的累積，瘟疫雲逐漸散布到世界各地。",
         "effect": "每次攻擊時都會在原地產生一個疾病雲一段時間，對週遭敵軍造成傷害。",
-        "damagePerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
+            "label": "每秒傷害",
+            "value": [
+              10,
+              20,
+              30,
+              40
+            ]
           },
           {
-            "level": 2,
-            "value": 20
-          },
-          {
-            "level": 3,
-            "value": 30
-          },
-          {
-            "level": 4,
-            "value": 40
+            "label": "射程",
+            "value": 200
           }
-        ],
-        "range": 200,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "屍毒",
         "icon": "../img_UDskill/bb03.gif",
         "description": "屍毒效果隨等級增長。",
         "effect": "增強其他技能效果。",
-        "dirtyBloodExtraReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "使用髒污之血時額外降低攻擊速度",
+            "value": [
+              20,
+              25,
+              30,
+              35,
+              40
+            ],
+            "suffix": "%"
           },
           {
-            "level": 2,
-            "value": 25
+            "label": "瘟疫範圍速度降低",
+            "value": [
+              10,
+              15,
+              20,
+              25,
+              30
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 30
-          },
-          {
-            "level": 4,
-            "value": 35
-          },
-          {
-            "level": 5,
-            "value": 40
+            "label": "染血刀刃傷害增加",
+            "value": 12
           }
-        ],
-        "plagueSpeedReduction": [
-          {
-            "level": 1,
-            "value": 10
-          },
-          {
-            "level": 2,
-            "value": 15
-          },
-          {
-            "level": 3,
-            "value": 20
-          },
-          {
-            "level": 4,
-            "value": 25
-          },
-          {
-            "level": 5,
-            "value": 30
-          }
-        ],
-        "bloodyBladeDamageIncrease": 12,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "染血刀刃",
         "icon": "../img_UDskill/bb04.gif",
         "description": "我劍上的血跡快乾了！",
         "effect": "增加刀手的攻擊力。殺死英雄時增加屍毒一個等級。",
-        "attackIncrease": [
+        "stats": [
           {
-            "level": 1,
-            "value": 40
-          },
-          {
-            "level": 2,
-            "value": 60
+            "label": "增加攻擊力",
+            "value": [
+              40,
+              60
+            ]
           }
-        ],
-        "type": "passive"
+        ]
       }
     ],
     "author": "crystalagate",
@@ -3937,149 +3425,149 @@
     "description": "具有破壞力的英雄。他的一拳一腳都具有強大的衝擊力，無論是隨性亂舞或精密招式，都能夠在轉瞬間殲滅敵人。奇瓦米的本身，以及他所具備的技巧，都只在傳說中出現。在熊人古語中，奇瓦米的涵義是「極限」，而身為最後一個熊人，以及熊人族武術最後一個傳人，他能夠造成的破壞與他的名字相同。",
     "abilities": [
       {
+        "type": "active",
         "name": "螺旋搏擊",
         "icon": "../img_UDskill/cha01.gif",
         "description": "直擊心臟部位的強力一擊。",
         "effect": "對目標造成傷害及暈眩。",
-        "manaCost": 80,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力花費",
             "value": 80
           },
           {
-            "level": 2,
-            "value": 100
+            "label": "傷害",
+            "value": [
+              80,
+              100,
+              120,
+              140
+            ]
           },
           {
-            "level": 3,
-            "value": 120
+            "label": "冷卻時間",
+            "value": 7
           },
           {
-            "level": 4,
-            "value": 140
+            "label": "英雄暈眩時間",
+            "value": [
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": [
+              5,
+              5,
+              5,
+              5
+            ]
           }
-        ],
-        "stunDuration": {
-          "normalUnits": 5,
-          "heroes": [
-            {
-              "level": 1,
-              "value": 1
-            },
-            {
-              "level": 2,
-              "value": 1
-            },
-            {
-              "level": 3,
-              "value": 2
-            },
-            {
-              "level": 4,
-              "value": 2
-            }
-          ]
-        },
-        "cooldown": 7,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "猛虎硬爬山",
         "icon": "../img_UDskill/cha02.gif",
         "description": "力道精巧的猛力一擊。",
         "effect": "對目標造成傷害及暈眩，並擊退500距離。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 105
+            "label": "法力花費",
+            "value": [
+              105,
+              120,
+              135,
+              150
+            ]
           },
           {
-            "level": 2,
-            "value": 120
+            "label": "傷害",
+            "value": [
+              70,
+              110,
+              150,
+              190
+            ]
           },
           {
-            "level": 3,
-            "value": 135
+            "label": "冷卻時間",
+            "value": 7
           },
           {
-            "level": 4,
-            "value": 150
+            "label": "英雄暈眩時間",
+            "value": 2
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": 4
+          },
+          {
+            "label": "擊退距離",
+            "value": 500
           }
-        ],
-        "damage": [
-          {
-            "level": 1,
-            "value": 70
-          },
-          {
-            "level": 2,
-            "value": 110
-          },
-          {
-            "level": 3,
-            "value": 150
-          },
-          {
-            "level": 4,
-            "value": 190
-          }
-        ],
-        "stunDuration": {
-          "normalUnits": 4,
-          "heroes": 2
-        },
-        "knockbackDistance": 500,
-        "cooldown": 7,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "弓身彈影",
         "icon": "../img_UDskill/cha03.gif",
         "description": "於腿部瞬間使力，快速彈至敵人身前。",
         "effect": "瞬間移動至敵人身前造成傷害。",
-        "manaCost": 100,
-        "damage": 150,
-        "range": [
+        "stats": [
           {
-            "level": 1,
-            "value": 400
+            "label": "法力花費",
+            "value": 100
           },
           {
-            "level": 2,
-            "value": 500
+            "label": "傷害",
+            "value": 150
           },
           {
-            "level": 3,
-            "value": 600
+            "label": "冷卻時間",
+            "value": 15
           },
           {
-            "level": 4,
-            "value": 700
+            "label": "移動距離",
+            "value": [
+              400,
+              500,
+              600,
+              700
+            ]
           }
-        ],
-        "cooldown": 15,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "浸透勁",
         "icon": "../img_UDskill/cha04.gif",
         "description": "運氣調息，針對敵方弱點發出強大氣勁。",
         "effect": "對射線範圍上的敵人造成傷害。",
-        "manaCost": 200,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 500
+            "label": "法力花費",
+            "value": 200
           },
           {
-            "level": 2,
-            "value": 800
+            "label": "傷害",
+            "value": [
+              500,
+              800
+            ]
+          },
+          {
+            "label": "飛射距離",
+            "value": 700
+          },
+          {
+            "label": "冷卻時間",
+            "value": 45
           }
-        ],
-        "range": 700,
-        "cooldown": 45,
-        "type": "active"
+        ]
       }
     ],
     "author": "poga",
@@ -4120,177 +3608,147 @@
     "description": "無可擊敗的英雄。他的軀體就是他的武器，對上他，即使逃走也不見得安全。厄努阿拉克是地底蜘蛛王國－阿茲鳩．奈魯布的國王。他具有卓越的軍事及戰鬥才能，加上古墓巨蛛天生具有抵抗巫妖王精神操控的能力，使那蘇在攻打地底王國時花了不少麻煩。最終阿茲鳩．耐魯布依然亡國了，而厄努阿拉克生前的才能受到那蘇賞識，成為天譴軍第一線的戰士。他並沒有因為死亡而忘記戰鬥技巧；相反地，他帶給敵人更大的恐懼。",
     "abilities": [
       {
+        "type": "active",
         "name": "穿刺",
         "icon": "../img_UDskill/cl01.gif",
         "description": "用古墓之王的巨爪重擊地面，在直線上打出卷鬚尖刺造成傷害，同時把敵方的部隊丟到半空中。",
         "effect": "對範圍內的敵軍造成傷害並暈眩。",
-        "manaCost": 100,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力花費",
             "value": 100
           },
           {
-            "level": 2,
-            "value": 140
+            "label": "傷害",
+            "value": [
+              100,
+              140,
+              180,
+              230
+            ]
           },
           {
-            "level": 3,
-            "value": 180
+            "label": "英雄暈眩時間",
+            "value": [
+              1,
+              1,
+              2,
+              2
+            ]
           },
           {
-            "level": 4,
-            "value": 230
+            "label": "一般單位暈眩時間",
+            "value": [
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "label": "範圍",
+            "value": 250
+          },
+          {
+            "label": "施放距離",
+            "value": 700
+          },
+          {
+            "label": "技能冷卻時間",
+            "value": 18
           }
-        ],
-        "stunDuration": {
-          "normalUnits": [
-            {
-              "level": 1,
-              "value": 2
-            },
-            {
-              "level": 2,
-              "value": 3
-            },
-            {
-              "level": 3,
-              "value": 4
-            },
-            {
-              "level": 4,
-              "value": 5
-            }
-          ],
-          "heroes": [
-            {
-              "level": 1,
-              "value": 1
-            },
-            {
-              "level": 2,
-              "value": 1
-            },
-            {
-              "level": 3,
-              "value": 2
-            },
-            {
-              "level": 4,
-              "value": 2
-            }
-          ]
-        },
-        "range": 250,
-        "castRange": 700,
-        "cooldown": 18,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "尖刺甲殼",
         "icon": "../img_UDskill/cl02.gif",
         "description": "墓之王會形成倒刺般的角質外殼，增強它的防禦力，並反彈近戰敵人的攻擊。",
         "effect": "增加防禦力，並反彈敵軍近距離攻擊的一部分。",
-        "armorIncrease": [
+        "stats": [
           {
-            "level": 1,
-            "value": 3
+            "label": "裝甲增加",
+            "value": [
+              3,
+              5,
+              7,
+              9
+            ]
           },
           {
-            "level": 2,
-            "value": 5
-          },
-          {
-            "level": 3,
-            "value": 7
-          },
-          {
-            "level": 4,
-            "value": 9
+            "label": "傷害反彈",
+            "value": [
+              15,
+              25,
+              35,
+              45
+            ],
+            "suffix": "%"
           }
-        ],
-        "damageReflection": [
-          {
-            "level": 1,
-            "value": 15
-          },
-          {
-            "level": 2,
-            "value": 25
-          },
-          {
-            "level": 3,
-            "value": 35
-          },
-          {
-            "level": 4,
-            "value": 45
-          }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "恫嚇",
         "icon": "../img_UDskill/cl03.jpg",
         "description": "古墓之王甲殼上的尖刺掛滿了屍體，令敵軍心生恐懼。",
         "effect": "降低週遭敵軍的防禦力。",
-        "armorReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 2
+            "label": "降低裝甲",
+            "value": [
+              2,
+              3,
+              4,
+              5
+            ]
           },
           {
-            "level": 2,
-            "value": 3
-          },
-          {
-            "level": 3,
-            "value": 4
-          },
-          {
-            "level": 4,
-            "value": 5
+            "label": "範圍",
+            "value": 900
           }
-        ],
-        "range": 900,
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "寄生蟲噴射",
         "icon": "../img_UDskill/cl04.jpg",
         "description": "古墓之王的部下不只是那些地底王國的戰士，還有他體內的寄生蟲。",
         "effect": "對敵方的部隊進行寄生，每秒造成傷害。如果受到寄生的部隊在寄生效果持續的狀態下死亡，他的屍體中會生出寄生蟲。",
-        "manaCost": 65,
-        "damagePerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 15
+            "label": "法力花費",
+            "value": 65
           },
           {
-            "level": 2,
-            "value": 30
-          }
-        ],
-        "duration": 15,
-        "parasiteCount": [
-          {
-            "level": 1,
-            "value": 1
+            "label": "每秒傷害",
+            "value": [
+              15,
+              30
+            ]
           },
           {
-            "level": 2,
-            "value": 2
+            "label": "持續時間",
+            "value": [
+              15,
+              15
+            ]
+          },
+          {
+            "label": "產生的寄生蟲數量",
+            "value": [
+              1,
+              2
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": [
+              5,
+              5
+            ]
           }
-        ],
-        "cooldown": 5,
-        "parasiteStats": {
-          "health": 400,
-          "damage": "52-60",
-          "siegeDamage": 1,
-          "movementSpeed": 220,
-          "armor": 0
-        },
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -4331,165 +3789,139 @@
     "description": "敏捷的英雄。他具有多種干擾戰場的手段。沙場是他的遊戲室，而敵人就是他的玩具。對魔術異常狂熱的怪胎，巧妙的雙手完全為了魔術而生，靈活的身軀使他無往不利，將魔術與狙殺合而為一的技術更是獨一無二，對雷斯特而言，每一次的戰鬥都是一場演出，不論是敵人或盟友都將目眩神迷。",
     "abilities": [
       {
+        "type": "active",
         "name": "白鴿的隱藏",
         "icon": "../img_UDskill/cm01.gif",
         "description": "雷斯特將化作白鴿並消失在戰場之上，任何靠近白鴿的敵人將付出慘痛的代價。",
         "effect": "魔術師召喚出幾隻白鴿後隱形，白鴿具有神風能力。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 65
+            "label": "白鴿數量",
+            "value": [
+              3,
+              4,
+              5,
+              6
+            ]
           },
           {
-            "level": 2,
-            "value": 75
+            "label": "白鴿傷害",
+            "value": 100
           },
           {
-            "level": 3,
-            "value": 85
+            "label": "隱形持續時間",
+            "value": [
+              20,
+              40,
+              60,
+              60
+            ],
+            "suffix": "秒"
           },
           {
-            "level": 4,
-            "value": 95
-          }
-        ],
-        "invisibilityDuration": [
-          {
-            "level": 1,
-            "value": 20
+            "label": "法力消耗",
+            "value": [
+              65,
+              75,
+              85,
+              95
+            ]
           },
           {
-            "level": 2,
+            "label": "冷卻時間",
             "value": 40
-          },
-          {
-            "level": 3,
-            "value": 60
-          },
-          {
-            "level": 4,
-            "value": 60
           }
-        ],
-        "doveCount": [
-          {
-            "level": 1,
-            "value": 3
-          },
-          {
-            "level": 2,
-            "value": 4
-          },
-          {
-            "level": 3,
-            "value": 5
-          },
-          {
-            "level": 4,
-            "value": 6
-          }
-        ],
-        "cooldown": 40,
-        "doveStats": {
-          "health": 60,
-          "movementSpeed": 400,
-          "explodeDamage": 100
-        },
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "鏡像轉移",
         "icon": "../img_UDskill/cm02.gif",
         "description": "在不可思議的技巧之下，雷斯特得以與同伴，甚至是敵人交換位置。",
         "effect": "與目標交換位置。若目標為敵人，將被困住一段時間。",
-        "manaCost": 90,
-        "bindDuration": {
-          "normalUnits": [
-            {
-              "level": 1,
-              "value": 4
-            },
-            {
-              "level": 2,
-              "value": 5
-            },
-            {
-              "level": 3,
-              "value": 6
-            },
-            {
-              "level": 4,
-              "value": 7
-            }
-          ],
-          "heroes": [
-            {
-              "level": 1,
-              "value": 2
-            },
-            {
-              "level": 2,
-              "value": 2
-            },
-            {
-              "level": 3,
-              "value": 3
-            },
-            {
-              "level": 4,
-              "value": 3
-            }
-          ]
-        },
-        "range": 500,
-        "cooldown": 18,
-        "type": "active"
+        "stats": [
+          {
+            "label": "英雄綑綁時間",
+            "value": [
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "label": "一般單位綑綁時間",
+            "value": [
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "label": "法力消耗",
+            "value": 90
+          },
+          {
+            "label": "冷卻時間",
+            "value": 18
+          },
+          {
+            "label": "射程",
+            "value": 500
+          }
+        ]
       },
       {
+        "type": "passive",
         "name": "逃脫的秘訣",
         "icon": "../img_UDskill/cm03.gif",
         "description": "雷斯特敏捷而優雅的姿態將助他躲避致命的攻擊。",
         "effect": "有一定機率閃避攻擊。",
-        "dodgeChance": [
+        "stats": [
           {
-            "level": 1,
-            "value": 10
-          },
-          {
-            "level": 2,
-            "value": 18
-          },
-          {
-            "level": 3,
-            "value": 26
-          },
-          {
-            "level": 4,
-            "value": 34
+            "label": "閃避機率",
+            "value": [
+              10,
+              18,
+              26,
+              34
+            ],
+            "suffix": "%"
           }
-        ],
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "鋒利穿心攻擊",
         "icon": "../img_UDskill/cm04.gif",
         "description": "「這就是表演的最高潮，睜大眼睛吧，跟我一樣怕血的朋友，請跟我一樣戴上眼罩吧。」",
         "effect": "將目標綑綁，並對他射出一連串的飛刀。（施展期間，混沌魔術師將成為無法點選的狀態）",
-        "manaCost": 175,
-        "knifeCount": 3,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": "50-150"
+            "label": "最低傷害",
+            "value": 50
           },
           {
-            "level": 2,
-            "value": "50-200"
+            "label": "最高傷害",
+            "value": [
+              150,
+              200
+            ]
+          },
+          {
+            "label": "法力消耗",
+            "value": 175
+          },
+          {
+            "label": "冷卻時間",
+            "value": 120
+          },
+          {
+            "label": "射程",
+            "value": 500
           }
-        ],
-        "range": 500,
-        "cooldown": 120,
-        "type": "active"
+        ]
       }
     ],
     "author": "DDKnight",
@@ -4530,141 +3962,130 @@
     "description": "無可擊敗的英雄。他能夠如風般穿梭戰場，激勵每個友軍，嚇阻每個敵軍。有他在，我方就不可能戰敗。阿薩斯是鐵倫那斯王的獨生子，原本是羅達隆最厲害的劍士，也是銀掌騎士團的明日之星。但與魔將馬爾加尼斯的數次戰鬥讓他的心中充滿仇恨，他為了戰勝而接受了嘆霜之劍，卻因此成為巫妖王那蘇的旗下第一名大將，從聖騎士轉變成為令人懼怕的死亡騎士。",
     "abilities": [
       {
+        "type": "active",
         "name": "黑死爪",
         "icon": "../img_UDskill/dk01.gif",
         "description": "死亡的纏繞可以傷害敵方活生生的部隊，或醫療一個友方的不死部隊。",
         "effect": "補充友軍生命，或對敵軍造成一半傷害。",
-        "manaCost": 100,
-        "damage": [
+        "stats": [
           {
-            "level": 1,
+            "label": "法力花費",
             "value": 100
           },
           {
-            "level": 2,
-            "value": 175
+            "label": "傷害",
+            "value": [
+              100,
+              175,
+              250,
+              325
+            ]
           },
           {
-            "level": 3,
-            "value": 250
+            "label": "補充生命",
+            "value": [
+              200,
+              350,
+              500,
+              650
+            ]
           },
           {
-            "level": 4,
-            "value": 325
+            "label": "施放距離",
+            "value": 800
+          },
+          {
+            "label": "技能冷卻時間",
+            "value": 15
           }
-        ],
-        "heal": [
-          {
-            "level": 1,
-            "value": 200
-          },
-          {
-            "level": 2,
-            "value": 350
-          },
-          {
-            "level": 3,
-            "value": 500
-          },
-          {
-            "level": 4,
-            "value": 650
-          }
-        ],
-        "range": 800,
-        "cooldown": 15,
-        "type": "active"
+        ]
       },
       {
+        "type": "active",
         "name": "亡靈威壓",
         "icon": "../img_UDskill/dk02.jpg",
         "description": "死亡騎士釋放出被他所殺的生物所成為的亡靈，侵蝕周遭敵軍的戰意。",
         "effect": "降低周遭敵軍的攻擊力。",
-        "manaCost": 90,
-        "damageReduction": [
+        "stats": [
           {
-            "level": 1,
-            "value": 34
+            "label": "法力花費",
+            "value": 90
           },
           {
-            "level": 2,
-            "value": 42
+            "label": "傷害降低",
+            "value": [
+              34,
+              42,
+              50,
+              58
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 50
+            "label": "範圍",
+            "value": 700
           },
           {
-            "level": 4,
-            "value": 58
+            "label": "持續時間",
+            "value": 15
+          },
+          {
+            "label": "冷卻時間",
+            "value": 12
           }
-        ],
-        "range": 700,
-        "duration": 15,
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "邪黑氣",
         "icon": "../img_UDskill/dk03.gif",
         "description": "死亡騎士的邪惡力量能使週遭的不死生物更加活躍。",
         "effect": "增加附近友方部隊的移動速度與生命再生速率。",
-        "healthRegenPerSecond": [
+        "stats": [
           {
-            "level": 1,
-            "value": 0.5
+            "label": "每秒回復生命",
+            "value": [
+              0.5,
+              1,
+              1.5,
+              2
+            ]
           },
           {
-            "level": 2,
-            "value": 1.0
+            "label": "移動速度增加",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ],
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 1.5
-          },
-          {
-            "level": 4,
-            "value": 2.0
+            "label": "範圍",
+            "value": 900
           }
-        ],
-        "movementSpeedIncrease": [
-          {
-            "level": 1,
-            "value": 5
-          },
-          {
-            "level": 2,
-            "value": 10
-          },
-          {
-            "level": 3,
-            "value": 15
-          },
-          {
-            "level": 4,
-            "value": 20
-          }
-        ],
-        "range": 900,
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "爆衝亡靈",
         "icon": "../img_UDskill/dk04.jpg",
         "description": "殺死死亡騎士時，他體內禁錮的亡靈將全部逃脫出來，衝擊附近的敵人。",
         "effect": "死亡時對週遭敵軍造成傷害。",
-        "damage": [
+        "stats": [
           {
-            "level": 1,
-            "value": 400
+            "label": "傷害",
+            "value": [
+              400,
+              800
+            ]
           },
           {
-            "level": 2,
-            "value": 800
+            "label": "範圍",
+            "value": 250
           }
-        ],
-        "range": 250,
-        "type": "passive"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -4705,83 +4126,106 @@
     "description": "敏捷的英雄。被他盯上的目標，沒有一個能夠存活下來。從他口裡吐出的毒液是最致命的武器。阿姆塔特對西方的居民來說，就是恐懼與死亡的化身。長久以來威脅著邊陲村莊賀坦特，除了自己襲擊村莊之外，也影響了週遭的魔物數量。拜索斯王國曾派出十一次遠征軍，包含一頭白龍在內，但全都鎩羽而歸。在中部的恐懼克拉德美索死後，阿姆塔特更是成為繼傑彭之後第二大的威脅。",
     "abilities": [
       {
+        "type": "active",
         "name": "劇毒之牙",
         "icon": "../img_UDskill/ds01.jpg",
         "description": "吐出一枚塗著劇毒的尖牙，影響目標的行動。",
         "effect": "每固定秒數對目標造成傷害並減緩移動速度。",
-        "manaCost": 75,
-        "damage": 75,
-        "movementSpeedReduction": 50,
-        "damageInterval": 3,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 6
+            "label": "法力花費",
+            "value": 75
           },
           {
-            "level": 2,
-            "value": 9
+            "label": "傷害",
+            "value": 75
           },
           {
-            "level": 3,
+            "label": "移動速度減少",
+            "value": 50,
+            "suffix": "%"
+          },
+          {
+            "label": "傷害間隔",
+            "value": 3
+          },
+          {
+            "label": "持續時間",
+            "value": [
+              6,
+              9,
+              12,
+              15
+            ]
+          },
+          {
+            "label": "施放距離",
+            "value": 450
+          },
+          {
+            "label": "冷卻時間",
             "value": 12
-          },
-          {
-            "level": 4,
-            "value": 15
           }
-        ],
-        "range": 450,
-        "cooldown": 12,
-        "type": "active"
+        ]
       },
       {
+        "type": "passive",
         "name": "戰鬥狂怒",
         "icon": "../img_UDskill/ds02.jpg",
         "description": "被激怒的龍將以更快的速度攻擊敵人。",
         "effect": "增加黑龍的攻擊速度。",
-        "manaCost": 60,
-        "attackSpeedIncrease": 50,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 4
+            "label": "法力花費",
+            "value": 60
           },
           {
-            "level": 2,
-            "value": 6
+            "label": "攻擊速度增加",
+            "value": 50,
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 8
+            "label": "持續時間",
+            "value": [
+              4,
+              6,
+              8,
+              10
+            ]
           },
           {
-            "level": 4,
-            "value": 10
+            "label": "冷卻時間",
+            "value": 20
           }
-        ],
-        "cooldown": 20,
-        "type": "passive"
+        ]
       },
       {
+        "type": "active",
         "name": "龍之恐懼術",
         "icon": "../img_UDskill/ds04.jpg",
         "description": "龍族天生具有的散發殺氣能力，使目標恐懼逃跑。",
         "effect": "使目標不受控制的朝不固定地點逃跑。",
-        "manaCost": 90,
-        "duration": [
+        "stats": [
           {
-            "level": 1,
-            "value": 4
+            "label": "法力花費",
+            "value": 90
           },
           {
-            "level": 2,
-            "value": 8
+            "label": "持續時間",
+            "value": [
+              4,
+              8
+            ]
+          },
+          {
+            "label": "施放距離",
+            "value": 600
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
           }
-        ],
-        "range": 600,
-        "cooldown": 60,
-        "type": "active"
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -4805,7 +4249,7 @@
       },
       "agility": {
         "base": 17,
-        "growth": 1.0
+        "growth": 1
       },
       "intelligence": {
         "base": 26,
@@ -4822,194 +4266,178 @@
     "description": "具有破壞力的英雄。他看似脆弱的身軀卻能發揮出可怕的力量，一次擊殺多數敵人。克爾蘇沙德是達拉朗最偉大的大法師之一。他原先是奇林托爾的成員之一，也是安東尼達斯的摯友。但是，他對於黑暗法術的執迷讓他被同僚驅逐。在巫妖王的召喚之下，克爾蘇沙德穿越北域，將自己的靈魂獻給那蘇。",
     "abilities": [
       {
+        "type": "active",
         "name": "寒冰爆",
-        "description": "引爆一個單位，讓他體內的邪惡力量四散，並補充到友軍身上。對目標及週遭部隊造成傷害並降低移動及攻擊速度。",
-        "manaCost": 120,
-        "damage": {
-          "primary": [
-            {
-              "level": 1,
-              "value": 35
-            },
-            {
-              "level": 2,
-              "value": 55
-            },
-            {
-              "level": 3,
-              "value": 75
-            },
-            {
-              "level": 4,
-              "value": 95
-            }
-          ],
-          "area": [
-            {
-              "level": 1,
-              "value": 80
-            },
-            {
-              "level": 2,
-              "value": 110
-            },
-            {
-              "level": 3,
-              "value": 140
-            },
-            {
-              "level": 4,
-              "value": 170
-            }
-          ]
-        },
-        "effects": {
-          "attackSpeedReduction": "20%",
-          "moveSpeedReduction": "50%",
-          "slowDuration": {
-            "normal": [
-              {
-                "level": 1,
-                "value": 2
-              },
-              {
-                "level": 2,
-                "value": 4
-              },
-              {
-                "level": 3,
-                "value": 6
-              },
-              {
-                "level": 4,
-                "value": 8
-              }
+        "icon": "../img_UDskill/lich01.gif",
+        "description": "引爆一個單位，讓他體內的邪惡力量四散，並補充到友軍身上。",
+        "effect": "對目標及週遭部隊造成傷害並降低移動及攻擊速度。",
+        "stats": [
+          {
+            "label": "法力花費",
+            "value": 120
+          },
+          {
+            "label": "主要目標傷害",
+            "value": [
+              35,
+              55,
+              75,
+              95
+            ]
+          },
+          {
+            "label": "範圍傷害",
+            "value": [
+              80,
+              110,
+              140,
+              170
+            ]
+          },
+          {
+            "label": "傷害範圍",
+            "value": 200
+          },
+          {
+            "label": "降低攻擊速度",
+            "value": 20,
+            "suffix": "%"
+          },
+          {
+            "label": "降低移動速度",
+            "value": 50,
+            "suffix": "%"
+          },
+          {
+            "label": "英雄緩慢時間",
+            "value": [
+              1,
+              1,
+              3,
+              4
             ],
-            "hero": [
-              {
-                "level": 1,
-                "value": 1
-              },
-              {
-                "level": 2,
-                "value": 1
-              },
-              {
-                "level": 3,
-                "value": 3
-              },
-              {
-                "level": 4,
-                "value": 4
-              }
+            "suffix": "秒"
+          },
+          {
+            "label": "一般單位緩慢時間",
+            "value": [
+              2,
+              4,
+              6,
+              8
+            ],
+            "suffix": "秒"
+          },
+          {
+            "label": "施放距離",
+            "value": 600
+          },
+          {
+            "label": "冷卻時間",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "type": "channeling",
+        "name": "寒冰屏障",
+        "icon": "../img_UDskill/lich02.gif",
+        "description": "巫妖被一道寒冰屏障所籠罩。",
+        "effect": "巫妖在一段時間內不會受到任何物理和法術傷害，並加快生命回復速度，但是在這期間也無法攻擊或施法，移動將解除屏障。",
+        "stats": [
+          {
+            "label": "法力花費",
+            "value": 125
+          },
+          {
+            "label": "每秒回復生命",
+            "value": 50
+          },
+          {
+            "label": "持續時間",
+            "value": [
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "type": "passive",
+        "name": "支配冰冷",
+        "icon": "../img_UDskill/lich03.jpg",
+        "description": "降低敵方的冰冷抵抗力，使巫妖的冰系魔法有更大的傷害。",
+        "effect": "增加寒冰爆的攻擊力。",
+        "stats": [
+          {
+            "label": "主要目標傷害增加",
+            "value": [
+              10,
+              20,
+              30,
+              40
+            ]
+          },
+          {
+            "label": "範圍傷害增加",
+            "value": [
+              25,
+              50,
+              75,
+              100
             ]
           }
-        },
-        "range": 600,
-        "areaOfEffect": 200,
-        "cooldown": 16
+        ]
       },
       {
-        "name": "寒冰屏障",
-        "description": "巫妖被一道寒冰屏障所籠罩。巫妖在一段時間內不會受到任何物理和法術傷害，並加快生命回復速度，但是在這期間也無法攻擊或施法，移動將解除屏障。",
-        "manaCost": 125,
-        "effects": {
-          "lifeRegen": 50,
-          "duration": [
-            {
-              "level": 1,
-              "value": 3
-            },
-            {
-              "level": 2,
-              "value": 4
-            },
-            {
-              "level": 3,
-              "value": 5
-            },
-            {
-              "level": 4,
-              "value": 6
-            }
-          ]
-        },
-        "cooldown": 60,
-        "type": "channeling"
-      },
-      {
-        "name": "支配冰冷",
-        "description": "降低敵方的冰冷抵抗力，使巫妖的冰系魔法有更大的傷害。增加寒冰爆的攻擊力。",
-        "effects": {
-          "primaryDamageIncrease": [
-            {
-              "level": 1,
-              "value": 10
-            },
-            {
-              "level": 2,
-              "value": 20
-            },
-            {
-              "level": 3,
-              "value": 30
-            },
-            {
-              "level": 4,
-              "value": 40
-            }
-          ],
-          "areaDamageIncrease": [
-            {
-              "level": 1,
-              "value": 25
-            },
-            {
-              "level": 2,
-              "value": 50
-            },
-            {
-              "level": 3,
-              "value": 75
-            },
-            {
-              "level": 4,
-              "value": 100
-            }
-          ]
-        },
-        "type": "passive"
-      },
-      {
+        "type": "active",
         "name": "急凍領域",
-        "description": "創造出一片極低溫的區域，對敵軍造成凍傷。範圍內每秒造成傷害並減緩移動速度。",
-        "manaCost": 175,
-        "effects": {
-          "damagePerSecond": [
-            {
-              "level": 1,
-              "value": 50
-            },
-            {
-              "level": 2,
-              "value": 100
-            }
-          ],
-          "moveSpeedReduction": [
-            {
-              "level": 1,
-              "value": "40%"
-            },
-            {
-              "level": 2,
-              "value": "80%"
-            }
-          ],
-          "duration": 8
-        },
-        "range": 900,
-        "areaOfEffect": 250,
-        "cooldown": 180
+        "icon": "../img_UDskill/lich04.jpg",
+        "description": "創造出一片極低溫的區域，對敵軍造成凍傷。",
+        "effect": "範圍內每秒造成傷害並減緩移動速度。",
+        "stats": [
+          {
+            "label": "法力花費",
+            "value": 175
+          },
+          {
+            "label": "每秒傷害",
+            "value": [
+              50,
+              100
+            ]
+          },
+          {
+            "label": "移動速度降低",
+            "value": [
+              40,
+              80
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "持續時間",
+            "value": 8
+          },
+          {
+            "label": "施放距離",
+            "value": 900
+          },
+          {
+            "label": "作用範圍",
+            "value": 250
+          },
+          {
+            "label": "冷卻時間",
+            "value": 180
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -5054,196 +4482,163 @@
       {
         "name": "感染",
         "description": "被狼人咬中的單位將無法施展魔法，並且在死後成為狼人。被此技能攻擊的目標死後將成為狼人。",
-        "manaCost": 40,
-        "effects": {
-          "duration": 40,
-          "spawnUnit": {
-            "health": [
-              {
-                "level": 1,
-                "value": 160
-              },
-              {
-                "level": 2,
-                "value": 250
-              },
-              {
-                "level": 3,
-                "value": 350
-              },
-              {
-                "level": 4,
-                "value": 440
-              }
-            ],
-            "damage": [
-              {
-                "level": 1,
-                "value": "10-11"
-              },
-              {
-                "level": 2,
-                "value": "17-20"
-              },
-              {
-                "level": 3,
-                "value": "24-28"
-              },
-              {
-                "level": 4,
-                "value": "31-34"
-              }
-            ],
-            "armor": [
-              {
-                "level": 1,
-                "value": 0
-              },
-              {
-                "level": 2,
-                "value": 1
-              },
-              {
-                "level": 3,
-                "value": 2
-              },
-              {
-                "level": 4,
-                "value": 3
-              }
-            ],
-            "moveSpeed": 300
+        "stats": [
+          {
+            "label": "減益持續時間",
+            "value": 40,
+            "suffix": "秒"
+          },
+          {
+            "label": "狼人生命值",
+            "value": [
+              160,
+              250,
+              350,
+              440
+            ]
+          },
+          {
+            "label": "狼人最低攻擊力",
+            "value": [
+              10,
+              17,
+              24,
+              31
+            ]
+          },
+          {
+            "label": "狼人最高攻擊力",
+            "value": [
+              11,
+              20,
+              28,
+              34
+            ]
+          },
+          {
+            "label": "狼人護甲",
+            "value": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "label": "狼人最低攻擊力",
+            "value": [
+              10,
+              17,
+              24,
+              31
+            ]
+          },
+          {
+            "label": "狼人最高攻擊力",
+            "value": [
+              11,
+              20,
+              28,
+              34
+            ]
+          },
+          {
+            "label": "狼人護甲",
+            "value": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "label": "狼人移動速度",
+            "value": 300
+          },
+          {
+            "label": "法力消耗",
+            "value": 40
+          },
+          {
+            "label": "冷卻時間",
+            "value": 8
           }
-        },
-        "cooldown": 8,
-        "restrictions": [
-          "持續效果",
-          "無法指定英雄"
         ]
       },
       {
+        "type": "passive",
         "name": "狂犬病",
         "description": "犬齒中的毒素會讓敵人受到疾病的感染。被擊中的敵人將每秒受到傷害並降低移動速度。",
-        "effects": {
-          "damagePerSecond": [
-            {
-              "level": 1,
-              "value": 4
-            },
-            {
-              "level": 2,
-              "value": 8
-            },
-            {
-              "level": 3,
-              "value": 12
-            },
-            {
-              "level": 4,
-              "value": 16
-            }
-          ],
-          "moveSpeedReduction": [
-            {
-              "level": 1,
-              "value": "7%"
-            },
-            {
-              "level": 2,
-              "value": "14%"
-            },
-            {
-              "level": 3,
-              "value": "21%"
-            },
-            {
-              "level": 4,
-              "value": "28%"
-            }
-          ],
-          "duration": {
-            "normal": [
-              {
-                "level": 1,
-                "value": 5
-              },
-              {
-                "level": 2,
-                "value": 5
-              },
-              {
-                "level": 3,
-                "value": 5
-              },
-              {
-                "level": 4,
-                "value": 5
-              }
-            ],
-            "hero": [
-              {
-                "level": 1,
-                "value": 1
-              },
-              {
-                "level": 2,
-                "value": 1
-              },
-              {
-                "level": 3,
-                "value": 2
-              },
-              {
-                "level": 4,
-                "value": 1
-              }
+        "stats": [
+          {
+            "label": "每秒傷害",
+            "value": [
+              4,
+              8,
+              12,
+              16
             ]
+          },
+          {
+            "label": "移動速度降低",
+            "value": [
+              7,
+              14,
+              21,
+              28
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "英雄持續時間",
+            "value": [
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "label": "一般單位持續時間",
+            "value": 5
           }
-        },
-        "type": "passive"
+        ]
       },
       {
+        "type": "passive",
         "name": "狼群領袖",
         "description": "狼人散發出的領袖氣質，使得他每一次攻擊都能造成更大傷害。增加攻擊力。",
-        "effects": {
-          "attackDamageIncrease": [
-            {
-              "level": 1,
-              "value": "9%"
-            },
-            {
-              "level": 2,
-              "value": "16%"
-            },
-            {
-              "level": 3,
-              "value": "23%"
-            },
-            {
-              "level": 4,
-              "value": "30%"
-            }
-          ]
-        },
-        "type": "passive"
+        "stats": [
+          {
+            "label": "增加攻擊力",
+            "value": [
+              9,
+              16,
+              23,
+              30
+            ],
+            "suffix": "%"
+          }
+        ]
       },
       {
+        "type": "transformation",
         "name": "狼化",
         "description": "狼人將成為完全的狼，失去理智而無法施展技能，但也具有更加強大的肉搏力量。轉化成巨狼，降低攻擊間隔，但也無法施展技能。",
-        "effects": {
-          "attackInterval": [
-            {
-              "level": 1,
-              "value": "1.4秒"
-            },
-            {
-              "level": 2,
-              "value": "1.0秒"
-            }
-          ]
-        },
-        "cooldown": 60,
-        "type": "transformation"
+        "stats": [
+          {
+            "label": "變身後攻擊間隔時間",
+            "value": [
+              1.4,
+              1
+            ],
+            "suffix": "秒"
+          },
+          {
+            "label": "冷卻時間",
+            "value": 60
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -5286,112 +4681,96 @@
       {
         "name": "火彈",
         "description": "召喚一枚火彈，毀滅所有阻擋它的物體。發射一枚火彈，飛行一段距離後爆炸。若飛行途中撞擊其它物體，則直接爆炸。",
-        "manaCost": 90,
-        "effects": {
-          "explosionDamage": [
-            {
-              "level": 1,
-              "value": 100
-            },
-            {
-              "level": 2,
-              "value": 133
-            },
-            {
-              "level": 3,
-              "value": 167
-            },
-            {
-              "level": 4,
-              "value": 200
-            }
-          ],
-          "flightDistance": 900
-        },
-        "range": 450,
-        "cooldown": 5
-      },
-      {
-        "name": "火焰狂熱",
-        "description": "火彈變得更具有毀滅性。增加火彈的燃燒軌跡範圍。",
-        "effects": {
-          "burningTrailRange": [
-            {
-              "level": 1,
-              "value": 80
-            },
-            {
-              "level": 2,
-              "value": 100
-            },
-            {
-              "level": 3,
-              "value": 120
-            },
-            {
-              "level": 4,
-              "value": 140
-            }
-          ]
-        },
-        "type": "passive"
-      },
-      {
-        "name": "火焰化身",
-        "description": "踩踏在火焰上的火焰魔術師感到更加自在。火彈的射線上出現燃燒軌跡，靠近燃燒軌跡的紅色魔術師將隱形及增加攻擊速度與移動速度。",
-        "effects": {
-          "attackSpeedIncrease": [
-            {
-              "level": 1,
-              "value": "18%"
-            },
-            {
-              "level": 2,
-              "value": "27%"
-            },
-            {
-              "level": 3,
-              "value": "36%"
-            },
-            {
-              "level": 4,
-              "value": "45%"
-            }
-          ],
-          "moveSpeedIncrease": "20%",
-          "invisibility": true
-        },
-        "type": "passive"
-      },
-      {
-        "name": "衝擊",
-        "description": "火彈爆炸時的猛烈震波，使周遭的敵人暫時失去戰鬥能力。火彈爆炸時使周遭敵人暈眩。",
-        "effects": {
-          "stunDuration": {
-            "normal": [
-              {
-                "level": 1,
-                "value": 3
-              },
-              {
-                "level": 2,
-                "value": 4
-              }
-            ],
-            "hero": [
-              {
-                "level": 1,
-                "value": 0.5
-              },
-              {
-                "level": 2,
-                "value": 1
-              }
+        "stats": [
+          {
+            "label": "爆炸傷害",
+            "value": [
+              100,
+              133,
+              167,
+              200
             ]
           },
-          "range": 200
-        },
-        "type": "passive"
+          {
+            "label": "火彈飛行距離",
+            "value": 900
+          },
+          {
+            "label": "法力消耗",
+            "value": 90
+          },
+          {
+            "label": "冷卻時間",
+            "value": 5
+          },
+          {
+            "label": "施展射程",
+            "value": 450
+          }
+        ]
+      },
+      {
+        "type": "passive",
+        "name": "火焰狂熱",
+        "description": "火彈變得更具有毀滅性。增加火彈的燃燒軌跡範圍。",
+        "stats": [
+          {
+            "label": "燃燒軌跡範圍",
+            "value": [
+              80,
+              100,
+              120,
+              140
+            ]
+          }
+        ]
+      },
+      {
+        "type": "passive",
+        "name": "火焰化身",
+        "description": "踩踏在火焰上的火焰魔術師感到更加自在。火彈的射線上出現燃燒軌跡，靠近燃燒軌跡的紅色魔術師將隱形及增加攻擊速度與移動速度。",
+        "stats": [
+          {
+            "label": "攻擊速度增加",
+            "value": [
+              18,
+              27,
+              36,
+              45
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "移動速度增加",
+            "value": 20,
+            "suffix": "%"
+          }
+        ]
+      },
+      {
+        "type": "passive",
+        "name": "衝擊",
+        "description": "火彈爆炸時的猛烈震波，使周遭的敵人暫時失去戰鬥能力。火彈爆炸時使周遭敵人暈眩。",
+        "stats": [
+          {
+            "label": "暈眩範圍",
+            "value": 200
+          },
+          {
+            "label": "英雄暈眩時間",
+            "value": [
+              0.5,
+              1
+            ]
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": [
+              3,
+              4
+            ]
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -5434,153 +4813,130 @@
       {
         "name": "跳劈",
         "description": "高高跳起，藉著重力增強揮刀的力道，造成毀滅性打擊。攻擊敵人並造成暈眩。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 75
+            "label": "法力花費",
+            "value": [
+              75,
+              80,
+              85,
+              90
+            ]
           },
           {
-            "level": 2,
-            "value": 80
+            "label": "傷害",
+            "value": [
+              50,
+              90,
+              130,
+              170
+            ]
           },
           {
-            "level": 3,
-            "value": 85
+            "label": "英雄暈眩時間",
+            "value": 2
           },
           {
-            "level": 4,
-            "value": 90
+            "label": "一般單位暈眩時間",
+            "value": 4
+          },
+          {
+            "label": "冷卻時間",
+            "value": 9
           }
-        ],
-        "effects": {
-          "damage": [
-            {
-              "level": 1,
-              "value": 50
-            },
-            {
-              "level": 2,
-              "value": 90
-            },
-            {
-              "level": 3,
-              "value": 130
-            },
-            {
-              "level": 4,
-              "value": 170
-            }
-          ],
-          "stunDuration": {
-            "normal": 4,
-            "hero": 2
-          }
-        },
-        "cooldown": 9
+        ]
       },
       {
+        "type": "buff",
         "name": "嗜血慾望",
         "description": "從任何一個目標身上奪取血肉，對血的慾望能使獸人更加狂暴，更具有破壞力。對目標造成傷害，並增加獸人的攻擊力。",
-        "manaCost": 60,
-        "effects": {
-          "damage": 50,
-          "attackIncrease": [
-            {
-              "level": 1,
-              "value": "20%"
-            },
-            {
-              "level": 2,
-              "value": "30%"
-            },
-            {
-              "level": 3,
-              "value": "40%"
-            },
-            {
-              "level": 4,
-              "value": "50%"
-            }
-          ],
-          "duration": 10
-        },
-        "range": 100,
-        "cooldown": 30,
-        "type": "buff"
+        "stats": [
+          {
+            "label": "法力花費",
+            "value": 60
+          },
+          {
+            "label": "傷害",
+            "value": 50
+          },
+          {
+            "label": "攻擊力增加",
+            "value": [
+              20,
+              30,
+              40,
+              50
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "持續時間",
+            "value": 10
+          },
+          {
+            "label": "施放距離",
+            "value": 100
+          },
+          {
+            "label": "冷卻時間",
+            "value": 30
+          }
+        ]
       },
       {
+        "type": "passive",
         "name": "破甲",
         "description": "波斯獸人強大的力量將擊破目標的盔甲。被獸人擊中的敵人將降低防禦一段時間。",
-        "effects": {
-          "armorReduction": [
-            {
-              "level": 1,
-              "value": 3
-            },
-            {
-              "level": 2,
-              "value": 5
-            },
-            {
-              "level": 3,
-              "value": 7
-            },
-            {
-              "level": 4,
-              "value": 9
-            }
-          ]
-        },
-        "type": "passive"
+        "stats": [
+          {
+            "label": "降低裝甲",
+            "value": [
+              3,
+              5,
+              7,
+              9
+            ]
+          }
+        ]
       },
       {
+        "type": "transformation",
         "name": "血性狂暴",
         "description": "對血的慾望提升到極限，獸人將會不顧一切消滅敵人，只為了享受切割血肉的快感。一段時間之內增加攻擊力、防禦力、生命值並魔法免疫。",
-        "effects": {
-          "attackIncrease": [
-            {
-              "level": 1,
-              "value": 25
-            },
-            {
-              "level": 2,
-              "value": 80
-            }
-          ],
-          "armorIncrease": [
-            {
-              "level": 1,
-              "value": 5
-            },
-            {
-              "level": 2,
-              "value": 10
-            }
-          ],
-          "healthIncrease": [
-            {
-              "level": 1,
-              "value": 100
-            },
-            {
-              "level": 2,
-              "value": 200
-            }
-          ],
-          "duration": [
-            {
-              "level": 1,
-              "value": 15
-            },
-            {
-              "level": 2,
-              "value": 15
-            }
-          ],
-          "magicImmunity": true
-        },
-        "cooldown": 180,
-        "type": "transformation"
+        "stats": [
+          {
+            "label": "攻擊力增加",
+            "value": [
+              25,
+              80
+            ]
+          },
+          {
+            "label": "裝甲增加",
+            "value": [
+              5,
+              10
+            ]
+          },
+          {
+            "label": "生命增加",
+            "value": [
+              100,
+              200
+            ]
+          },
+          {
+            "label": "持續時間",
+            "value": [
+              15,
+              15
+            ]
+          },
+          {
+            "label": "技能冷卻時間",
+            "value": 180
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -5623,122 +4979,116 @@
       {
         "name": "返魂蝶",
         "description": "具有操縱死亡能力的幽靈，能夠輕易的讓死者重生。喚醒周遭的屍體為幽靈而戰。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
+            "label": "重生數量",
+            "value": [
+              4,
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "label": "持續時間",
+            "value": 40,
+            "suffix": "秒"
+          },
+          {
+            "label": "法力消耗",
+            "value": [
+              100,
+              125,
+              150,
+              175
+            ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "type": "channeling",
+        "name": "幽影之夢",
+        "description": "吸收周遭死者殘存的精力，增加自身的力量，同時對周遭敵人造成傷害。吞食屍兵回復生命並增加生命上限，同時對周遭敵人造成傷害。",
+        "stats": [
+          {
+            "label": "每句屍兵回復生命",
+            "value": [
+              15,
+              20,
+              25,
+              30
+            ]
+          },
+          {
+            "label": "每句屍兵增加生命上限",
+            "value": 6
+          },
+          {
+            "label": "傷害",
             "value": 100
           },
           {
-            "level": 2,
-            "value": 125
+            "label": "傷害範圍",
+            "value": 400
           },
           {
-            "level": 3,
-            "value": 150
+            "label": "法力消耗",
+            "value": 50
           },
           {
-            "level": 4,
-            "value": 175
+            "label": "冷卻時間",
+            "value": 30
           }
-        ],
-        "effects": {
-          "resurrectCount": [
-            {
-              "level": 1,
-              "value": 4
-            },
-            {
-              "level": 2,
-              "value": 6
-            },
-            {
-              "level": 3,
-              "value": 8
-            },
-            {
-              "level": 4,
-              "value": 10
-            }
-          ],
-          "duration": 40
-        },
-        "cooldown": 40
+        ]
       },
       {
-        "name": "幽影之夢",
-        "description": "吸收周遭死者殘存的精力，增加自身的力量，同時對周遭敵人造成傷害。吞食屍兵回復生命並增加生命上限，同時對周遭敵人造成傷害。",
-        "manaCost": 50,
-        "effects": {
-          "healthPerCorpse": [
-            {
-              "level": 1,
-              "value": 15
-            },
-            {
-              "level": 2,
-              "value": 20
-            },
-            {
-              "level": 3,
-              "value": 25
-            },
-            {
-              "level": 4,
-              "value": 30
-            }
-          ],
-          "maxHealthPerCorpse": 6,
-          "damage": 100,
-          "areaOfEffect": 400
-        },
-        "cooldown": 30,
-        "type": "channeling"
-      },
-      {
+        "type": "passive",
         "name": "華胥的永眠",
         "description": "打開通往冥界的門，使幽靈湧入。悠悠可周遭有單位死亡時，回復生命。",
-        "effects": {
-          "healthPerDeath": 25,
-          "range": [
-            {
-              "level": 1,
-              "value": 500
-            },
-            {
-              "level": 2,
-              "value": 700
-            },
-            {
-              "level": 3,
-              "value": 900
-            },
-            {
-              "level": 4,
-              "value": 1100
-            }
-          ]
-        },
-        "type": "passive"
+        "stats": [
+          {
+            "label": "回復生命",
+            "value": 25
+          },
+          {
+            "label": "判定範圍",
+            "value": [
+              500,
+              700,
+              900,
+              1100
+            ]
+          }
+        ]
       },
       {
         "name": "優雅綻放的墨染之櫻",
         "description": "充滿妖力的櫻花「西行妖」具有吸收他人的養分作為己用的能力。對目標造成傷害，並回復傷害數值兩倍的生命。",
-        "manaCost": 125,
-        "effects": {
-          "damage": [
-            {
-              "level": 1,
-              "value": 200
-            },
-            {
-              "level": 2,
-              "value": 400
-            }
-          ],
-          "lifeSteal": "200%"
-        },
-        "range": 300,
-        "cooldown": 30
+        "stats": [
+          {
+            "label": "傷害",
+            "value": [
+              200,
+              400
+            ]
+          },
+          {
+            "label": "法力消耗",
+            "value": 125
+          },
+          {
+            "label": "冷卻時間",
+            "value": 30
+          },
+          {
+            "label": "射程",
+            "value": 300
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -5781,209 +5131,134 @@
       {
         "name": "暗影潛行",
         "description": "影行客將自我的身形隱藏於陰影之中，無所不在的陰影將可以使他通行無阻。讓影行客隱形並增加移動速度，隱形狀態下的第一次攻擊將威力加倍，但攻擊或施法後隱形將解除。",
-        "manaCost": 75,
-        "effects": {
-          "invisibilityDuration": [
-            {
-              "level": 1,
-              "value": 15
-            },
-            {
-              "level": 2,
-              "value": 20
-            },
-            {
-              "level": 3,
-              "value": 25
-            },
-            {
-              "level": 4,
-              "value": 30
-            }
-          ],
-          "bonusDamage": [
-            {
-              "level": 1,
-              "value": 40
-            },
-            {
-              "level": 2,
-              "value": 60
-            },
-            {
-              "level": 3,
-              "value": 80
-            },
-            {
-              "level": 4,
-              "value": 100
-            }
-          ],
-          "moveSpeedIncrease": [
-            {
-              "level": 1,
-              "value": "20%"
-            },
-            {
-              "level": 2,
-              "value": "30%"
-            },
-            {
-              "level": 3,
-              "value": "40%"
-            },
-            {
-              "level": 4,
-              "value": "50%"
-            }
-          ]
-        },
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 15
+            "label": "隱形持續時間",
+            "value": [
+              15,
+              20,
+              25,
+              30
+            ]
           },
           {
-            "level": 2,
-            "value": 20
+            "label": "背刺傷害",
+            "value": [
+              40,
+              60,
+              80,
+              100
+            ]
           },
           {
-            "level": 3,
-            "value": 25
+            "label": "移動速度增加",
+            "value": [
+              20,
+              30,
+              40,
+              50
+            ],
+            "suffix": "%"
           },
           {
-            "level": 4,
-            "value": 30
+            "label": "法力消耗",
+            "value": 75
+          },
+          {
+            "label": "冷卻時間",
+            "value": [
+              15,
+              20,
+              25,
+              30
+            ]
           }
         ]
       },
       {
         "name": "影跡擊",
         "description": "打出一個負力場的能源彈，可以燒掉對方部隊的法力點數，並造成同數值的傷害。減少目標的法力，並減少相同的生命。",
-        "manaCost": 50,
-        "effects": {
-          "manaReduction": [
-            {
-              "level": 1,
-              "value": 50
-            },
-            {
-              "level": 2,
-              "value": 100
-            },
-            {
-              "level": 3,
-              "value": 150
-            },
-            {
-              "level": 4,
-              "value": 200
-            }
-          ]
-        },
-        "range": 300,
-        "cooldown": 18
-      },
-      {
-        "name": "暗影之怒",
-        "description": "夜色與陰影將賜與影行客更大的力量。攻擊時有一定機率擊暈目標並造成額外傷害。",
-        "effects": {
-          "bonusDamage": [
-            {
-              "level": 1,
-              "value": 50
-            },
-            {
-              "level": 2,
-              "value": 50
-            },
-            {
-              "level": 3,
-              "value": 50
-            },
-            {
-              "level": 4,
-              "value": 50
-            }
-          ],
-          "stunDuration": {
-            "normal": [
-              {
-                "level": 1,
-                "value": 2
-              },
-              {
-                "level": 2,
-                "value": 2
-              },
-              {
-                "level": 3,
-                "value": 2
-              },
-              {
-                "level": 4,
-                "value": 2
-              }
-            ],
-            "hero": [
-              {
-                "level": 1,
-                "value": 1
-              },
-              {
-                "level": 2,
-                "value": 1
-              },
-              {
-                "level": 3,
-                "value": 1
-              },
-              {
-                "level": 4,
-                "value": 1
-              }
+        "stats": [
+          {
+            "label": "燃燒法力",
+            "value": [
+              50,
+              100,
+              150,
+              200
             ]
           },
-          "triggerChance": [
-            {
-              "level": 1,
-              "value": "12%"
-            },
-            {
-              "level": 2,
-              "value": "15%"
-            },
-            {
-              "level": 3,
-              "value": "18%"
-            },
-            {
-              "level": 4,
-              "value": "21%"
-            }
-          ]
-        },
-        "type": "passive"
+          {
+            "label": "法力消耗",
+            "value": 50
+          },
+          {
+            "label": "冷卻時間",
+            "value": 18
+          },
+          {
+            "label": "射程",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "type": "passive",
+        "name": "暗影之怒",
+        "description": "夜色與陰影將賜與影行客更大的力量。攻擊時有一定機率擊暈目標並造成額外傷害。",
+        "stats": [
+          {
+            "label": "傷害",
+            "value": 50
+          },
+          {
+            "label": "英雄暈眩時間",
+            "value": 1
+          },
+          {
+            "label": "一般單位暈眩時間",
+            "value": 2
+          },
+          {
+            "label": "觸發機率",
+            "value": [
+              12,
+              15,
+              18,
+              21
+            ],
+            "suffix": "%"
+          }
+        ]
       },
       {
         "name": "黑色安息日",
         "description": "任何擁有影子的生物將受到傷害，並成為影行客的路徑。向目標發射一枚影之箭，擊中目標造成傷害，同一瞬間影行客會在目標的身邊現身。影之箭路徑上的敵人會受到傷害。",
-        "manaCost": 140,
-        "effects": {
-          "damage": [
-            {
-              "level": 1,
-              "value": 150
-            },
-            {
-              "level": 2,
-              "value": 250
-            }
-          ],
-          "damageDistance": 800
-        },
-        "range": 800,
-        "cooldown": 120
+        "stats": [
+          {
+            "label": "傷害",
+            "value": [
+              150,
+              250
+            ]
+          },
+          {
+            "label": "傷害距離",
+            "value": 800
+          },
+          {
+            "label": "法力消耗",
+            "value": 140
+          },
+          {
+            "label": "冷卻時間",
+            "value": 120
+          },
+          {
+            "label": "射程",
+            "value": 800
+          }
+        ]
       }
     ],
     "author": "DDKnight",
@@ -6026,182 +5301,109 @@
       {
         "name": "無限的力量",
         "description": "大喊著「Unlimited Power!!」並發出強烈的黑暗原力閃電。對目標造成傷害並淨化。",
-        "manaCost": 75,
-        "effects": {
-          "damage": [
-            {
-              "level": 1,
-              "value": 85
-            },
-            {
-              "level": 2,
-              "value": 155
-            },
-            {
-              "level": 3,
-              "value": 255
-            },
-            {
-              "level": 4,
-              "value": 295
-            }
-          ],
-          "purifyDuration": {
-            "normal": [
-              {
-                "level": 1,
-                "value": 2
-              },
-              {
-                "level": 2,
-                "value": 2
-              },
-              {
-                "level": 3,
-                "value": 2
-              },
-              {
-                "level": 4,
-                "value": 2
-              }
-            ],
-            "hero": [
-              {
-                "level": 1,
-                "value": 1
-              },
-              {
-                "level": 2,
-                "value": 1
-              },
-              {
-                "level": 3,
-                "value": 1
-              },
-              {
-                "level": 4,
-                "value": 1
-              }
-            ]
+        "stats": [
+          {
+            "label": "法力消耗",
+            "value": 75
           },
-          "summonDamage": 400
-        },
-        "range": 600,
-        "cooldown": 10
+          {
+            "label": "冷卻時間",
+            "value": 10
+          },
+          {
+            "label": "射程",
+            "value": 600
+          }
+        ]
       },
       {
+        "type": "channeling",
         "name": "原力鎖喉",
         "description": "西斯側的絕地武士必修招式，以原力攻擊目標的喉嚨。使目標無法移動及攻擊並慢慢損失生命。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 90
-          },
-          {
-            "level": 2,
-            "value": 100
-          },
-          {
-            "level": 3,
-            "value": 110
-          },
-          {
-            "level": 4,
-            "value": 120
-          }
-        ],
-        "effects": {
-          "damagePerSecond": 30,
-          "disableDuration": {
-            "normal": [
+            "label": "法力消耗",
+            "value": [
               {
                 "level": 1,
-                "value": 8
+                "value": 90
               },
               {
                 "level": 2,
-                "value": 16
+                "value": 100
               },
               {
                 "level": 3,
-                "value": 24
+                "value": 110
               },
               {
                 "level": 4,
-                "value": 32
-              }
-            ],
-            "hero": [
-              {
-                "level": 1,
-                "value": 2
-              },
-              {
-                "level": 2,
-                "value": 3
-              },
-              {
-                "level": 3,
-                "value": 5
-              },
-              {
-                "level": 4,
-                "value": 6
+                "value": 120
               }
             ]
+          },
+          {
+            "label": "冷卻時間",
+            "value": 30
+          },
+          {
+            "label": "射程",
+            "value": 550
           }
-        },
-        "range": 550,
-        "cooldown": 30,
-        "type": "channeling"
+        ]
       },
       {
         "name": "第六十六號密令",
         "description": "第六十六號密令啟動，所有伏兵行動。使目標週遭的敵軍攻擊目標。",
-        "manaCost": [
+        "stats": [
           {
-            "level": 1,
-            "value": 110
+            "label": "法力消耗",
+            "value": [
+              {
+                "level": 1,
+                "value": 110
+              },
+              {
+                "level": 2,
+                "value": 130
+              },
+              {
+                "level": 3,
+                "value": 150
+              },
+              {
+                "level": 4,
+                "value": 170
+              }
+            ]
           },
           {
-            "level": 2,
-            "value": 130
+            "label": "冷卻時間",
+            "value": 40
           },
           {
-            "level": 3,
-            "value": 150
-          },
-          {
-            "level": 4,
-            "value": 170
+            "label": "射程",
+            "value": 500
           }
-        ],
-        "effects": {
-          "controlLevel": [
-            "雜兵",
-            "LV1傭兵",
-            "LV2傭兵",
-            "LV3傭兵"
-          ],
-          "areaOfEffect": 400
-        },
-        "range": 500,
-        "cooldown": 40
+        ]
       },
       {
         "name": "黑暗原力之誘",
         "description": "以黑暗原力分裂對象的黑暗面，產生一個對西斯絕對忠實的奴僕。創造一個具有本尊一部分攻擊力的分身。",
-        "manaCost": 200,
-        "effects": {
-          "cloneAttackPower": [
-            "50%",
-            "100%"
-          ],
-          "duration": 60,
-          "vulnerabilityMultiplier": "200%"
-        },
-        "range": 500,
-        "cooldown": 180
+        "stats": [
+          {
+            "label": "法力消耗",
+            "value": 200
+          },
+          {
+            "label": "冷卻時間",
+            "value": 180
+          },
+          {
+            "label": "射程",
+            "value": 500
+          }
+        ]
       }
     ],
     "author": "asukachikaru",
@@ -6244,178 +5446,148 @@
       {
         "name": "祖靈守護",
         "description": "召喚祖靈現形，守護友軍。創造一個結界，在結界周遭的非英雄友軍將獲得無敵裝甲。",
-        "manaCost": 50,
-        "effects": {
-          "areaOfEffect": 300,
-          "duration": 8
-        },
-        "range": 500,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 34
+            "label": "範圍",
+            "value": 300
           },
           {
-            "level": 2,
-            "value": 28
+            "label": "持續時間",
+            "value": 8,
+            "suffix": "秒"
           },
           {
-            "level": 3,
-            "value": 22
+            "label": "法力消耗",
+            "value": 50
           },
           {
-            "level": 4,
-            "value": 16
+            "label": "冷卻時間",
+            "value": [
+              34,
+              28,
+              22,
+              16
+            ]
+          },
+          {
+            "label": "射程",
+            "value": 500
           }
         ]
       },
       {
+        "type": "active",
         "name": "隱形術",
         "description": "將同伴的身形置於幽界之中，讓他的生命得以保存。讓範圍內的傭兵部隊隱形，並與靈行者同時增加移動速度，如果部隊展開攻擊，使用能力或是施展法術，就會為人所見。",
-        "manaCost": 50,
-        "effects": {
-          "duration": [
-            {
-              "level": 1,
-              "value": 16
-            },
-            {
-              "level": 2,
-              "value": 24
-            },
-            {
-              "level": 3,
-              "value": 32
-            },
-            {
-              "level": 4,
-              "value": 40
-            }
-          ],
-          "moveSpeedIncrease": "25%",
-          "areaOfEffect": 300
-        },
-        "range": 500,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 20
+            "label": "持續時間",
+            "value": [
+              16,
+              24,
+              32,
+              40
+            ],
+            "suffix": "秒"
           },
           {
-            "level": 2,
-            "value": 18
+            "label": "移動速度增加",
+            "value": 25,
+            "suffix": "%"
           },
           {
-            "level": 3,
-            "value": 16
+            "label": "法力消耗",
+            "value": 50
           },
           {
-            "level": 4,
-            "value": 14
+            "label": "冷卻時間",
+            "value": [
+              20,
+              18,
+              16,
+              14
+            ]
+          },
+          {
+            "label": "射程",
+            "value": 500
           }
-        ],
-        "type": "area_stealth"
+        ]
       },
       {
+        "type": "passive",
         "name": "狂野魂魄",
         "description": "巴特克能激起同伴最瘋狂的意志，使他們變得更為嗜血。增加附近友軍的攻擊速度，並使近戰單位攻擊時獲得攻擊力一部分的生命值。",
-        "effects": {
-          "attackSpeedIncrease": [
-            {
-              "level": 1,
-              "value": "5%"
-            },
-            {
-              "level": 2,
-              "value": "10%"
-            },
-            {
-              "level": 3,
-              "value": "15%"
-            },
-            {
-              "level": 4,
-              "value": "20%"
-            }
-          ],
-          "lifeStealMelee": [
-            {
-              "level": 1,
-              "value": "10%"
-            },
-            {
-              "level": 2,
-              "value": "20%"
-            },
-            {
-              "level": 3,
-              "value": "30%"
-            },
-            {
-              "level": 4,
-              "value": "40%"
-            }
-          ],
-          "auraRange": 900
-        },
-        "type": "aura"
+        "stats": [
+          {
+            "label": "攻擊速度增加",
+            "value": [
+              5,
+              10,
+              15,
+              20
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "近戰吸血倍率",
+            "value": [
+              10,
+              20,
+              30,
+              40
+            ],
+            "suffix": "%"
+          },
+          {
+            "label": "範圍",
+            "value": 900
+          }
+        ]
       },
       {
         "name": "戰蹄呼喚",
         "description": "巴特克將會一名同伴的靈魂中最狂暴的部份牽引出來，將其轉變為戰場上最駭人的野獸：戰牛一族。將一個友方非英雄單位轉變為戰牛族。",
-        "manaCost": 150,
-        "effects": {
-          "transformUnit": {
-            "health": [
-              {
-                "level": 1,
-                "value": 600
-              },
-              {
-                "level": 2,
-                "value": 900
-              }
-            ],
-            "damage": [
-              {
-                "level": 1,
-                "value": "30-36"
-              },
-              {
-                "level": 2,
-                "value": "46-52"
-              }
-            ],
-            "armor": [
-              {
-                "level": 1,
-                "value": 5
-              },
-              {
-                "level": 2,
-                "value": 7
-              }
-            ],
-            "abilities": [
-              "粉碎波",
-              "硬化外皮"
-            ],
-            "attackRange": 100,
-            "moveSpeed": 270,
-            "shockwaveDamage": 60,
-            "shockwaveChance": "20%",
-            "shockwaveRange": 350
-          }
-        },
-        "range": 500,
-        "cooldown": [
+        "stats": [
           {
-            "level": 1,
-            "value": 35
+            "label": "戰牛生命值",
+            "value": [
+              600,
+              900
+            ]
           },
           {
-            "level": 2,
-            "value": 20
+            "label": "戰牛最低攻擊力",
+            "value": [
+              30,
+              46
+            ]
+          },
+          {
+            "label": "戰牛最高攻擊力",
+            "value": [
+              36,
+              52
+            ]
+          },
+          {
+            "label": "戰牛移動速度",
+            "value": 270
+          },
+          {
+            "label": "法力消耗",
+            "value": 150
+          },
+          {
+            "label": "冷卻時間",
+            "value": [
+              35,
+              20
+            ]
+          },
+          {
+            "label": "射程",
+            "value": 500
           }
         ]
       }
