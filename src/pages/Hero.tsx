@@ -1,4 +1,5 @@
 import { createSignal, For, Match, Switch } from 'solid-js';
+import { HeroList } from '../components/HeroList';
 
 const dummy = {
   name: {
@@ -173,6 +174,7 @@ export const HeroPage = () => {
           )}
         </For>
       </Switch>
+      <HeroList />
     </div>
   );
 };

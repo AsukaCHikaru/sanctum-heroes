@@ -7,8 +7,8 @@ export type HeroData = {
     zh: string;
     en: string;
   };
-  faction: string;
-  type: string;
+  faction: 'alliance' | 'undead';
+  type: 'str' | 'agi' | 'int';
   stats: {
     strength: {
       base: number;
@@ -32,7 +32,7 @@ export type HeroData = {
   };
   description: string;
   abilities: {
-    type: string;
+    type: 'active' | 'passive';
     name: string;
     icon: string;
     description: string;
@@ -47,7 +47,7 @@ export type HeroData = {
   lastUpdated: string;
 };
 
-export const Hero: HeroData[] = [
+export const HERO: HeroData[] = [
   {
     name: {
       zh: '御火者',
@@ -2487,7 +2487,7 @@ export const Hero: HeroData[] = [
       zh: '納加茲',
       en: 'Nagaz',
     },
-    faction: 'scourge',
+    faction: 'undead',
     type: 'int',
     stats: {
       strength: {
@@ -3687,7 +3687,7 @@ export const Hero: HeroData[] = [
         ],
       },
       {
-        type: 'channeling',
+        type: 'active',
         name: '寒冰屏障',
         icon: '../img_UDskill/lich02.gif',
         description: '巫妖被一道寒冰屏障所籠罩。',
@@ -4246,7 +4246,7 @@ export const Hero: HeroData[] = [
         ],
       },
       {
-        type: 'channeling',
+        type: 'active',
         name: '幽影之夢',
         icon: '',
         description:
