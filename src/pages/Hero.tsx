@@ -19,13 +19,17 @@ export const HeroPage = () => {
       <Show when={hero()} fallback={<div>Hero not found</div>}>
         {(heroData) => (
           <>
-            <h1 class="">Hero Page</h1>
-            <h2 class="">
-              {heroData().name.zh} {heroData().name.en}
-            </h2>
-            <h2 class="">
-              {heroData().title.zh} {heroData().title.en}
-            </h2>
+            <div class="flex items-center gap-2">
+              <img src={heroData().icon} alt={heroData().title.en} class="" />
+              <div>
+                <h1 class="">
+                  {heroData().name.zh} {heroData().name.en}
+                </h1>
+                <h2 class="">
+                  {heroData().title.zh} {heroData().title.en}
+                </h2>
+              </div>
+            </div>
             <p>{heroData().description}</p>
             <div class="flex">
               <For each={heroData().abilities}>

@@ -13,8 +13,8 @@ const undeadCommanders = HERO.filter((hero) => hero.faction === 'undead' && hero
 
 export const HeroList = () => {
   return (
-    <div class="w-full">
-      <div class="grid grid-cols-3 w-full text-center">
+    <div class="w-full  text-center">
+      <div class="grid grid-cols-3 w-full">
         <div>
           <h3>同盟軍將軍</h3>
           <List heroes={allianceGenerals} />
@@ -53,8 +53,7 @@ const List = ({ heroes }: { heroes: HeroData[] }) => {
         {(hero) => (
           <div>
             <A href={`/hero/${hero.title.en.toLowerCase().replace(/\s+/g, '-')}`}>
-              {hero.name.en}
-              {hero.title.en}
+              <img src={hero.icon} alt={hero.name.en} />
             </A>
           </div>
         )}
