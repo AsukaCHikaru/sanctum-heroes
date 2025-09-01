@@ -34,11 +34,8 @@ export const HeroPage = () => {
             <div class="flex">
               <For each={heroData().abilities}>
                 {(ability, i) => (
-                  <button
-                    onClick={() => setSelectedAbility(i() + 1)}
-                    class="bg-sky-900 text-gray-200 p-1 rounded-sm border-0 cursor-pointer hover:bg-sky-700"
-                  >
-                    {ability.name}
+                  <button onClick={() => setSelectedAbility(i() + 1)} class="">
+                    <img src={ability.icon} alt={ability.name} />
                   </button>
                 )}
               </For>
