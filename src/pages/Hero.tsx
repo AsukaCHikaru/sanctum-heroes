@@ -31,6 +31,7 @@ export const HeroPage = () => {
               </div>
             </div>
             <p>{heroData().description}</p>
+            <h3>Project by {heroData().author}</h3>
             <div class="flex">
               <For each={heroData().abilities}>
                 {(ability, i) => (
