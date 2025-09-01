@@ -1,5 +1,6 @@
 import { For } from 'solid-js';
 import { HERO, type HeroData } from '../data/hero';
+import { A } from '@solidjs/router';
 
 const allianceGenerals = HERO.filter((hero) => hero.faction === 'alliance' && hero.type === 'str');
 const allianceAssassins = HERO.filter((hero) => hero.faction === 'alliance' && hero.type === 'agi');
@@ -51,8 +52,10 @@ const List = ({ heroes }: { heroes: HeroData[] }) => {
       <For each={heroes}>
         {(hero) => (
           <div>
-            {hero.name.en}
-            {hero.title.en}
+            <A href={`/hero/${hero.title.en.toLowerCase().replace(/\s+/g, '-')}`}>
+              {hero.name.en}
+              {hero.title.en}
+            </A>
           </div>
         )}
       </For>

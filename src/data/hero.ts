@@ -188,11 +188,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '大主教',
       en: 'Archbishop',
     },
-    title: {
+    name: {
       zh: '本尼迪塔斯',
       en: 'Benedictus',
     },
@@ -359,11 +359,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '十字刺客',
       en: 'Assassin Cross',
     },
-    title: {
+    name: {
       zh: '阿泰爾',
       en: 'Altair',
     },
@@ -483,11 +483,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '野蠻人',
       en: 'Barbarian',
     },
-    title: {
+    name: {
       zh: '沃夫加',
       en: 'Wulfgar',
     },
@@ -624,11 +624,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '大劍師',
       en: 'Blade Master',
     },
-    title: {
+    name: {
       zh: '葛羅•地獄吼',
       en: 'Grom Hellscream',
     },
@@ -757,11 +757,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '境界的妖怪',
       en: 'Boundary Spectre',
     },
-    title: {
+    name: {
       zh: '幽卡林',
       en: 'Yukarin',
     },
@@ -893,11 +893,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '銀河妖精',
       en: 'Fold Fairy',
     },
-    title: {
+    name: {
       zh: '瓦傑拉',
       en: 'Vajra',
     },
@@ -1022,11 +1022,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '戰士',
       en: 'Face Smasher',
     },
-    title: {
+    name: {
       zh: '卡干',
       en: 'Kagan',
     },
@@ -1161,11 +1161,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '守護騎士',
       en: 'Kingdom Guard',
     },
-    title: {
+    name: {
       zh: '凱文',
       en: 'Kevin',
     },
@@ -1307,11 +1307,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '森林衛士',
       en: 'Keeper of The Grove',
     },
-    title: {
+    name: {
       zh: '善那瑞亞斯',
       en: 'Cenarius',
     },
@@ -1458,11 +1458,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '創生者紅龍之后',
       en: 'Life Binder',
     },
-    title: {
+    name: {
       zh: '雅立史卓莎',
       en: 'Alexstrasza',
     },
@@ -1606,11 +1606,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '魔法少女',
       en: 'Magical Girl',
     },
-    title: {
+    name: {
       zh: '珍娜•普勞德摩爾',
       en: 'Jaina Proudmore',
     },
@@ -1773,11 +1773,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/30',
   },
   {
-    name: {
+    title: {
       zh: '聖騎士',
       en: 'Paladin',
     },
-    title: {
+    name: {
       zh: '護光者烏瑟',
       en: 'Uther the Lightbringer',
     },
@@ -1910,11 +1910,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '月之祭司',
       en: 'Priestess of the Moon',
     },
-    title: {
+    name: {
       zh: '泰蘭德．風語',
       en: 'Tyrande Whisperwind',
     },
@@ -2049,11 +2049,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2009/01/16',
   },
   {
-    name: {
+    title: {
       zh: '暗影獵人',
       en: 'Shadow Hunter',
     },
-    title: {
+    name: {
       zh: '羅克漢',
       en: 'Rokhan',
     },
@@ -2201,11 +2201,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/30',
   },
   {
-    name: {
+    title: {
       zh: '戰牛酋長',
       en: 'Tauren Chieftain',
     },
-    title: {
+    name: {
       zh: '凱恩．血蹄',
       en: 'Cairne Bloodhoof',
     },
@@ -2341,11 +2341,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '先驅者',
       en: 'Vanguard',
     },
-    title: {
+    name: {
       zh: '試作型先驅者GBX-001',
       en: 'GBX-001',
     },
@@ -2479,11 +2479,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '戰鎖',
       en: 'Warlock',
     },
-    title: {
+    name: {
       zh: '納加茲',
       en: 'Nagaz',
     },
@@ -2602,11 +2602,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '天譴坦克',
       en: 'Apocalypse Tank',
     },
-    title: {
+    name: {
       zh: '邦加拉希 MK.II',
       en: 'Bangalash MK.II',
     },
@@ -2736,11 +2736,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '殘酷刀手',
       en: 'Bloody Blade',
     },
-    title: {
+    name: {
       zh: '葛瑞斯華德',
       en: 'Griswold',
     },
@@ -2899,11 +2899,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/23',
   },
   {
-    name: {
+    title: {
       zh: '武術宗師',
       en: 'Champion',
     },
-    title: {
+    name: {
       zh: '奇瓦米',
       en: 'Kiwami',
     },
@@ -3050,11 +3050,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '古墓之王',
       en: 'Crypt Lord',
     },
-    title: {
+    name: {
       zh: '厄努阿拉克',
       en: "Anub'arak",
     },
@@ -3192,11 +3192,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/30',
   },
   {
-    name: {
+    title: {
       zh: '混沌魔術師',
       en: 'Chaos Magician',
     },
-    title: {
+    name: {
       zh: '雷斯特奈夫',
       en: 'Lastknife',
     },
@@ -3334,11 +3334,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/24',
   },
   {
-    name: {
+    title: {
       zh: '死亡騎士',
       en: 'Death Knight',
     },
-    title: {
+    name: {
       zh: '阿薩斯',
       en: 'Arthas',
     },
@@ -3471,11 +3471,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/23',
   },
   {
-    name: {
+    title: {
       zh: '夕陽的監視者',
       en: 'Dusk Surveillant',
     },
-    title: {
+    name: {
       zh: '阿姆塔特',
       en: 'Amurtart',
     },
@@ -3599,11 +3599,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/24',
   },
   {
-    name: {
+    title: {
       zh: '巫妖',
       en: 'Lich',
     },
-    title: {
+    name: {
       zh: '克爾蘇沙德',
       en: "Kel'Thuzad",
     },
@@ -3772,11 +3772,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/24',
   },
   {
-    name: {
+    title: {
       zh: '狼人',
       en: 'Lycan',
     },
-    title: {
+    name: {
       zh: '維克多',
       en: 'Victor',
     },
@@ -3924,11 +3924,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/30',
   },
   {
-    name: {
+    title: {
       zh: '紅色魔術師',
       en: "Magician's Red",
     },
-    title: {
+    name: {
       zh: '鴨都勞',
       en: 'Avdol',
     },
@@ -4044,11 +4044,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/24',
   },
   {
-    name: {
+    title: {
       zh: '波斯獸人',
       en: 'Persian Orc',
     },
-    title: {
+    name: {
       zh: '怒刃',
       en: 'Furyedge',
     },
@@ -4186,11 +4186,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/23',
   },
   {
-    name: {
+    title: {
       zh: '天衣無縫的亡靈',
       en: 'Perfect Phantom',
     },
-    title: {
+    name: {
       zh: '悠悠可',
       en: 'Yuyuko',
     },
@@ -4324,11 +4324,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/29',
   },
   {
-    name: {
+    title: {
       zh: '影行客',
       en: 'Shadow Walker',
     },
-    title: {
+    name: {
       zh: '阿莎．鐵牢之影',
       en: 'Alsa Iron-Cell',
     },
@@ -4472,11 +4472,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/24',
   },
   {
-    name: {
+    title: {
       zh: '西斯大帝',
       en: 'Sith The Lord',
     },
-    title: {
+    name: {
       zh: '白卜庭',
       en: 'Palpatine',
     },
@@ -4594,11 +4594,11 @@ export const HERO: HeroData[] = [
     lastUpdated: '2008/12/24',
   },
   {
-    name: {
+    title: {
       zh: '靈行者',
       en: 'Spirit Walker',
     },
-    title: {
+    name: {
       zh: '巴特克',
       en: 'Bartuc',
     },
