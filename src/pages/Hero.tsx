@@ -3,6 +3,7 @@ import { HeroList } from '../components/HeroList';
 import { useParams } from '@solidjs/router';
 import { HERO } from '../data/hero';
 import { convertTitleToParam } from '../utils/stringUtil';
+import { Layout } from '../components/Layout';
 
 export const HeroPage = () => {
   const params = useParams();
@@ -15,7 +16,7 @@ export const HeroPage = () => {
   });
 
   return (
-    <div class="">
+    <Layout>
       <Show when={hero()} fallback={<div>Hero not found</div>}>
         {(heroData) => (
           <>
@@ -58,7 +59,7 @@ export const HeroPage = () => {
         )}
       </Show>
       <HeroList />
-    </div>
+    </Layout>
   );
 };
 

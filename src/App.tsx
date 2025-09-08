@@ -5,14 +5,12 @@ import { HomePage } from './pages/Home';
 
 function App() {
   return (
-    <div class="">
-      <Router>
-        <Route path="/hero" component={HeroPage} />
-        <Route path="/hero/:title" component={HeroPage} />
-        <Route path="/item" component={ItemPage} />
-        <Route path="/" component={HomePage} />
-      </Router>
-    </div>
+    <Router>
+      <Route path="/hero" component={HeroPage} />
+      <Route path="/hero/:title" component={HeroPage} />
+      <Route path="/item" component={ItemPage} />
+      <Route path="/" component={HomePage} />
+    </Router>
   );
 }
 
