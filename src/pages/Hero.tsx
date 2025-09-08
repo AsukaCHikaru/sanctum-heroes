@@ -17,10 +17,10 @@ export const HeroPage = () => {
 
   return (
     <Layout>
-      <Show when={hero()} fallback={<div>Hero not found</div>}>
+      <Show when={hero()} fallback={null}>
         {(heroData) => (
-          <>
-            <div class="flex items-center gap-2">
+          <div class="mb-10">
+            <div class="flex items-center gap-2 text-stone-100">
               <img src={heroData().icon} alt={heroData().title.en} class="" />
               <div>
                 <h1 class="">
@@ -31,7 +31,7 @@ export const HeroPage = () => {
                 </h2>
               </div>
             </div>
-            <p>{heroData().description}</p>
+            <p class="text-stone-300">{heroData().description}</p>
             <h3>Project by {heroData().author}</h3>
             <div class="flex">
               <For each={heroData().abilities}>
@@ -46,16 +46,16 @@ export const HeroPage = () => {
               <For each={heroData().abilities}>
                 {(ability, i) => (
                   <Match when={selectedAbility() === i() + 1}>
-                    <div class="">
-                      <h2 class="">{ability.name}</h2>
-                      <p class="">{ability.description}</p>
+                    <div>
+                      <h2 class="text-stone-100">{ability.name}</h2>
+                      <p class="text-stone-200">{ability.description}</p>
                       <For each={ability.stats}>{(stat) => <AbilityStat stat={stat} />}</For>
                     </div>
                   </Match>
                 )}
               </For>
             </Switch>
-          </>
+          </div>
         )}
       </Show>
       <HeroList />
@@ -72,8 +72,9 @@ const AbilityStat = ({
   };
 }) => {
   return (
-    <div class="">
-      <span>{stat.label}</span>: {Array.isArray(stat.value) ? stat.value.join(' / ') : stat.value}
+    <div class="text-stone-200">
+      <span class="text-stone-400">{stat.label}</span>:{' '}
+      {Array.isArray(stat.value) ? stat.value.join(' / ') : stat.value}
     </div>
   );
 };
