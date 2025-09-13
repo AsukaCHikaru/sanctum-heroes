@@ -4786,4 +4786,1799 @@ export const HERO: HeroData[] = [
     author: 'DDKnight',
     lastUpdated: '2008/12/29',
   },
+  {
+    name: {
+      zh: '穆杭特',
+      en: 'Moonhunt',
+    },
+    title: {
+      zh: '德魯依',
+      en: 'Druid',
+    },
+    faction: 'alliance',
+    type: 'str',
+    icon: 'dru.jpg',
+    stats: {
+      strength: {
+        base: 22,
+        growth: 2.2,
+      },
+      agility: {
+        base: 23,
+        growth: 2.2,
+      },
+      intelligence: {
+        base: 15,
+        growth: 1.6,
+      },
+      baseHealth: 540,
+      baseMana: 150,
+      baseAttackMin: 37,
+      baseAttackMax: 47,
+      baseArmor: 2,
+      attackRange: 100,
+      movementSpeed: 330,
+    },
+    description:
+      '具有威嚇力的英雄。他憑藉著肉體的力量就能打倒敵人，他不需要任何武器就能製造成可觀傷害。他的怒氣，是比瑪那還要具有破壞力的存在。穆杭特在出現於世人面前之前，是個只存在於傳說中的人物。在許久以前，以熊的形體出現的他，曾被人類當為神明般祭拜。如同他被人類取的名稱，獵月，他的力量與偉大的自然不相上下。',
+    abilities: [
+      {
+        type: 'passive',
+        name: '爪擊',
+        icon: 'dru01.jpg',
+        description: '對於使自己發怒的敵人，只能以熊爪發洩一番。',
+        effect: '增加基本攻擊力、降低攻擊速度。每次攻擊產生1點怒氣，上限五點。',
+        stats: [
+          {
+            label: '增加攻擊力',
+            value: [15, 30, 45, 60],
+          },
+          {
+            label: '降低攻擊速度',
+            value: [0, 10, 20, 30],
+            suffix: '%',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '狂怒',
+        icon: 'dru02.jpg',
+        description: '釋放狂怒，全力發洩在敵人身上。',
+        effect: '增加攻擊速度，並且攻擊具有緩速效果。消耗3點怒氣。',
+        stats: [
+          {
+            label: '增加攻擊速度',
+            value: 10,
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 10,
+            suffix: '秒',
+          },
+          {
+            label: '緩速持續時間',
+            value: 1.5,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [8, 6, 4, 0],
+            suffix: '秒',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '熊掌擊',
+        icon: 'dru03.jpg',
+        description: '化身為熊，用熊掌用力打他的臉，啪！',
+        effect: '對目標造成傷害。消耗5點怒氣。目標具有撕裂出血效果時，造成2倍傷害',
+        stats: [
+          {
+            label: '傷害',
+            value: 225,
+          },
+          {
+            label: '冷卻時間',
+            value: [10, 2, 0, 0],
+            suffix: '秒',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '撕裂',
+        icon: 'dru04.jpg',
+        description: '撕裂傷口，使之出血。',
+        effect: '使目標受到持續傷害，並增加自身攻擊力。消耗2點怒氣。',
+        stats: [
+          {
+            label: '每秒傷害',
+            value: [5, 8],
+          },
+          {
+            label: '傷害持續時間',
+            value: 15,
+            suffix: '秒',
+          },
+          {
+            label: '增加攻擊力',
+            value: [10, 15],
+            suffix: '%',
+          },
+          {
+            label: '攻擊力持續時間',
+            value: 15,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [30, 15],
+            suffix: '秒',
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '贊德摩爾',
+      en: 'Zhandmlore',
+    },
+    title: {
+      zh: '食人妖百夫長',
+      en: 'Troll Centurion',
+    },
+    faction: 'alliance',
+    type: 'agi',
+    icon: 'trc.jpg',
+    stats: {
+      strength: {
+        base: 18,
+        growth: 1.6,
+      },
+      agility: {
+        base: 23,
+        growth: 2.5,
+      },
+      intelligence: {
+        base: 19,
+        growth: 1.9,
+      },
+      baseHealth: 460,
+      baseMana: 190,
+      baseAttackMin: 25,
+      baseAttackMax: 35,
+      baseArmor: 2,
+      attackRange: 100,
+      movementSpeed: 340,
+    },
+    description: '',
+    abilities: [
+      {
+        type: 'active',
+        name: '武器附魔︰十字軍',
+        icon: 'trc01.jpg',
+        description: '武器附魔的十字軍之力，能夠增加百夫長的破壞力，甚至吸取敵人的生命。',
+        effect: '增加自己的攻擊力，並且每次攻擊時都會吸取攻擊力一部分的生命',
+        stats: [
+          {
+            label: '增加攻擊力',
+            value: [9, 18, 27, 36],
+          },
+          {
+            label: '吸血倍率',
+            value: [15, 25, 35, 45],
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 8,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 40,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 100,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '兇砍',
+        icon: 'trc02.jpg',
+        description: '百夫長開始失去理智地砍擊敵人，濺出的鮮血已分不出是誰的',
+        effect: '開啟後，每次攻擊都會對自己與目標造成最大血量%數的傷害。',
+        stats: [
+          {
+            label: '對自己傷害',
+            value: 7,
+            suffix: '%',
+          },
+          {
+            label: '對敵人傷害',
+            value: [9, 10, 11, 12],
+            suffix: '%',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '追跡者',
+        icon: 'trc03.jpg',
+        description: '循著最微小的細節追蹤敵人，是每個森林食人妖都必須具備的技巧。',
+        effect: '顯示敵方英雄所在地8秒。',
+        stats: [
+          {
+            label: '顯示範圍',
+            value: [400, 800, 1200, 1600],
+          },
+          {
+            label: '冷卻時間',
+            value: [60, 55, 50, 45],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 90,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '英勇衝鋒',
+        icon: 'trc04.jpg',
+        description: '百夫長一夫當關地衝向敵人，戰鬥的刺激使他變得極度亢奮。',
+        effect: '對目標衝鋒，擊中目標之後增加攻擊速度50%，持續8秒。距離不足400時，無法衝鋒',
+        stats: [
+          {
+            label: '施放距離',
+            value: 900,
+          },
+          {
+            label: '冷卻時間',
+            value: [40, 25],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 140,
+          },
+        ],
+      },
+    ],
+    author: 'warrix',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '安亞',
+      en: 'Anya',
+    },
+    title: {
+      zh: '風神少女',
+      en: 'Hurricane Maiden',
+    },
+    faction: 'alliance',
+    type: 'agi',
+    icon: 'hm.jpg',
+    stats: {
+      strength: {
+        base: 17,
+        growth: 1.7,
+      },
+      agility: {
+        base: 23,
+        growth: 2.2,
+      },
+      intelligence: {
+        base: 16,
+        growth: 2.1,
+      },
+      baseHealth: 440,
+      baseMana: 160,
+      baseAttackMin: 25,
+      baseAttackMax: 31,
+      baseArmor: 0,
+      attackRange: 350,
+      movementSpeed: 340,
+    },
+    description:
+      '敏捷的英雄。她能自由自在操縱風的力量以控制敵人去留，並同時增強自己的戰鬥力。安亞是居住在某座滿是野獸之山的鳥身女妖族皇后。灼炎軍的鐵蹄踏過該山，使她家破人亡。帶著鳥身女妖族天生操縱風的力量，她將為復仇而戰。',
+    abilities: [
+      {
+        type: 'active',
+        name: '幻想風靡',
+        icon: 'hm01.jpg',
+        description: '纏繞旋風在身上，加快揮動氣流攻擊的速度。',
+        effect: '增加攻擊速度。',
+        stats: [
+          {
+            label: '增加速度',
+            value: [20, 40, 60, 80],
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 20,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [52, 48, 44, 40],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 100,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '疾走風靡',
+        icon: 'hm02.jpg',
+        description: '纏繞旋風，對前方進行突擊。',
+        effect: '向英雄前方瞬間移動400距離，並造成緩速。',
+        stats: [
+          {
+            label: '緩速倍率',
+            value: [20, 30, 40, 50],
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 5,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 30,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 80,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '疾風扇',
+        icon: 'hm03.jpg',
+        description: '使用團扇捲起旋風，襲擊周遭敵人。',
+        effect: '對目標附近敵人造成擴散傷害。',
+        stats: [
+          {
+            label: '擴散範圍',
+            value: [50, 70, 90, 110],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '風神無雙',
+        icon: 'hm04.jpg',
+        description: '將風纏繞達到最大加速，在敵人身上跳躍，來回攻擊。',
+        effect: '對指定目標的周遭造成傷害。',
+        stats: [
+          {
+            label: '傷害',
+            value: 200,
+          },
+          {
+            label: '飛行次數',
+            value: [6, 11],
+            suffix: '次',
+          },
+          {
+            label: '冷卻時間',
+            value: 120,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 250,
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '米夫．影歌',
+      en: 'Maiev Shadowsong',
+    },
+    title: {
+      zh: '典獄長',
+      en: 'Warden',
+    },
+    faction: 'alliance',
+    type: 'agi',
+    icon: 'wd.jpg',
+    stats: {
+      strength: {
+        base: 19,
+        growth: 1.9,
+      },
+      agility: {
+        base: 26,
+        growth: 2.7,
+      },
+      intelligence: {
+        base: 15,
+        growth: 1.4,
+      },
+      baseHealth: 480,
+      baseMana: 150,
+      baseAttackMin: 28,
+      baseAttackMax: 48,
+      baseArmor: 0,
+      attackRange: 100,
+      movementSpeed: 340,
+    },
+    description:
+      '敏捷的英雄，精通於進入及逃離戰場，敵人甚至在死亡的瞬間都無法察覺到米夫的存在。米夫對萬事萬物只有一套標準：非黑即白，染上邪惡之人只有死路可走。復仇曾是米夫唯一的目標。現在，她為了追捕同為復仇者的叛徒而加入了這場戰爭。',
+    abilities: [
+      {
+        type: 'active',
+        name: '闇影擊',
+        icon: 'wd01.jpg',
+        description: '對目標投擲一枚塗有劇毒的匕首。',
+        effect:
+          '射出一枚可以造成大量傷害的淬毒匕首，隨後還會持續性傷害。目標的移動速度也會減緩一段時間。',
+        stats: [
+          {
+            label: '初始傷害',
+            value: 50,
+          },
+          {
+            label: '持續傷害',
+            value: 30,
+          },
+          {
+            label: '移動速度減少倍率',
+            value: 25,
+            suffix: '%',
+          },
+          {
+            label: '傷害間隔',
+            value: 3,
+            suffix: '秒',
+          },
+          {
+            label: '英雄持續時間',
+            value: [3, 5, 7, 9],
+            suffix: '秒',
+          },
+          {
+            label: '一般單位持續時間',
+            value: 15,
+            suffix: '秒',
+          },
+          {
+            label: '施放距離',
+            value: 300,
+          },
+          {
+            label: '冷卻時間',
+            value: 8,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 75,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '融影',
+        icon: 'wd02.jpg',
+        description: '瞬間陰影合而為一，使敵方無法察覺她的存在。',
+        effect: '使米夫擁有半永久的隱形能力，攻擊或施法會使她暫時現形。',
+        stats: [
+          {
+            label: '隱形所需時間',
+            value: [8, 6, 4, 2],
+            suffix: '秒',
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '背刺',
+        icon: 'wd03.jpg',
+        description: '偷襲乃是是最具殺傷力的攻擊。',
+        effect: '從敵人背後攻擊時，增加額外傷害。',
+        stats: [
+          {
+            label: '額外傷害',
+            value: [15, 30, 45, 60],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '一閃',
+        icon: 'wd04.jpg',
+        description: '膽敢向點典獄長出手的敵人，將承受如電光般迅速的復仇。',
+        effect: '施展之後的短時間內若受到攻擊，米夫將瞬間移動至目標背後。',
+        stats: [
+          {
+            label: '持續時間',
+            value: [0.5, 1],
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [10, 5],
+            suffix: '秒',
+          },
+        ],
+      },
+    ],
+    author: 'j33669',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '翠絲特兒',
+      en: 'Drizztor',
+    },
+    title: {
+      zh: '北域游俠',
+      en: 'Northrend Ranger',
+    },
+    faction: 'alliance',
+    type: 'agi',
+    icon: 'nr.jpg',
+    stats: {
+      strength: {
+        base: 15,
+        growth: 1.4,
+      },
+      agility: {
+        base: 22,
+        growth: 2.4,
+      },
+      intelligence: {
+        base: 23,
+        growth: 2.2,
+      },
+      baseHealth: 400,
+      baseMana: 230,
+      baseAttackMin: 26,
+      baseAttackMax: 36,
+      baseArmor: 0,
+      attackRange: 600,
+      movementSpeed: 350,
+    },
+    description:
+      '敏捷的英雄。她具有多種偵察技巧，與能\\_追上敵人的靈巧雙足。帶著最忠實的戰友，她將是追蹤敵人的最好選擇。翠斯特兒是個天賦異稟的黑暗精靈，雖然身處一個標準的父系社會，又在三個野心勃勃哥哥的之下，卻完全沒有埋沒她的繼承自母親的才能。運用黑暗精靈天生的魔法能力以及靈巧的身形，加上她值得信賴的夥伴關海法，沒有目標能從她的紫色瞳孔中逃出。',
+    abilities: [
+      {
+        type: 'active',
+        name: '鎂箭',
+        icon: 'nr01.jpg',
+        description: '向上空射出一枚鎂箭，產生亮光顯露該地情況。',
+        effect: '觀看該地。等級三、四具有偵隱效果',
+        stats: [
+          {
+            label: '顯示區域',
+            value: [500, 1000, 1500, 2000],
+          },
+          {
+            label: '持續時間',
+            value: 8,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [70, 55, 40, 25],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 80,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '梅莉凱之眼',
+        icon: 'nr02.jpg',
+        description: '遊俠信奉之神，森林女神梅莉凱所賦予的，是安靜且快速的追蹤技巧。',
+        effect: '能夠穿越任何部隊與地形。',
+        stats: [
+          {
+            label: '每秒耗損法力',
+            value: [20, 15, 10, 5],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '凜風之觸',
+        icon: 'nr03.jpg',
+        description: '長久以來在北域的生活，讓翠絲特兒能夠熟練運用冰冷的力量。',
+        effect: '每次攻擊減少目標的攻擊、移動速度。',
+        stats: [
+          {
+            label: '攻擊速度降低倍率',
+            value: [10, 15, 20, 25],
+            suffix: '%',
+          },
+          {
+            label: '移動速度降低倍率',
+            value: [16, 24, 32, 40],
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 1,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 20,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '關海法',
+        icon: 'nr04.jpg',
+        description: '從星界召喚遊俠的忠實戰友︰黑豹關海法。',
+        effect: '召喚一隻具有永久隱形術的狼為你戰鬥。場上最多存在一隻關海法',
+        stats: [
+          {
+            label: '關法海最低傷害',
+            value: [26, 34],
+          },
+          {
+            label: '關海法最大傷害',
+            value: [27, 35],
+          },
+          {
+            label: '關海法生命',
+            value: [610, 700],
+          },
+          {
+            label: '關海法移動速度',
+            value: 380,
+          },
+          {
+            label: '召喚持續時間',
+            value: [20, 40],
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 60,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 130,
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '銜尾蛇',
+      en: 'Uroboros',
+    },
+    title: {
+      zh: '生命體兵器',
+      en: 'Bio Organic Weapon',
+    },
+    faction: 'undead',
+    type: 'int',
+    icon: 'bow.jpg',
+    stats: {
+      strength: {
+        base: 24,
+        growth: 2.2,
+      },
+      agility: {
+        base: 13,
+        growth: 1.4,
+      },
+      intelligence: {
+        base: 23,
+        growth: 2.4,
+      },
+      baseHealth: 580,
+      baseMana: 230,
+      baseAttackMin: 25,
+      baseAttackMax: 35,
+      baseArmor: 2,
+      attackRange: 500,
+      movementSpeed: 310,
+    },
+    description: '',
+    abilities: [
+      {
+        type: 'active',
+        name: '分裂生殖',
+        icon: 'bow01.jpg',
+        description: '銜尾蛇分裂自身，產生觸手分裂體。',
+        effect: '召喚銜尾蛇分殖，每隻銜尾蛇分殖死亡時對銜尾蛇造成傷害。',
+        stats: [
+          {
+            label: '分裂體的魔法抗性',
+            value: [25, 35, 45, 55],
+            suffix: '%',
+          },
+          {
+            label: '銜尾蛇分殖死亡時對銜尾蛇造成最大生命傷害',
+            value: [10, 9, 8, 7],
+            suffix: '%',
+          },
+          {
+            label: '銜尾蛇分殖持續時間',
+            value: 30,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [18, 15, 12, 9],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 125,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '觸手增生',
+        icon: 'bow02.jpg',
+        description: '使分裂體成長為巨大的觸手。',
+        effect: '將銜尾蛇分殖變化為巨型觸手，傷害大但是無法移動。',
+        stats: [
+          {
+            label: '觸手傷害',
+            value: 40,
+          },
+          {
+            label: '觸手生命',
+            value: 500,
+          },
+          {
+            label: '觸手攻擊範圍',
+            value: 500,
+          },
+          {
+            label: '冷卻時間',
+            value: [7, 6, 5, 4],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: [100, 110, 120, 130],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '破繭而出',
+        icon: 'bow03.jpg',
+        description: '使分殖體分裂產生行動迅速的飛行蟲。',
+        effect: '指定一隻銜尾蛇分殖，轉變成三隻飛行蟲，速度快但攻擊力低。',
+        stats: [
+          {
+            label: '飛行蟲傷害',
+            value: 20,
+          },
+          {
+            label: '飛行蟲生命',
+            value: 300,
+          },
+          {
+            label: '觸手攻擊範圍',
+            value: 100,
+          },
+          {
+            label: '飛行蟲移動速度',
+            value: 350,
+          },
+          {
+            label: '冷卻時間',
+            value: [7, 6, 5, 4],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: [100, 110, 120, 130],
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '魔法使之敵',
+        icon: 'bow04.jpg',
+        description: '觸手永遠是(少女)魔法師的大敵，對吧。',
+        effect: '每當(少女)魔法師對銜尾蛇施法時，威力都會無法控制的下降。',
+        stats: [
+          {
+            label: '增加自體魔法抗性',
+            value: [50, 100],
+            suffix: '%',
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '蕾咪莉亞',
+      en: 'Remilia',
+    },
+    title: {
+      zh: '緋紅惡魔',
+      en: 'Scarlet Devil',
+    },
+    faction: 'undead',
+    type: 'agi',
+    icon: 'sd.jpg',
+    stats: {
+      strength: {
+        base: 13,
+        growth: 1.4,
+      },
+      agility: {
+        base: 25,
+        growth: 2.4,
+      },
+      intelligence: {
+        base: 22,
+        growth: 2.2,
+      },
+      baseHealth: 360,
+      baseMana: 220,
+      baseAttackMin: 42,
+      baseAttackMax: 52,
+      baseArmor: 0,
+      attackRange: 100,
+      movementSpeed: 340,
+    },
+    description:
+      '敏捷的英雄。她的速度遠超過所有人的想像。別被她那嬌小的身軀騙了，就算她會被獸人的一拳所擊倒，但是在那之前，所有敵人都將被她的腳步玩弄。蕾咪莉亞是一名深居在洋房中的嬌小吸血族。平日不出外獵食，由侍女打點生活一切──但這不代表她不具有危險性。她的外表也許像個少女，但她的迅足與利爪，以及帶來的傷害，絕不愧於她的年紀。',
+    abilities: [
+      {
+        type: 'active',
+        name: '惡魔俯衝',
+        icon: 'import_druid_ravage',
+        description: '運用吸血鬼的強大爆發力，瞬間衝刺至敵人面前。',
+        effect: '向指定角度快速移動400距離，並增加30%攻擊力2秒。衝刺中為無敵狀態',
+        stats: [
+          {
+            label: '法力消耗',
+            value: [90, 80, 70, 60],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '不夜城之赤',
+        icon: 'sd02.jpg',
+        description: '呼喚紅色靈氣從體內向上竄升，灼燒周遭敵人。',
+        effect: '對周遭敵人造成傷害並減緩移動速度。',
+        stats: [
+          {
+            label: '傷害',
+            value: [60, 90, 120, 150],
+          },
+          {
+            label: '移動速度減緩倍率',
+            value: [20, 35, 50, 65],
+            suffix: '%',
+          },
+          {
+            label: '傷害範圍',
+            value: [250, 300, 350, 400],
+          },
+          {
+            label: '持續時間',
+            value: 5,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 15,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 90,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '神術．吸血鬼幻想',
+        icon: 'sd03.jpg',
+        description: '吸血鬼天生具備的，吸取他人精氣的能力。',
+        effect: '每次攻擊回復相等於一部分攻擊力的生命值。',
+        stats: [
+          {
+            label: '吸收生命比例',
+            value: [10, 17, 24, 30],
+            suffix: '%',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '惡魔鬼影',
+        icon: 'sd04.jpg',
+        description:
+          '吸血鬼的運動能力，已經超出一般生物肉眼所能辨別的速度。一個忽左忽右高速前進的物體，彷彿分裂成好幾個般。',
+        effect: '快速衝刺至指定方向800距離。',
+        stats: [
+          {
+            label: '冷卻時間',
+            value: 0,
+            suffix: '秒',
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '法蘭基斯坦',
+      en: 'Frankenstein',
+    },
+    title: {
+      zh: '血肉魔像',
+      en: 'Flesh Golem',
+    },
+    faction: 'undead',
+    type: 'str',
+    icon: 'fg.jpg',
+    stats: {
+      strength: {
+        base: 24,
+        growth: 2.3,
+      },
+      agility: {
+        base: 21,
+        growth: 2,
+      },
+      intelligence: {
+        base: 15,
+        growth: 1.7,
+      },
+      baseHealth: 580,
+      baseMana: 150,
+      baseAttackMin: 41,
+      baseAttackMax: 51,
+      baseArmor: 2,
+      attackRange: 100,
+      movementSpeed: 320,
+    },
+    description:
+      '無可擊敗的英雄。他能夠以一抵百，在亂軍中取人首級。圍剿他，或許不是最適當的應對方式。法蘭基斯坦是天譴軍皇家煉金學會的傑作之一。他從數千個屍體中被挑選為素體，運用暗影魔法及地精科技使他再度恢復行動。同時，皇家煉金學會在他身上裝設許多仍在試驗中的設備。帶著對生者的憤怒以及未知的力量，法蘭基斯坦會抹滅每一個天譴軍命令他消滅的敵人。',
+    abilities: [
+      {
+        type: 'active',
+        name: '電擊',
+        icon: 'fg01.jpg',
+        description:
+          '法蘭基斯坦體內蘊涵著強大的電流能量，他可以釋放將這些電流能量釋放出來，擴散到四周。這個釋放的過程除了能夠增加其肉體的活性之外，還能麻痺周圍敵人的速度。',
+        effect: '回復自體少量生命，並造成周圍敵人小量傷害及緩速。',
+        stats: [
+          {
+            label: '回復生命',
+            value: [50, 100, 150, 200],
+          },
+          {
+            label: '傷害',
+            value: [60, 100, 140, 180],
+          },
+          {
+            label: '攻擊、移動速度減緩倍率',
+            value: 20,
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 10,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 20,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 90,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '強化殖裝',
+        icon: 'fg02.jpg',
+        description:
+          '法蘭基斯坦可以殖裝身上的盔甲，使其覆蓋全身。一旦覆蓋完成，法蘭基斯坦將擁有更強大的防禦能力。',
+        effect: '增加20點攻擊力及8點防禦力，減少10點移動速度，吸收一定傷害後裝甲消失。',
+        stats: [
+          {
+            label: '吸收傷害',
+            value: [200, 300, 400, 500],
+          },
+          {
+            label: '持續時間',
+            value: 30,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 50,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 120,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '狂怒',
+        icon: 'fg03.jpg',
+        description:
+          '法蘭基斯坦殘暴易怒，任何強大能量的運行都會激起他的憤怒，一旦他陷入狂怒，便只有戰鬥能平息他的怒火。',
+        effect:
+          '法蘭基斯坦的周遭800範圍內有人施法時，法蘭基斯坦增加12%攻擊速度與10點移動速度，每次攻擊時減少一次疊加。',
+        stats: [
+          {
+            label: '疊加次數上限',
+            value: [2, 3, 4, 5],
+            suffix: '次',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '咒痕血印',
+        icon: 'fg04.jpg',
+        description:
+          '法蘭基斯坦將仇恨與憤怒投射在一個敵人身上。這個詛咒將使目標對法蘭基斯坦湧起相同的負面情緒以致於無法專注於戰鬥上，直至雙方其中一人死亡為止。',
+        effect: '標記目標，每次攻擊擁有標記的目標時，造成額外傷害，直到標記消失。',
+        stats: [
+          {
+            label: '額外傷害',
+            value: [40, 80],
+          },
+          {
+            label: '冷卻時間',
+            value: 60,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 150,
+          },
+        ],
+      },
+    ],
+    author: 'crystalagate',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '曼多基爾',
+      en: 'Mandokir',
+    },
+    title: {
+      zh: '哈卡神戰士',
+      en: 'Hakkar Soldier',
+    },
+    faction: 'undead',
+    type: 'int',
+    icon: 'hs.jpg',
+    stats: {
+      strength: {
+        base: 14,
+        growth: 1.6,
+      },
+      agility: {
+        base: 25,
+        growth: 2.4,
+      },
+      intelligence: {
+        base: 21,
+        growth: 2,
+      },
+      baseHealth: 380,
+      baseMana: 210,
+      baseAttackMin: 23,
+      baseAttackMax: 29,
+      baseArmor: 0,
+      attackRange: 650,
+      movementSpeed: 320,
+    },
+    description: '',
+    abilities: [
+      {
+        type: 'active',
+        name: '獵頭',
+        icon: 'hs01.jpg',
+        description: '曼多基爾投擲長矛，準確地獵殺目標。',
+        effect:
+          '對目標造成自己現有法力的百分比傷害，在傷害之後若目標血少於一定則直接死亡，英雄亦同。',
+        stats: [
+          {
+            label: '法力百分比',
+            value: [30, 40, 50, 60],
+            suffix: '%',
+          },
+          {
+            label: '施放距離',
+            value: 800,
+          },
+          {
+            label: '冷卻時間',
+            value: [15, 13, 11, 9],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 50,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '神性血液',
+        icon: 'hs02.jpg',
+        description: '哈卡的神力流動於曼基多爾之中，使他能夠防禦魔法力量。',
+        effect: '形成一個護盾，每一點的法力可以吸收一定傷害。',
+        stats: [
+          {
+            label: '每點法力抵銷傷害',
+            value: [1, 1.5, 2, 2.5],
+          },
+          {
+            label: '冷卻時間',
+            value: 10,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 25,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '嗜殺者',
+        icon: 'hs03.jpg',
+        description: '曼多基爾沉浸於殺戮的快感之中，每多殺一個人他就越瘋狂而更強大。',
+        effect: '每殺死一定數量單位時，增加智慧點數。每當增加的數值超過1時才會增加。',
+        stats: [
+          {
+            label: '每次殺死英雄提昇智慧',
+            value: [0.4, 0.8, 1.2, 1.6],
+          },
+          {
+            label: '每次殺死一般單位提昇智慧',
+            value: [0.025, 0.05, 0.075, 0.1],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '降臨',
+        icon: 'hs04.jpg',
+        description: '哈卡神力附身於曼基多爾，使他無人能擋。',
+        effect: '大量增加曼基多爾的攻擊速度。',
+        stats: [
+          {
+            label: '百分比',
+            value: [80, 160],
+            suffix: '%',
+          },
+          {
+            label: '每秒消耗法力',
+            value: 80,
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '勞倫斯',
+      en: 'Lawrence',
+    },
+    title: {
+      zh: '執法者',
+      en: 'Lawbringer',
+    },
+    faction: 'undead',
+    type: 'int',
+    icon: 'law.jpg',
+    stats: {
+      strength: {
+        base: 16,
+        growth: 1.4,
+      },
+      agility: {
+        base: 21,
+        growth: 2.3,
+      },
+      intelligence: {
+        base: 23,
+        growth: 2.3,
+      },
+      baseHealth: 420,
+      baseMana: 230,
+      baseAttackMin: 30,
+      baseAttackMax: 36,
+      baseArmor: 1,
+      attackRange: 600,
+      movementSpeed: 330,
+    },
+    description:
+      '敏捷的英雄，對罪惡恨之入骨，再微弱的邪惡氣息都能讓他為之發怒。他曾經是一名法官，對罪犯完全不可能寬恕，曾被稱作「巴比倫的鐵鎚」。離開法官之職後，以自己的方式殺死了大量的罪犯。為了永恆的制裁而加入天譴軍團，相當令人費解。顯然地，跟他一同出戰的同伴都有提前死亡的覺悟。',
+    abilities: [
+      {
+        type: 'active',
+        name: '諸惡消弭',
+        icon: 'law01.jpg',
+        description: '依罪惡程度對惡人造成精神傷害。',
+        effect: '燃燒一個範圍內敵人的法力。',
+        stats: [
+          {
+            label: '法力減少',
+            value: [50, 100, 150, 200],
+          },
+          {
+            label: '施放距離',
+            value: 450,
+          },
+          {
+            label: '範圍',
+            value: [300, 325, 350, 375],
+          },
+          {
+            label: '冷卻時間',
+            value: [8, 6, 4, 2],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: [500, 100, 150, 200],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '罪行昭然',
+        icon: 'law02.jpg',
+        description: '至今為止的犯行將付出代價。',
+        effect: '對目標造成「法力最大值與目前值差距」百分比傷害。',
+        stats: [
+          {
+            label: '百分比',
+            value: [30, 45, 60, 75],
+            suffix: '%',
+          },
+          {
+            label: '施放距離',
+            value: 500,
+          },
+          {
+            label: '冷卻時間',
+            value: [8, 8, 4, 4],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: [150, 120, 90, 60],
+            suffix: '秒',
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '吞食罪孽',
+        icon: 'law03.jpg',
+        description: '將邪惡化作對抗邪惡的意志力。',
+        effect: '每當周遭有人減損法力時，回復一定量的生命。',
+        stats: [
+          {
+            label: '回復生命',
+            value: [25, 35, 45, 55],
+          },
+          {
+            label: '消耗法力',
+            value: [10, 15, 20, 25],
+          },
+          {
+            label: '範圍',
+            value: 600,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '死亡終有時',
+        icon: 'law04.jpg',
+        description: '每次的攻擊都能毀滅敵人僅存的意志。',
+        effect: '每次的攻擊都能吸收對方大量的法力。',
+        stats: [
+          {
+            label: '吸收法力',
+            value: [25, 50],
+          },
+        ],
+      },
+    ],
+    author: 'DDKnight',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '泰瑞爾',
+      en: 'Tyreal the Fool',
+    },
+    title: {
+      zh: '天人',
+      en: 'Celestial Being',
+    },
+    faction: 'alliance',
+    type: 'agi',
+    icon: 'cb.jpg',
+    stats: {
+      strength: {
+        base: 24,
+        growth: 2.2,
+      },
+      agility: {
+        base: 27,
+        growth: 2.8,
+      },
+      intelligence: {
+        base: 9,
+        growth: 1,
+      },
+      baseHealth: 580,
+      baseMana: 90,
+      baseAttackMin: 29,
+      baseAttackMax: 39,
+      baseArmor: 2,
+      attackRange: 100,
+      movementSpeed: 320,
+    },
+    description: '',
+    abilities: [
+      {
+        type: 'active',
+        name: '惡魔的假象',
+        icon: 'cb01.jpg',
+        description: '在祂的眼中，動物與人類是戁以分辨的。',
+        effect: '將一個敵人轉化為亂數決定的生物，中止他們施法的能力。',
+        stats: [
+          {
+            label: '英雄持續時間',
+            value: [4, 5, 6, 7],
+            suffix: '秒',
+          },
+          {
+            label: '一般單位持續時間',
+            value: [15, 30, 45, 60],
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 7,
+            suffix: '秒',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '致命的誘惑',
+        icon: 'cb02.jpg',
+        description:
+          '嘿，這包錢殺死我了！為什麼？為什麼錢要殺我？我他媽的相信你耶，錢！我的老天啊，要是我連錢都不能相信，我還能相信誰？',
+        effect: '將目標的部份金錢變成金幣道具放在旁邊，撿起者將被捆綁。每次施展需消耗1的智慧',
+        stats: [
+          {
+            label: '轉化的金錢',
+            value: [75, 150, 225, 300],
+          },
+          {
+            label: '施放距離',
+            value: 500,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '猜疑的距離',
+        icon: 'cb03.jpg',
+        description: '泰瑞爾是很Rise的，這一定有什麼誤會。',
+        effect:
+          '依照本身的智慧對敵人造成額外傷害，若是英雄，則造成雙方智慧相減的額外傷害。每攻擊二次減少1的敏捷',
+        stats: [
+          {
+            label: '一般單位的額外傷害',
+            value: [1.5, 2, 2.5, 3],
+            suffix: '倍本身智慧',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '天堂的終焉',
+        icon: 'cb04.jpg',
+        description: '泰瑞爾是個笨蛋。',
+        effect: '衝向指定的敵人，自我引爆造成範圍性的傷害。',
+        stats: [
+          {
+            label: '傷害',
+            value: 300,
+          },
+          {
+            label: '範圍',
+            value: 400,
+          },
+        ],
+      },
+    ],
+    author: 'wulouise',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '摩戈爾',
+      en: 'Mogor',
+    },
+    title: {
+      zh: '食人魔霜火法師',
+      en: 'Ogre Frostfire Mage',
+    },
+    faction: 'alliance',
+    type: 'int',
+    icon: 'ofm.jpg',
+    stats: {
+      strength: {
+        base: 24,
+        growth: 2.2,
+      },
+      agility: {
+        base: 14,
+        growth: 1.5,
+      },
+      intelligence: {
+        base: 22,
+        growth: 2.3,
+      },
+      baseHealth: 580,
+      baseMana: 220,
+      baseAttackMin: 24,
+      baseAttackMax: 30,
+      baseArmor: 0,
+      attackRange: 480,
+      movementSpeed: 300,
+    },
+    description: '',
+    abilities: [
+      {
+        type: 'active',
+        name: '魔法箭',
+        icon: 'ofm01.jpg',
+        description: '霜火食人魔擅長操控火焰或是冰霜力量。',
+        effect:
+          '朝敵人發射火焰箭或是冰霜箭。魔法箭屬性由霜火精通決定與切換。火焰專精將提供火焰箭(5X火焰專精等級)的額外傷害。冰霜專精將提供冰霜箭(2x冰霜專精等級)%的額外緩速。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
+        stats: [
+          {
+            label: '火焰箭傷害',
+            value: [50, 100, 150, 200],
+          },
+          {
+            label: '冰霜箭傷害',
+            value: [50, 100, 150, 200],
+          },
+          {
+            label: '冰霜箭攻擊速度減緩倍率',
+            value: 20,
+            suffix: '%',
+          },
+          {
+            label: '冰霜箭移動速度減緩倍率',
+            value: 20,
+            suffix: '%',
+          },
+          {
+            label: '英雄緩慢持續時間',
+            value: 5,
+          },
+          {
+            label: '一般單位緩慢持續時間',
+            value: 10,
+          },
+          {
+            label: '施放距離',
+            value: 600,
+          },
+          {
+            label: '冷卻時間',
+            value: [20, 17, 14, 10],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: [90, 100, 110, 120],
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '霜火精通',
+        icon: 'ofm02.jpg',
+        description: '霜火食人魔將一次施放大量的元素攻擊。',
+        effect:
+          '施展範圍性的龍之吐息或冰霜新星。魔法箭屬性由霜火精通決定與切換。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
+        stats: [
+          {
+            label: '冷卻時間',
+            value: [60, 45, 25, 10],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 50,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '魔法噴射',
+        icon: 'ofm03.jpg',
+        description: '霜火食人魔將一次施放大量的元素攻擊。',
+        effect: '施展範圍性的龍之吐息或冰霜新星。施展不同的元素噴發將會提昇各自的元素專精點數。',
+        stats: [
+          {
+            label: '龍之吐息傷害',
+            value: [70, 140, 220, 320],
+          },
+          {
+            label: '冰霜新星傷害',
+            value: [35, 75, 115, 150],
+          },
+          {
+            label: '冰霜新星英雄持續時間',
+            value: [1.5, 2, 2.5, 3],
+            suffix: '秒',
+          },
+          {
+            label: '冰霜新星一般單位持續時間',
+            value: [3, 4, 5, 6],
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [70, 55, 40, 25],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 150,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '霜火箭',
+        icon: 'ofm04.jpg',
+        description: '將烈焰與寒霜合而為一，給予對手劇烈的痛苦。',
+        effect:
+          '向目標發射冰與火融合的魔法箭。每一等級的火焰專精將提供5的額外傷害。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
+        stats: [
+          {
+            label: '傷害',
+            value: [150, 300],
+          },
+          {
+            label: '攻擊速度減緩倍率',
+            value: 20,
+            suffix: '%x冰霜專精等級x2',
+          },
+          {
+            label: '移動速度減緩倍率',
+            value: 20,
+            suffix: '%x冰霜專精等級x2%',
+          },
+          {
+            label: '英雄緩慢持續時間',
+            value: 5,
+            suffix: '秒',
+          },
+          {
+            label: '一般單位緩慢持續時間',
+            value: 10,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: 30,
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 150,
+          },
+        ],
+      },
+    ],
+    author: 'asukachikaru',
+    lastUpdated: '2008/12/29',
+  },
+  {
+    name: {
+      zh: '重斧巴塞隆',
+      en: 'Great Axe Barselon',
+    },
+    title: {
+      zh: '疾風半人馬酋長',
+      en: 'Centaur Chieftain',
+    },
+    faction: 'alliance',
+    type: 'str',
+    icon: 'cc.jpg',
+    stats: {
+      strength: {
+        base: 23,
+        growth: 2.2,
+      },
+      agility: {
+        base: 22,
+        growth: 2.3,
+      },
+      intelligence: {
+        base: 13,
+        growth: 1.5,
+      },
+      baseHealth: 560,
+      baseMana: 130,
+      baseAttackMin: 25,
+      baseAttackMax: 35,
+      baseArmor: 2,
+      attackRange: 100,
+      movementSpeed: 320,
+    },
+    description: '',
+    abilities: [
+      {
+        type: 'active',
+        name: '攔截',
+        icon: 'cc01.jpg',
+        description: '在貧瘠之地長大的酋長，善於追擊每一個他看到的敵人。',
+        effect: '距離敵人一定距離以上時，衝鋒並擊暈周遭敵人，若距離不足時則直接擊暈目標。',
+        stats: [
+          {
+            label: '衝鋒距離',
+            value: [500, 700, 900, 1100],
+          },
+          {
+            label: '持續時間',
+            value: 3,
+            suffix: '秒',
+          },
+          {
+            label: '暈眩範圍',
+            value: 600,
+          },
+          {
+            label: '冷卻時間',
+            value: [24, 21, 18, 15],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 100,
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '斷筋',
+        icon: 'cc02.jpg',
+        description:
+          '機動力強大的半人馬族喜歡在戰鬥時找機會斬斷敵人腳筋，使自軍機動力強大的優點更加顯著',
+        effect: '酋長的下一次普攻將會減少目標的移動速度。在下一次普攻生效',
+        stats: [
+          {
+            label: '移動速度緩速倍率',
+            value: 30,
+            suffix: '%',
+          },
+          {
+            label: '持續時間',
+            value: 5,
+            suffix: '秒',
+          },
+          {
+            label: '冷卻時間',
+            value: [12, 10, 8, 6],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 60,
+          },
+        ],
+      },
+      {
+        type: 'passive',
+        name: '疾風之靈',
+        icon: 'cc03.jpg',
+        description:
+          '疾風半人馬一族的強壯馬身正是提供高速移動的最佳本錢，而疾風半人馬的祖靈護佑更是能大幅提升半人馬的機動力。',
+        effect: '增加酋長的移動速度。',
+        stats: [
+          {
+            label: '移動速度增加倍率',
+            value: [8, 16, 24, 32],
+            suffix: '%',
+          },
+        ],
+      },
+      {
+        type: 'active',
+        name: '致死打擊',
+        icon: 'cc04.jpg',
+        description: '重斧巴塞隆窮盡全身力量奮力一擊，將目標打成碎肉。',
+        effect: '對目標造成物理傷害。',
+        stats: [
+          {
+            label: '傷害',
+            value: [150, 300],
+          },
+          {
+            label: '冷卻時間',
+            value: [60, 40],
+            suffix: '秒',
+          },
+          {
+            label: '法力消耗',
+            value: 150,
+          },
+        ],
+      },
+    ],
+    author: 'warrix',
+    lastUpdated: '2008/12/29',
+  },
 ];
