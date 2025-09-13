@@ -5298,7 +5298,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '背刺',
-        icon: 'wd03.png',
+        icon: 'wd03.jpg',
         description: '偷襲乃是是最具殺傷力的攻擊。',
         effect: '從敵人背後攻擊時，增加額外傷害。',
         stats: [
@@ -5667,7 +5667,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '惡魔俯衝',
-        icon: 'import_druid_ravage',
+        icon: 'sd01.jpg',
         description: '運用吸血鬼的強大爆發力，瞬間衝刺至敵人面前。',
         effect: '向指定角度快速移動400距離，並增加30%攻擊力2秒。衝刺中為無敵狀態',
         stats: [
@@ -5680,7 +5680,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '不夜城之赤',
-        icon: 'sd02.png',
+        icon: 'sd02.jpg',
         description: '呼喚紅色靈氣從體內向上竄升，灼燒周遭敵人。',
         effect: '對周遭敵人造成傷害並減緩移動速度。',
         stats: [
@@ -5730,7 +5730,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '惡魔鬼影',
-        icon: 'sd04.png',
+        icon: 'sd04.jpg',
         description:
           '吸血鬼的運動能力，已經超出一般生物肉眼所能辨別的速度。一個忽左忽右高速前進的物體，彷彿分裂成好幾個般。',
         effect: '快速衝刺至指定方向800距離。',
@@ -5978,7 +5978,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '嗜殺者',
-        icon: 'hs03.png',
+        icon: 'hs03.jpg',
         description: '曼多基爾沉浸於殺戮的快感之中，每多殺一個人他就越瘋狂而更強大。',
         effect: '每殺死一定數量單位時，增加智慧點數。每當增加的數值超過1時才會增加。',
         stats: [
@@ -6157,7 +6157,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'neutral',
     type: 'agi',
-    icon: 'cb.png',
+    icon: 'cb.jpg',
     stats: {
       strength: {
         base: 24,
@@ -6346,7 +6346,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '霜火精通',
-        icon: 'ofm02.png',
+        icon: 'ofm02.jpg',
         description: '霜火食人魔將一次施放大量的元素攻擊。',
         effect:
           '施展範圍性的龍之吐息或冰霜新星。魔法箭屬性由霜火精通決定與切換。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
@@ -6401,7 +6401,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '霜火箭',
-        icon: 'ofm04.png',
+        icon: 'ofm04.jpg',
         description: '將烈焰與寒霜合而為一，給予對手劇烈的痛苦。',
         effect:
           '向目標發射冰與火融合的魔法箭。每一等級的火焰專精將提供5的額外傷害。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
@@ -6558,7 +6558,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '致死打擊',
-        icon: 'cc04.png',
+        icon: 'cc04.jpg',
         description: '重斧巴塞隆窮盡全身力量奮力一擊，將目標打成碎肉。',
         effect: '對目標造成物理傷害。',
         stats: [
