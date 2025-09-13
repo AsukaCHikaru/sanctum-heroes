@@ -7,7 +7,7 @@ export type HeroData = {
     zh: string;
     en: string;
   };
-  faction: 'alliance' | 'undead';
+  faction: 'alliance' | 'undead' | 'neutral';
   type: 'str' | 'agi' | 'int';
   icon: string;
   stats: {
@@ -60,7 +60,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'int',
-    icon: '/src/assets/hero/mega.jpg',
+    icon: 'mega.jpg',
     stats: {
       strength: {
         base: 16,
@@ -88,7 +88,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '火球術',
-        icon: '/src/assets/abilities/mega01.jpg',
+        icon: 'mega01.jpg',
         description: '發射一枚火球攻擊目標，對其造成火焰傷害。',
         effect: '對目標造成傷害。',
         stats: [
@@ -117,7 +117,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '製作魔法泉水',
-        icon: '/src/assets/abilities/mega02.jpg',
+        icon: 'mega02.jpg',
         description: '將魔力壓縮成為液體，能夠更靈活的運用。',
         effect: '製造不可交易、不可丟棄的魔法泉水，使用之後可以恢復魔力。',
         stats: [
@@ -138,7 +138,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '秘法心智',
-        icon: '/src/assets/abilities/mega03.jpg',
+        icon: 'mega03.jpg',
         description: '對魔法極為熟練的法師，除了懂得發出強力魔法，也對魔力的使用更加了解。',
         effect: '增加法師的魔力最大值及魔力回復速度。',
         stats: [
@@ -155,7 +155,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '炎爆術',
-        icon: '/src/assets/abilities/mega04.jpg',
+        icon: 'mega04.jpg',
         description: '丟出一枚殘暴的火球造成傷害並震昏目標敵方部隊。',
         effect: '對目標造成傷害及暈眩。',
         stats: [
@@ -200,7 +200,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'int',
-    icon: '/src/assets/hero/ab.jpg',
+    icon: 'ab.jpg',
     stats: {
       strength: {
         base: 19,
@@ -228,7 +228,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '神聖清風',
-        icon: '/src/assets/abilities/ab01.jpg',
+        icon: 'ab01.jpg',
         description: '呼喚一陣能量，來回復指定目標的生命點數。',
         effect: '回復目標的生命點數，並會在友軍身上彈跳，每次彈跳，回復力量就降低一些。',
         stats: [
@@ -265,7 +265,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '審判',
-        icon: '/src/assets/abilities/ab02.jpg',
+        icon: 'ab02.jpg',
         description: '宣判目標的罪，使之慢慢付出生命的代價。',
         effect: '在一段時間內每固定秒數對敵人造成傷害。',
         stats: [
@@ -298,7 +298,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '天譴',
-        icon: '/src/assets/abilities/ab03.jpg',
+        icon: 'ab03.jpg',
         description: '為友方單位祈福。攻擊獲得神之祈福的單位有可能遭到天譴。',
         effect: '攻擊被祈福的單位將遭到範圍攻擊。',
         stats: [
@@ -331,7 +331,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '聖堂',
-        icon: '/src/assets/abilities/ab04.jpg',
+        icon: 'ab04.jpg',
         description: '召喚強大的聖光能量，醫療範圍內的友軍及傷害範圍內的敵軍。',
         effect: '同時治療範圍內的友軍並對敵軍造成一半的傷害。',
         stats: [
@@ -372,7 +372,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: '/src/assets/hero/ac.jpg',
+    icon: 'ac.jpg',
     stats: {
       strength: {
         base: 16,
@@ -400,7 +400,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '隱匿',
-        icon: '/src/assets/abilities/ac01.jpg',
+        icon: 'ac01.jpg',
         description: '完全隱藏自己的身影，任何一名經過的敵人只能自求多福。',
         effect:
           '一定時間內使刺客消失，攻擊位於消失點周遭一定範圍內的敵人時將瞬間出現在他身旁，並造成50+隱匿秒數乘以10點傷害。',
@@ -426,7 +426,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '刀刃塗毒',
-        icon: '/src/assets/abilities/ac02.jpg',
+        icon: 'ac02.jpg',
         description: '在刀刃塗上致命劇毒，使敵人更快喪命。',
         effect: '使自身攻擊力增加一段時間。\n發動隱匿的期間，持續時間將凍結。',
         stats: [
@@ -452,7 +452,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '殘影',
-        icon: '/src/assets/abilities/ac03.jpg',
+        icon: 'ac03.jpg',
         description: '刺客靈巧的身影能夠躲避敵人的攻擊。',
         effect: '有機率躲避敵人的普通攻擊。',
         stats: [
@@ -466,7 +466,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '三倍危急',
-        icon: '/src/assets/abilities/ac04.jpg',
+        icon: 'ac04.jpg',
         description: '吸收了青骨精氣的刺客，在面對生死一瞬的場面時能夠作出更致命的攻擊。',
         effect: '吸收了青骨精氣的刺客，在面對生死一瞬的場面時能夠作出更致命的攻擊。',
         stats: [
@@ -497,7 +497,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'str',
-    icon: '/src/assets/hero/bar.jpg',
+    icon: 'bar.jpg',
     stats: {
       strength: {
         base: 29,
@@ -525,7 +525,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '投擲艾吉斯之牙',
-        icon: '/src/assets/abilities/bar01.jpg',
+        icon: 'bar01.jpg',
         description:
           '投擲魔法戰鎚「艾吉斯之牙」，造成傷害之後還會將對方打昏，並會自動回到主人手中。',
         effect: '對目標造成傷害及暈眩。',
@@ -561,7 +561,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '掃蕩',
-        icon: '/src/assets/abilities/bar02.jpg',
+        icon: 'bar02.jpg',
         description: '野蠻人大幅度揮動戰鎚，能夠揮掃到更多敵人。',
         effect: '攻擊傷害將擴散至目標週遭的敵軍。',
         stats: [
@@ -579,7 +579,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '腎上腺素爆發',
-        icon: '/src/assets/abilities/bar03.jpg',
+        icon: 'bar03.jpg',
         description: '野蠻人危及時將分泌大量的腎上腺素，發揮出超越平時的力量。',
         effect:
           '野蠻人的生命值低於一定數值時時將分泌大量腎上腺素，增加力量。當生命值低於50％將自動啟動。',
@@ -598,7 +598,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '全力揮擊',
-        icon: '/src/assets/abilities/bar04.jpg',
+        icon: 'bar04.jpg',
         description: '野蠻人全力揮動手中的戰鎚，對週遭敵人造成嚴重傷害。',
         effect: '啟動之後30秒內，野蠻人每次攻擊時造成範圍傷害。',
         stats: [
@@ -639,7 +639,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: '/src/assets/hero/bm.jpg',
+    icon: 'bm.jpg',
     stats: {
       strength: {
         base: 20,
@@ -667,7 +667,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '居合',
-        icon: '/src/assets/abilities/bm01.jpg',
+        icon: 'bm01.jpg',
         description: '以肉眼無法捕捉的速度移動到目標身後，並斬擊造成巨大傷害。',
         effect: '瞬間移動至目標身後並造成傷害。',
         stats: [
@@ -692,7 +692,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '縮地',
-        icon: '/src/assets/abilities/bm02.jpg',
+        icon: 'bm02.jpg',
         description: '強健的腳程能使大劍師在一瞬間縮短與敵人的距離。',
         effect: '瞬間移動至指定地點。',
         stats: [
@@ -713,7 +713,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '一擊斬',
-        icon: '/src/assets/abilities/bm03.jpg',
+        icon: 'bm03.jpg',
         description: '大劍師攻擊時奮力一擊，有機會在攻擊時造成更嚴重的傷害。',
         effect: '攻擊時有一定機率造成普通攻擊數倍的傷害。',
         stats: [
@@ -732,7 +732,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '旋風斬',
-        icon: '/src/assets/abilities/bm04.jpg',
+        icon: 'bm04.jpg',
         description: '讓大劍師身邊環繞著旋風斬的毀滅力量，導致他對魔法完全免疫。',
         effect: '對週遭敵軍造成傷害。',
         stats: [
@@ -773,7 +773,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'int',
-    icon: '/src/assets/hero/bs.jpg',
+    icon: 'bs.jpg',
     stats: {
       strength: {
         base: 19,
@@ -801,7 +801,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '撕裂隙間',
-        icon: '/src/assets/abilities/bs01.jpg',
+        icon: 'bs01.jpg',
         description: '將事物與事物之間的境界撕裂開來，使該範圍成為混沌並扭曲周遭敵人。',
         effect: '對自身周圍造成傷害，並在傷害區域中心創造一個隙間裂縫。',
         stats: [
@@ -826,7 +826,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '敵方與友方的境界',
-        icon: '/src/assets/abilities/bs02.jpg',
+        icon: 'bs02.jpg',
         description: '從隙間內出現的神秘力量，到底是敵是友？',
         effect:
           '在目標後方創造一個隙間，將他拖行進去。\n若目標與隙間裂縫的距離小於1300，便傳送至隙間裂縫。',
@@ -848,7 +848,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '自身與他人的境界',
-        icon: '/src/assets/abilities/bs03.jpg',
+        icon: 'bs03.jpg',
         description: '跨越自身與他人的境界，自身與目標將不再有阻礙存在。',
         effect: '使用技能後的下一次攻擊，將會在自身與攻擊目標旁創造兩個互通的傳送門。',
         stats: [
@@ -869,7 +869,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '此方與彼方的境界',
-        icon: '/src/assets/abilities/bs04.jpg',
+        icon: 'bs04.jpg',
         description: '跨越此方與彼方的境界，使距離的概念成為混沌，距離不再具有意義。',
         effect: '在指定地點與自身處創造兩個互通的傳送門。',
         stats: [
@@ -910,7 +910,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'int',
-    icon: '/src/assets/hero/ff.jpg',
+    icon: 'ff.jpg',
     stats: {
       strength: {
         base: 15,
@@ -938,7 +938,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '星間飛行',
-        icon: '/src/assets/abilities/ff01.jpg',
+        icon: 'ff01.jpg',
         description: '深藍色的夜空中，像流星一樣向你急急飛去。',
         effect:
           '飛行到指定地點，並在飛行中放出閃電，靠近瓦傑拉的敵人將被瓦傑拉身上的強大電流電傷。',
@@ -968,7 +968,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '閃電強化',
-        icon: '/src/assets/abilities/ff02.JPG',
+        icon: 'ff02.JPG',
         description: '從體內放出不可計量的閃電，對所有打擊它的人造成危害。',
         effect: '被攻擊時放出閃電',
         stats: [
@@ -989,7 +989,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '蛻皮',
-        icon: '/src/assets/abilities/ff03.jpg',
+        icon: 'ff03.jpg',
         description: '瓦傑拉經由空間波傳遞訊息的特性，使它能對已接收的傷害訊號產生免疫。',
         effect: '每次被敵方的法術指定一次就增加1%魔法抗性。',
         stats: [
@@ -1003,7 +1003,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '閃亮',
-        icon: '/src/assets/abilities/ff04.jpg',
+        icon: 'ff04.jpg',
         description: '閃亮☆',
         effect: '對周遭敵人造成傷害。',
         stats: [
@@ -1040,7 +1040,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'str',
-    icon: '/src/assets/hero/fs.jpg',
+    icon: 'fs.jpg',
     stats: {
       strength: {
         base: 25,
@@ -1068,7 +1068,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '嘲弄',
-        icon: '/src/assets/abilities/fs01.jpg',
+        icon: 'fs01.jpg',
         description: '嘲諷目標，使其向戰士移動，想要打他的臉。',
         effect: '一段時間內強制目標向戰士移動。',
         stats: [
@@ -1093,7 +1093,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '瘋狂打臉',
-        icon: '/src/assets/abilities/fs02.jpg',
+        icon: 'fs02.jpg',
         description: '快速揮動手中的刀，集中朝敵人臉部攻擊。',
         effect: '一段時間內增加攻擊速度，而且有可能擊暈敵人，但增加受到的傷害。',
         stats: [
@@ -1125,7 +1125,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '法術反彈',
-        icon: '/src/assets/abilities/fs03.jpg',
+        icon: 'fs03.jpg',
         description: '習於受到法師攻擊的戰士，漸漸熟悉了反擊的技巧。',
         effect: '被敵方法術指定時有機率反擊造成傷害。\n學習精通死亡之後，每死亡一次增加1%反彈機率',
         stats: [
@@ -1147,7 +1147,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '精通死亡',
-        icon: '/src/assets/abilities/fs04.jpg',
+        icon: 'fs04.jpg',
         description: '死習慣的戰士將能更熟練的釋放靈魂及復活，減少死亡時間，並對周遭敵軍造成影響。',
         effect: '復活等待時間縮短，死亡時週遭範圍內所有敵軍英雄永久減少全屬性。',
         stats: [
@@ -1179,7 +1179,7 @@ export const HERO: HeroData[] = [
       en: 'Kevin',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/kg.jpg',
+    icon: 'kg.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -1210,7 +1210,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '王國之敵',
-        icon: '/src/assets/abilities/kg01.jpg',
+        icon: 'kg01.jpg',
         description: '對王國的主要目標標記，使友軍能清楚看見他們該攻擊的目標。',
         effect: '減少目標的防禦力，並使他隨時暴露於友軍的視野。',
         stats: [
@@ -1243,7 +1243,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '名貴血統',
-        icon: '/src/assets/abilities/kg02.jpg',
+        icon: 'kg02.jpg',
         description: '類與藍龍混血的凱文，能夠化身為更具力量的形體。',
         effect: '變身為藍龍人，具有濺射傷害與增加血量。',
         stats: [
@@ -1268,7 +1268,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '堅韌防守',
-        icon: '/src/assets/abilities/kg03.jpg',
+        icon: 'kg03.jpg',
         description: '凱文不只自己具有強韌的防禦力，同時也能帶起隊友的防守。',
         effect: '自身增加魔法抗性，增加周遭友軍的防禦力。',
         stats: [
@@ -1290,7 +1290,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '橫掃千軍',
-        icon: '/src/assets/abilities/kg04.jpg',
+        icon: 'kg04.jpg',
         description: '大劍一揮，將敵人全數擊退。',
         effect: '將凱文前方120度之內的敵人擊退160距離，造成傷害並擊暈2秒。',
         stats: [
@@ -1326,7 +1326,7 @@ export const HERO: HeroData[] = [
       en: 'Cenarius',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/kog.jpg',
+    icon: 'kog.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -1355,7 +1355,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '老樹盤根',
-        icon: '/src/assets/abilities/kog01.jpg',
+        icon: 'kog01.jpg',
         description: '與樹木溝通，讓樹根從地面竄出，綑綁敵軍。',
         effect: '使指定目標無法移動與攻擊，並每秒受到傷害。',
         stats: [
@@ -1390,7 +1390,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '召喚暴風',
-        icon: '/src/assets/abilities/kog02.jpg',
+        icon: 'kog02.jpg',
         description: '召喚一個暴風，其強烈風速將妨礙所有附近敵軍的移動。',
         effect: '召喚一個不具攻擊力的暴風，減緩週遭敵軍的移動速度。',
         stats: [
@@ -1424,7 +1424,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '荊棘之光',
-        icon: '/src/assets/abilities/kog03.jpg',
+        icon: 'kog03.jpg',
         description: '一道光圈可以讓附近的友善部隊環繞著傷害性的護盾。',
         effect: '反彈敵人近戰攻擊的傷害。',
         stats: [
@@ -1442,7 +1442,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '鳥擊',
-        icon: '/src/assets/abilities/kog04.jpg',
+        icon: 'kog04.jpg',
         description: '呼喚自然的力量，阻擋所有試圖攻擊森林衛士的敵人。',
         effect: '召喚樹人。',
         stats: [
@@ -1479,7 +1479,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: '/src/assets/hero/lb.jpg',
+    icon: 'lb.jpg',
     stats: {
       strength: {
         base: 17,
@@ -1507,7 +1507,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '火焰之息',
-        icon: '/src/assets/abilities/lb01.jpg',
+        icon: 'lb01.jpg',
         description: '對敵方部隊吐出扇狀的火焰造成灼傷。',
         effect: '對範圍內的敵軍造成傷害。',
         stats: [
@@ -1540,7 +1540,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '彈跳火焰',
-        icon: '/src/assets/abilities/lb02.jpg',
+        icon: 'lb02.jpg',
         description: '從睿智的紅龍口中吐出的火球，能夠自己找到敵人。',
         effect: '每次攻擊時額外擊中更多敵人。',
         stats: [
@@ -1553,7 +1553,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '浴火',
-        icon: '/src/assets/abilities/lb03.jpg',
+        icon: 'lb03.jpg',
         description: '紅龍將全身點燃火焰，創造出令人難以忍受的高溫。',
         effect: '對週遭敵軍每秒造成傷害。',
         stats: [
@@ -1574,7 +1574,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '生命通道',
-        icon: '/src/assets/abilities/lb04.jpg',
+        icon: 'lb04.jpg',
         description: '掌管生命的紅龍之后將敵人的生命傳輸至紅龍身上，並疏導至友軍。',
         effect: '從目標敵軍吸收生命至紅龍，並加快週遭友軍的生命回復速度。',
         stats: [
@@ -1627,7 +1627,7 @@ export const HERO: HeroData[] = [
       en: 'Jaina Proudmore',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/mg.jpg',
+    icon: 'mg.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -1656,7 +1656,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '雷光衝擊',
-        icon: '/src/assets/abilities/mg01.jpg',
+        icon: 'mg01.jpg',
         description: '召喚出雷光快速的攻擊敵人並使之暈眩。',
         effect: '對目標造成傷害及暈眩。',
         stats: [
@@ -1693,7 +1693,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '召喚守護狼',
-        icon: '/src/assets/abilities/mg02.jpg',
+        icon: 'mg02.jpg',
         description: '召喚一隻沒有存在感的狼。',
         effect: '召喚一隻具有永久隱形術的狼為你戰鬥。',
         stats: [
@@ -1714,7 +1714,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '彈幕是力量',
-        icon: '/src/assets/abilities/mg03.jpg',
+        icon: 'mg03.jpg',
         description: '彈幕就是力量，這是理所當然的。',
         effect: '在一段時間內以彈幕對週遭的所有敵人攻擊。',
         stats: [
@@ -1751,7 +1751,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '天神烈破',
-        icon: '/src/assets/abilities/mg04.jpg',
+        icon: 'mg04.jpg',
         description: '放出強大的魔力炮，抹滅射線上的所有敵人。',
         effect: '對射線上的所有敵人造成嚴重傷害。',
         stats: [
@@ -1795,7 +1795,7 @@ export const HERO: HeroData[] = [
       en: 'Uther the Lightbringer',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/pal.jpg',
+    icon: 'pal.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -1824,7 +1824,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '聖光術',
-        icon: '/src/assets/abilities/pal01.jpg',
+        icon: 'pal01.jpg',
         description: '聖光的力量可以醫療友方活生生的部隊或是傷害敵方的不死部隊。',
         effect: '回復友軍的生命，或是對敵軍造成一半傷害。',
         stats: [
@@ -1849,7 +1849,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '神聖憤怒',
-        icon: '/src/assets/abilities/pal02.jpg',
+        icon: 'pal02.jpg',
         description: '灌注神力至戰鎚之上，對敵人發出神聖光芒。',
         effect:
           '啟動之後一段時間內，聖騎士攻擊時有可能：從目標身上對週遭敵人射出充滿神聖力量的箭矢。',
@@ -1884,7 +1884,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '白熱',
-        icon: '/src/assets/abilities/pal03.jpg',
+        icon: 'pal03.jpg',
         description: '烏瑟重拾失傳已久的聖騎士絕學，使白熱重現人間。',
         effect: '快速對周遭的敵人做出多次攻擊。',
         stats: [
@@ -1909,7 +1909,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '復仇',
-        icon: '/src/assets/abilities/pal04.jpg',
+        icon: 'pal04.jpg',
         description: '聖騎士在死亡之後將從天堂再次回到人間，繼續完成打倒灼炎軍的使命。',
         effect: '聖騎士在死亡之後將會復活。',
         stats: [
@@ -1933,7 +1933,7 @@ export const HERO: HeroData[] = [
       en: 'Tyrande Whisperwind',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/pom.jpg',
+    icon: 'pom.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -1962,7 +1962,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '咆哮',
-        icon: '/src/assets/abilities/pom01.jpg',
+        icon: 'pom01.jpg',
         description: '猛虎咆哮，激勵友軍。',
         effect: '讓附近友軍暫時獲得攻擊力加成。',
         stats: [
@@ -1992,7 +1992,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '獵鷹突擊',
-        icon: '/src/assets/abilities/pom02.jpg',
+        icon: 'pom02.jpg',
         description: '喚出獵鷹向前突擊。',
         effect: '對射線上的敵人造成傷害。',
         stats: [
@@ -2021,7 +2021,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '精準之光',
-        icon: '/src/assets/abilities/pom03.jpg',
+        icon: 'pom03.jpg',
         description: '一道光輝可以讓附近友方部隊的遠距攻擊有更強的破壞力。',
         effect: '增加週遭友軍的遠距攻擊力。',
         stats: [
@@ -2039,7 +2039,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '進攻',
-        icon: '/src/assets/abilities/pom04.jpg',
+        icon: 'pom04.jpg',
         description: '號召鐵衛士兵，鼓舞士氣，增加戰鬥能力。',
         effect: '增加週遭友軍的移動速度及攻擊速度。',
         stats: [
@@ -2073,7 +2073,7 @@ export const HERO: HeroData[] = [
       en: 'Rokhan',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/sh.jpg',
+    icon: 'sh.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -2102,7 +2102,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '連鎖閃電',
-        icon: '/src/assets/abilities/sh01.jpg',
+        icon: 'sh01.jpg',
         description: '信奉薩滿信仰的暗影獵人使用閃電攻擊敵人。',
         effect: '出一個閃電光球，可以在敵人之間跳躍；每一次跳躍破壞力就會減少。',
         stats: [
@@ -2136,7 +2136,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '邪法',
-        icon: '/src/assets/abilities/sh02.jpg',
+        icon: 'sh02.jpg',
         description: '將目標轉化為無攻擊能力的小動物。',
         effect: '將一個敵人轉化為亂數決定的生物，中止他們施法的能力。',
         stats: [
@@ -2165,7 +2165,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '蛇形結界',
-        icon: '/src/assets/abilities/sh03.jpg',
+        icon: 'sh03.jpg',
         description: '召喚一個固定不動的蛇形結界，來攻擊暗影獵人的敵人。這個結界對魔法免疫。',
         effect: '召喚結界為你戰鬥。',
         stats: [
@@ -2190,7 +2190,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '岩脈',
-        icon: '/src/assets/abilities/sh04.jpg',
+        icon: 'sh04.jpg',
         description: '暗影獵人運用自然的力量，召喚出一道岩脈。',
         effect: '目標點創造一道橫向的岩石魔像，一段時間後消失。',
         stats: [
@@ -2226,7 +2226,7 @@ export const HERO: HeroData[] = [
       en: 'Cairne Bloodhoof',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/tc.jpg',
+    icon: 'tc.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -2255,7 +2255,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '嘲弄',
-        icon: '/src/assets/abilities/tc01.jpg',
+        icon: 'tc01.jpg',
         description: '嘲弄敵人，使之攻擊戰牛酋長。',
         effect: '最接近戰牛酋長的敵人將被迫攻擊這個單位。',
         stats: [
@@ -2288,7 +2288,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '戰爭踐踏',
-        icon: '/src/assets/abilities/tc02.jpg',
+        icon: 'tc02.jpg',
         description: '用力跺擊地面，發出強大的震波。',
         effect: '對附近的部隊造成傷害並降低他們的移動速度與攻擊速度。',
         stats: [
@@ -2321,7 +2321,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '粉碎波',
-        icon: '/src/assets/abilities/tc03.jpg',
+        icon: 'tc03.jpg',
         description: '戰牛酋長在攻擊時，將有可能重重跺腳，對周遭的敵軍造成傷害。',
         effect: '攻擊時有一定機率造成範圍額外傷害。',
         stats: [
@@ -2343,7 +2343,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '熱血',
-        icon: '/src/assets/abilities/tc04.jpg',
+        icon: 'tc04.jpg',
         description: '流動在戰牛酋長體內的滾燙血液，讓他的力量倍增。',
         effect: '增加戰牛酋長的力量屬性。',
         stats: [
@@ -2367,7 +2367,7 @@ export const HERO: HeroData[] = [
       en: 'GBX-001',
     },
     faction: 'alliance',
-    icon: '/src/assets/hero/vg.jpg',
+    icon: 'vg.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -2396,7 +2396,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '龍騎兵',
-        icon: '/src/assets/abilities/vg01.jpg',
+        icon: 'vg01.jpg',
         description:
           '龍騎兵系統，全名為「分離式統合制御高速機動兵裝群」，放出後會自動攻擊週圍的敵人。',
         effect: '放出龍騎兵，自動攻擊週圍的敵人。',
@@ -2426,7 +2426,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '相轉移裝甲',
-        icon: '/src/assets/abilities/vg02.jpg',
+        icon: 'vg02.jpg',
         description: '以相轉移原理來防禦高熱和衝擊的特殊裝甲，具有相當高的防護效果。',
         effect: '降低受到的實體傷害。',
         stats: [
@@ -2439,7 +2439,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '光束噴槍',
-        icon: '/src/assets/abilities/vg03.jpg',
+        icon: 'vg03.jpg',
         description:
           '先驅者的標準武器之一，駕駛技術夠好的狀況下可利用它擊中敵人的腳部造成行動破壞的效果。',
         effect:
@@ -2466,7 +2466,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '全彈發射',
-        icon: '/src/assets/abilities/vg04.jpg',
+        icon: 'vg04.jpg',
         description: '發射所有飛彈及光束，周遭的敵人將無一倖免。需要時間搜尋並瞄準目標。',
         effect: '對周遭敵人造成傷害。',
         stats: [
@@ -2506,7 +2506,7 @@ export const HERO: HeroData[] = [
       en: 'Nagaz',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/wl.jpg',
+    icon: 'wl.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -2535,7 +2535,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '暗影箭',
-        icon: '/src/assets/abilities/wl01.jpg',
+        icon: 'wl01.jpg',
         description: '積蓄黑暗能量並發射，惡魔戰鎖的招牌招式。',
         effect: '對單體目標造成傷害。',
         stats: [
@@ -2560,7 +2560,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '獻祭',
-        icon: '/src/assets/abilities/wl02.jpg',
+        icon: 'wl02.jpg',
         description: '使納加茲的敵人全身被地獄的炙熱化為灰燼。',
         effect: '對敵人造成持續傷害。',
         stats: [
@@ -2589,7 +2589,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '獄甲術',
-        icon: '/src/assets/abilities/wl03.jpg',
+        icon: 'wl03.jpg',
         description: '納加茲利用惡魔之力強化自己的鎧甲，使其擁有再生的能力，更能吸取血肉來回復。',
         effect: '增加防禦力及生命回復。',
         stats: [
@@ -2606,7 +2606,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '夜幕',
-        icon: '/src/assets/abilities/wl04.jpg',
+        icon: 'wl04.jpg',
         description: '夜晚，魔將的舞台。',
         effect: '使用暗影箭時有機率額外發動一次。',
         stats: [
@@ -2630,7 +2630,7 @@ export const HERO: HeroData[] = [
       en: 'Bangalash MK.II',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/at.jpg',
+    icon: 'at.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -2659,7 +2659,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '近戰防衛系統—金剛',
-        icon: '/src/assets/abilities/at01.jpg',
+        icon: 'at01.jpg',
         description: '為了反制想要在坦克上裝C4的敵人所研發出來的武器。',
         effect: '自動對範圍內的敵人發射飛彈攻擊，射程短但射速高。',
         stats: [
@@ -2680,7 +2680,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '近戰防衛系統—神盾',
-        icon: '/src/assets/abilities/at02.jpg',
+        icon: 'at02.jpg',
         description:
           '為了反制躲在遠方的對戰車手持火箭炮所研發出來的武器，能夠自動偵測出敵人並攻擊。',
         effect: '自動對範圍內的敵人發射飛彈攻擊，射程遠但射速低落。',
@@ -2702,7 +2702,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '鐵幕',
-        icon: '/src/assets/abilities/at03.jpg',
+        icon: 'at03.jpg',
         description: '風險投資公司的尖端科技，能使坦克短暫時間內無人可擋。',
         effect: '使坦克在短暫時間內增加極高防禦力。',
         stats: [
@@ -2723,7 +2723,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '質量殘像',
-        icon: '/src/assets/abilities/at04.jpg',
+        icon: 'at04.jpg',
         description:
           '說穿了只是掉漆的假像罷了。天譴坦克脫去一小部分特殊塗料造成假像，迷惑敵方雷達。',
         effect: '製造不具有攻擊力的殘像，承受兩倍傷害。',
@@ -2765,7 +2765,7 @@ export const HERO: HeroData[] = [
       en: 'Griswold',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/bb.jpg',
+    icon: 'bb.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -2794,7 +2794,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '吞食',
-        icon: '/src/assets/abilities/bb01.jpg',
+        icon: 'bb01.jpg',
         description: '可以吃掉你嗎？',
         effect:
           '將目標吞下，對目標每秒造成傷害並補充刀手的生命，直到目標死亡或是刀手被殺。增加屍毒一個等級。',
@@ -2824,7 +2824,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '髒污之血',
-        icon: '/src/assets/abilities/bb02.jpg',
+        icon: 'bb02.jpg',
         description: '被吞食的部隊，他們的血液象徵著與生命完全相反的東西。',
         effect: '對範圍內的敵軍降低攻擊速度及移動速度。',
         stats: [
@@ -2865,7 +2865,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '瘟疫',
-        icon: '/src/assets/abilities/bb03.jpg',
+        icon: 'bb03.jpg',
         description: '刀手散播著瘟疫般的氣體，隨著體內屍毒的累積，瘟疫雲逐漸散布到世界各地。',
         effect: '每次攻擊時都會在原地產生一個疾病雲一段時間，對週遭敵軍造成傷害。',
         stats: [
@@ -2882,7 +2882,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '屍毒',
-        icon: '/src/assets/abilities/bb03.jpg',
+        icon: 'bb03.jpg',
         description: '屍毒效果隨等級增長。',
         effect: '增強其他技能效果。',
         stats: [
@@ -2905,7 +2905,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '染血刀刃',
-        icon: '/src/assets/abilities/bb04.jpg',
+        icon: 'bb04.jpg',
         description: '我劍上的血跡快乾了！',
         effect: '增加刀手的攻擊力。殺死英雄時增加屍毒一個等級。',
         stats: [
@@ -2929,7 +2929,7 @@ export const HERO: HeroData[] = [
       en: 'Kiwami',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/cha.jpg',
+    icon: 'cha.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -2958,7 +2958,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '螺旋搏擊',
-        icon: '/src/assets/abilities/cha01.jpg',
+        icon: 'cha01.jpg',
         description: '直擊心臟部位的強力一擊。',
         effect: '對目標造成傷害及暈眩。',
         stats: [
@@ -2987,7 +2987,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '猛虎硬爬山',
-        icon: '/src/assets/abilities/cha02.jpg',
+        icon: 'cha02.jpg',
         description: '力道精巧的猛力一擊。',
         effect: '對目標造成傷害及暈眩，並擊退500距離。',
         stats: [
@@ -3020,7 +3020,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '弓身彈影',
-        icon: '/src/assets/abilities/cha03.jpg',
+        icon: 'cha03.jpg',
         description: '於腿部瞬間使力，快速彈至敵人身前。',
         effect: '瞬間移動至敵人身前造成傷害。',
         stats: [
@@ -3045,7 +3045,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '浸透勁',
-        icon: '/src/assets/abilities/cha04.jpg',
+        icon: 'cha04.jpg',
         description: '運氣調息，針對敵方弱點發出強大氣勁。',
         effect: '對射線範圍上的敵人造成傷害。',
         stats: [
@@ -3081,7 +3081,7 @@ export const HERO: HeroData[] = [
       en: "Anub'arak",
     },
     faction: 'undead',
-    icon: '/src/assets/hero/cl.jpg',
+    icon: 'cl.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -3110,7 +3110,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '穿刺',
-        icon: '/src/assets/abilities/cl01.jpg',
+        icon: 'cl01.jpg',
         description:
           '用古墓之王的巨爪重擊地面，在直線上打出卷鬚尖刺造成傷害，同時把敵方的部隊丟到半空中。',
         effect: '對範圍內的敵軍造成傷害並暈眩。',
@@ -3148,7 +3148,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '尖刺甲殼',
-        icon: '/src/assets/abilities/cl02.jpg',
+        icon: 'cl02.jpg',
         description: '墓之王會形成倒刺般的角質外殼，增強它的防禦力，並反彈近戰敵人的攻擊。',
         effect: '增加防禦力，並反彈敵軍近距離攻擊的一部分。',
         stats: [
@@ -3166,7 +3166,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '恫嚇',
-        icon: '/src/assets/abilities/cl03.jpg',
+        icon: 'cl03.jpg',
         description: '古墓之王甲殼上的尖刺掛滿了屍體，令敵軍心生恐懼。',
         effect: '降低週遭敵軍的防禦力。',
         stats: [
@@ -3183,7 +3183,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '寄生蟲噴射',
-        icon: '/src/assets/abilities/cl04.jpg',
+        icon: 'cl04.jpg',
         description: '古墓之王的部下不只是那些地底王國的戰士，還有他體內的寄生蟲。',
         effect:
           '對敵方的部隊進行寄生，每秒造成傷害。如果受到寄生的部隊在寄生效果持續的狀態下死亡，他的屍體中會生出寄生蟲。',
@@ -3224,7 +3224,7 @@ export const HERO: HeroData[] = [
       en: 'Lastknife',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/cm.jpg',
+    icon: 'cm.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -3253,7 +3253,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '白鴿的隱藏',
-        icon: '/src/assets/abilities/cm01.jpg',
+        icon: 'cm01.jpg',
         description: '雷斯特將化作白鴿並消失在戰場之上，任何靠近白鴿的敵人將付出慘痛的代價。',
         effect: '魔術師召喚出幾隻白鴿後隱形，白鴿具有神風能力。',
         stats: [
@@ -3283,7 +3283,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '鏡像轉移',
-        icon: '/src/assets/abilities/cm02.jpg',
+        icon: 'cm02.jpg',
         description: '在不可思議的技巧之下，雷斯特得以與同伴，甚至是敵人交換位置。',
         effect: '與目標交換位置。若目標為敵人，將被困住一段時間。',
         stats: [
@@ -3312,7 +3312,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '逃脫的秘訣',
-        icon: '/src/assets/abilities/cm03.jpg',
+        icon: 'cm03.jpg',
         description: '雷斯特敏捷而優雅的姿態將助他躲避致命的攻擊。',
         effect: '有一定機率閃避攻擊。',
         stats: [
@@ -3326,7 +3326,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '鋒利穿心攻擊',
-        icon: '/src/assets/abilities/cm04.jpg',
+        icon: 'cm04.jpg',
         description:
           '「這就是表演的最高潮，睜大眼睛吧，跟我一樣怕血的朋友，請跟我一樣戴上眼罩吧。」',
         effect: '將目標綑綁，並對他射出一連串的飛刀。（施展期間，混沌魔術師將成為無法點選的狀態）',
@@ -3367,7 +3367,7 @@ export const HERO: HeroData[] = [
       en: 'Arthas',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/dk.jpg',
+    icon: 'dk.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -3396,7 +3396,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '黑死爪',
-        icon: '/src/assets/abilities/dk01.jpg',
+        icon: 'dk01.jpg',
         description: '死亡的纏繞可以傷害敵方活生生的部隊，或醫療一個友方的不死部隊。',
         effect: '補充友軍生命，或對敵軍造成一半傷害。',
         stats: [
@@ -3425,7 +3425,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '亡靈威壓',
-        icon: '/src/assets/abilities/dk02.jpg',
+        icon: 'dk02.jpg',
         description: '死亡騎士釋放出被他所殺的生物所成為的亡靈，侵蝕周遭敵軍的戰意。',
         effect: '降低周遭敵軍的攻擊力。',
         stats: [
@@ -3455,7 +3455,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '邪黑氣',
-        icon: '/src/assets/abilities/dk03.jpg',
+        icon: 'dk03.jpg',
         description: '死亡騎士的邪惡力量能使週遭的不死生物更加活躍。',
         effect: '增加附近友方部隊的移動速度與生命再生速率。',
         stats: [
@@ -3477,7 +3477,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '爆衝亡靈',
-        icon: '/src/assets/abilities/dk04.jpg',
+        icon: 'dk04.jpg',
         description: '殺死死亡騎士時，他體內禁錮的亡靈將全部逃脫出來，衝擊附近的敵人。',
         effect: '死亡時對週遭敵軍造成傷害。',
         stats: [
@@ -3505,7 +3505,7 @@ export const HERO: HeroData[] = [
       en: 'Amurtart',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/ds.jpg',
+    icon: 'ds.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -3534,7 +3534,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '劇毒之牙',
-        icon: '/src/assets/abilities/ds01.jpg',
+        icon: 'ds01.jpg',
         description: '吐出一枚塗著劇毒的尖牙，影響目標的行動。',
         effect: '每固定秒數對目標造成傷害並減緩移動速度。',
         stats: [
@@ -3572,7 +3572,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '戰鬥狂怒',
-        icon: '/src/assets/abilities/ds02.jpg',
+        icon: 'ds02.jpg',
         description: '被激怒的龍將以更快的速度攻擊敵人。',
         effect: '增加黑龍的攻擊速度。',
         stats: [
@@ -3598,7 +3598,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '龍之恐懼術',
-        icon: '/src/assets/abilities/ds04.jpg',
+        icon: 'ds04.jpg',
         description: '龍族天生具有的散發殺氣能力，使目標恐懼逃跑。',
         effect: '使目標不受控制的朝不固定地點逃跑。',
         stats: [
@@ -3634,7 +3634,7 @@ export const HERO: HeroData[] = [
       en: "Kel'Thuzad",
     },
     faction: 'undead',
-    icon: '/src/assets/hero/lich.jpg',
+    icon: 'lich.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -3663,7 +3663,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '寒冰爆',
-        icon: '/src/assets/abilities/lich01.jpg',
+        icon: 'lich01.jpg',
         description: '引爆一個單位，讓他體內的邪惡力量四散，並補充到友軍身上。',
         effect: '對目標及週遭部隊造成傷害並降低移動及攻擊速度。',
         stats: [
@@ -3716,7 +3716,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '寒冰屏障',
-        icon: '/src/assets/abilities/lich02.jpg',
+        icon: 'lich02.jpg',
         description: '巫妖被一道寒冰屏障所籠罩。',
         effect:
           '巫妖在一段時間內不會受到任何物理和法術傷害，並加快生命回復速度，但是在這期間也無法攻擊或施法，移動將解除屏障。',
@@ -3742,7 +3742,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '支配冰冷',
-        icon: '/src/assets/abilities/lich03.jpg',
+        icon: 'lich03.jpg',
         description: '降低敵方的冰冷抵抗力，使巫妖的冰系魔法有更大的傷害。',
         effect: '增加寒冰爆的攻擊力。',
         stats: [
@@ -3759,7 +3759,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '急凍領域',
-        icon: '/src/assets/abilities/lich04.jpg',
+        icon: 'lich04.jpg',
         description: '創造出一片極低溫的區域，對敵軍造成凍傷。',
         effect: '範圍內每秒造成傷害並減緩移動速度。',
         stats: [
@@ -3808,7 +3808,7 @@ export const HERO: HeroData[] = [
       en: 'Victor',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/lyc.jpg',
+    icon: 'lyc.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -3839,7 +3839,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '感染',
-        icon: '/src/assets/abilities/lyc01.jpg',
+        icon: 'lyc01.jpg',
         description:
           '被狼人咬中的單位將無法施展魔法，並且在死後成為狼人。被此技能攻擊的目標死後將成為狼人。',
         stats: [
@@ -3893,7 +3893,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '狂犬病',
-        icon: '/src/assets/abilities/lyc02.jpg',
+        icon: 'lyc02.jpg',
         description:
           '犬齒中的毒素會讓敵人受到疾病的感染。被擊中的敵人將每秒受到傷害並降低移動速度。',
         stats: [
@@ -3919,7 +3919,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '狼群領袖',
-        icon: '/src/assets/abilities/lyc03.jpg',
+        icon: 'lyc03.jpg',
         description: '狼人散發出的領袖氣質，使得他每一次攻擊都能造成更大傷害。增加攻擊力。',
         stats: [
           {
@@ -3932,7 +3932,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '狼化',
-        icon: '/src/assets/abilities/lyc04.jpg',
+        icon: 'lyc04.jpg',
         description:
           '狼人將成為完全的狼，失去理智而無法施展技能，但也具有更加強大的肉搏力量。轉化成巨狼，降低攻擊間隔，但也無法施展技能。',
         stats: [
@@ -3961,7 +3961,7 @@ export const HERO: HeroData[] = [
       en: 'Avdol',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/mr.jpg',
+    icon: 'mr.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -3990,7 +3990,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '火彈',
-        icon: '/src/assets/abilities/mr01.jpg',
+        icon: 'mr01.jpg',
         description:
           '召喚一枚火彈，毀滅所有阻擋它的物體。發射一枚火彈，飛行一段距離後爆炸。若飛行途中撞擊其它物體，則直接爆炸。',
         stats: [
@@ -4018,7 +4018,7 @@ export const HERO: HeroData[] = [
       },
       {
         type: 'passive',
-        icon: '/src/assets/abilities/mr02.jpg',
+        icon: 'mr02.jpg',
         name: '火焰狂熱',
         description: '火彈變得更具有毀滅性。增加火彈的燃燒軌跡範圍。',
         stats: [
@@ -4030,7 +4030,7 @@ export const HERO: HeroData[] = [
       },
       {
         type: 'passive',
-        icon: '/src/assets/abilities/mr03.jpg',
+        icon: 'mr03.jpg',
         name: '火焰化身',
         description:
           '踩踏在火焰上的火焰魔術師感到更加自在。火彈的射線上出現燃燒軌跡，靠近燃燒軌跡的紅色魔術師將隱形及增加攻擊速度與移動速度。',
@@ -4049,7 +4049,7 @@ export const HERO: HeroData[] = [
       },
       {
         type: 'passive',
-        icon: '/src/assets/abilities/mr04.jpg',
+        icon: 'mr04.jpg',
         name: '衝擊',
         description:
           '火彈爆炸時的猛烈震波，使周遭的敵人暫時失去戰鬥能力。火彈爆炸時使周遭敵人暈眩。',
@@ -4082,7 +4082,7 @@ export const HERO: HeroData[] = [
       en: 'Furyedge',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/po.jpg',
+    icon: 'po.jpg',
     type: 'str',
     stats: {
       strength: {
@@ -4111,7 +4111,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '跳劈',
-        icon: '/src/assets/abilities/po01.jpg',
+        icon: 'po01.jpg',
         description: '高高跳起，藉著重力增強揮刀的力道，造成毀滅性打擊。攻擊敵人並造成暈眩。',
         stats: [
           {
@@ -4138,7 +4138,7 @@ export const HERO: HeroData[] = [
       },
       {
         type: 'active',
-        icon: '/src/assets/abilities/po02.jpg',
+        icon: 'po02.jpg',
         name: '嗜血慾望',
         description:
           '從任何一個目標身上奪取血肉，對血的慾望能使獸人更加狂暴，更具有破壞力。對目標造成傷害，並增加獸人的攻擊力。',
@@ -4173,7 +4173,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '破甲',
-        icon: '/src/assets/abilities/po03.jpg',
+        icon: 'po03.jpg',
         description: '波斯獸人強大的力量將擊破目標的盔甲。被獸人擊中的敵人將降低防禦一段時間。',
         stats: [
           {
@@ -4185,7 +4185,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '血性狂暴',
-        icon: '/src/assets/abilities/po04.jpg',
+        icon: 'po04.jpg',
         description:
           '對血的慾望提升到極限，獸人將會不顧一切消滅敵人，只為了享受切割血肉的快感。一段時間之內增加攻擊力、防禦力、生命值並魔法免疫。',
         stats: [
@@ -4225,7 +4225,7 @@ export const HERO: HeroData[] = [
       en: 'Yuyuko',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/pp.jpg',
+    icon: 'pp.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -4254,7 +4254,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '返魂蝶',
-        icon: '/src/assets/abilities/pp01.jpg',
+        icon: 'pp01.jpg',
         description: '具有操縱死亡能力的幽靈，能夠輕易的讓死者重生。喚醒周遭的屍體為幽靈而戰。',
         stats: [
           {
@@ -4279,7 +4279,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '幽影之夢',
-        icon: '/src/assets/abilities/pp02.jpg',
+        icon: 'pp02.jpg',
         description:
           '吸收周遭死者殘存的精力，增加自身的力量，同時對周遭敵人造成傷害。吞食屍兵回復生命並增加生命上限，同時對周遭敵人造成傷害。',
         stats: [
@@ -4312,7 +4312,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '華胥的永眠',
-        icon: '/src/assets/abilities/pp03.jpg',
+        icon: 'pp03.jpg',
         description: '打開通往冥界的門，使幽靈湧入。悠悠可周遭有單位死亡時，回復生命。',
         stats: [
           {
@@ -4328,7 +4328,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '優雅綻放的墨染之櫻',
-        icon: '/src/assets/abilities/pp04.jpg',
+        icon: 'pp04.jpg',
         description:
           '充滿妖力的櫻花「西行妖」具有吸收他人的養分作為己用的能力。對目標造成傷害，並回復傷害數值兩倍的生命。',
         stats: [
@@ -4364,7 +4364,7 @@ export const HERO: HeroData[] = [
       en: 'Alsa Iron-Cell',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/shw.jpg',
+    icon: 'shw.jpg',
     type: 'agi',
     stats: {
       strength: {
@@ -4393,7 +4393,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '暗影潛行',
-        icon: '/src/assets/abilities/shw01.jpg',
+        icon: 'shw01.jpg',
         description:
           '影行客將自我的身形隱藏於陰影之中，無所不在的陰影將可以使他通行無阻。讓影行客隱形並增加移動速度，隱形狀態下的第一次攻擊將威力加倍，但攻擊或施法後隱形將解除。',
         stats: [
@@ -4423,7 +4423,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '影跡擊',
-        icon: '/src/assets/abilities/shw02.jpg',
+        icon: 'shw02.jpg',
         description:
           '打出一個負力場的能源彈，可以燒掉對方部隊的法力點數，並造成同數值的傷害。減少目標的法力，並減少相同的生命。',
         stats: [
@@ -4447,7 +4447,7 @@ export const HERO: HeroData[] = [
       },
       {
         type: 'passive',
-        icon: '/src/assets/abilities/shw03.jpg',
+        icon: 'shw03.jpg',
         name: '暗影之怒',
         description: '夜色與陰影將賜與影行客更大的力量。攻擊時有一定機率擊暈目標並造成額外傷害。',
         stats: [
@@ -4473,7 +4473,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '黑色安息日',
-        icon: '/src/assets/abilities/shw04.jpg',
+        icon: 'shw04.jpg',
         description:
           '任何擁有影子的生物將受到傷害，並成為影行客的路徑。向目標發射一枚影之箭，擊中目標造成傷害，同一瞬間影行客會在目標的身邊現身。影之箭路徑上的敵人會受到傷害。',
         stats: [
@@ -4513,7 +4513,7 @@ export const HERO: HeroData[] = [
       en: 'Palpatine',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/sith.jpg',
+    icon: 'sith.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -4541,7 +4541,7 @@ export const HERO: HeroData[] = [
     abilities: [
       {
         type: 'active',
-        icon: '/src/assets/abilities/sith01.jpg',
+        icon: 'sith01.jpg',
         name: '無限的力量',
         description: '大喊著「Unlimited Power!!」並發出強烈的黑暗原力閃電。對目標造成傷害並淨化。',
         stats: [
@@ -4562,7 +4562,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '原力鎖喉',
-        icon: '/src/assets/abilities/sith02.jpg',
+        icon: 'sith02.jpg',
         description:
           '西斯側的絕地武士必修招式，以原力攻擊目標的喉嚨。使目標無法移動及攻擊並慢慢損失生命。',
         stats: [
@@ -4583,7 +4583,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '第六十六號密令',
-        icon: '/src/assets/abilities/sith03.jpg',
+        icon: 'sith03.jpg',
         description: '第六十六號密令啟動，所有伏兵行動。使目標週遭的敵軍攻擊目標。',
         effect: '',
         stats: [
@@ -4604,7 +4604,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '黑暗原力之誘',
-        icon: '/src/assets/abilities/sith04.jpg',
+        icon: 'sith04.jpg',
         description:
           '以黑暗原力分裂對象的黑暗面，產生一個對西斯絕對忠實的奴僕。創造一個具有本尊一部分攻擊力的分身。',
         stats: [
@@ -4636,7 +4636,7 @@ export const HERO: HeroData[] = [
       en: 'Bartuc',
     },
     faction: 'undead',
-    icon: '/src/assets/hero/spw.jpg',
+    icon: 'spw.jpg',
     type: 'int',
     stats: {
       strength: {
@@ -4665,7 +4665,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '祖靈守護',
-        icon: '/src/assets/abilities/spw01.jpg',
+        icon: 'spw01.jpg',
         description: '召喚祖靈現形，守護友軍。創造一個結界，在結界周遭的非英雄友軍將獲得無敵裝甲。',
         stats: [
           {
@@ -4694,7 +4694,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '隱形術',
-        icon: '/src/assets/abilities/spw02.jpg',
+        icon: 'spw02.jpg',
         description:
           '將同伴的身形置於幽界之中，讓他的生命得以保存。讓範圍內的傭兵部隊隱形，並與靈行者同時增加移動速度，如果部隊展開攻擊，使用能力或是施展法術，就會為人所見。',
         stats: [
@@ -4725,7 +4725,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '狂野魂魄',
-        icon: '/src/assets/abilities/spw03.jpg',
+        icon: 'spw03.jpg',
         description:
           '巴特克能激起同伴最瘋狂的意志，使他們變得更為嗜血。增加附近友軍的攻擊速度，並使近戰單位攻擊時獲得攻擊力一部分的生命值。',
         stats: [
@@ -4748,7 +4748,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '戰蹄呼喚',
-        icon: '/src/assets/abilities/spw04.jpg',
+        icon: 'spw04.jpg',
         description:
           '巴特克將會一名同伴的靈魂中最狂暴的部份牽引出來，將其轉變為戰場上最駭人的野獸：戰牛一族。將一個友方非英雄單位轉變為戰牛族。',
         stats: [
@@ -4797,7 +4797,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'str',
-    icon: 'dru.jpg',
+    icon: 'dru.png',
     stats: {
       strength: {
         base: 22,
@@ -4825,7 +4825,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '爪擊',
-        icon: 'dru01.jpg',
+        icon: 'dru01.png',
         description: '對於使自己發怒的敵人，只能以熊爪發洩一番。',
         effect: '增加基本攻擊力、降低攻擊速度。每次攻擊產生1點怒氣，上限五點。',
         stats: [
@@ -4843,7 +4843,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '狂怒',
-        icon: 'dru02.jpg',
+        icon: 'dru02.png',
         description: '釋放狂怒，全力發洩在敵人身上。',
         effect: '增加攻擊速度，並且攻擊具有緩速效果。消耗3點怒氣。',
         stats: [
@@ -4872,7 +4872,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '熊掌擊',
-        icon: 'dru03.jpg',
+        icon: 'dru03.png',
         description: '化身為熊，用熊掌用力打他的臉，啪！',
         effect: '對目標造成傷害。消耗5點怒氣。目標具有撕裂出血效果時，造成2倍傷害',
         stats: [
@@ -4890,7 +4890,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '撕裂',
-        icon: 'dru04.jpg',
+        icon: 'dru04.png',
         description: '撕裂傷口，使之出血。',
         effect: '使目標受到持續傷害，並增加自身攻擊力。消耗2點怒氣。',
         stats: [
@@ -4935,7 +4935,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: 'trc.jpg',
+    icon: 'trc.png',
     stats: {
       strength: {
         base: 18,
@@ -4962,7 +4962,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '武器附魔︰十字軍',
-        icon: 'trc01.jpg',
+        icon: 'trc01.png',
         description: '武器附魔的十字軍之力，能夠增加百夫長的破壞力，甚至吸取敵人的生命。',
         effect: '增加自己的攻擊力，並且每次攻擊時都會吸取攻擊力一部分的生命',
         stats: [
@@ -4994,7 +4994,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '兇砍',
-        icon: 'trc02.jpg',
+        icon: 'trc02.png',
         description: '百夫長開始失去理智地砍擊敵人，濺出的鮮血已分不出是誰的',
         effect: '開啟後，每次攻擊都會對自己與目標造成最大血量%數的傷害。',
         stats: [
@@ -5013,7 +5013,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '追跡者',
-        icon: 'trc03.jpg',
+        icon: 'trc03.png',
         description: '循著最微小的細節追蹤敵人，是每個森林食人妖都必須具備的技巧。',
         effect: '顯示敵方英雄所在地8秒。',
         stats: [
@@ -5035,7 +5035,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '英勇衝鋒',
-        icon: 'trc04.jpg',
+        icon: 'trc04.png',
         description: '百夫長一夫當關地衝向敵人，戰鬥的刺激使他變得極度亢奮。',
         effect: '對目標衝鋒，擊中目標之後增加攻擊速度50%，持續8秒。距離不足400時，無法衝鋒',
         stats: [
@@ -5069,7 +5069,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: 'hm.jpg',
+    icon: 'hm.png',
     stats: {
       strength: {
         base: 17,
@@ -5097,7 +5097,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '幻想風靡',
-        icon: 'hm01.jpg',
+        icon: 'hm01.png',
         description: '纏繞旋風在身上，加快揮動氣流攻擊的速度。',
         effect: '增加攻擊速度。',
         stats: [
@@ -5125,7 +5125,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '疾走風靡',
-        icon: 'hm02.jpg',
+        icon: 'hm02.png',
         description: '纏繞旋風，對前方進行突擊。',
         effect: '向英雄前方瞬間移動400距離，並造成緩速。',
         stats: [
@@ -5153,7 +5153,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '疾風扇',
-        icon: 'hm03.jpg',
+        icon: 'hm03.png',
         description: '使用團扇捲起旋風，襲擊周遭敵人。',
         effect: '對目標附近敵人造成擴散傷害。',
         stats: [
@@ -5166,7 +5166,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '風神無雙',
-        icon: 'hm04.jpg',
+        icon: 'hm04.png',
         description: '將風纏繞達到最大加速，在敵人身上跳躍，來回攻擊。',
         effect: '對指定目標的周遭造成傷害。',
         stats: [
@@ -5205,7 +5205,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: 'wd.jpg',
+    icon: 'wd.png',
     stats: {
       strength: {
         base: 19,
@@ -5233,7 +5233,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '闇影擊',
-        icon: 'wd01.jpg',
+        icon: 'wd01.png',
         description: '對目標投擲一枚塗有劇毒的匕首。',
         effect:
           '射出一枚可以造成大量傷害的淬毒匕首，隨後還會持續性傷害。目標的移動速度也會減緩一段時間。',
@@ -5284,7 +5284,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '融影',
-        icon: 'wd02.jpg',
+        icon: 'wd02.png',
         description: '瞬間陰影合而為一，使敵方無法察覺她的存在。',
         effect: '使米夫擁有半永久的隱形能力，攻擊或施法會使她暫時現形。',
         stats: [
@@ -5298,7 +5298,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '背刺',
-        icon: 'wd03.jpg',
+        icon: 'wd03.png',
         description: '偷襲乃是是最具殺傷力的攻擊。',
         effect: '從敵人背後攻擊時，增加額外傷害。',
         stats: [
@@ -5311,7 +5311,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '一閃',
-        icon: 'wd04.jpg',
+        icon: 'wd04.png',
         description: '膽敢向點典獄長出手的敵人，將承受如電光般迅速的復仇。',
         effect: '施展之後的短時間內若受到攻擊，米夫將瞬間移動至目標背後。',
         stats: [
@@ -5342,7 +5342,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'alliance',
     type: 'agi',
-    icon: 'nr.jpg',
+    icon: 'nr.png',
     stats: {
       strength: {
         base: 15,
@@ -5370,7 +5370,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '鎂箭',
-        icon: 'nr01.jpg',
+        icon: 'nr01.png',
         description: '向上空射出一枚鎂箭，產生亮光顯露該地情況。',
         effect: '觀看該地。等級三、四具有偵隱效果',
         stats: [
@@ -5397,7 +5397,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '梅莉凱之眼',
-        icon: 'nr02.jpg',
+        icon: 'nr02.png',
         description: '遊俠信奉之神，森林女神梅莉凱所賦予的，是安靜且快速的追蹤技巧。',
         effect: '能夠穿越任何部隊與地形。',
         stats: [
@@ -5410,7 +5410,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '凜風之觸',
-        icon: 'nr03.jpg',
+        icon: 'nr03.png',
         description: '長久以來在北域的生活，讓翠絲特兒能夠熟練運用冰冷的力量。',
         effect: '每次攻擊減少目標的攻擊、移動速度。',
         stats: [
@@ -5438,7 +5438,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '關海法',
-        icon: 'nr04.jpg',
+        icon: 'nr04.png',
         description: '從星界召喚遊俠的忠實戰友︰黑豹關海法。',
         effect: '召喚一隻具有永久隱形術的狼為你戰鬥。場上最多存在一隻關海法',
         stats: [
@@ -5489,7 +5489,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'undead',
     type: 'int',
-    icon: 'bow.jpg',
+    icon: 'bow.png',
     stats: {
       strength: {
         base: 24,
@@ -5516,7 +5516,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '分裂生殖',
-        icon: 'bow01.jpg',
+        icon: 'bow01.png',
         description: '銜尾蛇分裂自身，產生觸手分裂體。',
         effect: '召喚銜尾蛇分殖，每隻銜尾蛇分殖死亡時對銜尾蛇造成傷害。',
         stats: [
@@ -5549,7 +5549,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '觸手增生',
-        icon: 'bow02.jpg',
+        icon: 'bow02.png',
         description: '使分裂體成長為巨大的觸手。',
         effect: '將銜尾蛇分殖變化為巨型觸手，傷害大但是無法移動。',
         stats: [
@@ -5579,7 +5579,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '破繭而出',
-        icon: 'bow03.jpg',
+        icon: 'bow03.png',
         description: '使分殖體分裂產生行動迅速的飛行蟲。',
         effect: '指定一隻銜尾蛇分殖，轉變成三隻飛行蟲，速度快但攻擊力低。',
         stats: [
@@ -5613,7 +5613,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '魔法使之敵',
-        icon: 'bow04.jpg',
+        icon: 'bow04.png',
         description: '觸手永遠是(少女)魔法師的大敵，對吧。',
         effect: '每當(少女)魔法師對銜尾蛇施法時，威力都會無法控制的下降。',
         stats: [
@@ -5639,7 +5639,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'undead',
     type: 'agi',
-    icon: 'sd.jpg',
+    icon: 'sd.png',
     stats: {
       strength: {
         base: 13,
@@ -5680,7 +5680,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '不夜城之赤',
-        icon: 'sd02.jpg',
+        icon: 'sd02.png',
         description: '呼喚紅色靈氣從體內向上竄升，灼燒周遭敵人。',
         effect: '對周遭敵人造成傷害並減緩移動速度。',
         stats: [
@@ -5716,7 +5716,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '神術．吸血鬼幻想',
-        icon: 'sd03.jpg',
+        icon: 'sd03.png',
         description: '吸血鬼天生具備的，吸取他人精氣的能力。',
         effect: '每次攻擊回復相等於一部分攻擊力的生命值。',
         stats: [
@@ -5730,7 +5730,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '惡魔鬼影',
-        icon: 'sd04.jpg',
+        icon: 'sd04.png',
         description:
           '吸血鬼的運動能力，已經超出一般生物肉眼所能辨別的速度。一個忽左忽右高速前進的物體，彷彿分裂成好幾個般。',
         effect: '快速衝刺至指定方向800距離。',
@@ -5757,7 +5757,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'undead',
     type: 'str',
-    icon: 'fg.jpg',
+    icon: 'fg.png',
     stats: {
       strength: {
         base: 24,
@@ -5785,7 +5785,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '電擊',
-        icon: 'fg01.jpg',
+        icon: 'fg01.png',
         description:
           '法蘭基斯坦體內蘊涵著強大的電流能量，他可以釋放將這些電流能量釋放出來，擴散到四周。這個釋放的過程除了能夠增加其肉體的活性之外，還能麻痺周圍敵人的速度。',
         effect: '回復自體少量生命，並造成周圍敵人小量傷害及緩速。',
@@ -5822,7 +5822,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '強化殖裝',
-        icon: 'fg02.jpg',
+        icon: 'fg02.png',
         description:
           '法蘭基斯坦可以殖裝身上的盔甲，使其覆蓋全身。一旦覆蓋完成，法蘭基斯坦將擁有更強大的防禦能力。',
         effect: '增加20點攻擊力及8點防禦力，減少10點移動速度，吸收一定傷害後裝甲消失。',
@@ -5850,7 +5850,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '狂怒',
-        icon: 'fg03.jpg',
+        icon: 'fg03.png',
         description:
           '法蘭基斯坦殘暴易怒，任何強大能量的運行都會激起他的憤怒，一旦他陷入狂怒，便只有戰鬥能平息他的怒火。',
         effect:
@@ -5866,7 +5866,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '咒痕血印',
-        icon: 'fg04.jpg',
+        icon: 'fg04.png',
         description:
           '法蘭基斯坦將仇恨與憤怒投射在一個敵人身上。這個詛咒將使目標對法蘭基斯坦湧起相同的負面情緒以致於無法專注於戰鬥上，直至雙方其中一人死亡為止。',
         effect: '標記目標，每次攻擊擁有標記的目標時，造成額外傷害，直到標記消失。',
@@ -5901,7 +5901,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'undead',
     type: 'int',
-    icon: 'hs.jpg',
+    icon: 'hs.png',
     stats: {
       strength: {
         base: 14,
@@ -5928,7 +5928,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '獵頭',
-        icon: 'hs01.jpg',
+        icon: 'hs01.png',
         description: '曼多基爾投擲長矛，準確地獵殺目標。',
         effect:
           '對目標造成自己現有法力的百分比傷害，在傷害之後若目標血少於一定則直接死亡，英雄亦同。',
@@ -5956,7 +5956,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '神性血液',
-        icon: 'hs02.jpg',
+        icon: 'hs02.png',
         description: '哈卡的神力流動於曼基多爾之中，使他能夠防禦魔法力量。',
         effect: '形成一個護盾，每一點的法力可以吸收一定傷害。',
         stats: [
@@ -5978,7 +5978,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '嗜殺者',
-        icon: 'hs03.jpg',
+        icon: 'hs03.png',
         description: '曼多基爾沉浸於殺戮的快感之中，每多殺一個人他就越瘋狂而更強大。',
         effect: '每殺死一定數量單位時，增加智慧點數。每當增加的數值超過1時才會增加。',
         stats: [
@@ -5995,7 +5995,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '降臨',
-        icon: 'hs04.jpg',
+        icon: 'hs04.png',
         description: '哈卡神力附身於曼基多爾，使他無人能擋。',
         effect: '大量增加曼基多爾的攻擊速度。',
         stats: [
@@ -6025,7 +6025,7 @@ export const HERO: HeroData[] = [
     },
     faction: 'undead',
     type: 'int',
-    icon: 'law.jpg',
+    icon: 'law.png',
     stats: {
       strength: {
         base: 16,
@@ -6053,7 +6053,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '諸惡消弭',
-        icon: 'law01.jpg',
+        icon: 'law01.png',
         description: '依罪惡程度對惡人造成精神傷害。',
         effect: '燃燒一個範圍內敵人的法力。',
         stats: [
@@ -6083,7 +6083,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '罪行昭然',
-        icon: 'law02.jpg',
+        icon: 'law02.png',
         description: '至今為止的犯行將付出代價。',
         effect: '對目標造成「法力最大值與目前值差距」百分比傷害。',
         stats: [
@@ -6111,7 +6111,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '吞食罪孽',
-        icon: 'law03.jpg',
+        icon: 'law03.png',
         description: '將邪惡化作對抗邪惡的意志力。',
         effect: '每當周遭有人減損法力時，回復一定量的生命。',
         stats: [
@@ -6132,7 +6132,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '死亡終有時',
-        icon: 'law04.jpg',
+        icon: 'law04.png',
         description: '每次的攻擊都能毀滅敵人僅存的意志。',
         effect: '每次的攻擊都能吸收對方大量的法力。',
         stats: [
@@ -6155,9 +6155,9 @@ export const HERO: HeroData[] = [
       zh: '天人',
       en: 'Celestial Being',
     },
-    faction: 'alliance',
+    faction: 'neutral',
     type: 'agi',
-    icon: 'cb.jpg',
+    icon: 'cb.png',
     stats: {
       strength: {
         base: 24,
@@ -6184,7 +6184,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '惡魔的假象',
-        icon: 'cb01.jpg',
+        icon: 'cb01.png',
         description: '在祂的眼中，動物與人類是戁以分辨的。',
         effect: '將一個敵人轉化為亂數決定的生物，中止他們施法的能力。',
         stats: [
@@ -6208,7 +6208,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '致命的誘惑',
-        icon: 'cb02.jpg',
+        icon: 'cb02.png',
         description:
           '嘿，這包錢殺死我了！為什麼？為什麼錢要殺我？我他媽的相信你耶，錢！我的老天啊，要是我連錢都不能相信，我還能相信誰？',
         effect: '將目標的部份金錢變成金幣道具放在旁邊，撿起者將被捆綁。每次施展需消耗1的智慧',
@@ -6226,7 +6226,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '猜疑的距離',
-        icon: 'cb03.jpg',
+        icon: 'cb03.png',
         description: '泰瑞爾是很Rise的，這一定有什麼誤會。',
         effect:
           '依照本身的智慧對敵人造成額外傷害，若是英雄，則造成雙方智慧相減的額外傷害。每攻擊二次減少1的敏捷',
@@ -6241,7 +6241,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '天堂的終焉',
-        icon: 'cb04.jpg',
+        icon: 'cb04.png',
         description: '泰瑞爾是個笨蛋。',
         effect: '衝向指定的敵人，自我引爆造成範圍性的傷害。',
         stats: [
@@ -6268,9 +6268,9 @@ export const HERO: HeroData[] = [
       zh: '食人魔霜火法師',
       en: 'Ogre Frostfire Mage',
     },
-    faction: 'alliance',
+    faction: 'neutral',
     type: 'int',
-    icon: 'ofm.jpg',
+    icon: 'ofm.png',
     stats: {
       strength: {
         base: 24,
@@ -6297,7 +6297,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '魔法箭',
-        icon: 'ofm01.jpg',
+        icon: 'ofm01.png',
         description: '霜火食人魔擅長操控火焰或是冰霜力量。',
         effect:
           '朝敵人發射火焰箭或是冰霜箭。魔法箭屬性由霜火精通決定與切換。火焰專精將提供火焰箭(5X火焰專精等級)的額外傷害。冰霜專精將提供冰霜箭(2x冰霜專精等級)%的額外緩速。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
@@ -6346,7 +6346,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '霜火精通',
-        icon: 'ofm02.jpg',
+        icon: 'ofm02.png',
         description: '霜火食人魔將一次施放大量的元素攻擊。',
         effect:
           '施展範圍性的龍之吐息或冰霜新星。魔法箭屬性由霜火精通決定與切換。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
@@ -6365,7 +6365,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '魔法噴射',
-        icon: 'ofm03.jpg',
+        icon: 'ofm03.png',
         description: '霜火食人魔將一次施放大量的元素攻擊。',
         effect: '施展範圍性的龍之吐息或冰霜新星。施展不同的元素噴發將會提昇各自的元素專精點數。',
         stats: [
@@ -6401,7 +6401,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '霜火箭',
-        icon: 'ofm04.jpg',
+        icon: 'ofm04.png',
         description: '將烈焰與寒霜合而為一，給予對手劇烈的痛苦。',
         effect:
           '向目標發射冰與火融合的魔法箭。每一等級的火焰專精將提供5的額外傷害。專精火焰時，施展時提昇火焰專精一級。專精冰霜時，施展時提昇冰霜專精一級',
@@ -6454,9 +6454,9 @@ export const HERO: HeroData[] = [
       zh: '疾風半人馬酋長',
       en: 'Centaur Chieftain',
     },
-    faction: 'alliance',
+    faction: 'neutral',
     type: 'str',
-    icon: 'cc.jpg',
+    icon: 'cc.png',
     stats: {
       strength: {
         base: 23,
@@ -6483,7 +6483,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '攔截',
-        icon: 'cc01.jpg',
+        icon: 'cc01.png',
         description: '在貧瘠之地長大的酋長，善於追擊每一個他看到的敵人。',
         effect: '距離敵人一定距離以上時，衝鋒並擊暈周遭敵人，若距離不足時則直接擊暈目標。',
         stats: [
@@ -6514,7 +6514,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '斷筋',
-        icon: 'cc02.jpg',
+        icon: 'cc02.png',
         description:
           '機動力強大的半人馬族喜歡在戰鬥時找機會斬斷敵人腳筋，使自軍機動力強大的優點更加顯著',
         effect: '酋長的下一次普攻將會減少目標的移動速度。在下一次普攻生效',
@@ -6543,7 +6543,7 @@ export const HERO: HeroData[] = [
       {
         type: 'passive',
         name: '疾風之靈',
-        icon: 'cc03.jpg',
+        icon: 'cc03.png',
         description:
           '疾風半人馬一族的強壯馬身正是提供高速移動的最佳本錢，而疾風半人馬的祖靈護佑更是能大幅提升半人馬的機動力。',
         effect: '增加酋長的移動速度。',
@@ -6558,7 +6558,7 @@ export const HERO: HeroData[] = [
       {
         type: 'active',
         name: '致死打擊',
-        icon: 'cc04.jpg',
+        icon: 'cc04.png',
         description: '重斧巴塞隆窮盡全身力量奮力一擊，將目標打成碎肉。',
         effect: '對目標造成物理傷害。',
         stats: [

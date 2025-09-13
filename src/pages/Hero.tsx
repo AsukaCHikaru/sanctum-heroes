@@ -21,7 +21,7 @@ export const HeroPage = () => {
         {(heroData) => (
           <div class="mb-10">
             <div class="flex items-center gap-2 text-stone-100">
-              <img src={heroData().icon} alt={heroData().title.en} class="" />
+              <img src={`/src/assets/hero/${heroData().icon}`} alt={heroData().title.en} class="" />
               <div>
                 <h1 class="">
                   {heroData().name.zh} {heroData().name.en}
@@ -37,7 +37,7 @@ export const HeroPage = () => {
               <For each={heroData().abilities}>
                 {(ability, i) => (
                   <button onClick={() => setSelectedAbility(i() + 1)} class="">
-                    <img src={ability.icon} alt={ability.name} />
+                    <img src={`/src/assets/abilities/${ability.icon}`} alt={ability.name} />
                   </button>
                 )}
               </For>
