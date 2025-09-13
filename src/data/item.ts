@@ -7,6 +7,10 @@ type ItemTypeBase = {
   goldCost: number;
   woodCost: number;
 };
+export const isBaseItem = (item: Item): BaseItem | undefined =>
+  item.type === 'Base' ? item : undefined;
+export const isEliteItem = (item: Item): EliteItem | undefined =>
+  item.type === 'Elite' ? item : undefined;
 type EliteItem = ItemTypeBase & {
   type: 'Elite';
   recipe: string[]; // item names that are required
