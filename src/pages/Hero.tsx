@@ -49,6 +49,7 @@ export const HeroPage = () => {
                     <div>
                       <h2 class="text-stone-100">{ability.name}</h2>
                       <p class="text-stone-200">{ability.description}</p>
+                      <p class="text-stone-200">{ability.effect}</p>
                       <For each={ability.stats}>{(stat) => <AbilityStat stat={stat} />}</For>
                     </div>
                   </Match>
