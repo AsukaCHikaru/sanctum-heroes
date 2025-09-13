@@ -3596,6 +3596,29 @@ export const HERO: HeroData[] = [
         ],
       },
       {
+        type: 'passive',
+        name: '酸性唾液',
+        icon: 'ds03.jpg',
+        description: '被黑龍具有強烈酸性的唾液噴中，受到灼燒的傷害。',
+        effect: '對目標造成持續性傷害。',
+        stats: [
+          {
+            label: '每秒傷害',
+            value: [8, 12, 16, 20],
+          },
+          {
+            label: '英雄持續時間',
+            value: 3,
+            suffix: '秒',
+          },
+          {
+            label: '一般單位持續時間',
+            value: 5,
+            suffix: '秒',
+          },
+        ],
+      },
+      {
         type: 'active',
         name: '龍之恐懼術',
         icon: 'ds04.jpg',
