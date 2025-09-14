@@ -70,7 +70,7 @@ const List = ({ heroes }: { heroes: HeroData[] }) => {
       <For each={heroes}>
         {(hero) => (
           <A href={`/hero/${hero.title.en.toLowerCase().replace(/\s+/g, '-')}`}>
-            <img src={`/src/assets/hero/${hero.icon}`} alt={hero.name.en} />
+            <img src={`/assets/hero/${hero.icon}`} alt={hero.name.en} />
           </A>
         )}
       </For>
