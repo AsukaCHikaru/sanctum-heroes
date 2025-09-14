@@ -1,4 +1,5 @@
 export type Mercenary = {
+  id: string;
   name: string;
   class: string;
   level: number;
@@ -26,6 +27,7 @@ export type Mercenary = {
 
 export const MERCENARIES: Mercenary[] = [
   {
+    id: 'al_heavy_1',
     name: '步兵',
     class: '重步兵',
     level: 1,
@@ -67,6 +69,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_heavy_2',
     name: '步兵隊長',
     class: '重步兵',
     level: 2,
@@ -108,6 +111,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_heavy_3',
     name: '銀掌騎士',
     class: '重步兵',
     level: 3,
@@ -149,6 +153,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_heavy_1',
     name: '殭屍',
     class: '重步兵',
     level: 1,
@@ -189,6 +194,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_heavy_2',
     name: '骷髏半獸人蠻兵',
     class: '重步兵',
     level: 2,
@@ -229,6 +235,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_heavy_3',
     name: '末日守衛',
     class: '重步兵',
     level: 3,
@@ -269,6 +276,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_cavalry_1',
     name: '斥候',
     class: '騎兵',
     level: 1,
@@ -309,6 +317,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_cavalry_2',
     name: '騎士',
     class: '騎兵',
     level: 2,
@@ -349,6 +358,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_cavalry_3',
     name: '騎兵隊長',
     class: '騎兵',
     level: 3,
@@ -389,6 +399,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_cavalry_1',
     name: '異形蟲',
     class: '騎兵',
     level: 1,
@@ -429,6 +440,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_cavalry_2',
     name: '食屍鬼',
     class: '騎兵',
     level: 2,
@@ -469,6 +481,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_cavalry_3',
     name: '墮落破壞獸',
     class: '騎兵',
     level: 3,
@@ -509,6 +522,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_mage_1',
     name: '達拉朗學徒',
     class: '法師',
     level: 1,
@@ -556,6 +570,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_mage_2',
     name: '達拉朗術士',
     class: '法師',
     level: 2,
@@ -603,6 +618,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_mage_3',
     name: '達拉朗魔導士',
     class: '法師',
     level: 3,
@@ -650,6 +666,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_mage_1',
     name: '死靈法師',
     class: '法師',
     level: 1,
@@ -696,6 +713,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_mage_2',
     name: '報喪女妖',
     class: '法師',
     level: 2,
@@ -742,6 +760,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_mage_3',
     name: '深淵亡靈',
     class: '法師',
     level: 3,
@@ -788,6 +807,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_light_1',
     name: '薩滿',
     class: '輕步兵',
     level: 1,
@@ -828,6 +848,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_light_2',
     name: '食人妖狂戰士',
     class: '輕步兵',
     level: 2,
@@ -868,6 +889,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_light_3',
     name: '王族劍士',
     class: '輕步兵',
     level: 3,
@@ -907,8 +929,8 @@ export const MERCENARIES: Mercenary[] = [
       },
     ],
   },
-
   {
+    id: 'ud_light_1',
     name: '莫勾血嘴',
     class: '輕步兵',
     level: 1,
@@ -949,6 +971,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_light_2',
     name: '莫勾浪潮戰士',
     class: '輕步兵',
     level: 2,
@@ -989,6 +1012,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_light_3',
     name: '莫勾搶匪',
     class: '輕步兵',
     level: 3,
@@ -1029,6 +1053,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_archer_1',
     name: '夜精靈弓箭手',
     class: '弓兵',
     level: 1,
@@ -1069,6 +1094,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_archer_2',
     name: '女獵戶',
     class: '弓兵',
     level: 2,
@@ -1109,6 +1135,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'al_archer_3',
     name: '森林守護者',
     class: '弓兵',
     level: 3,
@@ -1149,6 +1176,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_archer_1',
     name: '黑蜘蛛',
     class: '弓兵',
     level: 1,
@@ -1189,6 +1217,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_archer_2',
     name: '吐毒蜘蛛',
     class: '弓兵',
     level: 2,
@@ -1229,6 +1258,7 @@ export const MERCENARIES: Mercenary[] = [
     ],
   },
   {
+    id: 'ud_archer_3',
     name: '巨大蜘蛛',
     class: '弓兵',
     level: 3,
