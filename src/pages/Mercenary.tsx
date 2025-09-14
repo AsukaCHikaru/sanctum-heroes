@@ -37,15 +37,29 @@ export const MercenaryPage = () => {
         {(mercenaryData) => (
           <div>
             <div class="flex items-center gap-2">
-              <img src={`/assets/mercenaries/${mercenaryData().icon}`} alt="" />
-              <h1 class="text-stone-100">{mercenaryData().name}</h1>
+              <img
+                class="w-[64px] h-[64px]"
+                src={`/assets/mercenaries/${mercenaryData().icon}`}
+                alt=""
+              />
+              <div>
+                <h1 class="text-stone-100">{mercenaryData().name}</h1>
+                <div class="text-stone-100">
+                  <span class="mr-2 ">🟡 {mercenaryData().goldCost}</span>
+                  <span>🌲 {mercenaryData().woodCost}</span>
+                </div>
+              </div>
             </div>
             <p class="text-stone-300">{mercenaryData().description}</p>
             <ul>
               <For each={mercenaryData().abilities}>
                 {(ability) => (
                   <li class="flex items-center gap-2">
-                    <img src={`/assets/mercenaries/${ability.icon}`} alt="" />
+                    <img
+                      class="w-[64px] h-[64px]"
+                      src={`/assets/mercenaries/${ability.icon}`}
+                      alt=""
+                    />
                     <div>
                       <h3 class="text-stone-100">{ability.name}</h3>
                       <p class="text-stone-200">{ability.effect}</p>
