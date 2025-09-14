@@ -63,6 +63,7 @@ export const MercenaryPage = () => {
                     <div>
                       <h3 class="text-stone-100">{ability.name}</h3>
                       <p class="text-stone-200">{ability.effect}</p>
+                      {ability.type === 'Passive' ? <p class="text-stone-400">被動技能</p> : null}
                     </div>
                   </li>
                 )}
