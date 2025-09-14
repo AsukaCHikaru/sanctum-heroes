@@ -1,6 +1,7 @@
 import { MERCENARIES, type Mercenary } from '../data/mercenary';
 import { Layout } from '../components/Layout';
-import { For } from 'solid-js';
+import { createMemo, For, Show } from 'solid-js';
+import { useParams } from '@solidjs/router';
 
 const allianceHeavyInfantry = MERCENARIES.filter(
   (m) => m.faction === 'alliance' && m.class === '重步兵'
@@ -22,9 +23,40 @@ const allianceMage = MERCENARIES.filter((m) => m.faction === 'alliance' && m.cla
 const undeadMage = MERCENARIES.filter((m) => m.faction === 'undead' && m.class === '法師');
 
 export const MercenaryPage = () => {
+  const params = useParams();
+
+  const mercenary = createMemo(() => {
+    const id = params.id;
+    const mercenary = MERCENARIES.find((m) => m.id === id);
+    return mercenary;
+  });
+
   return (
     <Layout>
-      123
+      <Show when={mercenary()}>
+        {(mercenaryData) => (
+          <div>
+            <div class="flex items-center gap-2">
+              <img src={`/assets/mercenaries/${mercenaryData().icon}`} alt="" />
+              <h1 class="text-stone-100">{mercenaryData().name}</h1>
+            </div>
+            <p class="text-stone-300">{mercenaryData().description}</p>
+            <ul>
+              <For each={mercenaryData().abilities}>
+                {(ability) => (
+                  <li class="flex items-center gap-2">
+                    <img src={`/assets/mercenaries/${ability.icon}`} alt="" />
+                    <div>
+                      <h3 class="text-stone-100">{ability.name}</h3>
+                      <p class="text-stone-200">{ability.effect}</p>
+                    </div>
+                  </li>
+                )}
+              </For>
+            </ul>
+          </div>
+        )}
+      </Show>
       <MercenaryList />
     </Layout>
   );
@@ -56,7 +88,7 @@ const Mercenaries = ({ title, list }: { title: string; list: Mercenary[] }) => (
       <For each={list}>
         {(m) => (
           <div>
-            <a href={`/mercenary/`}>
+            <a href={`/mercenary/${m.id}`}>
               <img class="w-[64px] h-[64px]" src={`/assets/mercenaries/${m.icon}`} alt="" />
             </a>
           </div>
