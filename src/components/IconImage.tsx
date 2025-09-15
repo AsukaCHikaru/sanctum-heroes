@@ -5,5 +5,5 @@ interface IconImageProps {
 }
 
 export const IconImage = ({ src, alt, class: className = '' }: IconImageProps) => (
-  <img class={`w-[64px] h-[64px] ${className}`} src={src} alt={alt} />
+  <img class={`w-12 h-12 sm:w-[64px] sm:h-[64px] ${className}`} src={src} alt={alt} />
 );
