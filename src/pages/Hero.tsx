@@ -20,23 +20,28 @@ export const HeroPage = () => {
       <Show when={hero()} fallback={null}>
         {(heroData) => (
           <div class="mb-10">
-            <div class="flex items-center gap-2 text-stone-100">
+            <div class="flex items-center gap-2 text-stone-100 mb-4">
               <img src={`/assets/hero/${heroData().icon}`} alt={heroData().title.en} class="" />
               <div>
-                <h1 class="">
+                <h1 class="text-2xl font-serif text-amber-300">
                   {heroData().name.zh} {heroData().name.en}
                 </h1>
-                <h2 class="">
+                <h2 class="text-stone-100">
                   {heroData().title.zh} {heroData().title.en}
                 </h2>
               </div>
             </div>
             <p class="text-stone-300">{heroData().description}</p>
-            <h3>Project by {heroData().author}</h3>
-            <div class="flex">
+            <h3 class="text-amber-200 my-2">Project by {heroData().author}</h3>
+            <div class="flex gap-4 py-2 h-[96px]">
               <For each={heroData().abilities}>
                 {(ability, i) => (
-                  <button onClick={() => setSelectedAbility(i() + 1)} class="">
+                  <button
+                    onClick={() => setSelectedAbility(i() + 1)}
+                    class={`cursor-pointer transition-all ${
+                      selectedAbility() === i() + 1 ? 'bg-amber-300/70 p-2' : ' p-2'
+                    }`}
+                  >
                     <img src={`/assets/abilities/${ability.icon}`} alt={ability.name} />
                   </button>
                 )}
@@ -47,9 +52,10 @@ export const HeroPage = () => {
                 {(ability, i) => (
                   <Match when={selectedAbility() === i() + 1}>
                     <div>
-                      <h2 class="text-stone-100">{ability.name}</h2>
-                      <p class="text-stone-200">{ability.description}</p>
-                      <p class="text-stone-200">{ability.effect}</p>
+                      <h2 class="text-stone-100 text-xl font-serif my-2">{ability.name}</h2>
+                      <p class="text-stone-200">說明：{ability.description}</p>
+                      <p class="text-stone-200">效果：{ability.effect}</p>
+                      {ability.type === 'passive' ? <p class="text-amber-200">被動技能</p> : null}
                       <For each={ability.stats}>{(stat) => <AbilityStat stat={stat} />}</For>
                     </div>
                   </Match>

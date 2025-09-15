@@ -19,61 +19,37 @@ export const HeroList = () => {
   return (
     <div class="w-full text-center text-amber-300">
       <div class="grid grid-cols-3 w-full gap-4">
-        <div>
-          <h3>同盟軍將軍</h3>
-          <List heroes={allianceGenerals} />
-        </div>
-        <div>
-          <h3>同盟軍刺客</h3>
-          <List heroes={allianceAssassins} />
-        </div>
-        <div>
-          <h3>同盟軍指揮官</h3>
-          <List heroes={allianceCommanders} />
-        </div>
+        <List title="同盟軍將軍" heroes={allianceGenerals} />
+        <List title="同盟軍刺客" heroes={allianceAssassins} />
+        <List title="同盟軍指揮官" heroes={allianceCommanders} />
+      </div>
+      <div class="grid grid-cols-3 w-full gap-4">
+        <List title="天譴軍將軍" heroes={undeadGenerals} />
+        <List title="天譴軍刺客" heroes={undeadAssassins} />
+        <List title="天譴軍指揮官" heroes={undeadCommanders} />
       </div>
       <div class="grid grid-cols-3 w-full gap-4 mt-4">
-        <div>
-          <h3>天譴軍將軍</h3>
-          <List heroes={undeadGenerals} />
-        </div>
-        <div>
-          <h3>天譴軍刺客</h3>
-          <List heroes={undeadAssassins} />
-        </div>
-        <div>
-          <h3>天譴軍指揮官</h3>
-          <List heroes={undeadCommanders} />
-        </div>
-      </div>
-      <div class="grid grid-cols-3 w-full gap-4 mt-4">
-        <div>
-          <h3>中立將軍</h3>
-          <List heroes={neutralGenerals} />
-        </div>
-        <div>
-          <h3>中立刺客</h3>
-          <List heroes={neutralAssassins} />
-        </div>
-        <div>
-          <h3>中立指揮官</h3>
-          <List heroes={neutralCommanders} />
-        </div>
+        <List title="中立將軍" heroes={neutralGenerals} />
+        <List title="中立刺客" heroes={neutralAssassins} />
+        <List title="中立指揮官" heroes={neutralCommanders} />
       </div>
     </div>
   );
 };
 
-const List = ({ heroes }: { heroes: HeroData[] }) => {
+const List = ({ title, heroes }: { title: string; heroes: HeroData[] }) => {
   return (
-    <div class="flex flex-wrap">
-      <For each={heroes}>
-        {(hero) => (
-          <A href={`/hero/${hero.title.en.toLowerCase().replace(/\s+/g, '-')}`}>
-            <img src={`/assets/hero/${hero.icon}`} alt={hero.name.en} />
-          </A>
-        )}
-      </For>
+    <div>
+      <h3 class="text-lg my-2">{title}</h3>
+      <div class="flex flex-wrap">
+        <For each={heroes}>
+          {(hero) => (
+            <A href={`/hero/${hero.title.en.toLowerCase().replace(/\s+/g, '-')}`}>
+              <img src={`/assets/hero/${hero.icon}`} alt={hero.name.en} />
+            </A>
+          )}
+        </For>
+      </div>
     </div>
   );
 };
