@@ -1,7 +1,7 @@
 import { MERCENARIES, type Mercenary } from '../data/mercenary';
 import { Layout } from '../components/Layout';
 import { createMemo, For, Show } from 'solid-js';
-import { useParams } from '@solidjs/router';
+import { A, useParams } from '@solidjs/router';
 
 const allianceHeavyInfantry = MERCENARIES.filter(
   (m) => m.faction === 'alliance' && m.class === '重步兵'
@@ -103,9 +103,9 @@ const Mercenaries = ({ title, list }: { title: string; list: Mercenary[] }) => (
       <For each={list}>
         {(m) => (
           <div>
-            <a href={`/mercenary/${m.id}`}>
+            <A href={`/mercenary/${m.id}`}>
               <img class="w-[64px] h-[64px]" src={`/assets/mercenaries/${m.icon}`} alt="" />
-            </a>
+            </A>
           </div>
         )}
       </For>

@@ -1,7 +1,7 @@
 import { createMemo, For, Match, Show, Switch } from 'solid-js';
 import { Layout } from '../components/Layout';
 import { isBaseItem, isEliteItem, ITEMS } from '../data/item';
-import { useParams } from '@solidjs/router';
+import { A, useParams } from '@solidjs/router';
 
 const consumables = ITEMS.filter((item) => item.type === 'Consumable');
 const base = ITEMS.filter((item) => item.type === 'Base');
@@ -52,13 +52,13 @@ export const ItemPage = () => {
                     >
                       {(eliteItem) => (
                         <li class="text-stone-100 ">
-                          <a class="flex items-center gap-2" href={`/item/${eliteItem.id}`}>
+                          <A class="flex items-center gap-2" href={`/item/${eliteItem.id}`}>
                             <img src={`/assets/items/${eliteItem.icon}`} alt="" />
                             <div class="flex flex-col">
                               <span>{eliteItem.name}</span>
                               <Cost gold={eliteItem.buildGoldCost} wood={eliteItem.buildWoodCost} />
                             </div>
-                          </a>
+                          </A>
                         </li>
                       )}
                     </For>
@@ -75,13 +75,13 @@ export const ItemPage = () => {
                       {(baseItem) => (
                         <>
                           <li class="text-stone-100  gap-2">
-                            <a class="flex items-center gap-2" href={`/item/${baseItem.id}`}>
+                            <A class="flex items-center gap-2" href={`/item/${baseItem.id}`}>
                               <img src={`/assets/items/${baseItem.icon}`} alt="" />
                               <div class="flex flex-col">
                                 <span>{baseItem.name}</span>
                                 <Cost gold={baseItem.goldCost} wood={baseItem.woodCost} />
                               </div>
-                            </a>
+                            </A>
                           </li>
                           <li class="text-4xl text-stone-300">+</li>
                         </>
@@ -123,9 +123,9 @@ const ItemList = () => (
       <For each={consumables}>
         {(item) => (
           <div>
-            <a href={`/item/${item.id}`}>
+            <A href={`/item/${item.id}`}>
               <img class="w-[64px] h-[64px]" src={`/assets/items/${item.icon}`} alt="" />
-            </a>
+            </A>
           </div>
         )}
       </For>
@@ -135,9 +135,9 @@ const ItemList = () => (
       <For each={base}>
         {(item) => (
           <div>
-            <a href={`/item/${item.id}`}>
+            <A href={`/item/${item.id}`}>
               <img class="w-[64px] h-[64px]" src={`/assets/items/${item.icon}`} alt="" />
-            </a>
+            </A>
           </div>
         )}
       </For>
@@ -147,9 +147,9 @@ const ItemList = () => (
       <For each={elite}>
         {(item) => (
           <div>
-            <a href={`/item/${item.id}`}>
+            <A href={`/item/${item.id}`}>
               <img class="w-[64px] h-[64px]" src={`/assets/items/${item.icon}`} alt="" />
-            </a>
+            </A>
           </div>
         )}
       </For>
