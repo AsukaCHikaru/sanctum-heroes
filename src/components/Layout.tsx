@@ -12,6 +12,9 @@ export const Layout = (props: { children: JSXElement }) => {
         <A href="/mercenary">MERCENARY</A>
       </header>
       <main>{safeChildren()}</main>
+      <footer class="text-center text-gray-500 text-sm mt-16 pb-10">
+        WarCraft III and all related assets are property of Blizzard Entertainment, Inc.
+      </footer>
     </div>
   );
 };

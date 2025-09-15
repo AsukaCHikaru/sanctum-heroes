@@ -3,7 +3,7 @@ import { Layout } from '../components/Layout';
 export const HomePage = () => {
   return (
     <Layout>
-      <div class="max-w-3xl mx-auto px-4 pt-10 pb-20">
+      <div class="max-w-3xl mx-auto px-4pb-20">
         <div>
           <img src="/assets/banner.png" alt="banner" />
           <h1 class="text-center text-lg text-gray-400 mb-4">
