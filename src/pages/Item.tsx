@@ -20,12 +20,16 @@ export const ItemPage = () => {
     <Layout>
       <Show when={item()} fallback={null}>
         {(itemData) => (
-          <div class="flex">
+          <div class="flex justify-between">
             <div class="mb-10">
-              <div class="flex items-center gap-2 text-stone-100">
-                <img src={`/assets/items/${itemData().icon}`} alt={itemData().name} class="" />
+              <div class="flex items-center gap-2 text-stone-100 mb-4">
+                <img
+                  class="w-[64px] h-[64px]"
+                  src={`/assets/items/${itemData().icon}`}
+                  alt={itemData().name}
+                />
                 <div>
-                  <h1 class="">{itemData().name}</h1>
+                  <h1 class="font-serif text-2xl text-amber-300">{itemData().name}</h1>
                   {/** fixme: cost rendering at here using Cost does not change depending on item() value */}
                   <div>
                     <Show when={itemData().goldCost}>
@@ -37,13 +41,13 @@ export const ItemPage = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-stone-300">{itemData().description}</p>
-              <p class="text-stone-300">{itemData().effect}</p>
+              <p class="text-stone-300">說明：{itemData().description}</p>
+              <p class="text-stone-300">效果：{itemData().effect}</p>
             </div>
             <div class="text-amber-300">
               <Switch>
                 <Match when={isBaseItem(itemData())}>
-                  合成對象
+                  <h3 class="text-lg my-2">合成對象</h3>
                   <ul>
                     <For
                       each={elite.filter((eliteItem) =>
@@ -51,11 +55,15 @@ export const ItemPage = () => {
                       )}
                     >
                       {(eliteItem) => (
-                        <li class="text-stone-100 ">
+                        <li class="text-stone-100 my-2">
                           <A class="flex items-center gap-2" href={`/item/${eliteItem.id}`}>
-                            <img src={`/assets/items/${eliteItem.icon}`} alt="" />
+                            <img
+                              class="w-[64px] h-[64px]"
+                              src={`/assets/items/${eliteItem.icon}`}
+                              alt=""
+                            />
                             <div class="flex flex-col">
-                              <span>{eliteItem.name}</span>
+                              <span class="text-xl font-serif">{eliteItem.name}</span>
                               <Cost gold={eliteItem.buildGoldCost} wood={eliteItem.buildWoodCost} />
                             </div>
                           </A>
@@ -65,7 +73,7 @@ export const ItemPage = () => {
                   </ul>
                 </Match>
                 <Match when={isEliteItem(itemData())}>
-                  合成材料
+                  <h3 class="text-lg my-2">合成材料</h3>
                   <ul>
                     <For
                       each={base.filter((baseItem) =>
@@ -76,14 +84,18 @@ export const ItemPage = () => {
                         <>
                           <li class="text-stone-100  gap-2">
                             <A class="flex items-center gap-2" href={`/item/${baseItem.id}`}>
-                              <img src={`/assets/items/${baseItem.icon}`} alt="" />
+                              <img
+                                class="w-[64px] h-[64px]"
+                                src={`/assets/items/${baseItem.icon}`}
+                                alt=""
+                              />
                               <div class="flex flex-col">
-                                <span>{baseItem.name}</span>
+                                <span class="text-xl font-serif">{baseItem.name}</span>
                                 <Cost gold={baseItem.goldCost} wood={baseItem.woodCost} />
                               </div>
                             </A>
                           </li>
-                          <li class="text-4xl text-stone-300">+</li>
+                          <li class="text-4xl text-stone-300 w-[64px] text-center">+</li>
                         </>
                       )}
                     </For>
@@ -118,7 +130,7 @@ const Cost = ({ gold, wood }: { gold: number; wood: number }) => (
 
 const ItemList = () => (
   <div class="w-full text-center text-amber-300">
-    <h2>消耗品</h2>
+    <h2 class="text-lg my-2">消耗品</h2>
     <div class="flex flex-wrap">
       <For each={consumables}>
         {(item) => (
@@ -130,7 +142,7 @@ const ItemList = () => (
         )}
       </For>
     </div>
-    <h2>基礎裝備</h2>
+    <h2 class="text-lg my-2">基礎裝備</h2>
     <div class="flex flex-wrap">
       <For each={base}>
         {(item) => (
@@ -142,7 +154,7 @@ const ItemList = () => (
         )}
       </For>
     </div>
-    <h2>合成裝備</h2>
+    <h2 class="text-lg my-2">合成裝備</h2>
     <div class="flex flex-wrap">
       <For each={elite}>
         {(item) => (
