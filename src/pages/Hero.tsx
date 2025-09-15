@@ -55,7 +55,7 @@ export const HeroPage = () => {
                       <h2 class="text-stone-100 text-xl font-serif my-2">{ability.name}</h2>
                       <p class="text-stone-200">說明：{ability.description}</p>
                       <p class="text-stone-200">效果：{ability.effect}</p>
-                      {ability.type === 'passive' ? <p class="text-amber-200">被動技能</p> : null}
+                      {ability.type === 'passive' ? <p class="text-stone-400">被動技能</p> : null}
                       <For each={ability.stats}>{(stat) => <AbilityStat stat={stat} />}</For>
                     </div>
                   </Match>
