@@ -1,5 +1,6 @@
 import { createMemo, For, Match, Show, Switch } from 'solid-js';
 import { Layout } from '../components/Layout';
+import { IconImage } from '../components/IconImage';
 import { isBaseItem, isEliteItem, ITEMS } from '../data/item';
 import { A, useParams } from '@solidjs/router';
 
@@ -23,8 +24,7 @@ export const ItemPage = () => {
           <div class="flex flex-col lg:flex-row lg:justify-between gap-8 mb-10">
             <div>
               <div class="flex items-center gap-2 text-stone-100 mb-4">
-                <img
-                  class="w-[64px] h-[64px]"
+                <IconImage
                   src={`/assets/items/${itemData().icon}`}
                   alt={itemData().name}
                 />
@@ -57,10 +57,9 @@ export const ItemPage = () => {
                       {(eliteItem) => (
                         <li class="text-stone-100 my-2">
                           <A class="flex items-center gap-2" href={`/item/${eliteItem.id}`}>
-                            <img
-                              class="w-[64px] h-[64px]"
+                            <IconImage
                               src={`/assets/items/${eliteItem.icon}`}
-                              alt=""
+                              alt={eliteItem.name}
                             />
                             <div class="flex flex-col">
                               <span class="text-xl font-serif">{eliteItem.name}</span>
@@ -84,10 +83,9 @@ export const ItemPage = () => {
                         <>
                           <li class="text-stone-100  gap-2">
                             <A class="flex items-center gap-2" href={`/item/${baseItem.id}`}>
-                              <img
-                                class="w-[64px] h-[64px]"
+                              <IconImage
                                 src={`/assets/items/${baseItem.icon}`}
-                                alt=""
+                                alt={baseItem.name}
                               />
                               <div class="flex flex-col">
                                 <span class="text-xl font-serif">{baseItem.name}</span>
@@ -136,7 +134,7 @@ const ItemList = () => (
         {(item) => (
           <div>
             <A href={`/item/${item.id}`}>
-              <img class="w-[64px] h-[64px]" src={`/assets/items/${item.icon}`} alt="" />
+              <IconImage src={`/assets/items/${item.icon}`} alt={item.name} />
             </A>
           </div>
         )}
@@ -148,7 +146,7 @@ const ItemList = () => (
         {(item) => (
           <div>
             <A href={`/item/${item.id}`}>
-              <img class="w-[64px] h-[64px]" src={`/assets/items/${item.icon}`} alt="" />
+              <IconImage src={`/assets/items/${item.icon}`} alt={item.name} />
             </A>
           </div>
         )}
@@ -160,7 +158,7 @@ const ItemList = () => (
         {(item) => (
           <div>
             <A href={`/item/${item.id}`}>
-              <img class="w-[64px] h-[64px]" src={`/assets/items/${item.icon}`} alt="" />
+              <IconImage src={`/assets/items/${item.icon}`} alt={item.name} />
             </A>
           </div>
         )}

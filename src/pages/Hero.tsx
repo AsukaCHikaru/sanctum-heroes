@@ -1,5 +1,6 @@
 import { createMemo, createSignal, For, Match, Show, Switch } from 'solid-js';
 import { HeroList } from '../components/HeroList';
+import { IconImage } from '../components/IconImage';
 import { useParams } from '@solidjs/router';
 import { HERO } from '../data/hero';
 import { convertTitleToParam } from '../utils/stringUtil';
@@ -21,7 +22,7 @@ export const HeroPage = () => {
         {(heroData) => (
           <div class="py-8 sm:py-12">
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-stone-100 mb-6">
-              <img src={`/assets/hero/${heroData().icon}`} alt={heroData().title.en} class="" />
+              <IconImage src={`/assets/hero/${heroData().icon}`} alt={heroData().title.en} />
               <div>
                 <h1 class="text-2xl font-serif text-amber-300">
                   {heroData().name.zh} {heroData().name.en}
@@ -42,7 +43,7 @@ export const HeroPage = () => {
                       selectedAbility() === i() + 1 ? 'bg-amber-300/70 p-2' : ' p-2'
                     }`}
                   >
-                    <img src={`/assets/abilities/${ability.icon}`} alt={ability.name} />
+                    <IconImage src={`/assets/abilities/${ability.icon}`} alt={ability.name} />
                   </button>
                 )}
               </For>

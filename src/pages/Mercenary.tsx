@@ -1,5 +1,6 @@
 import { MERCENARIES, type Mercenary } from '../data/mercenary';
 import { Layout } from '../components/Layout';
+import { IconImage } from '../components/IconImage';
 import { createMemo, For, Show } from 'solid-js';
 import { A, useParams } from '@solidjs/router';
 
@@ -37,8 +38,7 @@ export const MercenaryPage = () => {
         {(mercenaryData) => (
           <div>
             <div class="flex items-center gap-2 mb-4">
-              <img
-                class="w-[64px] h-[64px]"
+              <IconImage
                 src={`/assets/mercenaries/${mercenaryData().icon}`}
                 alt={mercenaryData().name}
               />
@@ -55,10 +55,9 @@ export const MercenaryPage = () => {
               <For each={mercenaryData().abilities}>
                 {(ability) => (
                   <li class="flex items-center gap-2 mb-4">
-                    <img
-                      class="w-[64px] h-[64px]"
+                    <IconImage
                       src={`/assets/mercenaries/${ability.icon}`}
-                      alt=""
+                      alt={ability.name}
                     />
                     <div>
                       <h3 class="text-stone-100 font-serif text-xl">{ability.name}</h3>
@@ -104,7 +103,7 @@ const Mercenaries = ({ title, list }: { title: string; list: Mercenary[] }) => (
         {(m) => (
           <div>
             <A href={`/mercenary/${m.id}`}>
-              <img class="w-[64px] h-[64px]" src={`/assets/mercenaries/${m.icon}`} alt="" />
+              <IconImage src={`/assets/mercenaries/${m.icon}`} alt={m.name} />
             </A>
           </div>
         )}
