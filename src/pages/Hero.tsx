@@ -19,8 +19,8 @@ export const HeroPage = () => {
     <Layout>
       <Show when={hero()} fallback={null}>
         {(heroData) => (
-          <div class="mb-10">
-            <div class="flex items-center gap-2 text-stone-100 mb-4">
+          <div class="py-8 sm:py-12">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-stone-100 mb-6">
               <img src={`/assets/hero/${heroData().icon}`} alt={heroData().title.en} class="" />
               <div>
                 <h1 class="text-2xl font-serif text-amber-300">
@@ -33,7 +33,7 @@ export const HeroPage = () => {
             </div>
             <p class="text-stone-300">{heroData().description}</p>
             <h3 class="text-amber-200 my-2">Project by {heroData().author}</h3>
-            <div class="flex gap-4 py-2 h-[96px]">
+            <div class="flex flex-wrap gap-2 sm:gap-4 py-2">
               <For each={heroData().abilities}>
                 {(ability, i) => (
                   <button

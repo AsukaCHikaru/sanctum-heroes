@@ -20,8 +20,8 @@ export const ItemPage = () => {
     <Layout>
       <Show when={item()} fallback={null}>
         {(itemData) => (
-          <div class="flex justify-between">
-            <div class="mb-10">
+          <div class="flex flex-col lg:flex-row lg:justify-between gap-8 mb-10">
+            <div>
               <div class="flex items-center gap-2 text-stone-100 mb-4">
                 <img
                   class="w-[64px] h-[64px]"

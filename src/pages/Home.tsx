@@ -3,10 +3,10 @@ import { Layout } from '../components/Layout';
 export const HomePage = () => {
   return (
     <Layout>
-      <div class="max-w-3xl mx-auto px-4pb-20">
-        <div>
-          <img src="/assets/banner.png" alt="banner" />
-          <h1 class="text-center text-lg text-gray-400 mb-4">
+      <div class="py-8 sm:py-12 lg:py-20">
+        <div class="mb-8 sm:mb-12">
+          <img src="/assets/banner.png" alt="banner" class="w-full max-w-2xl mx-auto" />
+          <h1 class="text-center text-base sm:text-lg text-gray-400 mt-4 mb-4">
             An asukachikaru creation - WarCraft III Custom Map
           </h1>
         </div>
