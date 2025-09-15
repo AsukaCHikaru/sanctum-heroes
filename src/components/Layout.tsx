@@ -5,8 +5,10 @@ export const Layout = (props: { children: JSXElement }) => {
   const safeChildren = children(() => props.children);
   return (
     <div class="h-screen max-w-[960px] mx-auto">
-      <header class="flex text-gray-50 gap-10 justify-center mb-6 py-4 border-b border-gray-600">
-        <HeaderLink href="/">HOME</HeaderLink>
+      <header class="flex items-center text-gray-50 gap-10 mb-6 py-4 border-b border-gray-600">
+        <A href="/" class="w-[140px]">
+          <img src="/assets/banner.png" alt="Sanctum Heroes" class="h-12 w-auto" loading="eager" />
+        </A>
         <HeaderLink href="/hero">HERO</HeaderLink>
         <HeaderLink href="/item">ITEM</HeaderLink>
         <HeaderLink href="/mercenary">MERCENARY</HeaderLink>
