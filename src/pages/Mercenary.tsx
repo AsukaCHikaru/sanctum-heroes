@@ -36,32 +36,32 @@ export const MercenaryPage = () => {
       <Show when={mercenary()}>
         {(mercenaryData) => (
           <div>
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 mb-4">
               <img
                 class="w-[64px] h-[64px]"
                 src={`/assets/mercenaries/${mercenaryData().icon}`}
-                alt=""
+                alt={mercenaryData().name}
               />
               <div>
-                <h1 class="text-stone-100">{mercenaryData().name}</h1>
+                <h1 class="text-amber-300 font-serif text-2xl">{mercenaryData().name}</h1>
                 <div class="text-stone-100">
                   <span class="mr-2 ">🟡 {mercenaryData().goldCost}</span>
                   <span>🌲 {mercenaryData().woodCost}</span>
                 </div>
               </div>
             </div>
-            <p class="text-stone-300">{mercenaryData().description}</p>
+            <p class="text-stone-300 mb-4">{mercenaryData().description}</p>
             <ul>
               <For each={mercenaryData().abilities}>
                 {(ability) => (
-                  <li class="flex items-center gap-2">
+                  <li class="flex items-center gap-2 mb-4">
                     <img
                       class="w-[64px] h-[64px]"
                       src={`/assets/mercenaries/${ability.icon}`}
                       alt=""
                     />
                     <div>
-                      <h3 class="text-stone-100">{ability.name}</h3>
+                      <h3 class="text-stone-100 font-serif text-xl">{ability.name}</h3>
                       <p class="text-stone-200">{ability.effect}</p>
                       {ability.type === 'Passive' ? <p class="text-stone-400">被動技能</p> : null}
                     </div>
@@ -98,7 +98,7 @@ const MercenaryList = () => (
 
 const Mercenaries = ({ title, list }: { title: string; list: Mercenary[] }) => (
   <>
-    <h3 class="text-amber-300 text-center">{title}</h3>
+    <h3 class="text-amber-300 text-center text-lg mb-2">{title}</h3>
     <div class="flex justify-center">
       <For each={list}>
         {(m) => (
