@@ -24,21 +24,10 @@ export const ItemPage = () => {
           <div class="flex flex-col lg:flex-row lg:justify-between gap-8 mb-10">
             <div>
               <div class="flex items-center gap-2 text-stone-100 mb-4">
-                <IconImage
-                  src={`/assets/items/${itemData().icon}`}
-                  alt={itemData().name}
-                />
+                <IconImage src={`/assets/items/${itemData().icon}`} alt={itemData().name} />
                 <div>
                   <h1 class="font-serif text-2xl text-amber-300">{itemData().name}</h1>
-                  {/** fixme: cost rendering at here using Cost does not change depending on item() value */}
-                  <div>
-                    <Show when={itemData().goldCost}>
-                      <span class="mr-2">🟡 {itemData().goldCost}</span>
-                    </Show>
-                    <Show when={itemData().woodCost}>
-                      <span>🌲 {itemData().woodCost}</span>
-                    </Show>
-                  </div>
+                  <Cost gold={itemData().goldCost} wood={itemData().woodCost} />
                 </div>
               </div>
               <p class="text-stone-300">說明：{itemData().description}</p>
@@ -115,13 +104,13 @@ export const ItemPage = () => {
   );
 };
 
-const Cost = ({ gold, wood }: { gold: number; wood: number }) => (
+const Cost = (props: { gold: number; wood: number }) => (
   <div>
-    <Show when={gold}>
-      <span class="mr-2">🟡 {gold}</span>
+    <Show when={props.gold}>
+      <span class="mr-2">🟡 {props.gold}</span>
     </Show>
-    <Show when={wood}>
-      <span>🌲 {wood}</span>
+    <Show when={props.wood}>
+      <span>🌲 {props.wood}</span>
     </Show>
   </div>
 );
