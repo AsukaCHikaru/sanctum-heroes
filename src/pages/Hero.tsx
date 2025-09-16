@@ -20,7 +20,7 @@ export const HeroPage = () => {
     <Layout>
       <Show when={hero()} fallback={null}>
         {(heroData) => (
-          <div class="py-8 sm:py-12">
+          <div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-stone-100 mb-6">
               <IconImage src={`/assets/hero/${heroData().icon}`} alt={heroData().title.en} />
               <div>

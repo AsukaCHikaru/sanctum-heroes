@@ -7,7 +7,12 @@ export const Layout = (props: { children: JSXElement }) => {
     <div class="min-h-screen">
       <header class="flex items-center text-gray-50 gap-4 sm:gap-6 lg:gap-10 mb-6 py-4 px-4 sm:px-6 lg:px-8 border-b border-gray-600">
         <A href="/" class="w-[140px]">
-          <img src="/assets/banner.png" alt="Sanctum Heroes" class="h-auto w-auto" loading="eager" />
+          <img
+            src="/assets/banner.png"
+            alt="Sanctum Heroes"
+            class="h-auto w-auto"
+            loading="eager"
+          />
         </A>
         <HeaderLink href="/hero">HERO</HeaderLink>
         <HeaderLink href="/item">ITEM</HeaderLink>
