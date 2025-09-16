@@ -4,6 +4,12 @@ interface IconImageProps {
   class?: string;
 }
 
-export const IconImage = ({ src, alt, class: className = '' }: IconImageProps) => (
-  <img class={`w-12 h-12 sm:w-[64px] sm:h-[64px] ${className}`} src={src} alt={alt} />
-);
+export const IconImage = (props: IconImageProps) => {
+  return (
+    <img
+      class={`w-12 h-12 sm:w-[64px] sm:h-[64px] ${props.class || ''}`}
+      src={props.src}
+      alt={props.alt}
+    />
+  );
+};
